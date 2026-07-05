@@ -228,6 +228,7 @@ const SECTION_META = {
   's4r2-fem-basic':{ title: 'Feminine Adjectives (+e)', ch: 1, order: 6 },
   's4r3-fem-irreg':{ title: 'Irregular Feminine (4 patterns)', ch: 1, order: 7 },
   's4r4-plural-adj':{ title: 'Plural Adjectives', ch: 1, order: 8 },
+  'compound':      { title: 'Compound (Multi-Rule)', ch: 1, order: 8.5 },
   's4b-colors':    { title: 'Colors', ch: 1, order: 9 },
   's4c-precede':   { title: 'Precede-the-Noun (beau/nouveau)', ch: 1, order: 10 },
   's5-vocab':      { title: 'Key Vocabulary', ch: 1, order: 11 },
@@ -245,16 +246,25 @@ const SECTION_ID_MAP = {
 };
 
 const QUESTIONS = (function() {
-  if (typeof CHAPTER_1 === 'undefined') return [];
   const qs = [];
   const counters = {};
-  for (const sec of CHAPTER_1.sections) {
-    const sid = SECTION_ID_MAP[sec.id] || sec.id;
+  const addQ = (sid, q) => {
     counters[sid] = counters[sid] || {};
-    for (const q of sec.questions) {
-      const t = q.type;
-      counters[sid][t] = (counters[sid][t] || 0) + 1;
-      qs.push({ ...q, id: `${sid}-${t[0]}${counters[sid][t]}`, section: sid });
+    const t = q.type;
+    counters[sid][t] = (counters[sid][t] || 0) + 1;
+    qs.push({ ...q, id: `${sid}-${t[0]}${counters[sid][t]}`, section: sid });
+  };
+  if (typeof CHAPTER_1 !== 'undefined') {
+    for (const sec of CHAPTER_1.sections) {
+      const sid = SECTION_ID_MAP[sec.id] || sec.id;
+      for (const q of sec.questions) addQ(sid, q);
+    }
+  }
+  if (typeof ADDITIONAL_QUESTIONS !== 'undefined') {
+    const TAG_TO_SECTION = { 's1-gender':'s1-gender', 's3-plurals':'s3-plurals', 'compound':'compound', 'reduced-hint':'compound' };
+    for (const q of ADDITIONAL_QUESTIONS) {
+      const sid = (q.tags || []).reduce((found, t) => found || TAG_TO_SECTION[t], null) || 'compound';
+      addQ(sid, q);
     }
   }
   return qs;
@@ -359,6 +369,7 @@ function defaultProgress() {
       's4r2-fem-basic': { status:'locked', lastReview:null, reviews:0, scores:[] },
       's4r3-fem-irreg': { status:'locked', lastReview:null, reviews:0, scores:[] },
       's4r4-plural-adj':{ status:'learning', lastReview:null, reviews:0, scores:[] },
+      'compound':       { status:'learning', lastReview:null, reviews:0, scores:[] },
       's4b-colors':     { status:'not-started', lastReview:null, reviews:0, scores:[] },
       's4c-precede':    { status:'not-started', lastReview:null, reviews:0, scores:[] },
       's5-vocab':       { status:'not-started', lastReview:null, reviews:0, scores:[] },

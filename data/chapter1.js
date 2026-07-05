@@ -1263,3 +1263,512 @@ const CHAPTER_1 = {
     }
   ]
 };
+const ADDITIONAL_QUESTIONS = [
+
+  // ============================================================
+  // CATEGORY 1: Gender Production (12 questions)
+  // Targets the #1 weakness — forces RECALL, not recognition
+  // ============================================================
+
+  // --- 5 blank questions: "Fill in le or la" ---
+
+  {
+    type: 'blank',
+    stem: 'Fill in the correct article (le or la):',
+    context: '___ problème',
+    correct: 'le',
+    rule: 'Problème is masculine despite ending in -e. Many French words from Greek (problème, thème, système, poème) keep masculine gender.',
+    tags: ['s1-gender', 'gender-recall']
+  },
+  {
+    type: 'blank',
+    stem: 'Fill in the correct article (le or la):',
+    context: '___ nuit',
+    correct: 'la',
+    rule: 'Nuit (night) is feminine. No ending pattern predicts this — it must be memorized with its article.',
+    tags: ['s1-gender', 'gender-recall']
+  },
+  {
+    type: 'blank',
+    stem: 'Fill in the correct article (le or la):',
+    context: '___ lycée',
+    correct: 'le',
+    rule: 'Lycée is masculine despite the -ée ending. Greek-origin words ending in -ée (lycée, musée, trophée) are masculine — a notorious trap.',
+    tags: ['s1-gender', 'gender-recall']
+  },
+  {
+    type: 'blank',
+    stem: 'Fill in the correct article (le or la):',
+    context: '___ chose',
+    correct: 'la',
+    rule: 'Chose (thing) is feminine. The final -e does NOT reliably predict gender — plenty of masculine words end in -e (le groupe, le problème).',
+    tags: ['s1-gender', 'gender-recall']
+  },
+  {
+    type: 'blank',
+    stem: 'Fill in the correct article (le or la):',
+    context: '___ silence',
+    correct: 'le',
+    rule: 'Silence is masculine despite looking like it ends in -ence (a feminine marker). Le silence is a key exception to the -ence pattern.',
+    tags: ['s1-gender', 'gender-recall']
+  },
+
+  // --- 5 open translation questions: produce "le/la [noun]" ---
+
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the problem',
+    correct: 'le problème',
+    hints: 'problème',
+    alternates: [],
+    rule: 'Problème is masculine (Greek origin). Le problème — not la.',
+    tags: ['s1-gender', 'gender-production']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the sea',
+    correct: 'la mer',
+    hints: 'mer',
+    alternates: [],
+    rule: 'Mer (sea) is feminine. Short, common nouns like this must be memorized with their article.',
+    tags: ['s1-gender', 'gender-production']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the museum',
+    correct: 'le musée',
+    hints: 'musée',
+    alternates: [],
+    rule: 'Musée is masculine despite the -ée ending. Greek-origin -ée words (musée, lycée) are masculine exceptions.',
+    tags: ['s1-gender', 'gender-production']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the hand',
+    correct: 'la main',
+    hints: 'main',
+    alternates: [],
+    rule: 'Main (hand) is feminine — one of French\'s most commonly misgendered nouns.',
+    tags: ['s1-gender', 'gender-production']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the group',
+    correct: 'le groupe',
+    hints: 'groupe',
+    alternates: [],
+    rule: 'Groupe is masculine despite ending in -e. Not all -e words are feminine — this is the most common gender misconception.',
+    tags: ['s1-gender', 'gender-production']
+  },
+
+  // --- 2 WHY questions about gender patterns ---
+
+  {
+    type: 'why',
+    stem: 'Why is "problème" masculine even though it ends in -e?',
+    options: [
+      'Words borrowed from Greek (like -ème endings) are typically masculine regardless of the final -e',
+      'All words ending in -e are masculine in French',
+      'Problème changes to feminine when used with a feminine adjective'
+    ],
+    correct: 0,
+    rule: 'Many French words from Greek keep masculine gender despite their -e ending: problème, thème, système, poème. The -e ending does NOT reliably indicate feminine gender.',
+    tags: ['s1-gender', 'why']
+  },
+  {
+    type: 'why',
+    stem: 'Why is "musée" masculine when -ée is usually a feminine ending?',
+    options: [
+      'The -ée ending is always masculine in French',
+      'Musée comes from Greek (mouseion), and Greek-origin -ée words are masculine',
+      'Musée is actually feminine — "la musée" is correct'
+    ],
+    correct: 1,
+    rule: 'The -ée ending is usually feminine (une idée, une année, une journée). But Greek-origin words like musée, lycée, and trophée are masculine exceptions. Always learn the article with the noun.',
+    tags: ['s1-gender', 'why']
+  },
+
+  // ============================================================
+  // CATEGORY 2: Missing Plural Patterns (9 questions)
+  // -ou → -oux (7 special words) and -ail → -aux
+  // ============================================================
+
+  // --- 4 MCQs mixing these patterns with existing rules ---
+
+  {
+    type: 'mcq',
+    stem: 'What is the plural of "bijou" (jewel)?',
+    options: ['bijoux', 'bijous', 'bijou'],
+    correct: 0,
+    rule: 'Bijou is one of 7 special -ou words that take -x in plural: bijou, caillou, chou, genou, hibou, joujou, pou. All other -ou words just add -s.',
+    tags: ['s3-plurals', 'ou-oux']
+  },
+  {
+    type: 'mcq',
+    stem: 'What is the plural of "travail" (work)?',
+    options: ['travails', 'travaux', 'travaix'],
+    correct: 1,
+    rule: 'Travail → travaux follows the -ail → -aux pattern. Only a few -ail words do this (travail, vitrail, corail, émail). Most -ail words just add -s (détails, éventails).',
+    tags: ['s3-plurals', 'ail-aux']
+  },
+  {
+    type: 'mcq',
+    stem: 'What is the plural of "trou" (hole)?',
+    options: ['troux', 'trou', 'trous'],
+    correct: 2,
+    rule: 'Trou is a regular -ou word → trous. Only the 7 special -ou words take -x (bijou, caillou, chou, genou, hibou, joujou, pou). Every other -ou word adds -s normally.',
+    tags: ['s3-plurals', 'ou-oux']
+  },
+  {
+    type: 'mcq',
+    stem: 'What is the plural of "genou" (knee)?',
+    options: ['genous', 'genoaux', 'genoux'],
+    correct: 2,
+    rule: 'Genou is one of the 7 special -ou words that take -x in plural. Mnemonic: "Viens mon chou sur mes genoux avec tes bijoux..."',
+    tags: ['s3-plurals', 'ou-oux']
+  },
+
+  // --- 2 blank questions ---
+
+  {
+    type: 'blank',
+    stem: 'Write the correct plural form of the word in parentheses:',
+    context: 'Les ___ (caillou) sont dans le jardin.',
+    correct: 'cailloux',
+    rule: 'Caillou (pebble/stone) is one of the 7 special -ou words → cailloux. Regular -ou words like "clou" just add -s (clous).',
+    tags: ['s3-plurals', 'ou-oux']
+  },
+  {
+    type: 'blank',
+    stem: 'Write the correct plural form of the word in parentheses:',
+    context: 'Les ___ (vitrail) de la cathédrale sont magnifiques.',
+    correct: 'vitraux',
+    rule: 'Vitrail → vitraux follows the -ail → -aux pattern, like travail → travaux. This is a small closed set — most -ail words just add -s.',
+    tags: ['s3-plurals', 'ail-aux']
+  },
+
+  // --- 2 open translations ---
+
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the knees',
+    correct: 'les genoux',
+    hints: 'genou = knee',
+    alternates: [],
+    rule: 'Genou → genoux. One of the 7 special -ou words that take -x instead of -s in plural.',
+    tags: ['s3-plurals', 'ou-oux']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the works (construction/labor)',
+    correct: 'les travaux',
+    hints: 'travail = work',
+    alternates: [],
+    rule: 'Travail → travaux. One of the -ail words that transforms to -aux in plural (not just adds -s).',
+    tags: ['s3-plurals', 'ail-aux']
+  },
+
+  // --- 1 WHY question ---
+
+  {
+    type: 'why',
+    stem: 'Why do "bijou, caillou, genou" take -x in plural while "trou, clou" just take -s?',
+    options: [
+      'All -ou words take -x in plural; "trou" and "clou" are irregular exceptions',
+      'There are exactly 7 special -ou words that take -x; all others follow the regular -s rule',
+      'It depends on whether the -ou noun is masculine or feminine'
+    ],
+    correct: 1,
+    rule: 'Only 7 -ou words take -x: bijou, caillou, chou, genou, hibou, joujou, pou. This is a closed, memorized list. Every other -ou word is regular and adds -s.',
+    tags: ['s3-plurals', 'ou-oux', 'why']
+  },
+
+  // ============================================================
+  // CATEGORY 3: Gender Prediction Patterns (8 questions)
+  // Word endings that reliably predict masculine/feminine
+  // ============================================================
+
+  // --- 4 MCQs ---
+
+  {
+    type: 'mcq',
+    stem: 'Based on its ending, is "situation" masculine or feminine?',
+    options: ['Masculine (le)', 'Could be either', 'Feminine (la)'],
+    correct: 2,
+    rule: 'Words ending in -tion are almost always feminine: la situation, la nation, l\'information, la réaction, l\'éducation.',
+    tags: ['s1-gender', 'gender-patterns']
+  },
+  {
+    type: 'mcq',
+    stem: 'Based on its ending, is "appartement" masculine or feminine?',
+    options: ['Feminine (la)', 'Masculine (le)', 'Could be either'],
+    correct: 1,
+    rule: 'Words ending in -ment are almost always masculine: le moment, l\'appartement, le gouvernement, le sentiment, le mouvement.',
+    tags: ['s1-gender', 'gender-patterns']
+  },
+  {
+    type: 'mcq',
+    stem: 'Based on its ending, is "patience" masculine or feminine?',
+    options: ['Masculine (le)', 'Could be either', 'Feminine (la)'],
+    correct: 2,
+    rule: 'Words ending in -ence/-ance are almost always feminine: la patience, la danse, l\'expérience, l\'importance. Notable exception: le silence.',
+    tags: ['s1-gender', 'gender-patterns']
+  },
+  {
+    type: 'mcq',
+    stem: 'Based on its ending, is "fromage" masculine or feminine?',
+    options: ['Feminine (la)', 'Masculine (le)', 'Could be either'],
+    correct: 1,
+    rule: 'Words ending in -age are almost always masculine: le fromage, le village, le garage, le voyage. Exceptions to watch: la page, la plage, l\'image.',
+    tags: ['s1-gender', 'gender-patterns']
+  },
+
+  // --- 2 blank questions ---
+
+  {
+    type: 'blank',
+    stem: 'Fill in the correct article based on the noun\'s ending pattern:',
+    context: '___ nation est grande.',
+    correct: 'la',
+    rule: 'Nation ends in -tion → feminine. The -tion/-sion ending is one of the most reliable feminine markers in French.',
+    tags: ['s1-gender', 'gender-patterns']
+  },
+  {
+    type: 'blank',
+    stem: 'Fill in the correct article based on the noun\'s ending pattern:',
+    context: '___ moment est important.',
+    correct: 'le',
+    rule: 'Moment ends in -ment → masculine. The -ment ending reliably predicts masculine gender.',
+    tags: ['s1-gender', 'gender-patterns']
+  },
+
+  // --- 2 WHY questions ---
+
+  {
+    type: 'why',
+    stem: 'Why is "information" feminine in French?',
+    options: [
+      'Because it describes an abstract concept, and abstract nouns are always feminine',
+      'Because the -tion ending is a reliable feminine gender marker in French',
+      'Because all long words in French are feminine'
+    ],
+    correct: 1,
+    rule: 'The -tion/-sion ending is one of the strongest feminine predictors. Nearly every -tion word is feminine: l\'information, la situation, la nation, l\'éducation, la réaction, la conversation.',
+    tags: ['s1-gender', 'gender-patterns', 'why']
+  },
+  {
+    type: 'why',
+    stem: 'Why is "village" masculine in French?',
+    options: [
+      'Because it ends in -e, and all -e words are masculine',
+      'Because all place-related nouns are masculine in French',
+      'Because the -age ending is a reliable masculine gender marker'
+    ],
+    correct: 2,
+    rule: 'The -age ending almost always indicates masculine: le village, le garage, le fromage, le voyage. A few exceptions exist (la page, la plage, l\'image), but the pattern is very reliable.',
+    tags: ['s1-gender', 'gender-patterns', 'why']
+  },
+
+  // ============================================================
+  // CATEGORY 4: Compound/Synthesis (12 questions)
+  // Stack 3+ rules per question — the hardest, most realistic
+  // ============================================================
+
+  // --- 6 open translation questions ---
+
+  {
+    type: 'open',
+    stem: 'Translate to French (apply all agreement and position rules):',
+    context: 'the tall Italian women',
+    correct: 'les grandes femmes italiennes',
+    hints: 'grand(e) = tall, italien(ne) = Italian',
+    alternates: [],
+    rule: 'Four rules stacked: (1) les — plural definite. (2) grandes — fem pl of grand, BANGS (size) → before noun. (3) femmes — fem pl noun. (4) italiennes — fem pl of italien (double consonant: italien → italienne, +s), nationality → after noun.',
+    tags: ['compound', 's2-adjectives', 's3-plurals', 's1-gender']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French (apply all agreement and position rules):',
+    context: 'the happy French boys',
+    correct: 'les garçons français heureux',
+    hints: 'garçon = boy, heureux = happy',
+    alternates: ['les heureux garçons français'],
+    rule: 'Three rules stacked: (1) les garçons — masc pl. (2) français — masc pl is same as singular (already ends in -s). (3) heureux — masc pl is same as singular (-eux stays -eux for masculine). Both adjectives after noun in standard position.',
+    tags: ['compound', 's2-adjectives', 's3-plurals']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French (apply all agreement and position rules):',
+    context: 'a good natural reaction',
+    correct: 'une bonne réaction naturelle',
+    hints: 'réaction (f.) = reaction, naturel = natural',
+    alternates: [],
+    rule: 'Four rules stacked: (1) une — fem indefinite (réaction is fem, -tion ending). (2) bonne — fem of bon (double consonant), BANGS → before noun. (3) réaction — fem noun. (4) naturelle — fem of naturel (-el → -elle), descriptive → after noun.',
+    tags: ['compound', 's2-adjectives', 's1-gender', 'gender-patterns']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French (apply all agreement and position rules):',
+    context: 'the first creative student (f.)',
+    correct: 'la première étudiante créative',
+    hints: 'premier = first, créatif = creative, étudiant(e) = student',
+    alternates: [],
+    rule: 'Four rules stacked: (1) la — fem definite. (2) première — fem of premier (-er → -ère), ordinal → before noun. (3) étudiante — fem of étudiant. (4) créative — fem of créatif (-if → -ive), descriptive → after noun.',
+    tags: ['compound', 's2-adjectives', 's1-gender']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French (apply all agreement and position rules):',
+    context: 'the generous Italian men',
+    correct: 'les hommes italiens généreux',
+    hints: 'homme = man, généreux = generous',
+    alternates: ['les hommes généreux italiens'],
+    rule: 'Three rules stacked: (1) les hommes — masc pl. (2) italiens — masc pl of italien (+s). (3) généreux — masc pl stays généreux (-eux no change for masculine plural). Both adjectives after noun.',
+    tags: ['compound', 's2-adjectives', 's3-plurals']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French (apply all agreement and position rules):',
+    context: 'some beautiful French castles',
+    correct: 'de beaux châteaux français',
+    hints: 'beau = beautiful, château = castle',
+    alternates: ['des beaux châteaux français'],
+    rule: 'Four rules stacked: (1) des → de before a preceding adjective (formal rule). (2) beaux — irregular masc pl of beau, BANGS (beauty) → before noun. (3) châteaux — château plural (-eau → -eaux). (4) français — masc pl unchanged (ends in -s already), nationality → after noun.',
+    tags: ['compound', 's2-adjectives', 's3-plurals']
+  },
+
+  // --- 4 blank questions testing compound application ---
+
+  {
+    type: 'blank',
+    stem: 'Fill in the correct form of the adjective in parentheses:',
+    context: 'Les petites filles sont ___ (heureux).',
+    correct: 'heureuses',
+    rule: 'Must apply TWO changes: (1) feminine: heureux → heureuse (-eux → -euse). (2) plural: heureuse → heureuses (+s). Final form: heureuses. Must match both gender AND number of "filles."',
+    tags: ['compound', 's2-adjectives', 's3-plurals']
+  },
+  {
+    type: 'blank',
+    stem: 'Fill in the correct form of the adjective in parentheses:',
+    context: 'C\'est la première réaction ___ (naturel).',
+    correct: 'naturelle',
+    rule: 'Réaction is feminine (-tion ending), so naturel must agree: -el → -elle. The gender prediction pattern (-tion = feminine) triggers the adjective agreement (-el → -elle).',
+    tags: ['compound', 's2-adjectives', 's1-gender', 'gender-patterns']
+  },
+  {
+    type: 'blank',
+    stem: 'Fill in the correct form of the adjective in parentheses:',
+    context: 'Les ___ (beau) jardins français sont célèbres.',
+    correct: 'beaux',
+    rule: 'Must apply TWO rules: (1) beau is a BANGS adjective (beauty) → goes before the noun. (2) masculine plural: beau → beaux (irregular — not "beaus"). Position + irregular plural.',
+    tags: ['compound', 's2-adjectives', 's3-plurals']
+  },
+  {
+    type: 'blank',
+    stem: 'Fill in the correct form of the adjective in parentheses:',
+    context: 'J\'ai de ___ (bon) amies françaises.',
+    correct: 'bonnes',
+    rule: 'Must apply TWO changes: (1) feminine: bon → bonne (double consonant rule). (2) plural: bonne → bonnes (+s). Amies is feminine plural, so the adjective must be too.',
+    tags: ['compound', 's2-adjectives', 's3-plurals']
+  },
+
+  // --- 2 WHY questions about rule interactions ---
+
+  {
+    type: 'why',
+    stem: 'In "les grandes femmes italiennes," why does "grande" come before the noun but "italienne" comes after?',
+    options: [
+      'The shorter adjective always goes before, the longer one after',
+      'Grande is a BANGS adjective (size) and goes before; italienne is a nationality adjective and goes after',
+      'Feminine adjectives go before the noun; plural adjectives go after'
+    ],
+    correct: 1,
+    rule: 'BANGS adjectives (Beauty, Age, Number, Goodness, Size) go BEFORE the noun. Most other adjectives — especially nationality, color, and shape — go AFTER. Grande = size (before). Italienne = nationality (after). Length has nothing to do with it.',
+    tags: ['compound', 's2-adjectives', 'why']
+  },
+  {
+    type: 'why',
+    stem: 'In "les garçons heureux," why doesn\'t "heureux" change form even though it\'s plural?',
+    options: [
+      'Adjectives ending in -eux are invariable and never change',
+      'Words already ending in -x don\'t add -s for plural — they already have a plural-compatible ending',
+      '"Heureux" is an exception to all agreement rules'
+    ],
+    correct: 1,
+    rule: 'French words ending in -x, -s, or -z don\'t change in the masculine plural — they already end in a plural-compatible sound. So heureux (sing.) = heureux (pl.), français (sing.) = français (pl.). But the FEMININE forms do change: heureuse → heureuses.',
+    tags: ['compound', 's3-plurals', 'why']
+  },
+
+  // ============================================================
+  // CATEGORY 5: Reduced-Hint Open Questions (6 questions)
+  // No vocabulary hints — only grammar cues or nothing at all
+  // ============================================================
+
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the big house',
+    correct: 'la grande maison',
+    hints: 'Size adjective — which side of the noun?',
+    alternates: [],
+    rule: 'la (maison is feminine) + grande (fem of grand, BANGS/size → before noun) + maison.',
+    tags: ['reduced-hint', 's1-gender', 's2-adjectives']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the red cars',
+    correct: 'les voitures rouges',
+    hints: 'Color adjectives go after the noun.',
+    alternates: [],
+    rule: 'les (plural) + voitures (fem pl of voiture) + rouges (rouge + s for plural, color → after noun). Rouge is one of the adjectives that has the same form for masculine and feminine.',
+    tags: ['reduced-hint', 's2-adjectives', 's3-plurals']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'a young French woman',
+    correct: 'une jeune femme française',
+    hints: 'Two adjectives — where does each one go?',
+    alternates: ['une jeune Française'],
+    rule: 'une (fem indefinite) + jeune (BANGS/age → before noun, same form masc/fem) + femme + française (fem of français, nationality → after noun).',
+    tags: ['reduced-hint', 's2-adjectives', 's1-gender']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the old books',
+    correct: 'les vieux livres',
+    hints: 'Check the irregular masculine plural of this adjective.',
+    alternates: [],
+    rule: 'les (plural) + vieux (irregular adj: vieux is the same in masc sing and masc pl, BANGS/age → before noun) + livres (masc pl of livre).',
+    tags: ['reduced-hint', 's2-adjectives', 's3-plurals']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'the white cat (f.)',
+    correct: 'la chatte blanche',
+    hints: 'blanc has an irregular feminine form.',
+    alternates: [],
+    rule: 'la (feminine) + chatte (fem of chat) + blanche (fem of blanc — irregular: blanc → blanche, not "blance"). Color adjective → after noun.',
+    tags: ['reduced-hint', 's2-adjectives', 's1-gender']
+  },
+  {
+    type: 'open',
+    stem: 'Translate to French:',
+    context: 'some small children',
+    correct: 'de petits enfants',
+    hints: 'What happens to "des" when an adjective comes before the noun?',
+    alternates: ['des petits enfants'],
+    rule: 'Formal rule: des → de before a preceding adjective. petits (masc pl of petit, BANGS/size → before noun) + enfants. In spoken French "des petits enfants" is also widely used.',
+    tags: ['reduced-hint', 's2-adjectives', 's3-plurals']
+  }
+];
