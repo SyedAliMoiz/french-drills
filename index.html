@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>French Drills — Chapitre 1</title>
+<meta name="theme-color" content="#2B4570">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇫🇷</text></svg>">
+<style>
+:root {
+  --bg: #F8F7F4;
+  --surface: #FFFFFF;
+  --text: #1C1917;
+  --text-dim: #78716C;
+  --accent: #2B4570;
+  --accent-hover: #1E3355;
+  --accent-on: #FFFFFF;
+  --accent-faint: #EDF1F7;
+  --ok: #166534;
+  --ok-bg: #DCFCE7;
+  --ok-border: #86EFAC;
+  --err: #991B1B;
+  --err-bg: #FEE2E2;
+  --err-border: #FCA5A5;
+  --warn: #92400E;
+  --warn-bg: #FEF3C7;
+  --warn-border: #FCD34D;
+  --line: #E7E5E4;
+  --field-bg: #FAFAF9;
+  --field-border: #D6D3D1;
+  --field-focus: #2B4570;
+  --key-bg: #F5F5F4;
+  --key-hover: #E7E5E4;
+  --key-border: #D6D3D1;
+  --key-text: #1C1917;
+  --bar-track: #E7E5E4;
+  --bar-fill: #2B4570;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0C0A09;--surface:#1C1917;--text:#E7E5E4;--text-dim:#A8A29E;
+  --accent:#7DA2D4;--accent-hover:#93B4E0;--accent-on:#0C0A09;--accent-faint:#1A2332;
+  --ok:#4ADE80;--ok-bg:#052E16;--ok-border:#166534;
+  --err:#FCA5A5;--err-bg:#1C0606;--err-border:#7F1D1D;
+  --warn:#FCD34D;--warn-bg:#451A03;--warn-border:#92400E;
+  --line:#292524;--field-bg:#0C0A09;--field-border:#44403C;--field-focus:#7DA2D4;
+  --key-bg:#292524;--key-hover:#44403C;--key-border:#44403C;--key-text:#E7E5E4;
+  --bar-track:#292524;--bar-fill:#7DA2D4;--card-shadow:0 1px 3px rgba(0,0,0,0.3);
+}}
+:root[data-theme="dark"]{
+  --bg:#0C0A09;--surface:#1C1917;--text:#E7E5E4;--text-dim:#A8A29E;
+  --accent:#7DA2D4;--accent-hover:#93B4E0;--accent-on:#0C0A09;--accent-faint:#1A2332;
+  --ok:#4ADE80;--ok-bg:#052E16;--ok-border:#166534;
+  --err:#FCA5A5;--err-bg:#1C0606;--err-border:#7F1D1D;
+  --warn:#FCD34D;--warn-bg:#451A03;--warn-border:#92400E;
+  --line:#292524;--field-bg:#0C0A09;--field-border:#44403C;--field-focus:#7DA2D4;
+  --key-bg:#292524;--key-hover:#44403C;--key-border:#44403C;--key-text:#E7E5E4;
+  --bar-track:#292524;--bar-fill:#7DA2D4;--card-shadow:0 1px 3px rgba(0,0,0,0.3);
+}
+:root[data-theme="light"]{
+  --bg:#F8F7F4;--surface:#FFFFFF;--text:#1C1917;--text-dim:#78716C;
+  --accent:#2B4570;--accent-hover:#1E3355;--accent-on:#FFFFFF;--accent-faint:#EDF1F7;
+  --ok:#166534;--ok-bg:#DCFCE7;--ok-border:#86EFAC;
+  --err:#991B1B;--err-bg:#FEE2E2;--err-border:#FCA5A5;
+  --warn:#92400E;--warn-bg:#FEF3C7;--warn-border:#FCD34D;
+  --line:#E7E5E4;--field-bg:#FAFAF9;--field-border:#D6D3D1;--field-focus:#2B4570;
+  --key-bg:#F5F5F4;--key-hover:#E7E5E4;--key-border:#D6D3D1;--key-text:#1C1917;
+  --bar-track:#E7E5E4;--bar-fill:#2B4570;--card-shadow:0 1px 3px rgba(0,0,0,0.06);
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);min-height:100dvh;-webkit-text-size-adjust:100%}
+.wrap{max-width:480px;margin:0 auto;padding:1.25rem 1rem}
+
+/* Typography */
+.serif{font-family:Georgia,"Times New Roman",serif}
+.hdr{font-size:1.375rem;font-weight:700;letter-spacing:-0.01em}
+.sub{font-size:.8125rem;color:var(--text-dim)}
+.label{font-size:.6875rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim)}
+.tabnum{font-variant-numeric:tabular-nums}
+
+/* Progress bar */
+.prog-track{height:4px;background:var(--bar-track);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:var(--bar-fill);border-radius:2px;transition:width .35s ease}
+
+/* Cards */
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.25rem;box-shadow:var(--card-shadow);margin-bottom:.75rem}
+.card-accent{border-left:3px solid var(--accent)}
+.card-ok{border-left-color:var(--ok)}
+.card-err{border-left-color:var(--err)}
+.card-title{font-weight:600;margin-bottom:.25rem}
+.card-sub{font-size:.8125rem;color:var(--text-dim)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;width:100%;font-family:inherit;font-size:1rem;font-weight:600;padding:.75rem 1.5rem;border:none;border-radius:8px;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .15s,opacity .15s}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn-p{background:var(--accent);color:var(--accent-on)}
+.btn-p:hover:not(:disabled){background:var(--accent-hover)}
+.btn-g{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+.btn-g:hover:not(:disabled){background:var(--accent-faint)}
+.btn-sm{font-size:.875rem;padding:.5rem 1rem}
+.btn-ok{background:var(--ok);color:#fff}
+.btn-link{background:none;border:none;color:var(--accent);font-weight:600;cursor:pointer;padding:.5rem;font-size:.875rem;text-decoration:underline;text-underline-offset:2px}
+
+/* Fields */
+.field{width:100%;font-family:Georgia,"Times New Roman",serif;font-size:1.125rem;padding:.75rem;background:var(--field-bg);color:var(--text);border:1.5px solid var(--field-border);border-radius:6px;outline:none;transition:border-color .15s}
+.field:focus{border-color:var(--field-focus)}
+.field:disabled{opacity:.6;cursor:not-allowed}
+.field-ok{border-color:var(--ok)!important;background:var(--ok-bg)!important}
+.field-err{border-color:var(--err)!important;background:var(--err-bg)!important}
+.field-pw{font-family:inherit;font-size:1rem}
+
+/* Accent keys */
+.keys{display:flex;flex-wrap:wrap;gap:6px;margin:.625rem 0}
+.key{font-family:Georgia,serif;font-size:1rem;min-width:38px;height:36px;display:flex;align-items:center;justify-content:center;padding:0 4px;background:var(--key-bg);color:var(--key-text);border:1px solid var(--key-border);border-radius:6px;cursor:pointer;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:background .1s,transform .08s}
+.key:hover{background:var(--key-hover)}
+.key:active{transform:scale(.93)}
+.key:disabled{opacity:.3;pointer-events:none}
+
+/* MCQ options */
+.opts{display:flex;flex-direction:column;gap:.5rem;margin:.75rem 0}
+.opt{display:flex;align-items:center;gap:.75rem;width:100%;padding:.875rem 1rem;background:var(--surface);border:1.5px solid var(--line);border-radius:8px;cursor:pointer;font-family:Georgia,serif;font-size:1.0625rem;text-align:left;-webkit-tap-highlight-color:transparent;touch-action:manipulation;transition:border-color .15s,background .15s}
+.opt:hover:not(.opt-locked){border-color:var(--accent);background:var(--accent-faint)}
+.opt-letter{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:var(--accent-faint);color:var(--accent);font-family:system-ui,sans-serif;font-size:.8125rem;font-weight:700;flex-shrink:0}
+.opt-locked{cursor:default;opacity:.5}
+.opt-sel{border-color:var(--accent);background:var(--accent-faint)}
+.opt-right{border-color:var(--ok)!important;background:var(--ok-bg)!important;opacity:1!important}
+.opt-right .opt-letter{background:var(--ok);color:#fff}
+.opt-wrong{border-color:var(--err)!important;background:var(--err-bg)!important;opacity:1!important}
+.opt-wrong .opt-letter{background:var(--err);color:#fff}
+
+/* Feedback */
+.fb{padding:.875rem;border-radius:6px;font-size:.9375rem;line-height:1.5;margin-top:.75rem}
+.fb-ok{background:var(--ok-bg);border:1px solid var(--ok-border);color:var(--ok)}
+.fb-err{background:var(--err-bg);border:1px solid var(--err-border);color:var(--err)}
+.fb-warn{background:var(--warn-bg);border:1px solid var(--warn-border);color:var(--warn)}
+.fb-head{font-weight:700;display:block;margin-bottom:.2rem}
+.fb-rule{display:block;margin-top:.35rem;font-size:.8125rem;opacity:.85}
+.fb-answer{font-family:Georgia,serif;font-weight:600}
+
+/* Layout helpers */
+.row{display:flex;align-items:center;gap:.75rem}
+.col{display:flex;flex-direction:column;gap:.75rem}
+.mt{margin-top:1rem}.mt-sm{margin-top:.5rem}.mb{margin-bottom:1rem}
+.gap-sm{gap:.5rem}
+.center{text-align:center}
+.between{justify-content:space-between}
+.flex1{flex:1}
+
+/* Dashboard */
+.dash-section{margin-bottom:1.25rem}
+.dash-section-title{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dim);margin-bottom:.5rem;padding-left:.25rem}
+.stat-row{display:flex;gap:.5rem;flex-wrap:wrap}
+.stat-box{flex:1;min-width:100px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.75rem;text-align:center}
+.stat-val{font-size:1.5rem;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.stat-label{font-size:.6875rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.05em;margin-top:.125rem}
+.due-badge{display:inline-block;font-size:.6875rem;font-weight:600;padding:.125rem .5rem;border-radius:99px;background:var(--err-bg);color:var(--err);border:1px solid var(--err-border)}
+.overdue{color:var(--err)}
+
+/* Results */
+.res-score{font-family:Georgia,serif;font-size:3rem;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.res-msg{font-size:1.125rem;color:var(--text-dim);margin-bottom:1.5rem}
+.res-list{list-style:none}
+.res-item{display:flex;align-items:flex-start;gap:.625rem;padding:.625rem 0;border-bottom:1px solid var(--line);font-size:.9375rem}
+.res-item:last-child{border-bottom:none}
+.res-icon{flex-shrink:0;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;margin-top:2px}
+.ico-ok{background:var(--ok-bg);color:var(--ok);border:1px solid var(--ok-border)}
+.ico-err{background:var(--err-bg);color:var(--err);border:1px solid var(--err-border)}
+.res-yours{text-decoration:line-through;color:var(--err);font-size:.8125rem;margin-top:.125rem}
+
+/* Spinner */
+.spin{display:inline-block;width:18px;height:18px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:spin .6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Sync indicator */
+.sync{display:flex;align-items:center;gap:.375rem;font-size:.75rem;color:var(--text-dim);padding:.375rem .75rem;border-radius:99px;background:var(--surface);border:1px solid var(--line)}
+.sync-ok{color:var(--ok);border-color:var(--ok-border)}
+.sync-err{color:var(--err);border-color:var(--err-border)}
+
+/* Auth screens */
+.auth-logo{font-size:2rem;margin-bottom:.25rem}
+.auth-title{font-family:Georgia,serif;font-size:1.5rem;font-weight:700;margin-bottom:.25rem}
+.auth-sub{color:var(--text-dim);font-size:.875rem;margin-bottom:1.5rem}
+.form-group{margin-bottom:1rem}
+.form-label{display:block;font-size:.8125rem;font-weight:600;margin-bottom:.375rem;color:var(--text-dim)}
+.form-help{font-size:.75rem;color:var(--text-dim);margin-top:.25rem}
+.error-msg{color:var(--err);font-size:.875rem;font-weight:500;margin-bottom:.75rem}
+.checkbox-row{display:flex;align-items:center;gap:.5rem;font-size:.875rem;margin:.75rem 0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.checkbox-row input{width:18px;height:18px;accent-color:var(--accent)}
+
+/* Section progress list */
+.sec-list{list-style:none}
+.sec-item{display:flex;align-items:center;gap:.5rem;padding:.5rem 0;border-bottom:1px solid var(--line);font-size:.875rem}
+.sec-item:last-child{border-bottom:none}
+.sec-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.sec-dot-locked{background:var(--ok)}
+.sec-dot-learning{background:var(--warn)}
+.sec-dot-none{background:var(--line)}
+.sec-name{flex:1}
+.sec-status{font-size:.75rem;color:var(--text-dim)}
+
+/* Animations */
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+@keyframes pop{0%{transform:scale(1)}50%{transform:scale(1.015)}100%{transform:scale(1)}}
+.shake{animation:shake .35s ease}
+.pop{animation:pop .3s ease}
+@media(prefers-reduced-motion:reduce){.shake,.pop{animation:none}.prog-fill{transition:none}.spin{animation-duration:1.2s}}
+</style>
+</head>
+<body>
+<div id="app"><div class="wrap center" style="padding-top:40vh"><div class="spin"></div></div></div>
+<script src="data/chapter1.js"></script>
+<script>
+'use strict';
+
+/* ═══════════════════════════════════════════════════════════════
+   CONFIGURATION
+   ═══════════════════════════════════════════════════════════════ */
+
+const CFG = { owner: 'syedalimoiz', repo: 'french-drills' };
+const ACCENTS = ['é','è','ê','ë','à','â','î','ï','ô','ù','û','ç'];
+const SECTION_META = {
+  's1-gender':     { title: 'Gender + Articles (le/la)', ch: 1, order: 1 },
+  's2a-elision':   { title: "Elision (l')", ch: 1, order: 2 },
+  's2b-indefinite':{ title: 'Indefinite Articles (un/une)', ch: 1, order: 3 },
+  's3-plurals':    { title: 'Plural Nouns (6 rules)', ch: 1, order: 4 },
+  's4r1-position': { title: 'Adjective Position', ch: 1, order: 5 },
+  's4r2-fem-basic':{ title: 'Feminine Adjectives (+e)', ch: 1, order: 6 },
+  's4r3-fem-irreg':{ title: 'Irregular Feminine (4 patterns)', ch: 1, order: 7 },
+  's4r4-plural-adj':{ title: 'Plural Adjectives', ch: 1, order: 8 },
+  's4b-colors':    { title: 'Colors', ch: 1, order: 9 },
+  's4c-precede':   { title: 'Precede-the-Noun (beau/nouveau)', ch: 1, order: 10 },
+  's5-vocab':      { title: 'Key Vocabulary', ch: 1, order: 11 },
+};
+
+/* ═══════════════════════════════════════════════════════════════
+   QUESTION BANK — loaded from data/chapter1.js (CHAPTER_1)
+   Flattened at runtime with normalized section IDs.
+   ═══════════════════════════════════════════════════════════════ */
+
+const SECTION_ID_MAP = {
+  's4r1-adj-position': 's4r1-position',
+  's4r2-fem-adj-basic': 's4r2-fem-basic',
+  's4r3-fem-adj-irregular': 's4r3-fem-irreg',
+};
+
+const QUESTIONS = (function() {
+  if (typeof CHAPTER_1 === 'undefined') return [];
+  const qs = [];
+  const counters = {};
+  for (const sec of CHAPTER_1.sections) {
+    const sid = SECTION_ID_MAP[sec.id] || sec.id;
+    counters[sid] = counters[sid] || {};
+    for (const q of sec.questions) {
+      const t = q.type;
+      counters[sid][t] = (counters[sid][t] || 0) + 1;
+      qs.push({ ...q, id: `${sid}-${t[0]}${counters[sid][t]}`, section: sid });
+    }
+  }
+  return qs;
+})();
+
+
+/* ═══════════════════════════════════════════════════════════════
+   CRYPTO — AES-256-GCM password encryption for PAT
+   ═══════════════════════════════════════════════════════════════ */
+
+const Cry = {
+  async deriveKey(pw, salt) {
+    const raw = await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    return crypto.subtle.deriveKey(
+      { name:'PBKDF2', salt, iterations:100000, hash:'SHA-256' },
+      raw,
+      { name:'AES-GCM', length:256 },
+      false,
+      ['encrypt','decrypt']
+    );
+  },
+  async encrypt(pw, text) {
+    const salt = crypto.getRandomValues(new Uint8Array(16));
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const key = await this.deriveKey(pw, salt);
+    const enc = await crypto.subtle.encrypt({ name:'AES-GCM', iv }, key, new TextEncoder().encode(text));
+    return { s: this.b64(salt), i: this.b64(iv), d: this.b64(new Uint8Array(enc)) };
+  },
+  async decrypt(pw, bundle) {
+    const salt = this.unb64(bundle.s), iv = this.unb64(bundle.i), data = this.unb64(bundle.d);
+    const key = await this.deriveKey(pw, salt);
+    const dec = await crypto.subtle.decrypt({ name:'AES-GCM', iv }, key, data);
+    return new TextDecoder().decode(dec);
+  },
+  b64(u8) { return btoa(String.fromCharCode(...u8)); },
+  unb64(s) { return new Uint8Array(atob(s).split('').map(c=>c.charCodeAt(0))); }
+};
+
+
+/* ═══════════════════════════════════════════════════════════════
+   GITHUB API — Read/write files to the repo
+   ═══════════════════════════════════════════════════════════════ */
+
+class GH {
+  constructor(token) {
+    this.token = token;
+    this.api = `https://api.github.com/repos/${CFG.owner}/${CFG.repo}/contents`;
+    this.shas = {};
+  }
+  headers() {
+    const h = { 'Accept':'application/vnd.github.v3+json' };
+    if (this.token) h['Authorization'] = `Bearer ${this.token}`;
+    return h;
+  }
+  async get(path) {
+    const r = await fetch(`${this.api}/${path}`, { headers: this.headers() });
+    if (r.status === 404) return null;
+    if (!r.ok) throw new Error(`GitHub ${r.status}: ${(await r.json()).message}`);
+    const d = await r.json();
+    this.shas[path] = d.sha;
+    const bin = atob(d.content.replace(/\n/g, ''));
+    return new TextDecoder().decode(new Uint8Array([...bin].map(c=>c.charCodeAt(0))));
+  }
+  async put(path, content, msg) {
+    const bytes = new TextEncoder().encode(content);
+    const b64 = btoa(String.fromCharCode(...bytes));
+    const body = { message: msg, content: b64 };
+    if (this.shas[path]) body.sha = this.shas[path];
+    const r = await fetch(`${this.api}/${path}`, {
+      method: 'PUT',
+      headers: { ...this.headers(), 'Content-Type':'application/json' },
+      body: JSON.stringify(body)
+    });
+    if (!r.ok) {
+      const e = await r.json();
+      if (r.status === 409 && !this.shas[path]) {
+        await this.get(path);
+        return this.put(path, content, msg);
+      }
+      throw new Error(`GitHub ${r.status}: ${e.message}`);
+    }
+    const d = await r.json();
+    this.shas[path] = d.content.sha;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   PROGRESS — Default state matching PROGRESS.md
+   ═══════════════════════════════════════════════════════════════ */
+
+function defaultProgress() {
+  return {
+    v: 1,
+    updated: null,
+    sections: {
+      's1-gender':      { status:'locked', lastReview:null, reviews:0, scores:[] },
+      's2a-elision':    { status:'locked', lastReview:null, reviews:0, scores:[] },
+      's2b-indefinite': { status:'locked', lastReview:null, reviews:0, scores:[] },
+      's3-plurals':     { status:'locked', lastReview:null, reviews:0, scores:[] },
+      's4r1-position':  { status:'locked', lastReview:null, reviews:0, scores:[] },
+      's4r2-fem-basic': { status:'locked', lastReview:null, reviews:0, scores:[] },
+      's4r3-fem-irreg': { status:'locked', lastReview:null, reviews:0, scores:[] },
+      's4r4-plural-adj':{ status:'learning', lastReview:null, reviews:0, scores:[] },
+      's4b-colors':     { status:'not-started', lastReview:null, reviews:0, scores:[] },
+      's4c-precede':    { status:'not-started', lastReview:null, reviews:0, scores:[] },
+      's5-vocab':       { status:'not-started', lastReview:null, reviews:0, scores:[] },
+    },
+    history: [],
+    stats: { questions:0, correct:0, drills:0, streak:0, best:0, lastDate:null },
+    achievements: ['first-lock','clean-sweep','pattern-cracker','comeback','system-builder','mixed-master']
+  };
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   DRILL ENGINE
+   ═══════════════════════════════════════════════════════════════ */
+
+const Engine = {
+  getDue(progress) {
+    const now = Date.now(), due = [];
+    for (const [id, s] of Object.entries(progress.sections)) {
+      if (s.status !== 'locked') continue;
+      if (!s.lastReview) { due.push({ id, days: 999, pri: 'high' }); continue; }
+      const days = Math.floor((now - new Date(s.lastReview).getTime()) / 86400000);
+      const interval = [1,3,7,14,30,60][Math.min(s.reviews, 5)];
+      if (days >= interval) due.push({ id, days, pri: days > interval*2 ? 'high' : 'medium' });
+    }
+    return due.sort((a,b) => b.days - a.days);
+  },
+
+  getCurrent(progress) {
+    for (const [id, s] of Object.entries(progress.sections)) {
+      if (s.status === 'learning') return id;
+    }
+    return null;
+  },
+
+  pickQuestions(sectionIds, type, count) {
+    let pool = QUESTIONS.filter(q => sectionIds.includes(q.section) && q.type === type);
+    this.shuffle(pool);
+    return pool.slice(0, count);
+  },
+
+  buildReviewDrill(dueIds, count) {
+    let pool = QUESTIONS.filter(q => dueIds.includes(q.section) && (q.type === 'mcq' || q.type === 'why'));
+    this.shuffle(pool);
+    const perSection = Math.max(2, Math.ceil(count / dueIds.length));
+    const picked = [];
+    const used = new Set();
+    for (const sid of dueIds) {
+      const sqs = pool.filter(q => q.section === sid && !used.has(q.id));
+      sqs.slice(0, perSection).forEach(q => { picked.push(q); used.add(q.id); });
+    }
+    this.shuffle(picked);
+    return picked.slice(0, count);
+  },
+
+  buildLearningDrill(sectionId) {
+    const mcqs = QUESTIONS.filter(q => q.section === sectionId && q.type === 'mcq');
+    const whys = QUESTIONS.filter(q => q.section === sectionId && q.type === 'why');
+    this.shuffle(mcqs);
+    this.shuffle(whys);
+    return [...mcqs.slice(0, 6), ...whys.slice(0, 2)];
+  },
+
+  buildMixedDrill(progress, count) {
+    const available = Object.entries(progress.sections)
+      .filter(([,s]) => s.status === 'locked' || s.status === 'learning')
+      .map(([id]) => id);
+    let pool = QUESTIONS.filter(q => available.includes(q.section) && q.type === 'mcq');
+    this.shuffle(pool);
+    return pool.slice(0, count);
+  },
+
+  check(q, answer) {
+    if (q.type === 'mcq' || q.type === 'why') return answer === q.correct;
+    const norm = s => s.trim().normalize('NFC').replace(/\s+/g,' ').replace(/[.!?,;…]+$/,'').toLowerCase();
+    const n = norm(answer);
+    if (n === norm(q.correct)) return true;
+    if (q.alternates) return q.alternates.some(a => norm(a) === n);
+    return false;
+  },
+
+  shuffle(a) { for (let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+};
+
+
+/* ═══════════════════════════════════════════════════════════════
+   APP STATE
+   ═══════════════════════════════════════════════════════════════ */
+
+const S = {
+  screen: 'loading',
+  gh: null,
+  progress: null,
+  error: null,
+  // Drill state
+  drill: null,       // { questions, index, answers, type, sectionIds, label }
+  syncStatus: null,   // null | 'saving' | 'saved' | 'error'
+};
+
+const $ = id => document.getElementById(id);
+const app = () => document.getElementById('app');
+const esc = s => { const d=document.createElement('div'); d.textContent=s; return d.innerHTML; };
+
+
+/* ═══════════════════════════════════════════════════════════════
+   UI — Screen rendering
+   ═══════════════════════════════════════════════════════════════ */
+
+function render() {
+  const screens = {
+    loading: renderLoading,
+    setup: renderSetup,
+    login: renderLogin,
+    dashboard: renderDashboard,
+    drill: renderDrill,
+    results: renderResults,
+  };
+  (screens[S.screen] || renderLoading)();
+}
+
+function renderLoading() {
+  app().innerHTML = `<div class="wrap center" style="padding-top:40vh"><div class="spin"></div><p class="sub mt-sm">Loading...</p></div>`;
+}
+
+function renderSetup() {
+  app().innerHTML = `
+    <div class="wrap" style="padding-top:10vh">
+      <div class="center mb">
+        <div class="auth-logo">🇫🇷</div>
+        <div class="auth-title serif">French Drills</div>
+        <div class="auth-sub">First-time setup</div>
+      </div>
+      ${S.error ? `<div class="error-msg">${esc(S.error)}</div>` : ''}
+      <div class="card">
+        <div class="form-group">
+          <label class="form-label">Create a password</label>
+          <input type="password" class="field field-pw" id="pw1" placeholder="Your password" autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Confirm password</label>
+          <input type="password" class="field field-pw" id="pw2" placeholder="Confirm password" autocomplete="new-password">
+        </div>
+        <div class="form-group">
+          <label class="form-label">GitHub Personal Access Token</label>
+          <input type="password" class="field field-pw" id="pat" placeholder="github_pat_..." autocomplete="off">
+          <div class="form-help">Fine-grained PAT scoped to <strong>${CFG.owner}/${CFG.repo}</strong> with Contents read/write.</div>
+        </div>
+        <button class="btn btn-p mt" id="setup-btn">Set Up</button>
+      </div>
+    </div>`;
+  $('setup-btn').onclick = doSetup;
+  $('pw1').focus();
+  [$('pw1'),$('pw2'),$('pat')].forEach(el => el.addEventListener('keydown', e => { if(e.key==='Enter') doSetup(); }));
+}
+
+async function doSetup() {
+  const pw1=$('pw1').value, pw2=$('pw2').value, pat=$('pat').value;
+  S.error = null;
+  if (!pw1 || pw1.length < 4) { S.error='Password must be at least 4 characters.'; render(); return; }
+  if (pw1 !== pw2) { S.error='Passwords don\'t match.'; render(); return; }
+  if (!pat || !pat.startsWith('github_pat_')) { S.error='Please enter a valid fine-grained PAT (starts with github_pat_).'; render(); return; }
+
+  $('setup-btn').disabled = true;
+  $('setup-btn').innerHTML = '<span class="spin"></span> Setting up...';
+
+  try {
+    const gh = new GH(pat);
+    // Test the token by trying to read from the repo
+    try { await gh.get('README.md'); } catch(e) { /* file may not exist, that's fine */ }
+
+    const enc = await Cry.encrypt(pw1, pat);
+    await gh.put('config.enc', JSON.stringify(enc), 'Setup: encrypted config');
+
+    const prog = defaultProgress();
+    prog.updated = new Date().toISOString();
+    await gh.put('DRILL-PROGRESS.json', JSON.stringify(prog, null, 2), 'Setup: initial progress');
+
+    localStorage.setItem('fd_token', pat);
+    localStorage.setItem('fd_setup', '1');
+    S.gh = gh;
+    S.progress = prog;
+    S.screen = 'dashboard';
+    S.error = null;
+  } catch(e) {
+    S.error = `Setup failed: ${e.message}. Check your PAT has Contents permission on ${CFG.owner}/${CFG.repo}.`;
+  }
+  render();
+}
+
+function renderLogin() {
+  app().innerHTML = `
+    <div class="wrap" style="padding-top:15vh">
+      <div class="center mb">
+        <div class="auth-logo">🇫🇷</div>
+        <div class="auth-title serif">French Drills</div>
+        <div class="auth-sub">Enter your password to continue</div>
+      </div>
+      ${S.error ? `<div class="error-msg">${esc(S.error)}</div>` : ''}
+      <div class="card">
+        <div class="form-group">
+          <input type="password" class="field field-pw" id="pw" placeholder="Password" autocomplete="current-password">
+        </div>
+        <label class="checkbox-row"><input type="checkbox" id="remember" checked> Stay logged in on this device</label>
+        <button class="btn btn-p mt-sm" id="login-btn">Unlock</button>
+      </div>
+    </div>`;
+  $('login-btn').onclick = doLogin;
+  $('pw').focus();
+  $('pw').addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
+}
+
+async function doLogin() {
+  const pw = $('pw').value;
+  S.error = null;
+  if (!pw) { S.error = 'Enter your password.'; render(); return; }
+
+  $('login-btn').disabled = true;
+  $('login-btn').innerHTML = '<span class="spin"></span> Unlocking...';
+
+  try {
+    const gh = new GH(null);
+    const raw = await gh.get('config.enc');
+    if (!raw) { S.error = 'No config found in repo. Need to set up again.'; localStorage.removeItem('fd_setup'); S.screen = 'setup'; render(); return; }
+
+    const bundle = JSON.parse(raw);
+    let pat;
+    try { pat = await Cry.decrypt(pw, bundle); } catch(e) { S.error = 'Wrong password.'; render(); return; }
+
+    gh.token = pat;
+    if ($('remember').checked) localStorage.setItem('fd_token', pat);
+
+    const progRaw = await gh.get('DRILL-PROGRESS.json');
+    const prog = progRaw ? JSON.parse(progRaw) : defaultProgress();
+
+    S.gh = gh;
+    S.progress = prog;
+    S.screen = 'dashboard';
+    S.error = null;
+  } catch(e) {
+    S.error = `Login failed: ${e.message}`;
+  }
+  render();
+}
+
+function renderDashboard() {
+  const p = S.progress;
+  const due = Engine.getDue(p);
+  const current = Engine.getCurrent(p);
+  const sectionEntries = Object.entries(p.sections).sort((a,b) => (SECTION_META[a[0]]?.order||99) - (SECTION_META[b[0]]?.order||99));
+  const locked = sectionEntries.filter(([,s]) => s.status === 'locked').length;
+  const total = sectionEntries.length;
+  const pct = Math.round((locked / total) * 100);
+  const accuracy = p.stats.questions > 0 ? Math.round((p.stats.correct / p.stats.questions) * 100) : 0;
+
+  app().innerHTML = `
+    <div class="wrap">
+      <div class="row between mb">
+        <div>
+          <div class="hdr serif">Chapitre 1</div>
+          <div class="sub">Nouns, Articles, Adjectives</div>
+        </div>
+        <button class="btn-link" id="lock-btn" title="Lock app">🔒</button>
+      </div>
+
+      <div class="row gap-sm mb" style="align-items:center">
+        <span class="label tabnum">${pct}%</span>
+        <div class="prog-track flex1"><div class="prog-fill" style="width:${pct}%"></div></div>
+        <span class="label tabnum">${locked}/${total}</span>
+      </div>
+
+      ${current ? `
+      <div class="dash-section">
+        <div class="dash-section-title">Continue Learning</div>
+        <div class="card card-accent" style="cursor:pointer" id="start-learn">
+          <div class="card-title">${esc(SECTION_META[current]?.title || current)}</div>
+          <div class="card-sub">MCQ Drill — tap to start</div>
+        </div>
+      </div>` : ''}
+
+      ${due.length > 0 ? `
+      <div class="dash-section">
+        <div class="dash-section-title">Spaced Review ${due.length > 0 ? `<span class="due-badge">${due.length} due</span>` : ''}</div>
+        ${due.slice(0, 3).map(d => `
+          <div class="card" style="cursor:pointer;padding:.875rem 1.25rem" data-review="${d.id}">
+            <div class="row between">
+              <div>
+                <div class="card-title" style="font-size:.9375rem">${esc(SECTION_META[d.id]?.title || d.id)}</div>
+                <div class="card-sub overdue">${d.days === 999 ? 'Never reviewed' : d.days + ' days since last review'}</div>
+              </div>
+              <span style="color:var(--accent);font-size:1.25rem">→</span>
+            </div>
+          </div>
+        `).join('')}
+        ${due.length > 1 ? `<button class="btn btn-g btn-sm mt-sm" id="review-all">Review all ${due.length} due sections</button>` : ''}
+      </div>` : ''}
+
+      <div class="dash-section">
+        <div class="dash-section-title">Mixed Practice</div>
+        <button class="btn btn-g" id="mixed-btn">Mixed Drill — All Sections</button>
+      </div>
+
+      <div class="dash-section">
+        <div class="dash-section-title">Stats</div>
+        <div class="stat-row">
+          <div class="stat-box"><div class="stat-val">${p.stats.questions}</div><div class="stat-label">Questions</div></div>
+          <div class="stat-box"><div class="stat-val">${accuracy}%</div><div class="stat-label">Accuracy</div></div>
+          <div class="stat-box"><div class="stat-val">${p.stats.drills}</div><div class="stat-label">Drills</div></div>
+        </div>
+      </div>
+
+      <div class="dash-section">
+        <div class="dash-section-title">Section Progress</div>
+        <div class="card" style="padding:.75rem 1rem">
+          <ul class="sec-list">
+            ${sectionEntries.map(([id, s]) => `
+              <li class="sec-item">
+                <span class="sec-dot sec-dot-${s.status === 'locked' ? 'locked' : s.status === 'learning' ? 'learning' : 'none'}"></span>
+                <span class="sec-name">${esc(SECTION_META[id]?.title || id)}</span>
+                <span class="sec-status">${s.status === 'locked' ? '✓' : s.status === 'learning' ? 'In progress' : '—'}</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      </div>
+
+      ${S.syncStatus ? `<div class="center mt-sm"><span class="sync ${S.syncStatus === 'saved' ? 'sync-ok' : S.syncStatus === 'error' ? 'sync-err' : ''}">${
+        S.syncStatus === 'saving' ? '<span class="spin"></span> Syncing...' :
+        S.syncStatus === 'saved' ? '✓ Synced to GitHub' :
+        '✗ Sync failed (saved locally)'
+      }</span></div>` : ''}
+    </div>`;
+
+  // Event bindings
+  $('lock-btn').onclick = () => { localStorage.removeItem('fd_token'); S.gh=null; S.progress=null; S.screen='login'; S.error=null; render(); };
+
+  if (current && $('start-learn')) {
+    $('start-learn').onclick = () => startDrill('learn', [current], `Learn: ${SECTION_META[current]?.title || current}`);
+  }
+
+  document.querySelectorAll('[data-review]').forEach(el => {
+    el.onclick = () => {
+      const sid = el.dataset.review;
+      startDrill('review', [sid], `Review: ${SECTION_META[sid]?.title || sid}`);
+    };
+  });
+
+  const reviewAllBtn = $('review-all');
+  if (reviewAllBtn) reviewAllBtn.onclick = () => startDrill('review', due.map(d=>d.id), 'Review: All Due Sections');
+
+  $('mixed-btn').onclick = () => startDrill('mixed', [], 'Mixed Practice');
+}
+
+function startDrill(type, sectionIds, label) {
+  let questions;
+  if (type === 'learn') {
+    questions = Engine.buildLearningDrill(sectionIds[0]);
+  } else if (type === 'review') {
+    questions = Engine.buildReviewDrill(sectionIds, 8);
+  } else {
+    questions = Engine.buildMixedDrill(S.progress, 10);
+  }
+
+  if (questions.length === 0) {
+    S.error = 'No questions available for this drill.';
+    render();
+    return;
+  }
+
+  S.drill = { questions, index: 0, answers: [], type, sectionIds, label };
+  S.screen = 'drill';
+  render();
+}
+
+function renderDrill() {
+  const d = S.drill;
+  if (!d) { S.screen = 'dashboard'; render(); return; }
+  const q = d.questions[d.index];
+  const answered = d.answers[d.index] != null;
+  const pct = (d.index / d.questions.length) * 100;
+
+  let questionHTML = '';
+  if (q.type === 'mcq' || q.type === 'why') {
+    questionHTML = renderMCQ(q, d.index, answered);
+  } else if (q.type === 'blank') {
+    questionHTML = renderBlank(q, d.index, answered);
+  } else if (q.type === 'open') {
+    questionHTML = renderOpen(q, d.index, answered);
+  }
+
+  app().innerHTML = `
+    <div class="wrap">
+      <div class="row between mb">
+        <button class="btn-link" id="quit-btn" style="padding-left:0">← Quit</button>
+        <span class="label tabnum">${d.index + 1} / ${d.questions.length}</span>
+      </div>
+      <div class="prog-track mb"><div class="prog-fill" style="width:${pct}%"></div></div>
+      <div class="label mb-sm" style="margin-bottom:.375rem">${esc(d.label)}</div>
+      ${questionHTML}
+    </div>`;
+
+  $('quit-btn').onclick = () => {
+    if (d.answers.some(a => a != null) && !confirm('Quit this drill? Progress will be lost.')) return;
+    S.drill = null; S.screen = 'dashboard'; render();
+  };
+
+  bindDrillEvents(q, d.index, answered);
+}
+
+function renderMCQ(q, idx, answered) {
+  const ans = S.drill.answers[idx];
+  const letters = ['A','B','C'];
+  return `
+    <div class="card card-accent${answered ? (ans.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
+      <div class="label">${q.type === 'why' ? 'Why ?' : 'Traduisez / Choisissez'}</div>
+      <div class="serif mt-sm" style="font-size:1.125rem;line-height:1.4">${esc(q.stem)}</div>
+      ${q.context ? `<div class="sub mt-sm" style="font-style:italic">${esc(q.context)}</div>` : ''}
+      <div class="opts" id="opts">
+        ${q.options.map((o, i) => {
+          let cls = 'opt';
+          if (answered) {
+            cls += ' opt-locked';
+            if (i === q.correct) cls += ' opt-right';
+            else if (ans && ans.selected === i) cls += ' opt-wrong';
+          }
+          return `<button class="${cls}" data-idx="${i}"><span class="opt-letter">${letters[i]}</span><span>${esc(o)}</span></button>`;
+        }).join('')}
+      </div>
+      ${answered ? `
+        <div class="fb ${ans.correct ? 'fb-ok' : 'fb-err'}">
+          <span class="fb-head">${ans.correct ? 'Correct !' : 'Pas tout à fait.'}</span>
+          ${!ans.correct ? `<span class="fb-answer">${esc(q.options[q.correct])}</span>` : ''}
+          <span class="fb-rule">${esc(q.rule)}</span>
+        </div>
+        <button class="btn btn-p mt" id="next-btn">${S.drill.index < S.drill.questions.length - 1 ? 'Suivant →' : 'Voir les résultats'}</button>
+      ` : ''}
+    </div>`;
+}
+
+function renderBlank(q, idx, answered) {
+  const ans = S.drill.answers[idx];
+  return `
+    <div class="card card-accent${answered ? (ans.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
+      <div class="label">Complétez</div>
+      <div class="serif mt-sm" style="font-size:1.125rem;line-height:1.4">${esc(q.stem)}</div>
+      ${q.context ? `<div class="sub mt-sm" style="font-style:italic">${esc(q.context)}</div>` : ''}
+      <div class="mt">
+        <input type="text" class="field${answered ? (ans.correct ? ' field-ok' : ' field-err') : ''}" id="inp"
+          placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
+          value="${answered ? esc(ans.typed) : ''}" ${answered ? 'disabled' : ''}>
+      </div>
+      <div class="keys" id="keys">
+        ${ACCENTS.map(c => `<button class="key" data-c="${c}" ${answered ? 'disabled' : ''}>${c}</button>`).join('')}
+      </div>
+      ${!answered ? '<button class="btn btn-p" id="check-btn">Vérifier</button>' : ''}
+      ${answered ? `
+        <div class="fb ${ans.correct ? 'fb-ok' : 'fb-err'}">
+          <span class="fb-head">${ans.correct ? 'Correct !' : 'Pas tout à fait.'}</span>
+          ${!ans.correct ? `<span class="fb-answer">${esc(q.correct)}</span>` : ''}
+          <span class="fb-rule">${esc(q.rule)}</span>
+        </div>
+        <button class="btn btn-p mt" id="next-btn">${S.drill.index < S.drill.questions.length - 1 ? 'Suivant →' : 'Voir les résultats'}</button>
+      ` : ''}
+    </div>`;
+}
+
+function renderOpen(q, idx, answered) {
+  const ans = S.drill.answers[idx];
+  return `
+    <div class="card card-accent${answered ? (ans.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
+      <div class="label">Traduisez en français</div>
+      <div class="serif mt-sm" style="font-size:1.25rem;line-height:1.4">${esc(q.stem)}</div>
+      ${q.hints ? `<div class="sub mt-sm" style="font-style:italic">${esc(q.hints)}</div>` : ''}
+      <div class="mt">
+        <input type="text" class="field${answered ? (ans.correct ? ' field-ok' : ' field-err') : ''}" id="inp"
+          placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
+          value="${answered ? esc(ans.typed) : ''}" ${answered ? 'disabled' : ''}>
+      </div>
+      <div class="keys" id="keys">
+        ${ACCENTS.map(c => `<button class="key" data-c="${c}" ${answered ? 'disabled' : ''}>${c}</button>`).join('')}
+      </div>
+      ${!answered ? '<button class="btn btn-p" id="check-btn">Vérifier</button>' : ''}
+      ${answered ? `
+        <div class="fb ${ans.correct ? 'fb-ok' : 'fb-err'}">
+          <span class="fb-head">${ans.correct ? 'Correct !' : 'Pas tout à fait.'}</span>
+          ${!ans.correct ? `<span class="fb-answer">${esc(q.correct)}</span>` : ''}
+          <span class="fb-rule">${esc(q.rule)}</span>
+        </div>
+        <button class="btn btn-p mt" id="next-btn">${S.drill.index < S.drill.questions.length - 1 ? 'Suivant →' : 'Voir les résultats'}</button>
+      ` : ''}
+    </div>`;
+}
+
+function bindDrillEvents(q, idx, answered) {
+  if (answered) {
+    const next = $('next-btn');
+    if (next) next.onclick = advanceDrill;
+    const card = $('q-card');
+    if (S.drill.answers[idx]?.correct) card?.classList.add('pop');
+    else card?.classList.add('shake');
+    return;
+  }
+
+  if (q.type === 'mcq' || q.type === 'why') {
+    document.querySelectorAll('.opt').forEach(btn => {
+      btn.onclick = () => {
+        const selected = parseInt(btn.dataset.idx);
+        const correct = selected === q.correct;
+        S.drill.answers[idx] = { selected, correct };
+        render();
+      };
+    });
+  } else {
+    const inp = $('inp');
+    if (inp) setTimeout(() => inp.focus(), 60);
+
+    document.querySelectorAll('.key').forEach(k => {
+      k.addEventListener('mousedown', e => e.preventDefault());
+      k.onclick = () => insertChar(k.dataset.c);
+    });
+
+    const checkFn = () => {
+      const v = inp?.value?.trim();
+      if (!v) { inp?.focus(); return; }
+      const correct = Engine.check(q, v);
+      S.drill.answers[idx] = { typed: v, correct };
+      render();
+    };
+
+    const checkBtn = $('check-btn');
+    if (checkBtn) checkBtn.onclick = checkFn;
+    if (inp) inp.addEventListener('keydown', e => { if (e.key === 'Enter') checkFn(); });
+  }
+}
+
+function insertChar(ch) {
+  const el = $('inp');
+  if (!el || el.disabled) return;
+  const s = el.selectionStart, e = el.selectionEnd;
+  el.value = el.value.slice(0, s) + ch + el.value.slice(e);
+  el.selectionStart = el.selectionEnd = s + 1;
+  el.focus();
+}
+
+function advanceDrill() {
+  S.drill.index++;
+  if (S.drill.index >= S.drill.questions.length) {
+    finishDrill();
+  } else {
+    render();
+  }
+}
+
+async function finishDrill() {
+  const d = S.drill;
+  const correct = d.answers.filter(a => a?.correct).length;
+  const total = d.questions.length;
+  const score = Math.round((correct / total) * 100);
+  const now = new Date().toISOString();
+
+  // Update progress
+  const p = S.progress;
+  p.updated = now;
+  p.stats.questions += total;
+  p.stats.correct += correct;
+  p.stats.drills += 1;
+
+  const today = now.slice(0, 10);
+  if (p.stats.lastDate === today) {
+    // same day, streak unchanged
+  } else if (p.stats.lastDate) {
+    const last = new Date(p.stats.lastDate);
+    const todayD = new Date(today);
+    const diff = Math.floor((todayD - last) / 86400000);
+    p.stats.streak = diff <= 1 ? p.stats.streak + 1 : 1;
+  } else {
+    p.stats.streak = 1;
+  }
+  p.stats.lastDate = today;
+  if (p.stats.streak > p.stats.best) p.stats.best = p.stats.streak;
+
+  // Update section review data
+  const touchedSections = new Set(d.questions.map(q => q.section));
+  for (const sid of touchedSections) {
+    const sec = p.sections[sid];
+    if (!sec) continue;
+    const secQs = d.answers.filter((a, i) => d.questions[i].section === sid);
+    const secCorrect = secQs.filter(a => a?.correct).length;
+    sec.lastReview = now;
+    sec.reviews += 1;
+    sec.scores.push({ date: today, score: Math.round((secCorrect / secQs.length) * 100), n: secQs.length });
+    if (sec.scores.length > 20) sec.scores = sec.scores.slice(-20);
+  }
+
+  // Add to history
+  p.history.push({
+    date: now,
+    type: d.type,
+    label: d.label,
+    score, correct, total,
+    sections: [...touchedSections],
+    errors: d.answers.map((a, i) => a?.correct ? null : {
+      qid: d.questions[i].id,
+      section: d.questions[i].section,
+      selected: a?.selected,
+      typed: a?.typed,
+    }).filter(Boolean),
+  });
+  if (p.history.length > 100) p.history = p.history.slice(-100);
+
+  // Save locally first
+  localStorage.setItem('fd_progress', JSON.stringify(p));
+
+  S.screen = 'results';
+  S.syncStatus = 'saving';
+  render();
+
+  // Sync to GitHub
+  try {
+    await S.gh.put('DRILL-PROGRESS.json', JSON.stringify(p, null, 2), `Drill: ${d.label} — ${correct}/${total}`);
+    S.syncStatus = 'saved';
+  } catch(e) {
+    console.error('Sync failed:', e);
+    S.syncStatus = 'error';
+  }
+  render();
+}
+
+function renderResults() {
+  const d = S.drill;
+  if (!d) { S.screen = 'dashboard'; render(); return; }
+  const correct = d.answers.filter(a => a?.correct).length;
+  const total = d.questions.length;
+  const pct = Math.round((correct / total) * 100);
+
+  let msg;
+  if (pct === 100) msg = 'Parfait !';
+  else if (pct >= 80) msg = 'Bien joué !';
+  else if (pct >= 50) msg = 'Pas mal — continue !';
+  else msg = 'Il faut réviser.';
+
+  app().innerHTML = `
+    <div class="wrap">
+      <div class="center mb">
+        <div class="res-score">${correct} / ${total}</div>
+        <div class="res-msg">${msg}</div>
+        ${S.syncStatus ? `<span class="sync ${S.syncStatus === 'saved' ? 'sync-ok' : S.syncStatus === 'error' ? 'sync-err' : ''}">
+          ${S.syncStatus === 'saving' ? '<span class="spin"></span> Syncing...' :
+            S.syncStatus === 'saved' ? '✓ Synced to GitHub' :
+            '✗ Sync failed — saved locally'}
+        </span>` : ''}
+      </div>
+
+      <div class="card" style="padding:1rem">
+        <ul class="res-list">
+          ${d.questions.map((q, i) => {
+            const a = d.answers[i];
+            const isCorrect = a?.correct;
+            return `
+              <li class="res-item">
+                <span class="res-icon ${isCorrect ? 'ico-ok' : 'ico-err'}">${isCorrect ? '✓' : '✗'}</span>
+                <div style="flex:1">
+                  <div class="sub">${esc(q.stem).slice(0, 80)}</div>
+                  <div class="serif" style="font-size:.9375rem">${esc(q.type === 'mcq' || q.type === 'why' ? q.options[q.correct] : q.correct)}</div>
+                  ${!isCorrect && a?.typed ? `<div class="res-yours">You: ${esc(a.typed)}</div>` : ''}
+                  ${!isCorrect && a?.selected != null ? `<div class="res-yours">You: ${esc(q.options[a.selected])}</div>` : ''}
+                </div>
+              </li>`;
+          }).join('')}
+        </ul>
+      </div>
+
+      <div class="col mt">
+        <button class="btn btn-p" id="dash-btn">Dashboard</button>
+        <button class="btn btn-g" id="retry-btn">Retry This Drill</button>
+      </div>
+    </div>`;
+
+  $('dash-btn').onclick = () => { S.drill = null; S.syncStatus = null; S.screen = 'dashboard'; render(); };
+  $('retry-btn').onclick = () => {
+    Engine.shuffle(S.drill.questions);
+    S.drill.index = 0;
+    S.drill.answers = [];
+    S.syncStatus = null;
+    S.screen = 'drill';
+    render();
+  };
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   INIT
+   ═══════════════════════════════════════════════════════════════ */
+
+async function init() {
+  // Check for stored token (stay logged in)
+  const storedToken = localStorage.getItem('fd_token');
+  if (storedToken) {
+    try {
+      const gh = new GH(storedToken);
+      const raw = await gh.get('DRILL-PROGRESS.json');
+      S.gh = gh;
+      S.progress = raw ? JSON.parse(raw) : defaultProgress();
+      // Merge any locally cached progress if newer
+      const local = localStorage.getItem('fd_progress');
+      if (local) {
+        const lp = JSON.parse(local);
+        if (lp.updated && (!S.progress.updated || lp.updated > S.progress.updated)) {
+          S.progress = lp;
+        }
+      }
+      S.screen = 'dashboard';
+      render();
+      return;
+    } catch(e) {
+      localStorage.removeItem('fd_token');
+    }
+  }
+
+  // Check if setup was done
+  const hasSetup = localStorage.getItem('fd_setup');
+  if (hasSetup) {
+    S.screen = 'login';
+  } else {
+    // Try to detect if config exists in repo
+    try {
+      const gh = new GH(null);
+      const raw = await gh.get('config.enc');
+      S.screen = raw ? 'login' : 'setup';
+    } catch(e) {
+      S.screen = 'setup';
+    }
+  }
+  render();
+}
+
+init();
+</script>
+</body>
+</html>
