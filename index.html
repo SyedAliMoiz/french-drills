@@ -434,9 +434,11 @@ const Engine = {
   check(q, answer) {
     if (q.type === 'mcq' || q.type === 'why') return answer === q.correct;
     const norm = s => s.trim().normalize('NFC').replace(/\s+/g,' ').replace(/[.!?,;…]+$/,'').toLowerCase();
+    const strip = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+    const match = (a, b) => a === b || strip(a) === strip(b);
     const n = norm(answer);
-    if (n === norm(q.correct)) return true;
-    if (q.alternates) return q.alternates.some(a => norm(a) === n);
+    if (match(n, norm(q.correct))) return true;
+    if (q.alternates) return q.alternates.some(a => match(n, norm(a)));
     return false;
   },
 
@@ -613,9 +615,37 @@ function startAutoMode() {
     S.screen = 'done'; render(); return;
   }
 
-  let pool = QUESTIONS.filter(q => available.includes(q.section));
-  Engine.shuffle(pool);
-  S.queue = pool;
+  let queue = [];
+  const used = new Set();
+
+  // 1. Overdue spaced review first (3 per overdue section, capped at 20)
+  const due = Engine.getDue(p);
+  if (due.length > 0) {
+    for (const d of due) {
+      const secQs = QUESTIONS.filter(q => q.section === d.id);
+      Engine.shuffle(secQs);
+      secQs.slice(0, 3).forEach(q => { queue.push(q); used.add(q.id); });
+    }
+    if (queue.length > 20) queue = queue.slice(0, 20);
+  }
+
+  // 2. Current learning section (all questions)
+  const current = Engine.getCurrent(p);
+  if (current) {
+    const learnQs = QUESTIONS.filter(q => q.section === current && !used.has(q.id));
+    Engine.shuffle(learnQs);
+    learnQs.forEach(q => { queue.push(q); used.add(q.id); });
+  }
+
+  // 3. Everything else, weighted toward production (blank/open first)
+  const rest = QUESTIONS.filter(q => available.includes(q.section) && !used.has(q.id));
+  const production = rest.filter(q => q.type === 'blank' || q.type === 'open');
+  const recognition = rest.filter(q => q.type === 'mcq' || q.type === 'why');
+  Engine.shuffle(production);
+  Engine.shuffle(recognition);
+  queue.push(...production, ...recognition);
+
+  S.queue = queue;
   S.qi = 0;
   S.answered = false;
   S.currentAnswer = null;
@@ -831,6 +861,11 @@ async function syncToGitHub() {
 }
 
 function goNext() {
+  if (S.currentAnswer && !S.currentAnswer.correct) {
+    const gap = 5 + Math.floor(Math.random() * 6);
+    const reinsertAt = Math.min(S.qi + gap, S.queue.length);
+    S.queue.splice(reinsertAt, 0, S.queue[S.qi]);
+  }
   S.qi++;
   S.answered = false;
   S.currentAnswer = null;
