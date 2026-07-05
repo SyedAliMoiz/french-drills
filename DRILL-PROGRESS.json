@@ -1,0 +1,89 @@
+{
+  "v": 1,
+  "updated": "2026-07-05T20:12:31.454Z",
+  "sections": {
+    "s1-gender": {
+      "status": "locked",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s2a-elision": {
+      "status": "locked",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s2b-indefinite": {
+      "status": "locked",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s3-plurals": {
+      "status": "locked",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s4r1-position": {
+      "status": "locked",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s4r2-fem-basic": {
+      "status": "locked",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s4r3-fem-irreg": {
+      "status": "locked",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s4r4-plural-adj": {
+      "status": "learning",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s4b-colors": {
+      "status": "not-started",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s4c-precede": {
+      "status": "not-started",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    },
+    "s5-vocab": {
+      "status": "not-started",
+      "lastReview": null,
+      "reviews": 0,
+      "scores": []
+    }
+  },
+  "history": [],
+  "stats": {
+    "questions": 0,
+    "correct": 0,
+    "drills": 0,
+    "streak": 0,
+    "best": 0,
+    "lastDate": null
+  },
+  "achievements": [
+    "first-lock",
+    "clean-sweep",
+    "pattern-cracker",
+    "comeback",
+    "system-builder",
+    "mixed-master"
+  ]
+}
