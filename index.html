@@ -201,30 +201,32 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background
 
 /* Drill page — fills viewport, no card, soft shapes */
 .dp{min-height:100dvh;display:flex;flex-direction:column;background:var(--bg)}
-.dp-top{padding:1rem 1.5rem 0;max-width:640px;width:100%;margin:0 auto}
-.dp-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding:2rem 1.5rem 2.5rem;max-width:640px;width:100%;margin:0 auto;gap:.5rem}
+.dp-top{padding:1rem 1.25rem 0;width:100%;max-width:800px;margin:0 auto}
+.dp-body{flex:1;display:flex;flex-direction:column;justify-content:center;padding:1.5rem 1.25rem 2rem;width:100%;max-width:800px;margin:0 auto;gap:.5rem}
 .dp .card{background:transparent;border:none;box-shadow:none;padding:0;border-radius:0;border-left:none;margin:0}
-.dp .card.card-ok{background:var(--ok-bg);border-radius:24px;padding:1.5rem;margin:-.75rem;margin-bottom:0}
-.dp .card.card-err{background:var(--err-bg);border-radius:24px;padding:1.5rem;margin:-.75rem;margin-bottom:0}
-.dp .label{font-size:.75rem;letter-spacing:.14em;color:var(--text-dim);margin-bottom:.75rem;font-weight:600}
-.dp .serif{font-size:1.5rem;line-height:1.55;color:var(--text)}
-.dp .sub{font-size:1rem;margin-top:.5rem;color:var(--text-dim)}
-.dp .field{font-size:1.25rem;padding:1rem 1.125rem;border-radius:16px;margin-top:1rem}
-.dp .keys{gap:10px;margin:1rem 0;justify-content:center}
-.dp .key{min-width:46px;height:46px;font-size:1.125rem;border-radius:14px}
-.dp .btn{padding:1rem;font-size:1.125rem;border-radius:50px}
-.dp .opts{gap:.75rem;margin-top:1.25rem}
-.dp .opt{padding:1.125rem 1.25rem;font-size:1.125rem;border-radius:18px;border-width:1.5px;background:var(--surface)}
+.dp .card.card-ok{background:var(--ok-bg);border-radius:24px;padding:1.5rem;margin:-.5rem;margin-bottom:0}
+.dp .card.card-err{background:var(--err-bg);border-radius:24px;padding:1.5rem;margin:-.5rem;margin-bottom:0}
+.dp .label{font-size:.875rem;letter-spacing:.12em;color:var(--text-dim);margin-bottom:.5rem;font-weight:600}
+.dp .serif{font-size:clamp(1.5rem,4vw,2.25rem);line-height:1.5;color:var(--text)}
+.dp .sub{font-size:clamp(1rem,2.5vw,1.25rem);margin-top:.625rem;color:var(--text-dim)}
+.dp .field{font-size:clamp(1.25rem,3vw,1.5rem);padding:1.125rem 1.25rem;border-radius:18px;margin-top:1.25rem}
+.dp .keys{gap:10px;margin:.75rem 0;justify-content:center}
+.dp .key{min-width:48px;height:48px;font-size:1.25rem;border-radius:14px}
+.dp .keys-toggle{background:none;border:none;color:var(--text-dim);font-size:.875rem;cursor:pointer;padding:.5rem;margin-top:.5rem;-webkit-tap-highlight-color:transparent}
+.dp .keys-toggle:hover{color:var(--text)}
+.dp .btn{padding:1.125rem;font-size:clamp(1.0625rem,2.5vw,1.25rem);border-radius:50px}
+.dp .opts{gap:.875rem;margin-top:1.5rem}
+.dp .opt{padding:1.25rem 1.375rem;font-size:clamp(1.125rem,2.8vw,1.375rem);border-radius:20px;border-width:1.5px;background:var(--surface)}
 .dp .opt:hover:not(.opt-locked){background:var(--accent-faint)}
-.dp .opt-right{border-radius:18px!important}
-.dp .opt-wrong{border-radius:18px!important}
-.dp .opt-letter{width:34px;height:34px;font-size:.875rem;border-radius:50%}
-.dp .fb{padding:1.125rem 1.25rem;border-radius:18px;font-size:1rem;margin-top:1.25rem}
-.dp .fb-head{font-size:1.0625rem}
-.dp .fb-rule{font-size:.9375rem;line-height:1.5}
-.dp .fb-answer{font-size:1.0625rem}
+.dp .opt-right{border-radius:20px!important}
+.dp .opt-wrong{border-radius:20px!important}
+.dp .opt-letter{width:36px;height:36px;font-size:.9375rem;border-radius:50%}
+.dp .fb{padding:1.25rem 1.375rem;border-radius:20px;font-size:clamp(1rem,2.5vw,1.1875rem);margin-top:1.5rem}
+.dp .fb-head{font-size:clamp(1.0625rem,2.5vw,1.25rem)}
+.dp .fb-rule{font-size:clamp(.9375rem,2.2vw,1.0625rem);line-height:1.55}
+.dp .fb-answer{font-size:clamp(1.0625rem,2.5vw,1.25rem)}
 .dp .prog-track{height:3px;border-radius:2px}
-.dp-count{font-size:.8125rem;color:var(--text-dim);font-variant-numeric:tabular-nums}
+.dp-count{font-size:.875rem;color:var(--text-dim);font-variant-numeric:tabular-nums}
 
 /* Animations */
 @keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
@@ -773,7 +775,8 @@ function renderBlank(q) {
           placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
           value="${ans ? esc(a.typed) : ''}" ${ans ? 'disabled' : ''}>
       </div>
-      <div class="keys" id="keys">
+      <div class="center"><button class="keys-toggle" id="keys-toggle" ${ans ? 'style="display:none"' : ''}>accents ↓</button></div>
+      <div class="keys" id="keys" style="display:none">
         ${ACCENTS.map(c => `<button class="key" data-c="${c}" ${ans ? 'disabled' : ''}>${c}</button>`).join('')}
       </div>
       ${!ans ? '<button class="btn btn-p" id="check-btn">Vérifier</button>' : ''}
@@ -801,7 +804,8 @@ function renderOpen(q) {
           placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
           value="${ans ? esc(a.typed) : ''}" ${ans ? 'disabled' : ''}>
       </div>
-      <div class="keys" id="keys">
+      <div class="center"><button class="keys-toggle" id="keys-toggle" ${ans ? 'style="display:none"' : ''}>accents ↓</button></div>
+      <div class="keys" id="keys" style="display:none">
         ${ACCENTS.map(c => `<button class="key" data-c="${c}" ${ans ? 'disabled' : ''}>${c}</button>`).join('')}
       </div>
       ${!ans ? '<button class="btn btn-p" id="check-btn">Vérifier</button>' : ''}
@@ -836,6 +840,15 @@ function bindEvents(q) {
   } else {
     const inp = $('inp');
     if (inp) setTimeout(() => inp.focus(), 60);
+    const toggle = $('keys-toggle');
+    const keysEl = $('keys');
+    if (toggle && keysEl) {
+      toggle.onclick = () => {
+        const open = keysEl.style.display === 'none';
+        keysEl.style.display = open ? 'flex' : 'none';
+        toggle.textContent = open ? 'accents ↑' : 'accents ↓';
+      };
+    }
     document.querySelectorAll('.key').forEach(k => {
       k.addEventListener('mousedown', e => e.preventDefault());
       k.onclick = () => insertChar(k.dataset.c);
