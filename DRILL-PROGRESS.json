@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-06T20:45:09.404Z",
+  "updated": "2026-07-06T21:28:39.435Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-06T20:44:51.051Z",
-      "reviews": 2,
+      "lastReview": "2026-07-06T21:27:03.970Z",
+      "reviews": 3,
       "scores": []
     },
     "s2a-elision": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-06T11:35:07.709Z",
-      "reviews": 1,
+      "lastReview": "2026-07-06T21:28:39.435Z",
+      "reviews": 3,
       "scores": []
     },
     "s4r1-position": {
@@ -40,14 +40,14 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-06T11:32:07.044Z",
-      "reviews": 3,
+      "lastReview": "2026-07-06T20:45:26.297Z",
+      "reviews": 4,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-06T11:35:43.838Z",
-      "reviews": 1,
+      "lastReview": "2026-07-06T21:27:47.634Z",
+      "reviews": 2,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 8,
-    "correct": 1,
+    "questions": 13,
+    "correct": 4,
     "drills": 0,
     "streak": 1,
     "best": 1,
@@ -118,6 +118,11 @@
           "ok": false,
           "at": "2026-07-06T11:32:07.044Z",
           "you": "une fille gentile"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-06T20:45:26.297Z",
+          "you": "une fille gentille"
         }
       ]
     },
@@ -130,6 +135,11 @@
           "ok": false,
           "at": "2026-07-06T11:35:07.709Z",
           "you": "le travaille"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-06T21:28:39.435Z",
+          "you": "travaux"
         }
       ]
     },
@@ -166,6 +176,42 @@
           "ok": false,
           "at": "2026-07-06T20:45:09.404Z",
           "you": "une"
+        }
+      ]
+    },
+    "s1-gender-o8": {
+      "type": "open",
+      "section": "s1-gender",
+      "ans": "le groupe",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-06T21:27:03.970Z",
+          "you": "le groupe"
+        }
+      ]
+    },
+    "s4r4-plural-adj-b3": {
+      "type": "blank",
+      "section": "s4r4-plural-adj",
+      "ans": "américains",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-06T21:27:47.634Z",
+          "you": "americains"
+        }
+      ]
+    },
+    "s3-plurals-b6": {
+      "type": "blank",
+      "section": "s3-plurals",
+      "ans": "vitraux",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-06T21:28:15.181Z",
+          "you": "vitrailles"
         }
       ]
     }
