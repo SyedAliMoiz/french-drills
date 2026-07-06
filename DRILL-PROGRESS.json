@@ -1,17 +1,17 @@
 {
   "v": 1,
-  "updated": "2026-07-06T21:28:39.435Z",
+  "updated": "2026-07-06T23:01:05.780Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-06T21:27:03.970Z",
-      "reviews": 3,
+      "lastReview": "2026-07-06T23:00:46.221Z",
+      "reviews": 4,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-06T20:45:09.404Z",
-      "reviews": 1,
+      "lastReview": "2026-07-06T23:00:38.249Z",
+      "reviews": 2,
       "scores": []
     },
     "s2b-indefinite": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-06T21:28:39.435Z",
-      "reviews": 3,
+      "lastReview": "2026-07-06T23:01:05.780Z",
+      "reviews": 7,
       "scores": []
     },
     "s4r1-position": {
@@ -46,8 +46,8 @@
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-06T21:27:47.634Z",
-      "reviews": 2,
+      "lastReview": "2026-07-06T23:00:28.165Z",
+      "reviews": 3,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 13,
-    "correct": 4,
+    "questions": 20,
+    "correct": 8,
     "drills": 0,
     "streak": 1,
     "best": 1,
@@ -140,6 +140,16 @@
           "ok": false,
           "at": "2026-07-06T21:28:39.435Z",
           "you": "travaux"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-06T22:59:49.447Z",
+          "you": "travaux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-06T23:00:18.967Z",
+          "you": "les travaux"
         }
       ]
     },
@@ -152,6 +162,11 @@
           "ok": false,
           "at": "2026-07-06T11:35:43.838Z",
           "you": "verts"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-06T23:00:28.165Z",
+          "you": "vertes"
         }
       ]
     },
@@ -164,6 +179,11 @@
           "ok": false,
           "at": "2026-07-06T20:44:51.051Z",
           "you": "le"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-06T23:00:46.221Z",
+          "you": "une"
         }
       ]
     },
@@ -176,6 +196,11 @@
           "ok": false,
           "at": "2026-07-06T20:45:09.404Z",
           "you": "une"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-06T23:00:38.249Z",
+          "you": "l'"
         }
       ]
     },
@@ -212,6 +237,23 @@
           "ok": false,
           "at": "2026-07-06T21:28:15.181Z",
           "you": "vitrailles"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-06T23:00:05.822Z",
+          "you": "vitraux"
+        }
+      ]
+    },
+    "s3-plurals-o2": {
+      "type": "open",
+      "section": "s3-plurals",
+      "ans": "les journaux",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-06T23:01:05.780Z",
+          "you": "journaux"
         }
       ]
     }
