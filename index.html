@@ -738,8 +738,8 @@ function renderMCQ(q) {
   return `
     <div class="card card-accent${ans ? (a.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
       <div class="label">${q.type === 'why' ? 'Why ?' : 'Choisissez'}</div>
-      <div class="serif mt-sm" style="font-size:1.125rem;line-height:1.4">${esc(q.stem)}</div>
-      ${q.context ? `<div class="sub mt-sm" style="font-style:italic">${esc(q.context)}</div>` : ''}
+      <div class="serif mt-sm">${esc(q.stem)}</div>
+      ${q.context ? `<div class="sub mt-sm">${esc(q.context)}</div>` : ''}
       <div class="opts" id="opts">
         ${q.options.map((o, i) => {
           let cls = 'opt';
@@ -768,8 +768,8 @@ function renderBlank(q) {
   return `
     <div class="card card-accent${ans ? (a.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
       <div class="label">Complétez</div>
-      <div class="serif mt-sm" style="font-size:1.125rem;line-height:1.4">${esc(q.stem)}</div>
-      ${q.context ? `<div class="sub mt-sm" style="font-style:italic">${esc(q.context)}</div>` : ''}
+      <div class="serif mt-sm">${esc(q.stem)}</div>
+      ${q.context ? `<div class="sub mt-sm">${esc(q.context)}</div>` : ''}
       <div class="mt">
         <input type="text" class="field${ans ? (a.correct ? ' field-ok' : ' field-err') : ''}" id="inp"
           placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
@@ -797,8 +797,8 @@ function renderOpen(q) {
   return `
     <div class="card card-accent${ans ? (a.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
       <div class="label">Traduisez en français</div>
-      <div class="serif mt-sm" style="font-size:1.25rem;line-height:1.4">${esc(q.stem)}</div>
-      ${q.hints ? `<div class="sub mt-sm" style="font-style:italic">${esc(q.hints)}</div>` : ''}
+      <div class="serif mt-sm">${esc(q.stem)}</div>
+      ${q.hints ? `<div class="sub mt-sm">${esc(q.hints)}</div>` : ''}
       <div class="mt">
         <input type="text" class="field${ans ? (a.correct ? ' field-ok' : ' field-err') : ''}" id="inp"
           placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
