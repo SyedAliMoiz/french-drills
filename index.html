@@ -823,9 +823,11 @@ function bindEvents(q) {
   if (S.answered) {
     const next = $('next-btn');
     if (next) next.onclick = goNext;
-    document.addEventListener('keydown', function onKey(e) {
-      if (e.key === 'Enter') { document.removeEventListener('keydown', onKey); goNext(); }
-    });
+    setTimeout(() => {
+      document.addEventListener('keydown', function onKey(e) {
+        if (e.key === 'Enter') { document.removeEventListener('keydown', onKey); goNext(); }
+      });
+    }, 200);
     const card = $('q-card');
     if (S.currentAnswer?.correct) card?.classList.add('pop');
     else card?.classList.add('shake');
