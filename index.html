@@ -659,16 +659,22 @@ function startAutoMode() {
   const now = Date.now();
   const dayMs = 86400000;
 
-  const wrong = [], unseen = [], stale = [];
+  const wrongWhy = [], wrongOther = [], unseen = [], stale = [];
 
   for (const q of pool) {
     const rec = a[q.id];
-    if (!rec) { unseen.push(q); continue; }
-    if (!rec.ok) { wrong.push(q); continue; }
-    if (now - new Date(rec.at).getTime() > dayMs) { stale.push(q); continue; }
+    if (!rec || !rec.attempts) { unseen.push(q); continue; }
+    const last = rec.attempts[rec.attempts.length - 1];
+    if (!last.ok) {
+      if (rec.type === 'why') wrongWhy.push(q);
+      else wrongOther.push(q);
+      continue;
+    }
+    if (now - new Date(last.at).getTime() > dayMs) { stale.push(q); continue; }
   }
 
-  Engine.shuffle(wrong);
+  Engine.shuffle(wrongWhy);
+  Engine.shuffle(wrongOther);
   Engine.shuffle(unseen);
   Engine.shuffle(stale);
 
@@ -678,7 +684,7 @@ function startAutoMode() {
     return [...prod, ...recog];
   };
 
-  const queue = [...prodFirst(wrong), ...prodFirst(unseen), ...prodFirst(stale)];
+  const queue = [...wrongWhy, ...prodFirst(wrongOther), ...prodFirst(unseen), ...prodFirst(stale)];
 
   if (queue.length === 0) {
     S.screen = 'done'; render(); return;
@@ -884,14 +890,19 @@ function recordAnswer(q, answer) {
   if (sec) { sec.lastReview = now; sec.reviews++; }
 
   if (!p.answered) p.answered = {};
-  p.answered[q.id] = {
-    ok: answer.correct,
-    at: now,
-    n: (p.answered[q.id]?.n || 0) + 1,
-    you: answer.typed != null ? answer.typed : (q.options ? q.options[answer.selected] : '?'),
-    ans: q.type === 'mcq' || q.type === 'why' ? q.options[q.correct] : q.correct,
-    section: q.section
-  };
+  const youSaid = answer.typed != null ? answer.typed : (q.options ? q.options[answer.selected] : '?');
+  const entry = p.answered[q.id];
+  if (!entry) {
+    p.answered[q.id] = {
+      type: q.type,
+      section: q.section,
+      ans: q.type === 'mcq' || q.type === 'why' ? q.options[q.correct] : q.correct,
+      attempts: [{ ok: answer.correct, at: now, you: youSaid }]
+    };
+  } else {
+    entry.attempts.push({ ok: answer.correct, at: now, you: youSaid });
+    if (entry.attempts.length > 20) entry.attempts = entry.attempts.slice(-20);
+  }
 
   localStorage.setItem('fd_progress', JSON.stringify(p));
 
