@@ -1,17 +1,17 @@
 {
   "v": 1,
-  "updated": "2026-07-05T20:12:31.454Z",
+  "updated": "2026-07-06T20:45:09.404Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": null,
-      "reviews": 0,
+      "lastReview": "2026-07-06T20:44:51.051Z",
+      "reviews": 2,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": null,
-      "reviews": 0,
+      "lastReview": "2026-07-06T20:45:09.404Z",
+      "reviews": 1,
       "scores": []
     },
     "s2b-indefinite": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": null,
-      "reviews": 0,
+      "lastReview": "2026-07-06T11:35:07.709Z",
+      "reviews": 1,
       "scores": []
     },
     "s4r1-position": {
@@ -40,14 +40,14 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": null,
-      "reviews": 0,
+      "lastReview": "2026-07-06T11:32:07.044Z",
+      "reviews": 3,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": null,
-      "reviews": 0,
+      "lastReview": "2026-07-06T11:35:43.838Z",
+      "reviews": 1,
       "scores": []
     },
     "s4b-colors": {
@@ -71,12 +71,12 @@
   },
   "history": [],
   "stats": {
-    "questions": 0,
-    "correct": 0,
+    "questions": 8,
+    "correct": 1,
     "drills": 0,
-    "streak": 0,
-    "best": 0,
-    "lastDate": null
+    "streak": 1,
+    "best": 1,
+    "lastDate": "2026-07-06"
   },
   "achievements": [
     "first-lock",
@@ -85,5 +85,89 @@
     "comeback",
     "system-builder",
     "mixed-master"
-  ]
+  ],
+  "answered": {
+    "s1-gender-o1": {
+      "type": "open",
+      "section": "s1-gender",
+      "ans": "le père",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-06T11:02:50.015Z",
+          "you": "le pere"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-o4": {
+      "type": "open",
+      "section": "s4r3-fem-irreg",
+      "ans": "une fille gentille",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-06T11:22:21.830Z",
+          "you": "une fille gentile"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-06T11:26:56.560Z",
+          "you": "le fille gentile"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-06T11:32:07.044Z",
+          "you": "une fille gentile"
+        }
+      ]
+    },
+    "s3-plurals-o6": {
+      "type": "open",
+      "section": "s3-plurals",
+      "ans": "les travaux",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-06T11:35:07.709Z",
+          "you": "le travaille"
+        }
+      ]
+    },
+    "s4r4-plural-adj-b2": {
+      "type": "blank",
+      "section": "s4r4-plural-adj",
+      "ans": "vertes",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-06T11:35:43.838Z",
+          "you": "verts"
+        }
+      ]
+    },
+    "s1-gender-b1": {
+      "type": "blank",
+      "section": "s1-gender",
+      "ans": "La",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-06T20:44:51.051Z",
+          "you": "le"
+        }
+      ]
+    },
+    "s2a-elision-b2": {
+      "type": "blank",
+      "section": "s2a-elision",
+      "ans": "L'",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-06T20:45:09.404Z",
+          "you": "une"
+        }
+      ]
+    }
+  }
 }
