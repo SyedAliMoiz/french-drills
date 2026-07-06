@@ -206,9 +206,11 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background
 .dp .card{background:transparent;border:none;box-shadow:none;padding:0;border-radius:0;border-left:none;margin:0}
 .dp .card.card-ok{background:var(--ok-bg);border-radius:24px;padding:1.5rem;margin:-.5rem;margin-bottom:0}
 .dp .card.card-err{background:var(--err-bg);border-radius:24px;padding:1.5rem;margin:-.5rem;margin-bottom:0}
-.dp .label{font-size:clamp(1rem,2.5vw,1.375rem);letter-spacing:.12em;color:var(--text-dim);margin-bottom:.75rem;font-weight:700}
-.dp .serif{font-size:clamp(2rem,5.5vw,3rem);line-height:1.4;color:var(--text);font-weight:600}
-.dp .sub{font-size:clamp(1.25rem,3.5vw,1.75rem);margin-top:.75rem;color:var(--text-dim);font-weight:500}
+.dp .serif{font-size:1.75rem;line-height:1.45;color:#F2F2F2;font-weight:700}
+.dp .sub{font-size:1.375rem;line-height:1.5;margin-top:.75rem;color:#CCCCCC;font-weight:500}
+@media(prefers-color-scheme:light){.dp .serif{color:#1A1A1A}.dp .sub{color:#555}}
+:root[data-theme="light"] .dp .serif{color:#1A1A1A}
+:root[data-theme="light"] .dp .sub{color:#555}
 .dp .field{font-size:clamp(1.25rem,3vw,1.5rem);padding:1.125rem 1.25rem;border-radius:18px;margin-top:1.25rem}
 .dp .keys{gap:10px;margin:.75rem 0;justify-content:center}
 .dp .key{min-width:48px;height:48px;font-size:1.25rem;border-radius:14px}
@@ -737,8 +739,7 @@ function renderMCQ(q) {
   const letters = ['A','B','C'];
   return `
     <div class="card card-accent${ans ? (a.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
-      <div class="label">${q.type === 'why' ? 'Why ?' : 'Choisissez'}</div>
-      <div class="serif mt-sm">${esc(q.stem)}</div>
+      <div class="serif">${esc(q.stem)}</div>
       ${q.context ? `<div class="sub mt-sm">${esc(q.context)}</div>` : ''}
       <div class="opts" id="opts">
         ${q.options.map((o, i) => {
@@ -767,8 +768,7 @@ function renderBlank(q) {
   const ans = S.answered;
   return `
     <div class="card card-accent${ans ? (a.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
-      <div class="label">Complétez</div>
-      <div class="serif mt-sm">${esc(q.stem)}</div>
+      <div class="serif">${esc(q.stem)}</div>
       ${q.context ? `<div class="sub mt-sm">${esc(q.context)}</div>` : ''}
       <div class="mt">
         <input type="text" class="field${ans ? (a.correct ? ' field-ok' : ' field-err') : ''}" id="inp"
@@ -796,8 +796,7 @@ function renderOpen(q) {
   const ans = S.answered;
   return `
     <div class="card card-accent${ans ? (a.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
-      <div class="label">Traduisez en français</div>
-      <div class="serif mt-sm">${esc(q.stem)}</div>
+      <div class="serif">${esc(q.stem)}</div>
       ${q.hints ? `<div class="sub mt-sm">${esc(q.hints)}</div>` : ''}
       <div class="mt">
         <input type="text" class="field${ans ? (a.correct ? ' field-ok' : ' field-err') : ''}" id="inp"
