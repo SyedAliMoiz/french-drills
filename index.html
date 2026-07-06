@@ -794,10 +794,13 @@ function renderBlank(q) {
 function renderOpen(q) {
   const a = S.currentAnswer;
   const ans = S.answered;
+  const stem = q.stem.replace(/^Translate (?:into |to )?French:\s*/i,'').trim();
+  const question = stem || q.context || '';
+  const hintHtml = q.hints ? esc(q.hints).replace(/\.\s+(?=[A-Z])/g, '.<br>') : '';
   return `
     <div class="card card-accent${ans ? (a.correct ? ' card-ok' : ' card-err') : ''}" id="q-card">
-      <div class="serif">${esc(q.stem)}</div>
-      ${q.hints ? `<div class="sub mt-sm">${esc(q.hints)}</div>` : ''}
+      <div class="serif">${esc(question)}</div>
+      ${hintHtml ? `<div class="sub mt-sm">${hintHtml}</div>` : ''}
       <div class="mt">
         <input type="text" class="field${ans ? (a.correct ? ' field-ok' : ' field-err') : ''}" id="inp"
           placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
