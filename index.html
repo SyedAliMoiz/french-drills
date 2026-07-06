@@ -403,7 +403,8 @@ function defaultProgress() {
     },
     history: [],
     stats: { questions:0, correct:0, drills:0, streak:0, best:0, lastDate:null },
-    achievements: ['first-lock','clean-sweep','pattern-cracker','comeback','system-builder','mixed-master']
+    achievements: ['first-lock','clean-sweep','pattern-cracker','comeback','system-builder','mixed-master'],
+    answered: {}
   };
 }
 
@@ -653,35 +654,35 @@ function startAutoMode() {
     S.screen = 'done'; render(); return;
   }
 
-  let queue = [];
-  const used = new Set();
+  const pool = QUESTIONS.filter(q => available.includes(q.section));
+  const a = p.answered || {};
+  const now = Date.now();
+  const dayMs = 86400000;
 
-  // 1. Overdue spaced review first (3 per overdue section, capped at 20)
-  const due = Engine.getDue(p);
-  if (due.length > 0) {
-    for (const d of due) {
-      const secQs = QUESTIONS.filter(q => q.section === d.id);
-      Engine.shuffle(secQs);
-      secQs.slice(0, 3).forEach(q => { queue.push(q); used.add(q.id); });
-    }
-    if (queue.length > 20) queue = queue.slice(0, 20);
+  const wrong = [], unseen = [], stale = [];
+
+  for (const q of pool) {
+    const rec = a[q.id];
+    if (!rec) { unseen.push(q); continue; }
+    if (!rec.ok) { wrong.push(q); continue; }
+    if (now - new Date(rec.at).getTime() > dayMs) { stale.push(q); continue; }
   }
 
-  // 2. Current learning section (all questions)
-  const current = Engine.getCurrent(p);
-  if (current) {
-    const learnQs = QUESTIONS.filter(q => q.section === current && !used.has(q.id));
-    Engine.shuffle(learnQs);
-    learnQs.forEach(q => { queue.push(q); used.add(q.id); });
-  }
+  Engine.shuffle(wrong);
+  Engine.shuffle(unseen);
+  Engine.shuffle(stale);
 
-  // 3. Everything else, weighted toward production (blank/open first)
-  const rest = QUESTIONS.filter(q => available.includes(q.section) && !used.has(q.id));
-  const production = rest.filter(q => q.type === 'blank' || q.type === 'open');
-  const recognition = rest.filter(q => q.type === 'mcq' || q.type === 'why');
-  Engine.shuffle(production);
-  Engine.shuffle(recognition);
-  queue.push(...production, ...recognition);
+  const prodFirst = arr => {
+    const prod = arr.filter(q => q.type === 'blank' || q.type === 'open');
+    const recog = arr.filter(q => q.type === 'mcq' || q.type === 'why');
+    return [...prod, ...recog];
+  };
+
+  const queue = [...prodFirst(wrong), ...prodFirst(unseen), ...prodFirst(stale)];
+
+  if (queue.length === 0) {
+    S.screen = 'done'; render(); return;
+  }
 
   S.queue = queue;
   S.qi = 0;
@@ -882,11 +883,15 @@ function recordAnswer(q, answer) {
   const sec = p.sections[q.section];
   if (sec) { sec.lastReview = now; sec.reviews++; }
 
-  if (!answer.correct) {
-    if (!p.history) p.history = [];
-    p.history.push({ date: now, qid: q.id, section: q.section, selected: answer.selected, typed: answer.typed });
-    if (p.history.length > 200) p.history = p.history.slice(-200);
-  }
+  if (!p.answered) p.answered = {};
+  p.answered[q.id] = {
+    ok: answer.correct,
+    at: now,
+    n: (p.answered[q.id]?.n || 0) + 1,
+    you: answer.typed != null ? answer.typed : (q.options ? q.options[answer.selected] : '?'),
+    ans: q.type === 'mcq' || q.type === 'why' ? q.options[q.correct] : q.correct,
+    section: q.section
+  };
 
   localStorage.setItem('fd_progress', JSON.stringify(p));
 
