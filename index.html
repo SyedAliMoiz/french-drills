@@ -243,7 +243,7 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background
 </head>
 <body>
 <div id="app"><div class="wrap center" style="padding-top:40vh"><div class="spin"></div></div></div>
-<script src="data/chapter1.js?v=3"></script>
+<script src="data/chapter1.js?v=4"></script>
 <script>
 'use strict';
 
@@ -505,10 +505,11 @@ const S = {
   qi: 0,
   answered: false,
   currentAnswer: null,
-  sessionCorrect: 0,
-  sessionTotal: 0,
+  sessionSeen: new Set(),
   saveCounter: 0,
 };
+
+let _advanceListener = null;
 
 const $ = id => document.getElementById(id);
 const app = () => document.getElementById('app');
@@ -701,8 +702,7 @@ function startAutoMode() {
   S.qi = 0;
   S.answered = false;
   S.currentAnswer = null;
-  S.sessionCorrect = 0;
-  S.sessionTotal = 0;
+  S.sessionSeen = new Set();
   S.saveCounter = 0;
   S.screen = 'drill';
   render();
@@ -712,7 +712,7 @@ function renderDrill() {
   if (S.qi >= S.queue.length) { S.screen = 'done'; render(); return; }
   const q = S.queue[S.qi];
   const pct = (S.qi / S.queue.length) * 100;
-  const acc = S.sessionTotal > 0 ? Math.round((S.sessionCorrect / S.sessionTotal) * 100) + '%' : '';
+  const acc = sessionAccuracy().pct;
 
   let qHTML = '';
   if (q.type === 'mcq' || q.type === 'why') qHTML = renderMCQ(q);
@@ -826,13 +826,16 @@ function renderOpen(q) {
 }
 
 function bindEvents(q) {
+  if (_advanceListener) { document.removeEventListener('keydown', _advanceListener); _advanceListener = null; }
+
   if (S.answered) {
     const next = $('next-btn');
     if (next) next.onclick = goNext;
     setTimeout(() => {
-      document.addEventListener('keydown', function onKey(e) {
-        if (e.key === 'Enter') { document.removeEventListener('keydown', onKey); goNext(); }
-      });
+      _advanceListener = function(e) {
+        if (e.key === 'Enter') { document.removeEventListener('keydown', _advanceListener); _advanceListener = null; goNext(); }
+      };
+      document.addEventListener('keydown', _advanceListener);
     }, 200);
     const card = $('q-card');
     if (S.currentAnswer?.correct) card?.classList.add('pop');
@@ -883,11 +886,22 @@ function insertChar(ch) {
   el.focus();
 }
 
+function sessionAccuracy() {
+  const seen = S.sessionSeen;
+  if (!seen || seen.size === 0) return { total: 0, correct: 0, pct: '' };
+  const total = seen.size;
+  let correct = 0;
+  for (const id of seen) {
+    const rec = S.progress.answered?.[id];
+    if (rec?.attempts?.length && rec.attempts[rec.attempts.length - 1].ok) correct++;
+  }
+  return { total, correct, pct: Math.round((correct / total) * 100) + '%' };
+}
+
 function submitAnswer(q, answer) {
   S.answered = true;
   S.currentAnswer = answer;
-  S.sessionTotal++;
-  if (answer.correct) S.sessionCorrect++;
+  S.sessionSeen.add(q.id);
   recordAnswer(q, answer);
   render();
 }
@@ -958,7 +972,8 @@ function goNext() {
 }
 
 function renderDone() {
-  const acc = S.sessionTotal > 0 ? Math.round((S.sessionCorrect / S.sessionTotal) * 100) : 0;
+  const { total, correct } = sessionAccuracy();
+  const acc = total > 0 ? Math.round((correct / total) * 100) : 0;
   let msg = 'Parfait !';
   if (acc < 50) msg = 'Il faut réviser.';
   else if (acc < 80) msg = 'Pas mal — continue !';
@@ -968,7 +983,7 @@ function renderDone() {
     <div class="dp">
       <div class="dp-body center">
         <div style="margin-top:auto"></div>
-        <div class="res-score" style="color:var(--accent)">${S.sessionCorrect} / ${S.sessionTotal}</div>
+        <div class="res-score" style="color:var(--accent)">${correct} / ${total}</div>
         <div class="res-msg" style="font-size:1.25rem">${S.sessionTotal > 0 ? msg : 'All caught up.'}</div>
         <p class="sub" style="margin-bottom:2rem">Come back later for spaced review.</p>
         <div class="col" style="gap:1rem">
