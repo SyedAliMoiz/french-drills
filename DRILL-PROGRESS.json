@@ -1,17 +1,17 @@
 {
   "v": 1,
-  "updated": "2026-07-06T23:03:38.262Z",
+  "updated": "2026-07-07T14:52:53.795Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-06T23:02:59.514Z",
-      "reviews": 8,
+      "lastReview": "2026-07-07T14:51:46.457Z",
+      "reviews": 10,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-06T23:00:38.249Z",
-      "reviews": 2,
+      "lastReview": "2026-07-07T14:52:30.454Z",
+      "reviews": 5,
       "scores": []
     },
     "s2b-indefinite": {
@@ -40,8 +40,8 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-06T20:45:26.297Z",
-      "reviews": 4,
+      "lastReview": "2026-07-07T14:52:53.795Z",
+      "reviews": 5,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,12 +71,12 @@
   },
   "history": [],
   "stats": {
-    "questions": 30,
-    "correct": 16,
+    "questions": 36,
+    "correct": 19,
     "drills": 0,
-    "streak": 1,
-    "best": 1,
-    "lastDate": "2026-07-06"
+    "streak": 2,
+    "best": 2,
+    "lastDate": "2026-07-07"
   },
   "achievements": [
     "first-lock",
@@ -293,6 +293,11 @@
           "ok": false,
           "at": "2026-07-06T23:02:59.514Z",
           "you": "la musee"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-07T14:51:23.613Z",
+          "you": "la musee"
         }
       ]
     },
@@ -353,6 +358,59 @@
           "ok": true,
           "at": "2026-07-06T23:03:38.262Z",
           "you": "fleur rouge"
+        }
+      ]
+    },
+    "s2a-elision-o2": {
+      "type": "open",
+      "section": "s2a-elision",
+      "ans": "l'enfant",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-06T23:04:11.303Z",
+          "you": "le enfant"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-07T14:51:36.730Z",
+          "you": "l'enfant"
+        }
+      ]
+    },
+    "s1-gender-b7": {
+      "type": "blank",
+      "section": "s1-gender",
+      "ans": "la",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-07T14:51:46.457Z",
+          "you": "la"
+        }
+      ]
+    },
+    "s2a-elision-b1": {
+      "type": "blank",
+      "section": "s2a-elision",
+      "ans": "L'",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-07T14:52:30.454Z",
+          "you": "mis"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-b4": {
+      "type": "blank",
+      "section": "s4r3-fem-irreg",
+      "ans": "naturelle",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-07T14:52:53.795Z",
+          "you": "naturelle"
         }
       ]
     }
