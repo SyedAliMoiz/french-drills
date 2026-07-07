@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-07T14:52:53.795Z",
+  "updated": "2026-07-07T14:55:34.845Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-07T14:51:46.457Z",
-      "reviews": 10,
+      "lastReview": "2026-07-07T14:55:34.845Z",
+      "reviews": 11,
       "scores": []
     },
     "s2a-elision": {
@@ -16,8 +16,8 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-06T23:02:03.340Z",
-      "reviews": 1,
+      "lastReview": "2026-07-07T14:55:26.245Z",
+      "reviews": 3,
       "scores": []
     },
     "s3-plurals": {
@@ -28,8 +28,8 @@
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-06T23:03:38.262Z",
-      "reviews": 1,
+      "lastReview": "2026-07-07T14:53:07.947Z",
+      "reviews": 2,
       "scores": []
     },
     "s4r2-fem-basic": {
@@ -46,8 +46,8 @@
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-06T23:00:28.165Z",
-      "reviews": 3,
+      "lastReview": "2026-07-07T14:53:39.874Z",
+      "reviews": 4,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 36,
-    "correct": 19,
+    "questions": 41,
+    "correct": 23,
     "drills": 0,
     "streak": 2,
     "best": 2,
@@ -298,6 +298,11 @@
           "ok": false,
           "at": "2026-07-07T14:51:23.613Z",
           "you": "la musee"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-07T14:55:34.845Z",
+          "you": "le musee"
         }
       ]
     },
@@ -411,6 +416,54 @@
           "ok": true,
           "at": "2026-07-07T14:52:53.795Z",
           "you": "naturelle"
+        }
+      ]
+    },
+    "s4r1-position-b2": {
+      "type": "blank",
+      "section": "s4r1-position",
+      "ans": "voiture rapide",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-07T14:53:07.947Z",
+          "you": "rapide voiture"
+        }
+      ]
+    },
+    "s2b-indefinite-o1": {
+      "type": "open",
+      "section": "s2b-indefinite",
+      "ans": "un sac",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-07T14:53:24.045Z",
+          "you": "un sac"
+        }
+      ]
+    },
+    "s4r4-plural-adj-b1": {
+      "type": "blank",
+      "section": "s4r4-plural-adj",
+      "ans": "noirs",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-07T14:53:39.874Z",
+          "you": "noirs"
+        }
+      ]
+    },
+    "s2b-indefinite-b2": {
+      "type": "blank",
+      "section": "s2b-indefinite",
+      "ans": "une",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-07T14:55:26.245Z",
+          "you": "une"
         }
       ]
     }
