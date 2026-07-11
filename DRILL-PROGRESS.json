@@ -1,17 +1,17 @@
 {
   "v": 1,
-  "updated": "2026-07-11T22:31:51.354Z",
+  "updated": "2026-07-11T22:33:01.218Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:31:27.306Z",
-      "reviews": 20,
+      "lastReview": "2026-07-11T22:33:01.218Z",
+      "reviews": 21,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-07T14:59:25.498Z",
-      "reviews": 6,
+      "lastReview": "2026-07-11T22:32:04.974Z",
+      "reviews": 7,
       "scores": []
     },
     "s2b-indefinite": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:31:51.354Z",
-      "reviews": 18,
+      "lastReview": "2026-07-11T22:32:55.124Z",
+      "reviews": 19,
       "scores": []
     },
     "s4r1-position": {
@@ -34,8 +34,8 @@
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:28:44.371Z",
-      "reviews": 2,
+      "lastReview": "2026-07-11T22:32:47.537Z",
+      "reviews": 3,
       "scores": []
     },
     "s4r3-fem-irreg": {
@@ -46,8 +46,8 @@
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-07T14:53:39.874Z",
-      "reviews": 4,
+      "lastReview": "2026-07-11T22:32:28.893Z",
+      "reviews": 5,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 66,
-    "correct": 41,
+    "questions": 71,
+    "correct": 44,
     "drills": 0,
     "streak": 1,
     "best": 2,
@@ -672,6 +672,11 @@
           "ok": false,
           "at": "2026-07-11T22:30:36.258Z",
           "you": "c'est"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-11T22:33:01.218Z",
+          "you": "le"
         }
       ]
     },
@@ -708,6 +713,54 @@
           "ok": true,
           "at": "2026-07-11T22:31:27.306Z",
           "you": "le"
+        }
+      ]
+    },
+    "s2a-elision-o1": {
+      "type": "open",
+      "section": "s2a-elision",
+      "ans": "l'arbre",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-11T22:32:04.974Z",
+          "you": "l'arbre"
+        }
+      ]
+    },
+    "s4r4-plural-adj-o2": {
+      "type": "open",
+      "section": "s4r4-plural-adj",
+      "ans": "Les hommes sont sérieux.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-11T22:32:28.893Z",
+          "you": "les hommes sont serieux"
+        }
+      ]
+    },
+    "s4r2-fem-basic-b2": {
+      "type": "blank",
+      "section": "s4r2-fem-basic",
+      "ans": "sincère",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-11T22:32:47.537Z",
+          "you": "sinceree"
+        }
+      ]
+    },
+    "s3-plurals-b1": {
+      "type": "blank",
+      "section": "s3-plurals",
+      "ans": "chevaux",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-11T22:32:55.124Z",
+          "you": "chevals"
         }
       ]
     }
