@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-11T22:35:20.991Z",
+  "updated": "2026-07-11T22:36:34.820Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:33:27.547Z",
-      "reviews": 22,
+      "lastReview": "2026-07-11T22:36:34.820Z",
+      "reviews": 24,
       "scores": []
     },
     "s2a-elision": {
@@ -28,20 +28,20 @@
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:34:43.128Z",
-      "reviews": 5,
+      "lastReview": "2026-07-11T22:36:16.177Z",
+      "reviews": 6,
       "scores": []
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:32:47.537Z",
-      "reviews": 3,
+      "lastReview": "2026-07-11T22:35:30.594Z",
+      "reviews": 4,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:27:39.376Z",
-      "reviews": 8,
+      "lastReview": "2026-07-11T22:35:51.008Z",
+      "reviews": 9,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 76,
-    "correct": 46,
+    "questions": 81,
+    "correct": 49,
     "drills": 0,
     "streak": 1,
     "best": 2,
@@ -749,6 +749,11 @@
           "ok": false,
           "at": "2026-07-11T22:32:47.537Z",
           "you": "sinceree"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-11T22:35:30.594Z",
+          "you": "sincereux"
         }
       ]
     },
@@ -790,6 +795,11 @@
           "ok": false,
           "at": "2026-07-11T22:33:27.547Z",
           "you": "le main"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-11T22:36:34.820Z",
+          "you": "la main"
         }
       ]
     },
@@ -802,6 +812,11 @@
           "ok": false,
           "at": "2026-07-11T22:34:43.128Z",
           "you": "l'important lettre"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-11T22:36:16.177Z",
+          "you": "une lettre importante"
         }
       ]
     },
@@ -814,6 +829,30 @@
           "ok": false,
           "at": "2026-07-11T22:35:07.606Z",
           "you": "la fleur sont rouge"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-o1": {
+      "type": "open",
+      "section": "s4r3-fem-irreg",
+      "ans": "une femme curieuse",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-11T22:35:51.008Z",
+          "you": "une femme curieuse"
+        }
+      ]
+    },
+    "s1-gender-o2": {
+      "type": "open",
+      "section": "s1-gender",
+      "ans": "la table",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-11T22:36:28.725Z",
+          "you": "le table"
         }
       ]
     }
