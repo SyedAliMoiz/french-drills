@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-11T22:33:01.218Z",
+  "updated": "2026-07-11T22:35:20.991Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:33:01.218Z",
-      "reviews": 21,
+      "lastReview": "2026-07-11T22:33:27.547Z",
+      "reviews": 22,
       "scores": []
     },
     "s2a-elision": {
@@ -22,14 +22,14 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:32:55.124Z",
-      "reviews": 19,
+      "lastReview": "2026-07-11T22:35:20.991Z",
+      "reviews": 20,
       "scores": []
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:27:17.437Z",
-      "reviews": 4,
+      "lastReview": "2026-07-11T22:34:43.128Z",
+      "reviews": 5,
       "scores": []
     },
     "s4r2-fem-basic": {
@@ -46,8 +46,8 @@
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-11T22:32:28.893Z",
-      "reviews": 5,
+      "lastReview": "2026-07-11T22:35:07.606Z",
+      "reviews": 7,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 71,
-    "correct": 44,
+    "questions": 76,
+    "correct": 46,
     "drills": 0,
     "streak": 1,
     "best": 2,
@@ -761,6 +761,59 @@
           "ok": false,
           "at": "2026-07-11T22:32:55.124Z",
           "you": "chevals"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-11T22:35:20.991Z",
+          "you": "chevaux"
+        }
+      ]
+    },
+    "s4r4-plural-adj-o3": {
+      "type": "open",
+      "section": "s4r4-plural-adj",
+      "ans": "Les filles sont actives.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-11T22:33:17.658Z",
+          "you": "les filles sont actives"
+        }
+      ]
+    },
+    "s1-gender-o7": {
+      "type": "open",
+      "section": "s1-gender",
+      "ans": "la main",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-11T22:33:27.547Z",
+          "you": "le main"
+        }
+      ]
+    },
+    "s4r1-position-o2": {
+      "type": "open",
+      "section": "s4r1-position",
+      "ans": "une lettre importante",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-11T22:34:43.128Z",
+          "you": "l'important lettre"
+        }
+      ]
+    },
+    "s4r4-plural-adj-o1": {
+      "type": "open",
+      "section": "s4r4-plural-adj",
+      "ans": "Les fleurs sont rouges.",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-11T22:35:07.606Z",
+          "you": "la fleur sont rouge"
         }
       ]
     }
