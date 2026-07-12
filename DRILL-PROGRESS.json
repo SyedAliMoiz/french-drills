@@ -1,17 +1,17 @@
 {
   "v": 1,
-  "updated": "2026-07-12T10:15:48.510Z",
+  "updated": "2026-07-12T10:17:38.302Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:14:13.863Z",
-      "reviews": 26,
+      "lastReview": "2026-07-12T10:15:54.424Z",
+      "reviews": 27,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:32:04.974Z",
-      "reviews": 7,
+      "lastReview": "2026-07-12T10:16:12.832Z",
+      "reviews": 8,
       "scores": []
     },
     "s2b-indefinite": {
@@ -40,14 +40,14 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:15:13.028Z",
-      "reviews": 12,
+      "lastReview": "2026-07-12T10:17:38.302Z",
+      "reviews": 14,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-12T10:13:14.296Z",
-      "reviews": 8,
+      "lastReview": "2026-07-12T10:16:03.961Z",
+      "reviews": 9,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 91,
-    "correct": 55,
+    "questions": 96,
+    "correct": 59,
     "drills": 0,
     "streak": 2,
     "best": 2,
@@ -839,6 +839,11 @@
           "ok": false,
           "at": "2026-07-12T10:13:14.296Z",
           "you": "les fleurs sont rouge"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-12T10:16:03.961Z",
+          "you": "les fleurs sont rouges"
         }
       ]
     },
@@ -892,6 +897,11 @@
           "ok": false,
           "at": "2026-07-12T10:12:45.382Z",
           "you": "genereux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-12T10:16:19.316Z",
+          "you": "genereuse"
         }
       ]
     },
@@ -952,6 +962,42 @@
           "ok": true,
           "at": "2026-07-12T10:15:48.510Z",
           "you": "un homme americain"
+        }
+      ]
+    },
+    "s1-gender-b8": {
+      "type": "blank",
+      "section": "s1-gender",
+      "ans": "le",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-12T10:15:54.424Z",
+          "you": "la"
+        }
+      ]
+    },
+    "s2a-elision-m4": {
+      "type": "mcq",
+      "section": "s2a-elision",
+      "ans": "l'",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:16:12.832Z",
+          "you": "l'"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-w2": {
+      "type": "why",
+      "section": "s4r3-fem-irreg",
+      "ans": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added — like English knife → knives.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:17:38.302Z",
+          "you": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added — like English knife → knives."
         }
       ]
     }
