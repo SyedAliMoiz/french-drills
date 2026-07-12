@@ -1,17 +1,17 @@
 {
   "v": 1,
-  "updated": "2026-07-12T10:35:36.325Z",
+  "updated": "2026-07-12T11:00:16.667Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:22:56.892Z",
-      "reviews": 29,
+      "lastReview": "2026-07-12T10:36:13.553Z",
+      "reviews": 30,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:16:12.832Z",
-      "reviews": 8,
+      "lastReview": "2026-07-12T11:00:16.667Z",
+      "reviews": 9,
       "scores": []
     },
     "s2b-indefinite": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:13:33.356Z",
-      "reviews": 21,
+      "lastReview": "2026-07-12T10:43:29.839Z",
+      "reviews": 22,
       "scores": []
     },
     "s4r1-position": {
@@ -46,8 +46,8 @@
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-12T10:25:23.298Z",
-      "reviews": 10,
+      "lastReview": "2026-07-12T10:43:23.146Z",
+      "reviews": 12,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 101,
-    "correct": 64,
+    "questions": 106,
+    "correct": 69,
     "drills": 0,
     "streak": 2,
     "best": 2,
@@ -1037,6 +1037,66 @@
           "ok": true,
           "at": "2026-07-12T10:25:23.298Z",
           "you": "Because French defaults to masculine for mixed-gender groups — if any noun in the group is masculine, the adjective takes masculine plural."
+        }
+      ]
+    },
+    "s1-gender-m8": {
+      "type": "mcq",
+      "section": "s1-gender",
+      "ans": "Feminine (la)",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:36:13.553Z",
+          "you": "Feminine (la)"
+        }
+      ]
+    },
+    "s4r4-plural-adj-w1": {
+      "type": "why",
+      "section": "s4r4-plural-adj",
+      "ans": "Because adjectives ending in -x (or -s) already have a plural-sounding ending, so nothing is added.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:37:21.723Z",
+          "you": "Because adjectives ending in -x (or -s) already have a plural-sounding ending, so nothing is added."
+        }
+      ]
+    },
+    "s4r4-plural-adj-m5": {
+      "type": "mcq",
+      "section": "s4r4-plural-adj",
+      "ans": "contents",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:43:23.146Z",
+          "you": "contents"
+        }
+      ]
+    },
+    "s3-plurals-m2": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "animaux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:43:29.839Z",
+          "you": "animaux"
+        }
+      ]
+    },
+    "s2a-elision-m3": {
+      "type": "mcq",
+      "section": "s2a-elision",
+      "ans": "l'",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T11:00:16.667Z",
+          "you": "l'"
         }
       ]
     }
