@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-12T11:00:16.667Z",
+  "updated": "2026-07-12T11:07:38.532Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:36:13.553Z",
-      "reviews": 30,
+      "lastReview": "2026-07-12T11:05:21.083Z",
+      "reviews": 31,
       "scores": []
     },
     "s2a-elision": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:43:29.839Z",
-      "reviews": 22,
+      "lastReview": "2026-07-12T11:05:36.182Z",
+      "reviews": 23,
       "scores": []
     },
     "s4r1-position": {
@@ -34,20 +34,20 @@
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:35:29.122Z",
-      "reviews": 7,
+      "lastReview": "2026-07-12T11:00:45.667Z",
+      "reviews": 8,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:35:36.325Z",
-      "reviews": 15,
+      "lastReview": "2026-07-12T11:04:49.534Z",
+      "reviews": 16,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-12T10:43:23.146Z",
-      "reviews": 12,
+      "lastReview": "2026-07-12T11:07:38.532Z",
+      "reviews": 13,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 106,
-    "correct": 69,
+    "questions": 111,
+    "correct": 72,
     "drills": 0,
     "streak": 2,
     "best": 2,
@@ -1097,6 +1097,66 @@
           "ok": true,
           "at": "2026-07-12T11:00:16.667Z",
           "you": "l'"
+        }
+      ]
+    },
+    "s4r2-fem-basic-m2": {
+      "type": "mcq",
+      "section": "s4r2-fem-basic",
+      "ans": "forte",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T11:00:45.667Z",
+          "you": "forte"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-m1": {
+      "type": "mcq",
+      "section": "s4r3-fem-irreg",
+      "ans": "heureuse",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T11:04:49.534Z",
+          "you": "heureuse"
+        }
+      ]
+    },
+    "s1-gender-m3": {
+      "type": "mcq",
+      "section": "s1-gender",
+      "ans": "le",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-12T11:05:21.083Z",
+          "you": "la"
+        }
+      ]
+    },
+    "s3-plurals-m8": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "des",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T11:05:36.182Z",
+          "you": "des"
+        }
+      ]
+    },
+    "s4r4-plural-adj-m6": {
+      "type": "mcq",
+      "section": "s4r4-plural-adj",
+      "ans": "fatiguées",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-12T11:07:38.532Z",
+          "you": "fatiguée"
         }
       ]
     }
