@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-11T22:36:34.820Z",
+  "updated": "2026-07-12T10:13:14.296Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:36:34.820Z",
-      "reviews": 24,
+      "lastReview": "2026-07-12T10:12:53.931Z",
+      "reviews": 25,
       "scores": []
     },
     "s2a-elision": {
@@ -34,20 +34,20 @@
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:35:30.594Z",
-      "reviews": 4,
+      "lastReview": "2026-07-12T10:07:45.672Z",
+      "reviews": 5,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:35:51.008Z",
-      "reviews": 9,
+      "lastReview": "2026-07-12T10:12:45.382Z",
+      "reviews": 11,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-11T22:35:07.606Z",
-      "reviews": 7,
+      "lastReview": "2026-07-12T10:13:14.296Z",
+      "reviews": 8,
       "scores": []
     },
     "s4b-colors": {
@@ -71,12 +71,12 @@
   },
   "history": [],
   "stats": {
-    "questions": 81,
-    "correct": 49,
+    "questions": 86,
+    "correct": 52,
     "drills": 0,
-    "streak": 1,
+    "streak": 2,
     "best": 2,
-    "lastDate": "2026-07-11"
+    "lastDate": "2026-07-12"
   },
   "achievements": [
     "first-lock",
@@ -754,6 +754,11 @@
           "ok": false,
           "at": "2026-07-11T22:35:30.594Z",
           "you": "sincereux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-12T10:07:45.672Z",
+          "you": "sincere"
         }
       ]
     },
@@ -829,6 +834,11 @@
           "ok": false,
           "at": "2026-07-11T22:35:07.606Z",
           "you": "la fleur sont rouge"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-12T10:13:14.296Z",
+          "you": "les fleurs sont rouge"
         }
       ]
     },
@@ -853,6 +863,35 @@
           "ok": false,
           "at": "2026-07-11T22:36:28.725Z",
           "you": "le table"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-12T10:12:53.931Z",
+          "you": "la table"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-b2": {
+      "type": "blank",
+      "section": "s4r3-fem-irreg",
+      "ans": "créative",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:07:25.086Z",
+          "you": "creative"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-b1": {
+      "type": "blank",
+      "section": "s4r3-fem-irreg",
+      "ans": "généreuse",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-12T10:12:45.382Z",
+          "you": "genereux"
         }
       ]
     }
