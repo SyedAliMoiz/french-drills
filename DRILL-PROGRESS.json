@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-12T10:17:38.302Z",
+  "updated": "2026-07-12T10:35:36.325Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:15:54.424Z",
-      "reviews": 27,
+      "lastReview": "2026-07-12T10:22:56.892Z",
+      "reviews": 29,
       "scores": []
     },
     "s2a-elision": {
@@ -34,20 +34,20 @@
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:15:36.123Z",
-      "reviews": 6,
+      "lastReview": "2026-07-12T10:35:29.122Z",
+      "reviews": 7,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:17:38.302Z",
-      "reviews": 14,
+      "lastReview": "2026-07-12T10:35:36.325Z",
+      "reviews": 15,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-12T10:16:03.961Z",
-      "reviews": 9,
+      "lastReview": "2026-07-12T10:25:23.298Z",
+      "reviews": 10,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 96,
-    "correct": 59,
+    "questions": 101,
+    "correct": 64,
     "drills": 0,
     "streak": 2,
     "best": 2,
@@ -938,6 +938,11 @@
           "ok": false,
           "at": "2026-07-12T10:15:13.028Z",
           "you": "un robe cher"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-12T10:35:36.325Z",
+          "you": "une robe chere"
         }
       ]
     },
@@ -950,6 +955,11 @@
           "ok": false,
           "at": "2026-07-12T10:15:36.123Z",
           "you": "une timide fille"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-12T10:35:29.122Z",
+          "you": "une fille timide"
         }
       ]
     },
@@ -974,6 +984,11 @@
           "ok": false,
           "at": "2026-07-12T10:15:54.424Z",
           "you": "la"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-12T10:22:56.892Z",
+          "you": "le"
         }
       ]
     },
@@ -998,6 +1013,30 @@
           "ok": true,
           "at": "2026-07-12T10:17:38.302Z",
           "you": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added — like English knife → knives."
+        }
+      ]
+    },
+    "s1-gender-w5": {
+      "type": "why",
+      "section": "s1-gender",
+      "ans": "Because the -tion ending is a reliable feminine gender marker in French",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:21:48.091Z",
+          "you": "Because the -tion ending is a reliable feminine gender marker in French"
+        }
+      ]
+    },
+    "s4r4-plural-adj-w2": {
+      "type": "why",
+      "section": "s4r4-plural-adj",
+      "ans": "Because French defaults to masculine for mixed-gender groups — if any noun in the group is masculine, the adjective takes masculine plural.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:25:23.298Z",
+          "you": "Because French defaults to masculine for mixed-gender groups — if any noun in the group is masculine, the adjective takes masculine plural."
         }
       ]
     }
