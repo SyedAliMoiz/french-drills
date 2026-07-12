@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-12T10:13:14.296Z",
+  "updated": "2026-07-12T10:15:48.510Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:12:53.931Z",
-      "reviews": 25,
+      "lastReview": "2026-07-12T10:14:13.863Z",
+      "reviews": 26,
       "scores": []
     },
     "s2a-elision": {
@@ -22,26 +22,26 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:35:20.991Z",
-      "reviews": 20,
+      "lastReview": "2026-07-12T10:13:33.356Z",
+      "reviews": 21,
       "scores": []
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:36:16.177Z",
-      "reviews": 6,
+      "lastReview": "2026-07-12T10:15:48.510Z",
+      "reviews": 7,
       "scores": []
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:07:45.672Z",
-      "reviews": 5,
+      "lastReview": "2026-07-12T10:15:36.123Z",
+      "reviews": 6,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:12:45.382Z",
-      "reviews": 11,
+      "lastReview": "2026-07-12T10:15:13.028Z",
+      "reviews": 12,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 86,
-    "correct": 52,
+    "questions": 91,
+    "correct": 55,
     "drills": 0,
     "streak": 2,
     "best": 2,
@@ -892,6 +892,66 @@
           "ok": false,
           "at": "2026-07-12T10:12:45.382Z",
           "you": "genereux"
+        }
+      ]
+    },
+    "s3-plurals-o3": {
+      "type": "open",
+      "section": "s3-plurals",
+      "ans": "des jeux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:13:33.356Z",
+          "you": "des jeux"
+        }
+      ]
+    },
+    "s1-gender-o4": {
+      "type": "open",
+      "section": "s1-gender",
+      "ans": "le problème",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:14:13.863Z",
+          "you": "le probleme"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-o3": {
+      "type": "open",
+      "section": "s4r3-fem-irreg",
+      "ans": "une robe chère",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-12T10:15:13.028Z",
+          "you": "un robe cher"
+        }
+      ]
+    },
+    "s4r2-fem-basic-o2": {
+      "type": "open",
+      "section": "s4r2-fem-basic",
+      "ans": "une fille timide",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-12T10:15:36.123Z",
+          "you": "une timide fille"
+        }
+      ]
+    },
+    "s4r1-position-o1": {
+      "type": "open",
+      "section": "s4r1-position",
+      "ans": "un homme américain",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T10:15:48.510Z",
+          "you": "un homme americain"
         }
       ]
     }
