@@ -1,17 +1,17 @@
 {
   "v": 1,
-  "updated": "2026-07-13T00:21:41.083Z",
+  "updated": "2026-07-13T00:23:26.479Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:19:31.670Z",
-      "reviews": 35,
+      "lastReview": "2026-07-13T00:21:52.989Z",
+      "reviews": 36,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:17:59.198Z",
-      "reviews": 10,
+      "lastReview": "2026-07-13T00:23:26.479Z",
+      "reviews": 11,
       "scores": []
     },
     "s2b-indefinite": {
@@ -22,14 +22,14 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:20:51.870Z",
-      "reviews": 31,
+      "lastReview": "2026-07-13T00:22:55.463Z",
+      "reviews": 32,
       "scores": []
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:21:22.787Z",
-      "reviews": 8,
+      "lastReview": "2026-07-13T00:23:16.223Z",
+      "reviews": 9,
       "scores": []
     },
     "s4r2-fem-basic": {
@@ -40,8 +40,8 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-12T11:52:50.542Z",
-      "reviews": 17,
+      "lastReview": "2026-07-13T00:22:46.735Z",
+      "reviews": 18,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 131,
-    "correct": 88,
+    "questions": 136,
+    "correct": 93,
     "drills": 0,
     "streak": 3,
     "best": 3,
@@ -1309,6 +1309,11 @@
           "ok": false,
           "at": "2026-07-13T00:18:50.041Z",
           "you": "braux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-13T00:22:55.463Z",
+          "you": "bras"
         }
       ]
     },
@@ -1369,6 +1374,54 @@
           "ok": true,
           "at": "2026-07-13T00:21:22.787Z",
           "you": "un examen difficile"
+        }
+      ]
+    },
+    "s1-gender-w2": {
+      "type": "why",
+      "section": "s1-gender",
+      "ans": "\"Table\" is feminine, so it needs \"la\" — the article must match the noun's gender, which is masculine (le) or feminine (la).",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:21:52.989Z",
+          "you": "\"Table\" is feminine, so it needs \"la\" — the article must match the noun's gender, which is masculine (le) or feminine (la)."
+        }
+      ]
+    },
+    "s4r3-fem-irreg-m6": {
+      "type": "mcq",
+      "section": "s4r3-fem-irreg",
+      "ans": "dernière",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:22:46.735Z",
+          "you": "dernière"
+        }
+      ]
+    },
+    "s4r1-position-m1": {
+      "type": "mcq",
+      "section": "s4r1-position",
+      "ans": "l'étudiante intelligente",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:23:16.223Z",
+          "you": "l'étudiante intelligente"
+        }
+      ]
+    },
+    "s2a-elision-m1": {
+      "type": "mcq",
+      "section": "s2a-elision",
+      "ans": "l'",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:23:26.479Z",
+          "you": "l'"
         }
       ]
     }
