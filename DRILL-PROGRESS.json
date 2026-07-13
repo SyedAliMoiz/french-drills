@@ -1,17 +1,17 @@
 {
   "v": 1,
-  "updated": "2026-07-13T00:17:38.607Z",
+  "updated": "2026-07-13T00:19:40.834Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:16:20.874Z",
-      "reviews": 34,
+      "lastReview": "2026-07-13T00:19:31.670Z",
+      "reviews": 35,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-12T11:00:16.667Z",
-      "reviews": 9,
+      "lastReview": "2026-07-13T00:17:59.198Z",
+      "reviews": 10,
       "scores": []
     },
     "s2b-indefinite": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:16:32.010Z",
-      "reviews": 26,
+      "lastReview": "2026-07-13T00:19:40.834Z",
+      "reviews": 29,
       "scores": []
     },
     "s4r1-position": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 121,
-    "correct": 80,
+    "questions": 126,
+    "correct": 84,
     "drills": 0,
     "streak": 3,
     "best": 3,
@@ -1227,6 +1227,11 @@
           "ok": false,
           "at": "2026-07-13T00:15:59.103Z",
           "you": "oeux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-13T00:19:40.834Z",
+          "you": "yeux"
         }
       ]
     },
@@ -1263,6 +1268,54 @@
           "ok": false,
           "at": "2026-07-13T00:17:38.607Z",
           "you": "la"
+        }
+      ]
+    },
+    "s2a-elision-w1": {
+      "type": "why",
+      "section": "s2a-elision",
+      "ans": "Because \"homme\" starts with a vowel sound — the h is silent (mute), and French uses elision to avoid two vowel sounds colliding.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:17:59.198Z",
+          "you": "Because \"homme\" starts with a vowel sound — the h is silent (mute), and French uses elision to avoid two vowel sounds colliding."
+        }
+      ]
+    },
+    "s3-plurals-m9": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "bijoux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:18:21.639Z",
+          "you": "bijoux"
+        }
+      ]
+    },
+    "s3-plurals-m3": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "bras",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-13T00:18:50.041Z",
+          "you": "braux"
+        }
+      ]
+    },
+    "s1-gender-m6": {
+      "type": "mcq",
+      "section": "s1-gender",
+      "ans": "Feminine (la)",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:19:31.670Z",
+          "you": "Feminine (la)"
         }
       ]
     }
