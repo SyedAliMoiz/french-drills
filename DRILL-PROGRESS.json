@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-13T00:19:40.834Z",
+  "updated": "2026-07-13T00:21:41.083Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -16,26 +16,26 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:17:38.607Z",
-      "reviews": 6,
+      "lastReview": "2026-07-13T00:21:41.083Z",
+      "reviews": 7,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:19:40.834Z",
-      "reviews": 29,
+      "lastReview": "2026-07-13T00:20:51.870Z",
+      "reviews": 31,
       "scores": []
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-12T10:15:48.510Z",
-      "reviews": 7,
+      "lastReview": "2026-07-13T00:21:22.787Z",
+      "reviews": 8,
       "scores": []
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-12T11:00:45.667Z",
-      "reviews": 8,
+      "lastReview": "2026-07-13T00:19:57.386Z",
+      "reviews": 9,
       "scores": []
     },
     "s4r3-fem-irreg": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 126,
-    "correct": 84,
+    "questions": 131,
+    "correct": 88,
     "drills": 0,
     "streak": 3,
     "best": 3,
@@ -1268,6 +1268,11 @@
           "ok": false,
           "at": "2026-07-13T00:17:38.607Z",
           "you": "la"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-13T00:21:41.083Z",
+          "you": "une"
         }
       ]
     },
@@ -1316,6 +1321,54 @@
           "ok": true,
           "at": "2026-07-13T00:19:31.670Z",
           "you": "Feminine (la)"
+        }
+      ]
+    },
+    "s4r2-fem-basic-m3": {
+      "type": "mcq",
+      "section": "s4r2-fem-basic",
+      "ans": "triste",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:19:57.386Z",
+          "you": "triste"
+        }
+      ]
+    },
+    "s3-plurals-w2": {
+      "type": "why",
+      "section": "s3-plurals",
+      "ans": "Because nouns already ending in -s, -x, or -z don't add anything — they already \"look\" plural.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:20:40.606Z",
+          "you": "Because nouns already ending in -s, -x, or -z don't add anything — they already \"look\" plural."
+        }
+      ]
+    },
+    "s3-plurals-m5": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "chats",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:20:51.870Z",
+          "you": "chats"
+        }
+      ]
+    },
+    "s4r1-position-m3": {
+      "type": "mcq",
+      "section": "s4r1-position",
+      "ans": "un examen difficile",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:21:22.787Z",
+          "you": "un examen difficile"
         }
       ]
     }
