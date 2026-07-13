@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-12T11:07:38.532Z",
+  "updated": "2026-07-13T00:15:49.853Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-12T11:05:21.083Z",
-      "reviews": 31,
+      "lastReview": "2026-07-12T11:07:55.695Z",
+      "reviews": 32,
       "scores": []
     },
     "s2a-elision": {
@@ -16,14 +16,14 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-11T22:29:31.534Z",
-      "reviews": 4,
+      "lastReview": "2026-07-12T11:53:05.074Z",
+      "reviews": 5,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-12T11:05:36.182Z",
-      "reviews": 23,
+      "lastReview": "2026-07-12T11:08:41.273Z",
+      "reviews": 24,
       "scores": []
     },
     "s4r1-position": {
@@ -40,14 +40,14 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-12T11:04:49.534Z",
-      "reviews": 16,
+      "lastReview": "2026-07-12T11:52:50.542Z",
+      "reviews": 17,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-12T11:07:38.532Z",
-      "reviews": 13,
+      "lastReview": "2026-07-13T00:15:49.853Z",
+      "reviews": 14,
       "scores": []
     },
     "s4b-colors": {
@@ -71,12 +71,12 @@
   },
   "history": [],
   "stats": {
-    "questions": 111,
-    "correct": 72,
+    "questions": 116,
+    "correct": 77,
     "drills": 0,
-    "streak": 2,
-    "best": 2,
-    "lastDate": "2026-07-12"
+    "streak": 3,
+    "best": 3,
+    "lastDate": "2026-07-13"
   },
   "achievements": [
     "first-lock",
@@ -1157,6 +1157,59 @@
           "ok": false,
           "at": "2026-07-12T11:07:38.532Z",
           "you": "fatiguée"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-13T00:15:49.853Z",
+          "you": "fatiguées"
+        }
+      ]
+    },
+    "s1-gender-m5": {
+      "type": "mcq",
+      "section": "s1-gender",
+      "ans": "le",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T11:07:55.695Z",
+          "you": "le"
+        }
+      ]
+    },
+    "s3-plurals-m12": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "genoux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T11:08:41.273Z",
+          "you": "genoux"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-m4": {
+      "type": "mcq",
+      "section": "s4r3-fem-irreg",
+      "ans": "sportive",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T11:52:50.542Z",
+          "you": "sportive"
+        }
+      ]
+    },
+    "s2b-indefinite-w1": {
+      "type": "why",
+      "section": "s2b-indefinite",
+      "ans": "The grammatical gender of the noun — masculine nouns take \"un\", feminine nouns take \"une\".",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-12T11:53:05.074Z",
+          "you": "The grammatical gender of the noun — masculine nouns take \"un\", feminine nouns take \"une\"."
         }
       ]
     }
