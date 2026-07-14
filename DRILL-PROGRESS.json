@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-14T01:49:54.813Z",
+  "updated": "2026-07-14T01:51:34.438Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -16,20 +16,20 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:49:54.813Z",
-      "reviews": 8,
+      "lastReview": "2026-07-14T01:51:34.438Z",
+      "reviews": 9,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:23:55.239Z",
-      "reviews": 33,
+      "lastReview": "2026-07-14T01:51:26.195Z",
+      "reviews": 34,
       "scores": []
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:23:16.223Z",
-      "reviews": 9,
+      "lastReview": "2026-07-14T01:51:11.358Z",
+      "reviews": 10,
       "scores": []
     },
     "s4r2-fem-basic": {
@@ -40,8 +40,8 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:49:21.895Z",
-      "reviews": 20,
+      "lastReview": "2026-07-14T01:50:46.517Z",
+      "reviews": 22,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 141,
-    "correct": 97,
+    "questions": 146,
+    "correct": 101,
     "drills": 0,
     "streak": 4,
     "best": 4,
@@ -1278,6 +1278,11 @@
           "ok": false,
           "at": "2026-07-14T01:49:54.813Z",
           "you": "une"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-14T01:51:34.438Z",
+          "you": "un"
         }
       ]
     },
@@ -1475,6 +1480,54 @@
           "ok": true,
           "at": "2026-07-14T01:49:21.895Z",
           "you": "active"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-w1": {
+      "type": "why",
+      "section": "s4r3-fem-irreg",
+      "ans": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added — giving -euse.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:50:24.518Z",
+          "you": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added — giving -euse."
+        }
+      ]
+    },
+    "s4r3-fem-irreg-m5": {
+      "type": "mcq",
+      "section": "s4r3-fem-irreg",
+      "ans": "première",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-14T01:50:46.517Z",
+          "you": "premierè"
+        }
+      ]
+    },
+    "s4r1-position-m2": {
+      "type": "mcq",
+      "section": "s4r1-position",
+      "ans": "un livre intéressant",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:51:11.358Z",
+          "you": "un livre intéressant"
+        }
+      ]
+    },
+    "s3-plurals-m7": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "oiseaux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:51:26.195Z",
+          "you": "oiseaux"
         }
       ]
     }
