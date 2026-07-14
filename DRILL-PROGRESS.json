@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-14T01:55:46.644Z",
+  "updated": "2026-07-14T01:57:12.458Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:54:45.861Z",
-      "reviews": 38,
+      "lastReview": "2026-07-14T01:56:55.661Z",
+      "reviews": 39,
       "scores": []
     },
     "s2a-elision": {
@@ -16,14 +16,14 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:53:07.627Z",
-      "reviews": 10,
+      "lastReview": "2026-07-14T01:56:23.112Z",
+      "reviews": 12,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:54:00.385Z",
-      "reviews": 37,
+      "lastReview": "2026-07-14T01:56:32.034Z",
+      "reviews": 38,
       "scores": []
     },
     "s4r1-position": {
@@ -40,8 +40,8 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:55:29.909Z",
-      "reviews": 25,
+      "lastReview": "2026-07-14T01:57:12.458Z",
+      "reviews": 26,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 161,
-    "correct": 115,
+    "questions": 166,
+    "correct": 119,
     "drills": 0,
     "streak": 4,
     "best": 4,
@@ -1629,6 +1629,11 @@
           "ok": false,
           "at": "2026-07-14T01:54:00.385Z",
           "you": "troux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-14T01:56:32.034Z",
+          "you": "trous"
         }
       ]
     },
@@ -1701,6 +1706,54 @@
           "ok": true,
           "at": "2026-07-14T01:55:46.644Z",
           "you": "Because French adjectives must agree in gender with the noun they describe — adding -e marks the feminine form."
+        }
+      ]
+    },
+    "s2b-indefinite-m4": {
+      "type": "mcq",
+      "section": "s2b-indefinite",
+      "ans": "une",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:56:13.034Z",
+          "you": "une"
+        }
+      ]
+    },
+    "s2b-indefinite-m1": {
+      "type": "mcq",
+      "section": "s2b-indefinite",
+      "ans": "un",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:56:23.112Z",
+          "you": "un"
+        }
+      ]
+    },
+    "s1-gender-w4": {
+      "type": "why",
+      "section": "s1-gender",
+      "ans": "Musée comes from Greek (mouseion), and Greek-origin -ée words are masculine",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-14T01:56:55.661Z",
+          "you": "Musée is actually feminine — \"la musée\" is correct"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-m8": {
+      "type": "mcq",
+      "section": "s4r3-fem-irreg",
+      "ans": "italienne",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:57:12.458Z",
+          "you": "italienne"
         }
       ]
     }
