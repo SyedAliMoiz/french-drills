@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-14T01:52:50.198Z",
+  "updated": "2026-07-14T01:54:22.801Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -16,14 +16,14 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:51:34.438Z",
-      "reviews": 9,
+      "lastReview": "2026-07-14T01:53:07.627Z",
+      "reviews": 10,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:52:36.051Z",
-      "reviews": 35,
+      "lastReview": "2026-07-14T01:54:00.385Z",
+      "reviews": 37,
       "scores": []
     },
     "s4r1-position": {
@@ -46,8 +46,8 @@
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-13T00:15:49.853Z",
-      "reviews": 14,
+      "lastReview": "2026-07-14T01:54:22.801Z",
+      "reviews": 16,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 151,
-    "correct": 106,
+    "questions": 156,
+    "correct": 110,
     "drills": 0,
     "streak": 4,
     "best": 4,
@@ -1581,6 +1581,66 @@
           "ok": true,
           "at": "2026-07-14T01:52:36.051Z",
           "you": "There are exactly 7 special -ou words that take -x; all others follow the regular -s rule"
+        }
+      ]
+    },
+    "s2b-indefinite-m2": {
+      "type": "mcq",
+      "section": "s2b-indefinite",
+      "ans": "une",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:53:07.627Z",
+          "you": "une"
+        }
+      ]
+    },
+    "s3-plurals-w1": {
+      "type": "why",
+      "section": "s3-plurals",
+      "ans": "Because nouns ending in -al have their own plural pattern: -al changes to -aux.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:53:26.026Z",
+          "you": "Because nouns ending in -al have their own plural pattern: -al changes to -aux."
+        }
+      ]
+    },
+    "s4r4-plural-adj-m3": {
+      "type": "mcq",
+      "section": "s4r4-plural-adj",
+      "ans": "heureux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:53:48.748Z",
+          "you": "heureux"
+        }
+      ]
+    },
+    "s3-plurals-m11": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "trous",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-14T01:54:00.385Z",
+          "you": "troux"
+        }
+      ]
+    },
+    "s4r4-plural-adj-m4": {
+      "type": "mcq",
+      "section": "s4r4-plural-adj",
+      "ans": "français",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:54:22.801Z",
+          "you": "français"
         }
       ]
     }
