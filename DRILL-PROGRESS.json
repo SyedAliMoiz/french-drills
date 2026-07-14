@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-14T01:54:22.801Z",
+  "updated": "2026-07-14T01:55:46.644Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:48:51.837Z",
-      "reviews": 37,
+      "lastReview": "2026-07-14T01:54:45.861Z",
+      "reviews": 38,
       "scores": []
     },
     "s2a-elision": {
@@ -34,14 +34,14 @@
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:19:57.386Z",
-      "reviews": 9,
+      "lastReview": "2026-07-14T01:55:46.644Z",
+      "reviews": 11,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:52:50.198Z",
-      "reviews": 23,
+      "lastReview": "2026-07-14T01:55:29.909Z",
+      "reviews": 25,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 156,
-    "correct": 110,
+    "questions": 161,
+    "correct": 115,
     "drills": 0,
     "streak": 4,
     "best": 4,
@@ -1641,6 +1641,66 @@
           "ok": true,
           "at": "2026-07-14T01:54:22.801Z",
           "you": "français"
+        }
+      ]
+    },
+    "s4r2-fem-basic-m1": {
+      "type": "mcq",
+      "section": "s4r2-fem-basic",
+      "ans": "contente",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:54:31.750Z",
+          "you": "contente"
+        }
+      ]
+    },
+    "s1-gender-m7": {
+      "type": "mcq",
+      "section": "s1-gender",
+      "ans": "Masculine (le)",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:54:45.861Z",
+          "you": "Masculine (le)"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-w3": {
+      "type": "why",
+      "section": "s4r3-fem-irreg",
+      "ans": "Because doubling the n preserves the vowel sound — without the double n, \"bone\" would change the pronunciation of the \"o\".",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:55:05.865Z",
+          "you": "Because doubling the n preserves the vowel sound — without the double n, \"bone\" would change the pronunciation of the \"o\"."
+        }
+      ]
+    },
+    "s4r3-fem-irreg-m2": {
+      "type": "mcq",
+      "section": "s4r3-fem-irreg",
+      "ans": "sérieuse",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:55:29.909Z",
+          "you": "sérieuse"
+        }
+      ]
+    },
+    "s4r2-fem-basic-w1": {
+      "type": "why",
+      "section": "s4r2-fem-basic",
+      "ans": "Because French adjectives must agree in gender with the noun they describe — adding -e marks the feminine form.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:55:46.644Z",
+          "you": "Because French adjectives must agree in gender with the noun they describe — adding -e marks the feminine form."
         }
       ]
     }
