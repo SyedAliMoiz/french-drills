@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-14T01:51:34.438Z",
+  "updated": "2026-07-14T01:52:50.198Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -10,8 +10,8 @@
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:23:26.479Z",
-      "reviews": 11,
+      "lastReview": "2026-07-14T01:51:43.985Z",
+      "reviews": 12,
       "scores": []
     },
     "s2b-indefinite": {
@@ -22,14 +22,14 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:51:26.195Z",
-      "reviews": 34,
+      "lastReview": "2026-07-14T01:52:36.051Z",
+      "reviews": 35,
       "scores": []
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:51:11.358Z",
-      "reviews": 10,
+      "lastReview": "2026-07-14T01:52:10.377Z",
+      "reviews": 12,
       "scores": []
     },
     "s4r2-fem-basic": {
@@ -40,8 +40,8 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:50:46.517Z",
-      "reviews": 22,
+      "lastReview": "2026-07-14T01:52:50.198Z",
+      "reviews": 23,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 146,
-    "correct": 101,
+    "questions": 151,
+    "correct": 106,
     "drills": 0,
     "streak": 4,
     "best": 4,
@@ -1504,6 +1504,11 @@
           "ok": false,
           "at": "2026-07-14T01:50:46.517Z",
           "you": "premierè"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-14T01:52:50.198Z",
+          "you": "première"
         }
       ]
     },
@@ -1528,6 +1533,54 @@
           "ok": true,
           "at": "2026-07-14T01:51:26.195Z",
           "you": "oiseaux"
+        }
+      ]
+    },
+    "s2a-elision-m2": {
+      "type": "mcq",
+      "section": "s2a-elision",
+      "ans": "l'",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:51:43.985Z",
+          "you": "l'"
+        }
+      ]
+    },
+    "s4r1-position-m4": {
+      "type": "mcq",
+      "section": "s4r1-position",
+      "ans": "une femme française",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:51:53.100Z",
+          "you": "une femme française"
+        }
+      ]
+    },
+    "s4r1-position-w1": {
+      "type": "why",
+      "section": "s4r1-position",
+      "ans": "Because in French, most adjectives are placed AFTER the noun — the opposite of English word order.",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:52:10.377Z",
+          "you": "Because in French, most adjectives are placed AFTER the noun — the opposite of English word order."
+        }
+      ]
+    },
+    "s3-plurals-w4": {
+      "type": "why",
+      "section": "s3-plurals",
+      "ans": "There are exactly 7 special -ou words that take -x; all others follow the regular -s rule",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:52:36.051Z",
+          "you": "There are exactly 7 special -ou words that take -x; all others follow the regular -s rule"
         }
       ]
     }
