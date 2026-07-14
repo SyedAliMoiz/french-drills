@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-14T01:57:12.458Z",
+  "updated": "2026-07-14T08:31:26.112Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:56:55.661Z",
-      "reviews": 39,
+      "lastReview": "2026-07-14T01:58:09.403Z",
+      "reviews": 42,
       "scores": []
     },
     "s2a-elision": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:56:32.034Z",
-      "reviews": 38,
+      "lastReview": "2026-07-14T08:31:26.112Z",
+      "reviews": 40,
       "scores": []
     },
     "s4r1-position": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 166,
-    "correct": 119,
+    "questions": 171,
+    "correct": 121,
     "drills": 0,
     "streak": 4,
     "best": 4,
@@ -1754,6 +1754,66 @@
           "ok": true,
           "at": "2026-07-14T01:57:12.458Z",
           "you": "italienne"
+        }
+      ]
+    },
+    "s1-gender-m2": {
+      "type": "mcq",
+      "section": "s1-gender",
+      "ans": "la",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-14T01:57:22.821Z",
+          "you": "un"
+        }
+      ]
+    },
+    "s1-gender-m9": {
+      "type": "mcq",
+      "section": "s1-gender",
+      "ans": "Masculine (le)",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-14T01:57:38.157Z",
+          "you": "Feminine (la)"
+        }
+      ]
+    },
+    "s1-gender-w3": {
+      "type": "why",
+      "section": "s1-gender",
+      "ans": "Words borrowed from Greek (like -ème endings) are typically masculine regardless of the final -e",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:58:09.403Z",
+          "you": "Words borrowed from Greek (like -ème endings) are typically masculine regardless of the final -e"
+        }
+      ]
+    },
+    "s3-plurals-w3": {
+      "type": "why",
+      "section": "s3-plurals",
+      "ans": "Because the definite article must agree in number with the noun — singular le/la becomes plural les.",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-14T08:31:15.354Z",
+          "you": "Because le and la can only appear with singular verbs, so les is needed for plural sentences."
+        }
+      ]
+    },
+    "s3-plurals-m1": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "châteaux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T08:31:26.112Z",
+          "you": "châteaux"
         }
       ]
     }
