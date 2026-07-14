@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-13T00:23:26.479Z",
+  "updated": "2026-07-14T01:49:54.813Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:21:52.989Z",
-      "reviews": 36,
+      "lastReview": "2026-07-14T01:48:51.837Z",
+      "reviews": 37,
       "scores": []
     },
     "s2a-elision": {
@@ -16,14 +16,14 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:21:41.083Z",
-      "reviews": 7,
+      "lastReview": "2026-07-14T01:49:54.813Z",
+      "reviews": 8,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:22:55.463Z",
-      "reviews": 32,
+      "lastReview": "2026-07-13T00:23:55.239Z",
+      "reviews": 33,
       "scores": []
     },
     "s4r1-position": {
@@ -40,8 +40,8 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-13T00:22:46.735Z",
-      "reviews": 18,
+      "lastReview": "2026-07-14T01:49:21.895Z",
+      "reviews": 20,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,12 +71,12 @@
   },
   "history": [],
   "stats": {
-    "questions": 136,
-    "correct": 93,
+    "questions": 141,
+    "correct": 97,
     "drills": 0,
-    "streak": 3,
-    "best": 3,
-    "lastDate": "2026-07-13"
+    "streak": 4,
+    "best": 4,
+    "lastDate": "2026-07-14"
   },
   "achievements": [
     "first-lock",
@@ -1273,6 +1273,11 @@
           "ok": false,
           "at": "2026-07-13T00:21:41.083Z",
           "you": "une"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-14T01:49:54.813Z",
+          "you": "une"
         }
       ]
     },
@@ -1422,6 +1427,54 @@
           "ok": true,
           "at": "2026-07-13T00:23:26.479Z",
           "you": "l'"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-m7": {
+      "type": "mcq",
+      "section": "s4r3-fem-irreg",
+      "ans": "bonne",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:23:38.549Z",
+          "you": "bonne"
+        }
+      ]
+    },
+    "s3-plurals-m10": {
+      "type": "mcq",
+      "section": "s3-plurals",
+      "ans": "travaux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-13T00:23:55.239Z",
+          "you": "travaux"
+        }
+      ]
+    },
+    "s1-gender-w6": {
+      "type": "why",
+      "section": "s1-gender",
+      "ans": "Because the -age ending is a reliable masculine gender marker",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:48:51.837Z",
+          "you": "Because the -age ending is a reliable masculine gender marker"
+        }
+      ]
+    },
+    "s4r3-fem-irreg-m3": {
+      "type": "mcq",
+      "section": "s4r3-fem-irreg",
+      "ans": "active",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-14T01:49:21.895Z",
+          "you": "active"
         }
       ]
     }
