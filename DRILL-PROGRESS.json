@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-15T23:50:55.235Z",
+  "updated": "2026-07-15T23:52:01.766Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-15T23:50:55.235Z",
-      "reviews": 45,
+      "lastReview": "2026-07-15T23:52:01.766Z",
+      "reviews": 48,
       "scores": []
     },
     "s2a-elision": {
@@ -22,8 +22,8 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-14T08:31:26.112Z",
-      "reviews": 40,
+      "lastReview": "2026-07-15T23:51:09.342Z",
+      "reviews": 41,
       "scores": []
     },
     "s4r1-position": {
@@ -34,8 +34,8 @@
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:55:46.644Z",
-      "reviews": 11,
+      "lastReview": "2026-07-15T23:51:47.202Z",
+      "reviews": 12,
       "scores": []
     },
     "s4r3-fem-irreg": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 176,
-    "correct": 124,
+    "questions": 181,
+    "correct": 128,
     "drills": 0,
     "streak": 5,
     "best": 5,
@@ -1742,6 +1742,11 @@
           "ok": false,
           "at": "2026-07-14T01:56:55.661Z",
           "you": "Musée is actually feminine — \"la musée\" is correct"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-15T23:51:37.169Z",
+          "you": "Musée comes from Greek (mouseion), and Greek-origin -ée words are masculine"
         }
       ]
     },
@@ -1812,6 +1817,11 @@
           "ok": false,
           "at": "2026-07-14T08:31:15.354Z",
           "you": "Because le and la can only appear with singular verbs, so les is needed for plural sentences."
+        },
+        {
+          "ok": false,
+          "at": "2026-07-15T23:51:09.342Z",
+          "you": "Because le and la can only appear with singular verbs, so les is needed for plural sentences."
         }
       ]
     },
@@ -1860,6 +1870,35 @@
           "ok": false,
           "at": "2026-07-15T23:50:55.235Z",
           "you": "la"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-15T23:52:01.766Z",
+          "you": "le"
+        }
+      ]
+    },
+    "s4r2-fem-basic-m4": {
+      "type": "mcq",
+      "section": "s4r2-fem-basic",
+      "ans": "française",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-15T23:51:47.202Z",
+          "you": "française"
+        }
+      ]
+    },
+    "s1-gender-w1": {
+      "type": "why",
+      "section": "s1-gender",
+      "ans": "Because \"fleur\" is a feminine noun — noun gender is grammatical and must be memorized, and feminine nouns take \"la\".",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-15T23:51:55.081Z",
+          "you": "Because \"fleur\" is a feminine noun — noun gender is grammatical and must be memorized, and feminine nouns take \"la\"."
         }
       ]
     }
