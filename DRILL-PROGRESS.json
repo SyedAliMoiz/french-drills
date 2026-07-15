@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-15T23:53:49.086Z",
+  "updated": "2026-07-15T23:54:58.733Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -10,8 +10,8 @@
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-15T23:53:07.072Z",
-      "reviews": 13,
+      "lastReview": "2026-07-15T23:54:38.710Z",
+      "reviews": 14,
       "scores": []
     },
     "s2b-indefinite": {
@@ -34,20 +34,20 @@
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-15T23:51:47.202Z",
-      "reviews": 12,
+      "lastReview": "2026-07-15T23:54:13.453Z",
+      "reviews": 13,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-15T23:53:16.510Z",
-      "reviews": 27,
+      "lastReview": "2026-07-15T23:54:58.733Z",
+      "reviews": 29,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-15T23:53:49.086Z",
-      "reviews": 19,
+      "lastReview": "2026-07-15T23:54:32.205Z",
+      "reviews": 20,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 191,
-    "correct": 135,
+    "questions": 196,
+    "correct": 139,
     "drills": 0,
     "streak": 5,
     "best": 5,
@@ -123,6 +123,11 @@
           "ok": true,
           "at": "2026-07-06T20:45:26.297Z",
           "you": "une fille gentille"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-15T23:54:00.482Z",
+          "you": "une fille gentile"
         }
       ]
     },
@@ -376,6 +381,11 @@
           "ok": true,
           "at": "2026-07-06T23:03:22.811Z",
           "you": "une femme grande"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-15T23:54:13.453Z",
+          "you": "une femme grande"
         }
       ]
     },
@@ -415,6 +425,11 @@
           "ok": false,
           "at": "2026-07-15T23:53:07.072Z",
           "you": "la enfant"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-15T23:54:38.710Z",
+          "you": "l'enfant"
         }
       ]
     },
@@ -507,6 +522,11 @@
           "ok": true,
           "at": "2026-07-07T14:53:39.874Z",
           "you": "noirs"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-15T23:54:32.205Z",
+          "you": "noirs"
         }
       ]
     },
@@ -530,6 +550,11 @@
         {
           "ok": true,
           "at": "2026-07-07T14:56:05.560Z",
+          "you": "une etudiante attentive"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-15T23:54:58.733Z",
           "you": "une etudiante attentive"
         }
       ]
