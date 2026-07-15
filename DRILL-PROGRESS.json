@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-14T08:31:26.112Z",
+  "updated": "2026-07-15T23:50:55.235Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-14T01:58:09.403Z",
-      "reviews": 42,
+      "lastReview": "2026-07-15T23:50:55.235Z",
+      "reviews": 45,
       "scores": []
     },
     "s2a-elision": {
@@ -46,8 +46,8 @@
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-14T01:54:22.801Z",
-      "reviews": 16,
+      "lastReview": "2026-07-15T23:50:45.264Z",
+      "reviews": 18,
       "scores": []
     },
     "s4b-colors": {
@@ -71,12 +71,12 @@
   },
   "history": [],
   "stats": {
-    "questions": 171,
-    "correct": 121,
+    "questions": 176,
+    "correct": 124,
     "drills": 0,
-    "streak": 4,
-    "best": 4,
-    "lastDate": "2026-07-14"
+    "streak": 5,
+    "best": 5,
+    "lastDate": "2026-07-15"
   },
   "achievements": [
     "first-lock",
@@ -1766,6 +1766,11 @@
           "ok": false,
           "at": "2026-07-14T01:57:22.821Z",
           "you": "un"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-15T23:50:33.958Z",
+          "you": "la"
         }
       ]
     },
@@ -1777,6 +1782,11 @@
         {
           "ok": false,
           "at": "2026-07-14T01:57:38.157Z",
+          "you": "Feminine (la)"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-15T23:50:16.620Z",
           "you": "Feminine (la)"
         }
       ]
@@ -1814,6 +1824,42 @@
           "ok": true,
           "at": "2026-07-14T08:31:26.112Z",
           "you": "châteaux"
+        }
+      ]
+    },
+    "s4r4-plural-adj-m1": {
+      "type": "mcq",
+      "section": "s4r4-plural-adj",
+      "ans": "intelligents",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-15T23:50:09.370Z",
+          "you": "intelligents"
+        }
+      ]
+    },
+    "s4r4-plural-adj-m2": {
+      "type": "mcq",
+      "section": "s4r4-plural-adj",
+      "ans": "contentes",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-15T23:50:45.264Z",
+          "you": "contentes"
+        }
+      ]
+    },
+    "s1-gender-m1": {
+      "type": "mcq",
+      "section": "s1-gender",
+      "ans": "le",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-15T23:50:55.235Z",
+          "you": "la"
         }
       ]
     }
