@@ -1260,6 +1260,495 @@ const CHAPTER_1 = {
           tags: ['plural-adjective', 'mixed-group', 'why', 'gender-agreement']
         }
       ]
+    },
+
+    // =========================================================
+    // S4B: Color Adjectives
+    // =========================================================
+    {
+      id: 's4b-colors',
+      title: 'Color Adjectives',
+      rules: [
+        'Regular colors agree like normal adjectives: bleu→bleue, vert→verte, gris→grise (add -e for feminine, -s for plural).',
+        'Colors ending in silent -e (rouge, jaune, rose) are the same for masculine and feminine — just add -s for plural.',
+        'Irregular colors: blanc→blanche, violet→violette.',
+        'INVARIABLE colors: marron and orange NEVER change — no -e, no -s, nothing.',
+        'Color adjectives go AFTER the noun.'
+      ],
+      questions: [
+
+        // --- MCQ 1 ---
+        {
+          type: 'mcq',
+          stem: 'What is the feminine form of "bleu"?',
+          context: 'La voiture est ___.',
+          options: ['bleu', 'bleue', 'bleuse'],
+          correct: 1,
+          rule: 'Bleu follows the regular pattern: add -e for feminine → bleue. It does not use -euse or stay unchanged.',
+          tags: ['s4b-colors', 'regular-color', 'feminine']
+        },
+
+        // --- MCQ 2 ---
+        {
+          type: 'mcq',
+          stem: 'What is the feminine form of "blanc"?',
+          context: 'La robe est ___.',
+          options: ['blance', 'blanche', 'blanc'],
+          correct: 1,
+          rule: 'Blanc is irregular: the feminine form is "blanche" (not "blance"). This is a common trap — the -c changes to -che.',
+          tags: ['s4b-colors', 'irregular-color', 'feminine']
+        },
+
+        // --- MCQ 3 ---
+        {
+          type: 'mcq',
+          stem: 'Which form of "orange" is correct for "les chaussures ___ (orange)"?',
+          context: 'Les chaussures sont ___.',
+          options: ['oranges', 'oranger', 'orange'],
+          correct: 2,
+          rule: 'Orange is an INVARIABLE color — it NEVER changes. No -s for plural, no -e for feminine. Les chaussures orange.',
+          tags: ['s4b-colors', 'invariable-color', 'plural']
+        },
+
+        // --- MCQ 4 ---
+        {
+          type: 'mcq',
+          stem: 'What is the plural of "un stylo vert"?',
+          options: ['des stylos verts', 'des stylos vert', 'des stylos vertes'],
+          correct: 0,
+          rule: 'Vert is a regular color adjective. Masculine plural: add -s → verts. "Vertes" would be feminine plural.',
+          tags: ['s4b-colors', 'regular-color', 'plural']
+        },
+
+        // --- MCQ 5 ---
+        {
+          type: 'mcq',
+          stem: 'Which sentence is correct?',
+          options: [
+            'Les chaussettes marrons sont jolies.',
+            'Les chaussettes marron sont jolies.',
+            'Les chaussettes marronne sont jolies.'
+          ],
+          correct: 1,
+          rule: 'Marron is INVARIABLE — it never takes -s, -e, or -es. No matter the gender or number: marron stays marron.',
+          tags: ['s4b-colors', 'invariable-color', 'plural']
+        },
+
+        // --- BLANK 1 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct form of the color adjective.',
+          context: 'La porte est ___ (vert).',
+          correct: 'verte',
+          rule: 'Vert is regular: feminine form adds -e → verte. Porte is feminine, so the adjective must agree.',
+          tags: ['s4b-colors', 'regular-color', 'feminine']
+        },
+
+        // --- BLANK 2 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct form of the color adjective.',
+          context: 'Les murs sont ___ (gris).',
+          correct: 'gris',
+          rule: 'Gris already ends in -s. Masculine plural of gris stays gris — words ending in -s don\'t add another -s.',
+          tags: ['s4b-colors', 'regular-color', 'plural']
+        },
+
+        // --- BLANK 3 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct form of the color adjective.',
+          context: 'Les fleurs sont ___ (violet).',
+          correct: 'violettes',
+          rule: 'Violet is irregular: feminine is violette (double -t + -e). Fleur is feminine, and les fleurs is plural → violettes.',
+          tags: ['s4b-colors', 'irregular-color', 'feminine', 'plural']
+        },
+
+        // --- BLANK 4 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct form of the color adjective.',
+          context: 'La maison ___ (jaune) est grande.',
+          correct: 'jaune',
+          rule: 'Jaune ends in silent -e, so it\'s the same for masculine and feminine. Singular feminine: jaune (no change). Color adjective goes after the noun.',
+          tags: ['s4b-colors', 'silent-e-color', 'feminine']
+        },
+
+        // --- OPEN 1 ---
+        {
+          type: 'open',
+          stem: 'Translate into French: "The gray cat (f.)"',
+          hints: 'chat/chatte = cat, gris(e) = gray. Remember gender agreement and adjective position.',
+          correct: 'la chatte grise',
+          alternates: ['La chatte grise'],
+          rule: 'Feminine of chat is chatte. Gris → grise (add -e for feminine). Color adjective goes after the noun: la chatte grise.',
+          tags: ['s4b-colors', 'regular-color', 'feminine', 'translation']
+        },
+
+        // --- OPEN 2 ---
+        {
+          type: 'open',
+          stem: 'Translate into French: "The white houses"',
+          hints: 'maison (f.) = house, blanc/blanche = white. Apply gender + plural agreement.',
+          correct: 'les maisons blanches',
+          alternates: ['Les maisons blanches'],
+          rule: 'Maison is feminine: blanc → blanche. Plural: blanche → blanches. Les maisons blanches.',
+          tags: ['s4b-colors', 'irregular-color', 'feminine', 'plural', 'translation']
+        },
+
+        // --- OPEN 3 ---
+        {
+          type: 'open',
+          stem: 'Translate into French: "The red roses"',
+          hints: 'rose (f.) = rose (the flower), rouge = red. Both the noun and color end in -e.',
+          correct: 'les roses rouges',
+          alternates: ['Les roses rouges'],
+          rule: 'Rouge ends in silent -e: same for masculine and feminine. Plural: add -s → rouges. Les roses rouges.',
+          tags: ['s4b-colors', 'silent-e-color', 'plural', 'translation']
+        },
+
+        // --- WHY 1 ---
+        {
+          type: 'why',
+          stem: 'Why does "marron" stay "marron" in "les yeux marron" (brown eyes)?',
+          options: [
+            'Because "marron" is an invariable color — it comes from a noun (the chestnut) and NEVER changes for gender or number.',
+            'Because "yeux" is an irregular noun, so its adjectives don\'t agree.',
+            'Because "marron" already ends in -on, which is a natural plural ending.'
+          ],
+          correct: 0,
+          rule: 'Marron comes from the noun "marron" (chestnut). Colors derived from nouns (marron, orange) are invariable — they never take -e, -s, or -es. This is different from regular color adjectives like bleu or vert.',
+          tags: ['s4b-colors', 'invariable-color', 'why']
+        },
+
+        // --- WHY 2 ---
+        {
+          type: 'why',
+          stem: 'Why is the feminine of "blanc" written "blanche" and not "blance"?',
+          options: [
+            'Because "blanc" is completely irregular and the feminine must be memorized.',
+            'Because adjectives ending in -c form their feminine by changing -c to -che (blanc→blanche, sec→sèche, franc→franche).',
+            'Because all color adjectives double their final consonant before adding -e.'
+          ],
+          correct: 1,
+          rule: 'The -c → -che pattern is a specific French rule. Blanc→blanche, sec→sèche, franc→franche. It\'s not random — it follows a consonant-shift pattern. Not all colors double their consonant; this is specific to -c endings.',
+          tags: ['s4b-colors', 'irregular-color', 'why']
+        }
+      ]
+    },
+
+    // =========================================================
+    // S4C: Adjectives That Precede the Noun
+    // =========================================================
+    {
+      id: 's4c-precede',
+      title: 'Adjectives That Precede the Noun',
+      rules: [
+        'These adjectives go BEFORE the noun: autre, beau, bon, grand, gros, jeune, joli, mauvais, nouveau, petit, vieux, même.',
+        'beau/bel/belle: beau before consonant, bel before vowel/mute-h, belle for feminine.',
+        'nouveau/nouvel/nouvelle: same pattern as beau.',
+        'vieux/vieil/vieille: same pattern as beau.',
+        'des → de before a preceding adjective (formal French): "de belles maisons" not "des belles maisons".',
+        'Some adjectives change meaning based on position: ancien before = former, after = very old; cher before = dear, after = expensive; pauvre before = unfortunate, after = not rich.'
+      ],
+      questions: [
+
+        // --- MCQ 1 ---
+        {
+          type: 'mcq',
+          stem: 'Choose the correct form: "un ___ homme" (an old man).',
+          options: ['vieil', 'vieux', 'vieille'],
+          correct: 0,
+          rule: '"Homme" starts with a vowel sound (the h is mute). Before a vowel or mute-h, use "vieil" (not "vieux"). "Vieille" is feminine and wrong here because homme is masculine.',
+          tags: ['s4c-precede', 'vieux-vieil-vieille', 'pre-vowel']
+        },
+
+        // --- MCQ 2 ---
+        {
+          type: 'mcq',
+          stem: 'Choose the correct form: "un ___ appartement" (a beautiful apartment).',
+          options: ['beau', 'bel', 'belle'],
+          correct: 1,
+          rule: '"Appartement" starts with a vowel. Before a vowel or mute-h, use "bel" (not "beau"). "Belle" is feminine. The pattern: beau (consonant) / bel (vowel) / belle (feminine).',
+          tags: ['s4c-precede', 'beau-bel-belle', 'pre-vowel']
+        },
+
+        // --- MCQ 3 ---
+        {
+          type: 'mcq',
+          stem: 'What does "un ancien professeur" mean?',
+          options: [
+            'A very old professor',
+            'A former professor',
+            'An ancient professor'
+          ],
+          correct: 1,
+          rule: 'Position changes meaning: "ancien" BEFORE the noun = former. "Ancien" AFTER the noun = very old/ancient. "Un ancien professeur" = a former professor. "Un professeur ancien" = a very old professor.',
+          tags: ['s4c-precede', 'position-meaning', 'ancien']
+        },
+
+        // --- MCQ 4 ---
+        {
+          type: 'mcq',
+          stem: 'Which is correct? "She has beautiful dresses."',
+          options: [
+            'Elle a des belles robes.',
+            'Elle a de belles robes.',
+            'Elle a de belle robes.'
+          ],
+          correct: 1,
+          rule: 'In formal French, "des" becomes "de" before a preceding adjective: de belles robes (not "des belles robes"). The adjective must still agree in gender/number: belles (fem pl).',
+          tags: ['s4c-precede', 'des-de', 'formal']
+        },
+
+        // --- MCQ 5 ---
+        {
+          type: 'mcq',
+          stem: 'Choose the correct form: "un ___ garçon" (a new boy).',
+          options: ['nouvel', 'nouveau', 'nouvelle'],
+          correct: 1,
+          rule: '"Garçon" starts with a consonant, so use "nouveau" (not "nouvel"). "Nouvel" is only for masculine nouns starting with a vowel or mute-h. "Nouvelle" is feminine.',
+          tags: ['s4c-precede', 'nouveau-nouvel-nouvelle', 'pre-consonant']
+        },
+
+        // --- MCQ 6 ---
+        {
+          type: 'mcq',
+          stem: 'What does "une femme pauvre" mean vs "une pauvre femme"?',
+          options: [
+            '"Une femme pauvre" = unfortunate woman; "une pauvre femme" = not rich woman',
+            'They mean the same thing — position doesn\'t matter for "pauvre"',
+            '"Une femme pauvre" = not rich woman; "une pauvre femme" = unfortunate woman'
+          ],
+          correct: 2,
+          rule: 'Position changes meaning: "pauvre" AFTER the noun = not rich (literally poor). "Pauvre" BEFORE the noun = unfortunate/pitiful. "Une femme pauvre" = a woman without money. "Une pauvre femme" = a poor (unfortunate) woman.',
+          tags: ['s4c-precede', 'position-meaning', 'pauvre']
+        },
+
+        // --- BLANK 1 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct form of "beau" before the noun.',
+          context: 'C\'est un ___ hôtel.',
+          correct: 'bel',
+          rule: '"Hôtel" starts with a mute-h (vowel sound). Before a vowel or mute-h: beau → bel. The pattern is the same as nouveau→nouvel and vieux→vieil.',
+          tags: ['s4c-precede', 'beau-bel-belle', 'pre-vowel']
+        },
+
+        // --- BLANK 2 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct form of "nouveau" before the noun.',
+          context: 'J\'ai un ___ ami.',
+          correct: 'nouvel',
+          rule: '"Ami" starts with a vowel. Before a vowel or mute-h: nouveau → nouvel. Same pattern as beau→bel and vieux→vieil.',
+          tags: ['s4c-precede', 'nouveau-nouvel-nouvelle', 'pre-vowel']
+        },
+
+        // --- BLANK 3 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct form of "vieux" before the noun.',
+          context: 'C\'est un ___ château.',
+          correct: 'vieux',
+          rule: '"Château" starts with a consonant (ch-). Before a consonant, use "vieux" (not "vieil"). Vieil is only for masculine nouns starting with a vowel or mute-h.',
+          tags: ['s4c-precede', 'vieux-vieil-vieille', 'pre-consonant']
+        },
+
+        // --- BLANK 4 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the blank with "joli" in the correct position and form.',
+          context: 'Elle a une ___ robe.',
+          correct: 'jolie',
+          rule: 'Joli is one of the adjectives that goes BEFORE the noun. Robe is feminine, so joli → jolie (add -e). Une jolie robe.',
+          tags: ['s4c-precede', 'feminine-agreement', 'position']
+        },
+
+        // --- OPEN 1 ---
+        {
+          type: 'open',
+          stem: 'Translate into French: "a beautiful old tree"',
+          hints: 'arbre (m.) = tree. Use beau/bel and vieux/vieil. Arbre starts with a vowel.',
+          correct: 'un bel arbre vieux',
+          alternates: ['un bel vieil arbre', 'un bel vieux arbre'],
+          rule: 'Arbre starts with a vowel → use "bel" (not "beau"). Both beau and vieux are BANGS adjectives that go before the noun. "Un bel vieil arbre" or "un bel arbre vieux" — either works, though stacking two before the noun is more natural.',
+          tags: ['s4c-precede', 'beau-bel-belle', 'vieux-vieil-vieille', 'translation']
+        },
+
+        // --- OPEN 2 ---
+        {
+          type: 'open',
+          stem: 'Translate into French: "some beautiful houses"',
+          hints: 'maison (f.) = house. Remember the des → de rule before a preceding adjective.',
+          correct: 'de belles maisons',
+          alternates: ['De belles maisons', 'des belles maisons'],
+          rule: 'Formal French: des → de before a preceding adjective. Beau → belle (fem) → belles (fem pl). De belles maisons. "Des belles maisons" is accepted in spoken French.',
+          tags: ['s4c-precede', 'des-de', 'beau-bel-belle', 'translation']
+        },
+
+        // --- OPEN 3 ---
+        {
+          type: 'open',
+          stem: 'Translate into French: "a new old school" (meaning: a school that used to be something else, and the building is ancient)',
+          hints: 'école (f.) = school. "New" = nouveau (what it became). "Old" = ancien after noun (ancient building). école starts with a vowel.',
+          correct: 'une nouvelle ancienne école',
+          alternates: ['une nouvelle école ancienne'],
+          rule: 'Nouveau → nouvelle (feminine, école is f.). "Nouvelle" goes before (BANGS). "Ancienne" after the noun means "ancient/very old." But "ancienne" before means "former." Position matters! "Une nouvelle école ancienne" = a new school that is an old building.',
+          tags: ['s4c-precede', 'position-meaning', 'ancien', 'translation']
+        },
+
+        // --- WHY 1 ---
+        {
+          type: 'why',
+          stem: 'Why do we say "un bel homme" and not "un beau homme"?',
+          options: [
+            'Because "homme" is a special noun that always requires "bel" regardless of its starting sound.',
+            'Because "beau" changes to "bel" before a masculine noun starting with a vowel or mute-h, to avoid two vowel sounds clashing.',
+            'Because "bel" is the formal version of "beau" and is always preferred in writing.'
+          ],
+          correct: 1,
+          rule: 'French avoids the awkward sound of two vowels colliding ("beau homme" → "bo om"). The special form "bel" creates a smooth liaison. Same pattern: nouveau→nouvel, vieux→vieil. This ONLY applies to masculine — feminine "belle" is used regardless.',
+          tags: ['s4c-precede', 'beau-bel-belle', 'why', 'pre-vowel']
+        },
+
+        // --- WHY 2 ---
+        {
+          type: 'why',
+          stem: 'Why does "cher" mean "dear" in "mon cher ami" but "expensive" in "un restaurant cher"?',
+          options: [
+            'Because "cher" is actually two different words that happen to be spelled the same.',
+            'Because certain French adjectives change meaning depending on whether they are placed before or after the noun.',
+            'Because "cher" before a person is always emotional, and before a thing is always about price.'
+          ],
+          correct: 1,
+          rule: 'Several French adjectives shift meaning with position: cher (before = dear/beloved, after = expensive), ancien (before = former, after = ancient), pauvre (before = unfortunate, after = not rich), propre (before = own, after = clean). It\'s a single word — position determines meaning.',
+          tags: ['s4c-precede', 'position-meaning', 'cher', 'why']
+        }
+      ]
+    },
+
+    // =========================================================
+    // S5: Key Vocabulary — Common Adjectives
+    // =========================================================
+    {
+      id: 's5-vocab',
+      title: 'Key Vocabulary — Common Adjectives',
+      rules: [
+        'Know the meaning and gender agreement of common French adjectives.',
+        'Adjectives ending in -eux form feminine with -euse: heureux→heureuse.',
+        'Adjectives ending in -if form feminine with -ive: actif→active, sportif→sportive.',
+        'Adjectives ending in silent -e are the same for masculine and feminine: timide, sincère, sympathique.'
+      ],
+      questions: [
+
+        // --- MCQ 1 ---
+        {
+          type: 'mcq',
+          stem: 'What does "sympathique" mean?',
+          options: ['Sympathetic', 'Nice/Friendly', 'Pathetic'],
+          correct: 1,
+          rule: '"Sympathique" is a false friend — it means "nice" or "friendly" in French, NOT "sympathetic." Often shortened to "sympa" in spoken French.',
+          tags: ['s5-vocab', 'meaning', 'false-friend']
+        },
+
+        // --- MCQ 2 ---
+        {
+          type: 'mcq',
+          stem: 'What is the feminine form of "heureux" (happy)?',
+          context: 'Elle est ___.',
+          options: ['heureuse', 'heureuxe', 'heureux'],
+          correct: 0,
+          rule: 'Adjectives ending in -eux form their feminine with -euse: heureux → heureuse. Never just add -e to -eux.',
+          tags: ['s5-vocab', 'eux-euse', 'feminine']
+        },
+
+        // --- MCQ 3 ---
+        {
+          type: 'mcq',
+          stem: 'What does "formidable" mean in French?',
+          options: ['Scary/Formidable', 'Fabulous/Terrific', 'Formal'],
+          correct: 1,
+          rule: '"Formidable" in French means "fabulous, terrific, great" — it\'s positive! In English, "formidable" means intimidating or daunting. Another false friend.',
+          tags: ['s5-vocab', 'meaning', 'false-friend']
+        },
+
+        // --- MCQ 4 ---
+        {
+          type: 'mcq',
+          stem: 'Which adjective means "stingy"?',
+          options: ['avare', 'agreable', 'content'],
+          correct: 0,
+          rule: '"Avare" means stingy/miserly. "Agréable" means pleasant. "Content(e)" means happy/satisfied. Avare ends in -e, so it\'s the same for masculine and feminine.',
+          tags: ['s5-vocab', 'meaning']
+        },
+
+        // --- BLANK 1 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct adjective meaning "tired."',
+          context: 'Je suis très ___ (tired, feminine speaker).',
+          correct: 'fatiguée',
+          rule: 'Fatigué(e) = tired. Feminine form: fatiguée (add -e). The speaker is feminine, so use the feminine agreement.',
+          tags: ['s5-vocab', 'meaning', 'feminine']
+        },
+
+        // --- BLANK 2 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the French adjective meaning "ugly."',
+          context: 'Le bâtiment est ___.',
+          correct: 'laid',
+          rule: 'Laid(e) = ugly. Bâtiment is masculine, so use the masculine form: laid. Feminine would be "laide."',
+          tags: ['s5-vocab', 'meaning', 'masculine']
+        },
+
+        // --- BLANK 3 ---
+        {
+          type: 'blank',
+          stem: 'Fill in the correct form of "premier" (first).',
+          context: 'C\'est la ___ fois (the first time, f.).',
+          correct: 'première',
+          rule: 'Premier (first) has an irregular feminine: premier → première (-er → -ère). "Fois" is feminine, so use première.',
+          tags: ['s5-vocab', 'premier-premiere', 'feminine']
+        },
+
+        // --- OPEN 1 ---
+        {
+          type: 'open',
+          stem: 'Translate into French: "The shy girl is sad."',
+          hints: 'fille = girl, timide = shy, triste = sad. Both adjectives end in -e.',
+          correct: 'La fille timide est triste.',
+          alternates: ['la fille timide est triste'],
+          rule: 'Timide and triste both end in silent -e, so they don\'t change for feminine. They go after the noun (they\'re not BANGS adjectives). La fille timide est triste.',
+          tags: ['s5-vocab', 'silent-e', 'translation']
+        },
+
+        // --- OPEN 2 ---
+        {
+          type: 'open',
+          stem: 'Translate into French: "The strong, intelligent woman"',
+          hints: 'femme = woman, fort(e) = strong, intelligent(e) = intelligent.',
+          correct: 'la femme forte et intelligente',
+          alternates: ['La femme forte et intelligente', 'la femme forte, intelligente'],
+          rule: 'Both adjectives go after the noun (not BANGS). Feminine agreement: fort → forte, intelligent → intelligente. Use "et" (and) to connect them.',
+          tags: ['s5-vocab', 'feminine', 'translation']
+        },
+
+        // --- WHY 1 ---
+        {
+          type: 'why',
+          stem: 'Why does "timide" stay "timide" for both masculine and feminine?',
+          options: [
+            'Because "timide" is an invariable adjective that never agrees with the noun.',
+            'Because adjectives already ending in -e don\'t add another -e for the feminine — they\'re already compatible.',
+            'Because "timide" is borrowed from English and doesn\'t follow French rules.'
+          ],
+          correct: 1,
+          rule: 'The -e ending is the feminine marker in French. If an adjective already ends in -e (timide, sincère, sympathique, triste, mince, riche, drôle, facile, difficile), it doesn\'t need another one. It still changes for plural though: timide → timides.',
+          tags: ['s5-vocab', 'silent-e', 'why']
+        }
+      ]
     }
   ]
 };

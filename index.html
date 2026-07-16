@@ -295,7 +295,7 @@ const QUESTIONS = (function() {
     }
   }
   if (typeof ADDITIONAL_QUESTIONS !== 'undefined') {
-    const TAG_TO_SECTION = { 's1-gender':'s1-gender', 's3-plurals':'s3-plurals', 'compound':'compound', 'reduced-hint':'compound' };
+    const TAG_TO_SECTION = { 's1-gender':'s1-gender', 's3-plurals':'s3-plurals', 'compound':'compound', 'reduced-hint':'compound', 's4b-colors':'s4b-colors', 's4c-precede':'s4c-precede', 's5-vocab':'s5-vocab' };
     for (const q of ADDITIONAL_QUESTIONS) {
       const sid = (q.tags || []).reduce((found, t) => found || TAG_TO_SECTION[t], null) || 'compound';
       addQ(sid, q);
@@ -404,15 +404,40 @@ function defaultProgress() {
       's4r3-fem-irreg': { status:'locked', lastReview:null, reviews:0, scores:[] },
       's4r4-plural-adj':{ status:'learning', lastReview:null, reviews:0, scores:[] },
       'compound':       { status:'learning', lastReview:null, reviews:0, scores:[] },
-      's4b-colors':     { status:'not-started', lastReview:null, reviews:0, scores:[] },
-      's4c-precede':    { status:'not-started', lastReview:null, reviews:0, scores:[] },
-      's5-vocab':       { status:'not-started', lastReview:null, reviews:0, scores:[] },
+      's4b-colors':     { status:'learning', lastReview:null, reviews:0, scores:[] },
+      's4c-precede':    { status:'learning', lastReview:null, reviews:0, scores:[] },
+      's5-vocab':       { status:'learning', lastReview:null, reviews:0, scores:[] },
     },
     history: [],
     stats: { questions:0, correct:0, drills:0, streak:0, best:0, lastDate:null },
     achievements: ['first-lock','clean-sweep','pattern-cracker','comeback','system-builder','mixed-master'],
     answered: {}
   };
+}
+
+function migrateProgress(prog) {
+  const defaults = defaultProgress();
+  for (const [id, sec] of Object.entries(defaults.sections)) {
+    if (!prog.sections[id]) {
+      prog.sections[id] = sec;
+    }
+  }
+  return prog;
+}
+
+function masteryPct() {
+  const total = QUESTIONS.filter(q => {
+    const sec = S.progress.sections[q.section];
+    return sec && (sec.status === 'locked' || sec.status === 'learning');
+  }).length;
+  if (!total) return 0;
+  const a = S.progress.answered || {};
+  let correct = 0;
+  for (const q of QUESTIONS) {
+    const rec = a[q.id];
+    if (rec && rec.attempts && rec.attempts.length > 0 && rec.attempts[rec.attempts.length - 1].ok) correct++;
+  }
+  return Math.round((correct / total) * 100);
 }
 
 
@@ -636,7 +661,7 @@ async function doLogin() {
     if ($('remember').checked) localStorage.setItem('fd_token', pat);
 
     const progRaw = await gh.get('DRILL-PROGRESS.json');
-    const prog = progRaw ? JSON.parse(progRaw) : defaultProgress();
+    const prog = progRaw ? migrateProgress(JSON.parse(progRaw)) : defaultProgress();
 
     S.gh = gh;
     S.progress = prog;
@@ -711,7 +736,7 @@ function startAutoMode() {
 function renderDrill() {
   if (S.qi >= S.queue.length) { S.screen = 'done'; render(); return; }
   const q = S.queue[S.qi];
-  const pct = (S.qi / S.queue.length) * 100;
+  const pct = masteryPct();
   const acc = sessionAccuracy().pct;
 
   let qHTML = '';
@@ -727,6 +752,7 @@ function renderDrill() {
           <span class="dp-count">${acc}</span>
         </div>
         <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+        <div style="text-align:center;margin-top:.25rem"><span class="dp-count">${pct}% mastered</span></div>
       </div>
       <div class="dp-body">
         ${qHTML}
@@ -1018,10 +1044,10 @@ async function init() {
       const gh = new GH(storedToken);
       const raw = await gh.get('DRILL-PROGRESS.json');
       S.gh = gh;
-      S.progress = raw ? JSON.parse(raw) : defaultProgress();
+      S.progress = raw ? migrateProgress(JSON.parse(raw)) : defaultProgress();
       const local = localStorage.getItem('fd_progress');
       if (local) {
-        const lp = JSON.parse(local);
+        const lp = migrateProgress(JSON.parse(local));
         if (lp.updated && (!S.progress.updated || lp.updated > S.progress.updated)) S.progress = lp;
       }
       startAutoMode();
