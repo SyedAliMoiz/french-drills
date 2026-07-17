@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-17T04:46:36.230Z",
+  "updated": "2026-07-17T04:48:09.894Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:46:36.230Z",
-      "reviews": 83,
+      "lastReview": "2026-07-17T04:47:18.538Z",
+      "reviews": 84,
       "scores": []
     },
     "s2a-elision": {
@@ -16,14 +16,14 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:45:37.142Z",
-      "reviews": 19,
+      "lastReview": "2026-07-17T04:47:54.886Z",
+      "reviews": 20,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:50:53.634Z",
-      "reviews": 63,
+      "lastReview": "2026-07-17T04:48:09.894Z",
+      "reviews": 65,
       "scores": []
     },
     "s4r1-position": {
@@ -40,8 +40,8 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:45:51.068Z",
-      "reviews": 38,
+      "lastReview": "2026-07-17T04:47:30.711Z",
+      "reviews": 39,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 291,
-    "correct": 206,
+    "questions": 296,
+    "correct": 210,
     "drills": 0,
     "streak": 1,
     "best": 5,
@@ -1555,6 +1555,11 @@
           "ok": true,
           "at": "2026-07-12T10:43:29.839Z",
           "you": "animaux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:48:09.894Z",
+          "you": "animaux"
         }
       ]
     },
@@ -1612,6 +1617,11 @@
         {
           "ok": true,
           "at": "2026-07-13T00:16:11.537Z",
+          "you": "le"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:47:18.538Z",
           "you": "le"
         }
       ]
@@ -1782,6 +1792,11 @@
         {
           "ok": false,
           "at": "2026-07-17T01:50:45.807Z",
+          "you": "la"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-17T04:47:54.886Z",
           "you": "la"
         }
       ]
@@ -2164,6 +2179,11 @@
           "ok": false,
           "at": "2026-07-17T01:50:53.634Z",
           "you": "troux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:48:03.486Z",
+          "you": "trous"
         }
       ]
     },
@@ -2216,6 +2236,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:55:05.865Z",
+          "you": "Because doubling the n preserves the vowel sound — without the double n, \"bone\" would change the pronunciation of the \"o\"."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:47:30.711Z",
           "you": "Because doubling the n preserves the vowel sound — without the double n, \"bone\" would change the pronunciation of the \"o\"."
         }
       ]
