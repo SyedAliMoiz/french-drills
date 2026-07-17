@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-17T01:50:06.475Z",
+  "updated": "2026-07-17T01:50:53.634Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:49:18.900Z",
-      "reviews": 80,
+      "lastReview": "2026-07-17T01:50:24.449Z",
+      "reviews": 81,
       "scores": []
     },
     "s2a-elision": {
@@ -16,20 +16,20 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:28:54.641Z",
-      "reviews": 17,
+      "lastReview": "2026-07-17T01:50:45.807Z",
+      "reviews": 18,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:49:38.041Z",
-      "reviews": 61,
+      "lastReview": "2026-07-17T01:50:53.634Z",
+      "reviews": 63,
       "scores": []
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:47:27.542Z",
-      "reviews": 17,
+      "lastReview": "2026-07-17T01:50:20.808Z",
+      "reviews": 18,
       "scores": []
     },
     "s4r2-fem-basic": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 281,
-    "correct": 199,
+    "questions": 286,
+    "correct": 201,
     "drills": 0,
     "streak": 1,
     "best": 5,
@@ -1150,6 +1150,11 @@
           "ok": false,
           "at": "2026-07-17T01:48:26.235Z",
           "you": "la"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-17T01:50:24.449Z",
+          "you": "le main"
         }
       ]
     },
@@ -1758,6 +1763,11 @@
           "ok": true,
           "at": "2026-07-14T01:51:34.438Z",
           "you": "un"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-17T01:50:45.807Z",
+          "you": "la"
         }
       ]
     },
@@ -2054,6 +2064,11 @@
           "ok": true,
           "at": "2026-07-14T01:52:10.377Z",
           "you": "Because in French, most adjectives are placed AFTER the noun — the opposite of English word order."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T01:50:20.808Z",
+          "you": "Because in French, most adjectives are placed AFTER the noun — the opposite of English word order."
         }
       ]
     },
@@ -2065,6 +2080,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:52:36.051Z",
+          "you": "There are exactly 7 special -ou words that take -x; all others follow the regular -s rule"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T01:50:35.420Z",
           "you": "There are exactly 7 special -ou words that take -x; all others follow the regular -s rule"
         }
       ]
@@ -2119,6 +2139,11 @@
           "ok": true,
           "at": "2026-07-14T01:56:32.034Z",
           "you": "trous"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-17T01:50:53.634Z",
+          "you": "troux"
         }
       ]
     },
