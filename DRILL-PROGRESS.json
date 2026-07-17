@@ -1,29 +1,29 @@
 {
   "v": 1,
-  "updated": "2026-07-17T05:08:30.713Z",
+  "updated": "2026-07-17T05:09:03.672Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:51:09.288Z",
-      "reviews": 88,
+      "lastReview": "2026-07-17T05:08:59.704Z",
+      "reviews": 90,
       "scores": []
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-17T05:07:27.457Z",
-      "reviews": 25,
+      "lastReview": "2026-07-17T05:09:03.672Z",
+      "reviews": 26,
       "scores": []
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:49:37.312Z",
-      "reviews": 22,
+      "lastReview": "2026-07-17T05:08:54.759Z",
+      "reviews": 23,
       "scores": []
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-17T05:07:18.613Z",
-      "reviews": 74,
+      "lastReview": "2026-07-17T05:08:49.446Z",
+      "reviews": 75,
       "scores": []
     },
     "s4r1-position": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 331,
-    "correct": 244,
+    "questions": 336,
+    "correct": 249,
     "drills": 0,
     "streak": 1,
     "best": 5,
@@ -1921,6 +1921,11 @@
           "ok": true,
           "at": "2026-07-13T00:19:31.670Z",
           "you": "Feminine (la)"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:08:41.062Z",
+          "you": "Feminine (la)"
         }
       ]
     },
@@ -1944,6 +1949,11 @@
         {
           "ok": true,
           "at": "2026-07-13T00:20:40.606Z",
+          "you": "Because nouns already ending in -s, -x, or -z don't add anything — they already \"look\" plural."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:08:49.446Z",
           "you": "Because nouns already ending in -s, -x, or -z don't add anything — they already \"look\" plural."
         }
       ]
@@ -1996,6 +2006,11 @@
           "ok": true,
           "at": "2026-07-13T00:21:52.989Z",
           "you": "\"Table\" is feminine, so it needs \"la\" — the article must match the noun's gender, which is masculine (le) or feminine (la)."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:08:59.704Z",
+          "you": "\"Table\" is feminine, so it needs \"la\" — the article must match the noun's gender, which is masculine (le) or feminine (la)."
         }
       ]
     },
@@ -2041,6 +2056,11 @@
         {
           "ok": true,
           "at": "2026-07-13T00:23:26.479Z",
+          "you": "l'"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:09:03.672Z",
           "you": "l'"
         }
       ]
@@ -2262,6 +2282,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:53:07.627Z",
+          "you": "une"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:08:54.759Z",
           "you": "une"
         }
       ]
