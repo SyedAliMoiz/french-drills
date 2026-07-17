@@ -420,6 +420,8 @@ function migrateProgress(prog) {
   for (const [id, sec] of Object.entries(defaults.sections)) {
     if (!prog.sections[id]) {
       prog.sections[id] = sec;
+    } else if (prog.sections[id].status === 'not-started' && sec.status === 'learning') {
+      prog.sections[id].status = 'learning';
     }
   }
   return prog;
