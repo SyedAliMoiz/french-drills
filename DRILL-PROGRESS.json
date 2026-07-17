@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-17T05:07:27.457Z",
+  "updated": "2026-07-17T05:08:30.713Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -28,8 +28,8 @@
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-17T05:07:08.974Z",
-      "reviews": 22,
+      "lastReview": "2026-07-17T05:08:01.973Z",
+      "reviews": 23,
       "scores": []
     },
     "s4r2-fem-basic": {
@@ -40,14 +40,14 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-17T05:02:37.212Z",
-      "reviews": 44,
+      "lastReview": "2026-07-17T05:08:10.476Z",
+      "reviews": 47,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-17T04:50:00.287Z",
-      "reviews": 31,
+      "lastReview": "2026-07-17T05:08:30.713Z",
+      "reviews": 32,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 326,
-    "correct": 239,
+    "questions": 331,
+    "correct": 244,
     "drills": 0,
     "streak": 1,
     "best": 5,
@@ -1979,6 +1979,11 @@
           "ok": false,
           "at": "2026-07-17T05:02:19.627Z",
           "you": "un difficile examen"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:08:01.973Z",
+          "you": "un examen difficile"
         }
       ]
     },
@@ -2002,6 +2007,11 @@
         {
           "ok": true,
           "at": "2026-07-13T00:22:46.735Z",
+          "you": "dernière"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:08:10.476Z",
           "you": "dernière"
         }
       ]
@@ -2111,6 +2121,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:50:24.518Z",
+          "you": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added — giving -euse."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:07:50.022Z",
           "you": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added — giving -euse."
         }
       ]
@@ -2276,6 +2291,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:53:48.748Z",
+          "you": "heureux"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:08:30.713Z",
           "you": "heureux"
         }
       ]
@@ -2463,6 +2483,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:57:12.458Z",
+          "you": "italienne"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:07:35.919Z",
           "you": "italienne"
         }
       ]
