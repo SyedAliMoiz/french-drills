@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-17T05:02:33.555Z",
+  "updated": "2026-07-17T05:07:27.457Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -10,8 +10,8 @@
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-17T05:02:33.555Z",
-      "reviews": 24,
+      "lastReview": "2026-07-17T05:07:27.457Z",
+      "reviews": 25,
       "scores": []
     },
     "s2b-indefinite": {
@@ -22,14 +22,14 @@
     },
     "s3-plurals": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:50:15.609Z",
-      "reviews": 72,
+      "lastReview": "2026-07-17T05:07:18.613Z",
+      "reviews": 74,
       "scores": []
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-17T05:02:19.627Z",
-      "reviews": 21,
+      "lastReview": "2026-07-17T05:07:08.974Z",
+      "reviews": 22,
       "scores": []
     },
     "s4r2-fem-basic": {
@@ -40,8 +40,8 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:51:17.319Z",
-      "reviews": 43,
+      "lastReview": "2026-07-17T05:02:37.212Z",
+      "reviews": 44,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 321,
-    "correct": 234,
+    "questions": 326,
+    "correct": 239,
     "drills": 0,
     "streak": 1,
     "best": 5,
@@ -1655,6 +1655,11 @@
           "ok": true,
           "at": "2026-07-12T11:05:36.182Z",
           "you": "des"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:06:59.385Z",
+          "you": "des"
         }
       ]
     },
@@ -1860,6 +1865,11 @@
           "ok": true,
           "at": "2026-07-13T00:17:59.198Z",
           "you": "Because \"homme\" starts with a vowel sound — the h is silent (mute), and French uses elision to avoid two vowel sounds colliding."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:07:27.457Z",
+          "you": "Because \"homme\" starts with a vowel sound — the h is silent (mute), and French uses elision to avoid two vowel sounds colliding."
         }
       ]
     },
@@ -2005,6 +2015,11 @@
           "ok": true,
           "at": "2026-07-13T00:23:16.223Z",
           "you": "l'étudiante intelligente"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:07:08.974Z",
+          "you": "l'étudiante intelligente"
         }
       ]
     },
@@ -2079,6 +2094,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:49:21.895Z",
+          "you": "active"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:02:37.212Z",
           "you": "active"
         }
       ]
@@ -2239,6 +2259,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:53:26.026Z",
+          "you": "Because nouns ending in -al have their own plural pattern: -al changes to -aux."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:07:18.613Z",
           "you": "Because nouns ending in -al have their own plural pattern: -al changes to -aux."
         }
       ]
