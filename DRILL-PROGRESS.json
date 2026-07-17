@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-17T04:51:09.288Z",
+  "updated": "2026-07-17T05:02:33.555Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -10,8 +10,8 @@
     },
     "s2a-elision": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:49:45.381Z",
-      "reviews": 23,
+      "lastReview": "2026-07-17T05:02:33.555Z",
+      "reviews": 24,
       "scores": []
     },
     "s2b-indefinite": {
@@ -28,20 +28,20 @@
     },
     "s4r1-position": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:50:24.203Z",
-      "reviews": 20,
+      "lastReview": "2026-07-17T05:02:19.627Z",
+      "reviews": 21,
       "scores": []
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:50:28.806Z",
-      "reviews": 18,
+      "lastReview": "2026-07-17T04:51:29.325Z",
+      "reviews": 20,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:50:34.711Z",
-      "reviews": 42,
+      "lastReview": "2026-07-17T04:51:17.319Z",
+      "reviews": 43,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 316,
-    "correct": 230,
+    "questions": 321,
+    "correct": 234,
     "drills": 0,
     "streak": 1,
     "best": 5,
@@ -1616,6 +1616,11 @@
           "ok": true,
           "at": "2026-07-12T11:04:49.534Z",
           "you": "heureuse"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:51:17.319Z",
+          "you": "heureuse"
         }
       ]
     },
@@ -1959,6 +1964,11 @@
           "ok": true,
           "at": "2026-07-13T00:21:22.787Z",
           "you": "un examen difficile"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-17T05:02:19.627Z",
+          "you": "un difficile examen"
         }
       ]
     },
@@ -2150,6 +2160,11 @@
           "ok": true,
           "at": "2026-07-14T01:51:43.985Z",
           "you": "l'"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T05:02:33.555Z",
+          "you": "l'"
         }
       ]
     },
@@ -2293,6 +2308,11 @@
           "ok": true,
           "at": "2026-07-14T01:54:31.750Z",
           "you": "contente"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:51:21.100Z",
+          "you": "contente"
         }
       ]
     },
@@ -2355,6 +2375,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:55:46.644Z",
+          "you": "Because French adjectives must agree in gender with the noun they describe — adding -e marks the feminine form."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:51:29.325Z",
           "you": "Because French adjectives must agree in gender with the noun they describe — adding -e marks the feminine form."
         }
       ]
