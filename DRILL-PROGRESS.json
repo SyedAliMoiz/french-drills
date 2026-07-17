@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-17T01:50:53.634Z",
+  "updated": "2026-07-17T04:46:36.230Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:50:24.449Z",
-      "reviews": 81,
+      "lastReview": "2026-07-17T04:46:36.230Z",
+      "reviews": 83,
       "scores": []
     },
     "s2a-elision": {
@@ -16,8 +16,8 @@
     },
     "s2b-indefinite": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:50:45.807Z",
-      "reviews": 18,
+      "lastReview": "2026-07-17T04:45:37.142Z",
+      "reviews": 19,
       "scores": []
     },
     "s3-plurals": {
@@ -40,14 +40,14 @@
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:49:52.899Z",
-      "reviews": 37,
+      "lastReview": "2026-07-17T04:45:51.068Z",
+      "reviews": 38,
       "scores": []
     },
     "s4r4-plural-adj": {
       "status": "learning",
-      "lastReview": "2026-07-17T01:50:06.475Z",
-      "reviews": 29,
+      "lastReview": "2026-07-17T01:51:02.375Z",
+      "reviews": 30,
       "scores": []
     },
     "s4b-colors": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 286,
-    "correct": 201,
+    "questions": 291,
+    "correct": 206,
     "drills": 0,
     "streak": 1,
     "best": 5,
@@ -1155,6 +1155,11 @@
           "ok": false,
           "at": "2026-07-17T01:50:24.449Z",
           "you": "le main"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:46:36.230Z",
+          "you": "la main"
         }
       ]
     },
@@ -1458,6 +1463,11 @@
           "ok": true,
           "at": "2026-07-12T10:17:38.302Z",
           "you": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added — like English knife → knives."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:45:51.068Z",
+          "you": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added — like English knife → knives."
         }
       ]
     },
@@ -1694,6 +1704,11 @@
         {
           "ok": true,
           "at": "2026-07-12T11:53:05.074Z",
+          "you": "The grammatical gender of the noun — masculine nouns take \"un\", feminine nouns take \"une\"."
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:45:37.142Z",
           "you": "The grammatical gender of the noun — masculine nouns take \"un\", feminine nouns take \"une\"."
         }
       ]
@@ -1963,6 +1978,11 @@
           "ok": true,
           "at": "2026-07-14T01:48:51.837Z",
           "you": "Because the -age ending is a reliable masculine gender marker"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:46:13.305Z",
+          "you": "Because the -age ending is a reliable masculine gender marker"
         }
       ]
     },
@@ -2155,6 +2175,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:54:22.801Z",
+          "you": "français"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T01:51:02.375Z",
           "you": "français"
         }
       ]
