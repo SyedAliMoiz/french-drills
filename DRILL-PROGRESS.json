@@ -1,11 +1,11 @@
 {
   "v": 1,
-  "updated": "2026-07-17T04:50:24.203Z",
+  "updated": "2026-07-17T04:51:09.288Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:48:41.984Z",
-      "reviews": 85,
+      "lastReview": "2026-07-17T04:51:09.288Z",
+      "reviews": 88,
       "scores": []
     },
     "s2a-elision": {
@@ -34,14 +34,14 @@
     },
     "s4r2-fem-basic": {
       "status": "locked",
-      "lastReview": "2026-07-17T01:29:02.715Z",
-      "reviews": 17,
+      "lastReview": "2026-07-17T04:50:28.806Z",
+      "reviews": 18,
       "scores": []
     },
     "s4r3-fem-irreg": {
       "status": "locked",
-      "lastReview": "2026-07-17T04:50:11.779Z",
-      "reviews": 41,
+      "lastReview": "2026-07-17T04:50:34.711Z",
+      "reviews": 42,
       "scores": []
     },
     "s4r4-plural-adj": {
@@ -71,8 +71,8 @@
   },
   "history": [],
   "stats": {
-    "questions": 311,
-    "correct": 225,
+    "questions": 316,
+    "correct": 230,
     "drills": 0,
     "streak": 1,
     "best": 5,
@@ -1514,6 +1514,11 @@
           "ok": true,
           "at": "2026-07-12T10:36:13.553Z",
           "you": "Feminine (la)"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:50:43.939Z",
+          "you": "Feminine (la)"
         }
       ]
     },
@@ -1593,6 +1598,11 @@
         {
           "ok": true,
           "at": "2026-07-12T11:00:45.667Z",
+          "you": "forte"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:50:28.806Z",
           "you": "forte"
         }
       ]
@@ -1768,6 +1778,11 @@
         {
           "ok": true,
           "at": "2026-07-13T00:16:20.874Z",
+          "you": "la"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:50:57.616Z",
           "you": "la"
         }
       ]
@@ -2003,6 +2018,11 @@
         {
           "ok": true,
           "at": "2026-07-13T00:23:38.549Z",
+          "you": "bonne"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:50:34.711Z",
           "you": "bonne"
         }
       ]
@@ -2444,6 +2464,11 @@
         {
           "ok": true,
           "at": "2026-07-14T01:58:09.403Z",
+          "you": "Words borrowed from Greek (like -ème endings) are typically masculine regardless of the final -e"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T04:51:09.288Z",
           "you": "Words borrowed from Greek (like -ème endings) are typically masculine regardless of the final -e"
         }
       ]
