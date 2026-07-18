@@ -1,6 +1,6 @@
 {
   "v": 1,
-  "updated": "2026-07-17T05:09:17.633Z",
+  "updated": "2026-07-18T20:07:50.055Z",
   "sections": {
     "s1-gender": {
       "status": "locked",
@@ -52,31 +52,37 @@
     },
     "s4b-colors": {
       "status": "learning",
-      "lastReview": null,
-      "reviews": 0,
+      "lastReview": "2026-07-17T20:43:04.063Z",
+      "reviews": 1,
       "scores": []
     },
     "s4c-precede": {
       "status": "learning",
-      "lastReview": null,
-      "reviews": 0,
+      "lastReview": "2026-07-17T05:44:13.215Z",
+      "reviews": 1,
       "scores": []
     },
     "s5-vocab": {
       "status": "learning",
-      "lastReview": null,
-      "reviews": 0,
+      "lastReview": "2026-07-17T20:43:23.938Z",
+      "reviews": 1,
+      "scores": []
+    },
+    "compound": {
+      "status": "learning",
+      "lastReview": "2026-07-18T20:07:50.055Z",
+      "reviews": 5,
       "scores": []
     }
   },
   "history": [],
   "stats": {
-    "questions": 338,
-    "correct": 251,
+    "questions": 346,
+    "correct": 254,
     "drills": 0,
-    "streak": 1,
+    "streak": 2,
     "best": 5,
-    "lastDate": "2026-07-17"
+    "lastDate": "2026-07-18"
   },
   "achievements": [
     "first-lock",
@@ -90,7 +96,7 @@
     "s1-gender-o1": {
       "type": "open",
       "section": "s1-gender",
-      "ans": "le p\u00e8re",
+      "ans": "le père",
       "attempts": [
         {
           "ok": true,
@@ -279,7 +285,7 @@
     "s4r4-plural-adj-b3": {
       "type": "blank",
       "section": "s4r4-plural-adj",
-      "ans": "am\u00e9ricains",
+      "ans": "américains",
       "attempts": [
         {
           "ok": true,
@@ -357,7 +363,7 @@
     "s1-gender-o6": {
       "type": "open",
       "section": "s1-gender",
-      "ans": "le mus\u00e9e",
+      "ans": "le musée",
       "attempts": [
         {
           "ok": false,
@@ -670,7 +676,7 @@
     "s4r3-fem-irreg-o2": {
       "type": "open",
       "section": "s4r3-fem-irreg",
-      "ans": "une \u00e9tudiante attentive",
+      "ans": "une étudiante attentive",
       "attempts": [
         {
           "ok": true,
@@ -704,7 +710,7 @@
     "s4r3-fem-irreg-b3": {
       "type": "blank",
       "section": "s4r3-fem-irreg",
-      "ans": "\u00e9trang\u00e8re",
+      "ans": "étrangère",
       "attempts": [
         {
           "ok": false,
@@ -836,7 +842,7 @@
     "s3-plurals-b3": {
       "type": "blank",
       "section": "s3-plurals",
-      "ans": "g\u00e2teaux",
+      "ans": "gâteaux",
       "attempts": [
         {
           "ok": true,
@@ -980,7 +986,7 @@
     "s1-gender-o3": {
       "type": "open",
       "section": "s1-gender",
-      "ans": "le fr\u00e8re",
+      "ans": "le frère",
       "attempts": [
         {
           "ok": true,
@@ -1036,7 +1042,7 @@
     "s4r4-plural-adj-o2": {
       "type": "open",
       "section": "s4r4-plural-adj",
-      "ans": "Les hommes sont s\u00e9rieux.",
+      "ans": "Les hommes sont sérieux.",
       "attempts": [
         {
           "ok": true,
@@ -1058,7 +1064,7 @@
     "s4r2-fem-basic-b2": {
       "type": "blank",
       "section": "s4r2-fem-basic",
-      "ans": "sinc\u00e8re",
+      "ans": "sincère",
       "attempts": [
         {
           "ok": false,
@@ -1264,7 +1270,7 @@
     "s4r3-fem-irreg-b2": {
       "type": "blank",
       "section": "s4r3-fem-irreg",
-      "ans": "cr\u00e9ative",
+      "ans": "créative",
       "attempts": [
         {
           "ok": true,
@@ -1281,7 +1287,7 @@
     "s4r3-fem-irreg-b1": {
       "type": "blank",
       "section": "s4r3-fem-irreg",
-      "ans": "g\u00e9n\u00e9reuse",
+      "ans": "généreuse",
       "attempts": [
         {
           "ok": false,
@@ -1320,7 +1326,7 @@
     "s1-gender-o4": {
       "type": "open",
       "section": "s1-gender",
-      "ans": "le probl\u00e8me",
+      "ans": "le problème",
       "attempts": [
         {
           "ok": true,
@@ -1342,7 +1348,7 @@
     "s4r3-fem-irreg-o3": {
       "type": "open",
       "section": "s4r3-fem-irreg",
-      "ans": "une robe ch\u00e8re",
+      "ans": "une robe chère",
       "attempts": [
         {
           "ok": false,
@@ -1391,7 +1397,7 @@
     "s4r1-position-o1": {
       "type": "open",
       "section": "s4r1-position",
-      "ans": "un homme am\u00e9ricain",
+      "ans": "un homme américain",
       "attempts": [
         {
           "ok": true,
@@ -1457,17 +1463,17 @@
     "s4r3-fem-irreg-w2": {
       "type": "why",
       "section": "s4r3-fem-irreg",
-      "ans": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added \u2014 like English knife \u2192 knives.",
+      "ans": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added — like English knife → knives.",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-12T10:17:38.302Z",
-          "you": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added \u2014 like English knife \u2192 knives."
+          "you": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added — like English knife → knives."
         },
         {
           "ok": true,
           "at": "2026-07-17T04:45:51.068Z",
-          "you": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added \u2014 like English knife \u2192 knives."
+          "you": "Because -if adjectives follow Pattern B: the f \"voices\" to v, then -e is added — like English knife → knives."
         }
       ]
     },
@@ -1491,17 +1497,17 @@
     "s4r4-plural-adj-w2": {
       "type": "why",
       "section": "s4r4-plural-adj",
-      "ans": "Because French defaults to masculine for mixed-gender groups \u2014 if any noun in the group is masculine, the adjective takes masculine plural.",
+      "ans": "Because French defaults to masculine for mixed-gender groups — if any noun in the group is masculine, the adjective takes masculine plural.",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-12T10:25:23.298Z",
-          "you": "Because French defaults to masculine for mixed-gender groups \u2014 if any noun in the group is masculine, the adjective takes masculine plural."
+          "you": "Because French defaults to masculine for mixed-gender groups — if any noun in the group is masculine, the adjective takes masculine plural."
         },
         {
           "ok": true,
           "at": "2026-07-17T01:49:13.887Z",
-          "you": "Because French defaults to masculine for mixed-gender groups \u2014 if any noun in the group is masculine, the adjective takes masculine plural."
+          "you": "Because French defaults to masculine for mixed-gender groups — if any noun in the group is masculine, the adjective takes masculine plural."
         }
       ]
     },
@@ -1666,22 +1672,22 @@
     "s4r4-plural-adj-m6": {
       "type": "mcq",
       "section": "s4r4-plural-adj",
-      "ans": "fatigu\u00e9es",
+      "ans": "fatiguées",
       "attempts": [
         {
           "ok": false,
           "at": "2026-07-12T11:07:38.532Z",
-          "you": "fatigu\u00e9e"
+          "you": "fatiguée"
         },
         {
           "ok": true,
           "at": "2026-07-13T00:15:49.853Z",
-          "you": "fatigu\u00e9es"
+          "you": "fatiguées"
         },
         {
           "ok": true,
           "at": "2026-07-17T01:50:06.475Z",
-          "you": "fatigu\u00e9es"
+          "you": "fatiguées"
         }
       ]
     },
@@ -1744,17 +1750,17 @@
     "s2b-indefinite-w1": {
       "type": "why",
       "section": "s2b-indefinite",
-      "ans": "The grammatical gender of the noun \u2014 masculine nouns take \"un\", feminine nouns take \"une\".",
+      "ans": "The grammatical gender of the noun — masculine nouns take \"un\", feminine nouns take \"une\".",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-12T11:53:05.074Z",
-          "you": "The grammatical gender of the noun \u2014 masculine nouns take \"un\", feminine nouns take \"une\"."
+          "you": "The grammatical gender of the noun — masculine nouns take \"un\", feminine nouns take \"une\"."
         },
         {
           "ok": true,
           "at": "2026-07-17T04:45:37.142Z",
-          "you": "The grammatical gender of the noun \u2014 masculine nouns take \"un\", feminine nouns take \"une\"."
+          "you": "The grammatical gender of the noun — masculine nouns take \"un\", feminine nouns take \"une\"."
         }
       ]
     },
@@ -1859,17 +1865,17 @@
     "s2a-elision-w1": {
       "type": "why",
       "section": "s2a-elision",
-      "ans": "Because \"homme\" starts with a vowel sound \u2014 the h is silent (mute), and French uses elision to avoid two vowel sounds colliding.",
+      "ans": "Because \"homme\" starts with a vowel sound — the h is silent (mute), and French uses elision to avoid two vowel sounds colliding.",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-13T00:17:59.198Z",
-          "you": "Because \"homme\" starts with a vowel sound \u2014 the h is silent (mute), and French uses elision to avoid two vowel sounds colliding."
+          "you": "Because \"homme\" starts with a vowel sound — the h is silent (mute), and French uses elision to avoid two vowel sounds colliding."
         },
         {
           "ok": true,
           "at": "2026-07-17T05:07:27.457Z",
-          "you": "Because \"homme\" starts with a vowel sound \u2014 the h is silent (mute), and French uses elision to avoid two vowel sounds colliding."
+          "you": "Because \"homme\" starts with a vowel sound — the h is silent (mute), and French uses elision to avoid two vowel sounds colliding."
         }
       ]
     },
@@ -1949,17 +1955,17 @@
     "s3-plurals-w2": {
       "type": "why",
       "section": "s3-plurals",
-      "ans": "Because nouns already ending in -s, -x, or -z don't add anything \u2014 they already \"look\" plural.",
+      "ans": "Because nouns already ending in -s, -x, or -z don't add anything — they already \"look\" plural.",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-13T00:20:40.606Z",
-          "you": "Because nouns already ending in -s, -x, or -z don't add anything \u2014 they already \"look\" plural."
+          "you": "Because nouns already ending in -s, -x, or -z don't add anything — they already \"look\" plural."
         },
         {
           "ok": true,
           "at": "2026-07-17T05:08:49.446Z",
-          "you": "Because nouns already ending in -s, -x, or -z don't add anything \u2014 they already \"look\" plural."
+          "you": "Because nouns already ending in -s, -x, or -z don't add anything — they already \"look\" plural."
         }
       ]
     },
@@ -2005,51 +2011,51 @@
     "s1-gender-w2": {
       "type": "why",
       "section": "s1-gender",
-      "ans": "\"Table\" is feminine, so it needs \"la\" \u2014 the article must match the noun's gender, which is masculine (le) or feminine (la).",
+      "ans": "\"Table\" is feminine, so it needs \"la\" — the article must match the noun's gender, which is masculine (le) or feminine (la).",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-13T00:21:52.989Z",
-          "you": "\"Table\" is feminine, so it needs \"la\" \u2014 the article must match the noun's gender, which is masculine (le) or feminine (la)."
+          "you": "\"Table\" is feminine, so it needs \"la\" — the article must match the noun's gender, which is masculine (le) or feminine (la)."
         },
         {
           "ok": true,
           "at": "2026-07-17T05:08:59.704Z",
-          "you": "\"Table\" is feminine, so it needs \"la\" \u2014 the article must match the noun's gender, which is masculine (le) or feminine (la)."
+          "you": "\"Table\" is feminine, so it needs \"la\" — the article must match the noun's gender, which is masculine (le) or feminine (la)."
         }
       ]
     },
     "s4r3-fem-irreg-m6": {
       "type": "mcq",
       "section": "s4r3-fem-irreg",
-      "ans": "derni\u00e8re",
+      "ans": "dernière",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-13T00:22:46.735Z",
-          "you": "derni\u00e8re"
+          "you": "dernière"
         },
         {
           "ok": true,
           "at": "2026-07-17T05:08:10.476Z",
-          "you": "derni\u00e8re"
+          "you": "dernière"
         }
       ]
     },
     "s4r1-position-m1": {
       "type": "mcq",
       "section": "s4r1-position",
-      "ans": "l'\u00e9tudiante intelligente",
+      "ans": "l'étudiante intelligente",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-13T00:23:16.223Z",
-          "you": "l'\u00e9tudiante intelligente"
+          "you": "l'étudiante intelligente"
         },
         {
           "ok": true,
           "at": "2026-07-17T05:07:08.974Z",
-          "you": "l'\u00e9tudiante intelligente"
+          "you": "l'étudiante intelligente"
         }
       ]
     },
@@ -2141,56 +2147,56 @@
     "s4r3-fem-irreg-w1": {
       "type": "why",
       "section": "s4r3-fem-irreg",
-      "ans": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added \u2014 giving -euse.",
+      "ans": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added — giving -euse.",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:50:24.518Z",
-          "you": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added \u2014 giving -euse."
+          "you": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added — giving -euse."
         },
         {
           "ok": true,
           "at": "2026-07-17T05:07:50.022Z",
-          "you": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added \u2014 giving -euse."
+          "you": "Because -eux adjectives follow their own pattern: the x drops, s replaces it, and -e is added — giving -euse."
         }
       ]
     },
     "s4r3-fem-irreg-m5": {
       "type": "mcq",
       "section": "s4r3-fem-irreg",
-      "ans": "premi\u00e8re",
+      "ans": "première",
       "attempts": [
         {
           "ok": false,
           "at": "2026-07-14T01:50:46.517Z",
-          "you": "premier\u00e8"
+          "you": "premierè"
         },
         {
           "ok": true,
           "at": "2026-07-14T01:52:50.198Z",
-          "you": "premi\u00e8re"
+          "you": "première"
         },
         {
           "ok": true,
           "at": "2026-07-17T04:48:18.536Z",
-          "you": "premi\u00e8re"
+          "you": "première"
         }
       ]
     },
     "s4r1-position-m2": {
       "type": "mcq",
       "section": "s4r1-position",
-      "ans": "un livre int\u00e9ressant",
+      "ans": "un livre intéressant",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:51:11.358Z",
-          "you": "un livre int\u00e9ressant"
+          "you": "un livre intéressant"
         },
         {
           "ok": true,
           "at": "2026-07-17T04:49:13.426Z",
-          "you": "un livre int\u00e9ressant"
+          "you": "un livre intéressant"
         }
       ]
     },
@@ -2231,34 +2237,34 @@
     "s4r1-position-m4": {
       "type": "mcq",
       "section": "s4r1-position",
-      "ans": "une femme fran\u00e7aise",
+      "ans": "une femme française",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:51:53.100Z",
-          "you": "une femme fran\u00e7aise"
+          "you": "une femme française"
         },
         {
           "ok": true,
           "at": "2026-07-17T04:50:24.203Z",
-          "you": "une femme fran\u00e7aise"
+          "you": "une femme française"
         }
       ]
     },
     "s4r1-position-w1": {
       "type": "why",
       "section": "s4r1-position",
-      "ans": "Because in French, most adjectives are placed AFTER the noun \u2014 the opposite of English word order.",
+      "ans": "Because in French, most adjectives are placed AFTER the noun — the opposite of English word order.",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:52:10.377Z",
-          "you": "Because in French, most adjectives are placed AFTER the noun \u2014 the opposite of English word order."
+          "you": "Because in French, most adjectives are placed AFTER the noun — the opposite of English word order."
         },
         {
           "ok": true,
           "at": "2026-07-17T01:50:20.808Z",
-          "you": "Because in French, most adjectives are placed AFTER the noun \u2014 the opposite of English word order."
+          "you": "Because in French, most adjectives are placed AFTER the noun — the opposite of English word order."
         }
       ]
     },
@@ -2360,17 +2366,17 @@
     "s4r4-plural-adj-m4": {
       "type": "mcq",
       "section": "s4r4-plural-adj",
-      "ans": "fran\u00e7ais",
+      "ans": "français",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:54:22.801Z",
-          "you": "fran\u00e7ais"
+          "you": "français"
         },
         {
           "ok": true,
           "at": "2026-07-17T01:51:02.375Z",
-          "you": "fran\u00e7ais"
+          "you": "français"
         }
       ]
     },
@@ -2411,51 +2417,51 @@
     "s4r3-fem-irreg-w3": {
       "type": "why",
       "section": "s4r3-fem-irreg",
-      "ans": "Because doubling the n preserves the vowel sound \u2014 without the double n, \"bone\" would change the pronunciation of the \"o\".",
+      "ans": "Because doubling the n preserves the vowel sound — without the double n, \"bone\" would change the pronunciation of the \"o\".",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:55:05.865Z",
-          "you": "Because doubling the n preserves the vowel sound \u2014 without the double n, \"bone\" would change the pronunciation of the \"o\"."
+          "you": "Because doubling the n preserves the vowel sound — without the double n, \"bone\" would change the pronunciation of the \"o\"."
         },
         {
           "ok": true,
           "at": "2026-07-17T04:47:30.711Z",
-          "you": "Because doubling the n preserves the vowel sound \u2014 without the double n, \"bone\" would change the pronunciation of the \"o\"."
+          "you": "Because doubling the n preserves the vowel sound — without the double n, \"bone\" would change the pronunciation of the \"o\"."
         }
       ]
     },
     "s4r3-fem-irreg-m2": {
       "type": "mcq",
       "section": "s4r3-fem-irreg",
-      "ans": "s\u00e9rieuse",
+      "ans": "sérieuse",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:55:29.909Z",
-          "you": "s\u00e9rieuse"
+          "you": "sérieuse"
         },
         {
           "ok": true,
           "at": "2026-07-17T01:49:52.899Z",
-          "you": "s\u00e9rieuse"
+          "you": "sérieuse"
         }
       ]
     },
     "s4r2-fem-basic-w1": {
       "type": "why",
       "section": "s4r2-fem-basic",
-      "ans": "Because French adjectives must agree in gender with the noun they describe \u2014 adding -e marks the feminine form.",
+      "ans": "Because French adjectives must agree in gender with the noun they describe — adding -e marks the feminine form.",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:55:46.644Z",
-          "you": "Because French adjectives must agree in gender with the noun they describe \u2014 adding -e marks the feminine form."
+          "you": "Because French adjectives must agree in gender with the noun they describe — adding -e marks the feminine form."
         },
         {
           "ok": true,
           "at": "2026-07-17T04:51:29.325Z",
-          "you": "Because French adjectives must agree in gender with the noun they describe \u2014 adding -e marks the feminine form."
+          "you": "Because French adjectives must agree in gender with the noun they describe — adding -e marks the feminine form."
         }
       ]
     },
@@ -2496,17 +2502,17 @@
     "s1-gender-w4": {
       "type": "why",
       "section": "s1-gender",
-      "ans": "Mus\u00e9e comes from Greek (mouseion), and Greek-origin -\u00e9e words are masculine",
+      "ans": "Musée comes from Greek (mouseion), and Greek-origin -ée words are masculine",
       "attempts": [
         {
           "ok": false,
           "at": "2026-07-14T01:56:55.661Z",
-          "you": "Mus\u00e9e is actually feminine \u2014 \"la mus\u00e9e\" is correct"
+          "you": "Musée is actually feminine — \"la musée\" is correct"
         },
         {
           "ok": true,
           "at": "2026-07-15T23:51:37.169Z",
-          "you": "Mus\u00e9e comes from Greek (mouseion), and Greek-origin -\u00e9e words are masculine"
+          "you": "Musée comes from Greek (mouseion), and Greek-origin -ée words are masculine"
         }
       ]
     },
@@ -2569,24 +2575,24 @@
     "s1-gender-w3": {
       "type": "why",
       "section": "s1-gender",
-      "ans": "Words borrowed from Greek (like -\u00e8me endings) are typically masculine regardless of the final -e",
+      "ans": "Words borrowed from Greek (like -ème endings) are typically masculine regardless of the final -e",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T01:58:09.403Z",
-          "you": "Words borrowed from Greek (like -\u00e8me endings) are typically masculine regardless of the final -e"
+          "you": "Words borrowed from Greek (like -ème endings) are typically masculine regardless of the final -e"
         },
         {
           "ok": true,
           "at": "2026-07-17T04:51:09.288Z",
-          "you": "Words borrowed from Greek (like -\u00e8me endings) are typically masculine regardless of the final -e"
+          "you": "Words borrowed from Greek (like -ème endings) are typically masculine regardless of the final -e"
         }
       ]
     },
     "s3-plurals-w3": {
       "type": "why",
       "section": "s3-plurals",
-      "ans": "Because the definite article must agree in number with the noun \u2014 singular le/la becomes plural les.",
+      "ans": "Because the definite article must agree in number with the noun — singular le/la becomes plural les.",
       "attempts": [
         {
           "ok": false,
@@ -2601,24 +2607,24 @@
         {
           "ok": true,
           "at": "2026-07-15T23:52:27.324Z",
-          "you": "Because the definite article must agree in number with the noun \u2014 singular le/la becomes plural les."
+          "you": "Because the definite article must agree in number with the noun — singular le/la becomes plural les."
         }
       ]
     },
     "s3-plurals-m1": {
       "type": "mcq",
       "section": "s3-plurals",
-      "ans": "ch\u00e2teaux",
+      "ans": "châteaux",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-14T08:31:26.112Z",
-          "you": "ch\u00e2teaux"
+          "you": "châteaux"
         },
         {
           "ok": true,
           "at": "2026-07-17T04:49:51.833Z",
-          "you": "ch\u00e2teaux"
+          "you": "châteaux"
         }
       ]
     },
@@ -2666,24 +2672,106 @@
     "s4r2-fem-basic-m4": {
       "type": "mcq",
       "section": "s4r2-fem-basic",
-      "ans": "fran\u00e7aise",
+      "ans": "française",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-15T23:51:47.202Z",
-          "you": "fran\u00e7aise"
+          "you": "française"
         }
       ]
     },
     "s1-gender-w1": {
       "type": "why",
       "section": "s1-gender",
-      "ans": "Because \"fleur\" is a feminine noun \u2014 noun gender is grammatical and must be memorized, and feminine nouns take \"la\".",
+      "ans": "Because \"fleur\" is a feminine noun — noun gender is grammatical and must be memorized, and feminine nouns take \"la\".",
       "attempts": [
         {
           "ok": true,
           "at": "2026-07-15T23:51:55.081Z",
-          "you": "Because \"fleur\" is a feminine noun \u2014 noun gender is grammatical and must be memorized, and feminine nouns take \"la\"."
+          "you": "Because \"fleur\" is a feminine noun — noun gender is grammatical and must be memorized, and feminine nouns take \"la\"."
+        }
+      ]
+    },
+    "compound-o7": {
+      "type": "open",
+      "section": "compound",
+      "ans": "la grande maison",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-17T05:43:53.643Z",
+          "you": "une grande maison"
+        },
+        {
+          "ok": true,
+          "at": "2026-07-17T20:41:41.404Z",
+          "you": "la grande maison"
+        }
+      ]
+    },
+    "s4c-precede-b3": {
+      "type": "blank",
+      "section": "s4c-precede",
+      "ans": "vieux",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-17T05:44:13.215Z",
+          "you": "vieux"
+        }
+      ]
+    },
+    "compound-o3": {
+      "type": "open",
+      "section": "compound",
+      "ans": "une bonne réaction naturelle",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-17T05:44:39.791Z",
+          "you": "naturel reaction"
+        },
+        {
+          "ok": false,
+          "at": "2026-07-17T20:42:06.859Z",
+          "you": "une bonne naturelle reaction"
+        }
+      ]
+    },
+    "s4b-colors-o3": {
+      "type": "open",
+      "section": "s4b-colors",
+      "ans": "les roses rouges",
+      "attempts": [
+        {
+          "ok": true,
+          "at": "2026-07-17T20:43:04.063Z",
+          "you": "Les roses rouges"
+        }
+      ]
+    },
+    "s5-vocab-o2": {
+      "type": "open",
+      "section": "s5-vocab",
+      "ans": "la femme forte et intelligente",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-17T20:43:23.938Z",
+          "you": "La forte intelligente femme"
+        }
+      ]
+    },
+    "compound-b4": {
+      "type": "blank",
+      "section": "compound",
+      "ans": "bonnes",
+      "attempts": [
+        {
+          "ok": false,
+          "at": "2026-07-18T20:07:50.055Z",
+          "you": "bon"
         }
       ]
     }
