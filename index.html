@@ -1612,6 +1612,7 @@ function renderHWSummary() {
         '<div class="sub" style="margin-bottom:1rem">' + (durationStr ? durationStr + ' today' : '') + '</div>' +
         (errors ? '<div style="text-align:left;width:100%;margin-bottom:1rem"><div class="hw-entry-label" style="color:var(--err)">Review These</div>' + errors + '</div>' : '') +
         '<div class="col" style="gap:.75rem;width:100%">' +
+          '<button class="btn btn-ok" id="hw-save-btn" style="border-radius:12px;padding:1rem">Save Homework</button>' +
           '<button class="btn btn-p" id="hw-another-btn" style="border-radius:12px;padding:1rem">One more round?</button>' +
           '<button class="btn btn-g" id="hw-bonus-btn" style="border-radius:12px;padding:1rem">Continue to Bonus Drills →</button>' +
         '</div>' +
@@ -1620,8 +1621,66 @@ function renderHWSummary() {
     '</div>';
 
   completeHW();
+  $('hw-save-btn').onclick = downloadHWFile;
   $('hw-another-btn').onclick = function() { resetHWForNewRound(); };
   $('hw-bonus-btn').onclick = function() { startAutoMode(); };
+}
+
+function generateHWMarkdown() {
+  var set = HW_BANK[S.hwBankIdx % HW_BANK.length];
+  var md = '';
+  for (var i = 0; i < 3; i++) {
+    var verb = S.hwWords.verbs[i];
+    var conj = French.conjugateER(verb);
+    md += '### ' + verb + '\n\n';
+    PRONOUNS.forEach(function(p, pi) {
+      var lbl = pronounLabel(p, conj[p]);
+      md += '|' + lbl + '|' + conj[p] + '|\n';
+      if (pi === 0) md += '|---|---|\n';
+    });
+    md += '\n';
+  }
+  for (var i = 0; i < 3; i++) {
+    var noun = S.hwWords.nouns[i];
+    var article = noun.g === 'f' ? 'une' : 'un';
+    var gLabel = noun.g === 'f' ? 'feminine' : 'masculine';
+    md += '### ' + noun.w + '\n\n';
+    md += '|' + gLabel + '|' + article + ' ' + noun.w + '|\n';
+    md += '|---|---|\n';
+    md += '|plural|des ' + French.pluralNoun(noun.w) + '|\n\n';
+  }
+  for (var i = 0; i < 3; i++) {
+    var adj = S.hwWords.adjectives[i];
+    md += '### ' + adj + '\n\n';
+    md += '|masculine|' + adj + '|\n';
+    md += '|---|---|\n';
+    md += '|feminine|' + French.feminizeAdj(adj) + '|\n';
+    md += '|masc. plural|' + French.pluralAdj(adj) + '|\n';
+    md += '|fem. plural|' + French.pluralAdj(French.feminizeAdj(adj)) + '|\n\n';
+  }
+  if (set.sentences) {
+    md += '### Sentences\n\n';
+    md += '|English|French|\n|---|---|\n';
+    set.sentences.forEach(function(s) { md += '|' + s.en + '|' + s.fr + '|\n'; });
+    md += '\n';
+  }
+  return md;
+}
+
+function downloadHWFile() {
+  var md = generateHWMarkdown();
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var d = new Date();
+  var name = 'Homework ' + (getHWLevel()) + ' (' + months[d.getMonth()] + ' ' + d.getDate() + ').md';
+  var blob = new Blob([md], { type: 'text/markdown' });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 function resetHWForNewRound() {
