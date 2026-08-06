@@ -971,6 +971,15 @@ function pickHWSet(idx) {
   };
 }
 
+function needsElision(conjugatedForm) {
+  return /^[aeéèêëiîïoôuùûyh]/i.test(conjugatedForm);
+}
+
+function pronounLabel(pronoun, conjugatedForm) {
+  if (pronoun === 'je' && needsElision(conjugatedForm)) return "j'";
+  return pronoun;
+}
+
 let _hwActiveInput = null;
 
 function insertCharHW(ch) {
@@ -1134,8 +1143,10 @@ function renderHWVerb(idx) {
         '<div class="sub center" style="margin-bottom:1.25rem">Conjugate in present tense</div>' +
         PRONOUNS.map(function(p, i) {
           var f = checked ? checked.forms[p] : null;
+          var conj = French.conjugateER(verb);
+          var lbl = pronounLabel(p, conj[p]);
           return '<div class="conj-row">' +
-            '<span class="conj-label">' + esc(p) + '</span>' +
+            '<span class="conj-label">' + esc(lbl) + '</span>' +
             '<div class="conj-input">' +
               '<input type="text" class="field' + (f ? (f.ok ? ' field-ok' : ' field-err') : '') + '" id="conj' + i + '" placeholder="..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (f ? esc(f.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
               (f && !f.ok ? '<div class="conj-result"><span class="conj-wrong">→</span><span class="conj-answer conj-correct">' + esc(f.correct) + '</span></div>' : '') +
@@ -1180,10 +1191,18 @@ function checkHWVerb(idx) {
 
   PRONOUNS.forEach(function(p, i) {
     var typed = ($('conj' + i) ? $('conj' + i).value : '').trim().toLowerCase().normalize('NFC');
-    var expected = correct[p].normalize('NFC');
-    var ok = typed === expected;
+    var rawForm = correct[p].normalize('NFC');
+    var displayCorrect = correct[p];
+    var ok = typed === rawForm;
+
+    if (p === 'je' && needsElision(rawForm)) {
+      var elided = ("j'" + rawForm).normalize('NFC');
+      displayCorrect = "j'" + correct[p];
+      if (typed === elided) ok = true;
+    }
+
     if (ok) scoreCorrect++;
-    forms[p] = { typed: typed, correct: correct[p], ok: ok };
+    forms[p] = { typed: typed, correct: displayCorrect, ok: ok };
   });
 
   S.hwChecked['v' + idx] = { forms: forms, score: { total: 6, correct: scoreCorrect } };
