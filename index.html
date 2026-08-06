@@ -1215,11 +1215,23 @@ function checkHWVerb(idx) {
   render();
 }
 
+function hintLevel() {
+  if (S.hwBankIdx <= 3) return 0;
+  if (S.hwBankIdx <= 8) return 1;
+  return 2;
+}
+
 function renderHWNoun(idx) {
   var noun = S.hwWords.nouns[idx];
   var checked = S.hwChecked['n' + idx];
   var pct = Math.round((S.hwStep / 10) * 100);
   var article = noun.g === 'f' ? 'une' : 'un';
+  var hl = hintLevel();
+  var genderHint = hl <= 1 ? (noun.g === 'f' ? 'feminine' : 'masculine') : '';
+  var articlePlaceholder = hl === 0 ? (article + ' ...') : '...';
+  var pluralPlaceholder = hl === 0 ? 'des ...' : '...';
+  var articleLabel = hl === 0 ? 'Write with un or une:' : 'Write with the correct article:';
+  var pluralLabel = 'Write the plural:';
 
   app().innerHTML =
     '<div class="dp">' +
@@ -1233,15 +1245,15 @@ function renderHWNoun(idx) {
       '</div>' +
       '<div class="dp-body" style="justify-content:flex-start">' +
         '<div class="serif" style="font-size:2rem;text-align:center;margin-bottom:.5rem">' + esc(noun.w) + '</div>' +
-        '<div class="sub center" style="margin-bottom:1.5rem">' + (noun.g === 'f' ? 'feminine' : 'masculine') + '</div>' +
+        (genderHint ? '<div class="sub center" style="margin-bottom:1.5rem">' + genderHint + '</div>' : '<div style="margin-bottom:1.5rem"></div>') +
         '<div class="hw-form-row">' +
-          '<label class="hw-form-label">Write with indefinite article:</label>' +
-          '<input type="text" class="field' + (checked ? (checked.article && checked.article.ok ? ' field-ok' : ' field-err') : '') + '" id="noun-article" placeholder="' + article + ' ..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (checked && checked.article ? esc(checked.article.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
+          '<label class="hw-form-label">' + articleLabel + '</label>' +
+          '<input type="text" class="field' + (checked ? (checked.article && checked.article.ok ? ' field-ok' : ' field-err') : '') + '" id="noun-article" placeholder="' + articlePlaceholder + '" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (checked && checked.article ? esc(checked.article.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
           (checked && checked.article && !checked.article.ok ? '<div class="conj-result"><span class="conj-wrong">→</span><span class="conj-answer conj-correct">' + esc(checked.article.correct) + '</span></div>' : '') +
         '</div>' +
         '<div class="hw-form-row">' +
-          '<label class="hw-form-label">Write plural with des:</label>' +
-          '<input type="text" class="field' + (checked ? (checked.plural && checked.plural.ok ? ' field-ok' : ' field-err') : '') + '" id="noun-plural" placeholder="des ..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (checked && checked.plural ? esc(checked.plural.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
+          '<label class="hw-form-label">' + pluralLabel + '</label>' +
+          '<input type="text" class="field' + (checked ? (checked.plural && checked.plural.ok ? ' field-ok' : ' field-err') : '') + '" id="noun-plural" placeholder="' + pluralPlaceholder + '" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (checked && checked.plural ? esc(checked.plural.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
           (checked && checked.plural && !checked.plural.ok ? '<div class="conj-result"><span class="conj-wrong">→</span><span class="conj-answer conj-correct">' + esc(checked.plural.correct) + '</span></div>' : '') +
         '</div>' +
         (!checked ?
@@ -1308,6 +1320,8 @@ function renderHWAdj(idx) {
   var adj = S.hwWords.adjectives[idx];
   var checked = S.hwChecked['a' + idx];
   var pct = Math.round((S.hwStep / 10) * 100);
+  var hl = hintLevel();
+  var showFormHint = hl <= 1;
 
   app().innerHTML =
     '<div class="dp">' +
@@ -1321,19 +1335,19 @@ function renderHWAdj(idx) {
       '</div>' +
       '<div class="dp-body" style="justify-content:flex-start">' +
         '<div class="serif" style="font-size:2rem;text-align:center;margin-bottom:.5rem">' + esc(adj) + '</div>' +
-        '<div class="sub center" style="margin-bottom:1.5rem">masculine singular</div>' +
+        (showFormHint ? '<div class="sub center" style="margin-bottom:1.5rem">masculine singular</div>' : '<div style="margin-bottom:1.5rem"></div>') +
         '<div class="hw-form-row">' +
-          '<label class="hw-form-label">Feminine singular:</label>' +
+          '<label class="hw-form-label">' + (showFormHint ? 'Feminine singular:' : 'Feminine:') + '</label>' +
           '<input type="text" class="field' + (checked ? (checked.fem && checked.fem.ok ? ' field-ok' : ' field-err') : '') + '" id="adj-fem" placeholder="..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (checked && checked.fem ? esc(checked.fem.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
           (checked && checked.fem && !checked.fem.ok ? '<div class="conj-result"><span class="conj-wrong">→</span><span class="conj-answer conj-correct">' + esc(checked.fem.correct) + '</span></div>' : '') +
         '</div>' +
         '<div class="hw-form-row">' +
-          '<label class="hw-form-label">Masculine plural:</label>' +
+          '<label class="hw-form-label">' + (showFormHint ? 'Masculine plural:' : 'Masc. plural:') + '</label>' +
           '<input type="text" class="field' + (checked ? (checked.mascPl && checked.mascPl.ok ? ' field-ok' : ' field-err') : '') + '" id="adj-mpl" placeholder="..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (checked && checked.mascPl ? esc(checked.mascPl.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
           (checked && checked.mascPl && !checked.mascPl.ok ? '<div class="conj-result"><span class="conj-wrong">→</span><span class="conj-answer conj-correct">' + esc(checked.mascPl.correct) + '</span></div>' : '') +
         '</div>' +
         '<div class="hw-form-row">' +
-          '<label class="hw-form-label">Feminine plural:</label>' +
+          '<label class="hw-form-label">' + (showFormHint ? 'Feminine plural:' : 'Fem. plural:') + '</label>' +
           '<input type="text" class="field' + (checked ? (checked.femPl && checked.femPl.ok ? ' field-ok' : ' field-err') : '') + '" id="adj-fpl" placeholder="..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (checked && checked.femPl ? esc(checked.femPl.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
           (checked && checked.femPl && !checked.femPl.ok ? '<div class="conj-result"><span class="conj-wrong">→</span><span class="conj-answer conj-correct">' + esc(checked.femPl.correct) + '</span></div>' : '') +
         '</div>' +
