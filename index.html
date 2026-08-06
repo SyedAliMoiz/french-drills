@@ -545,7 +545,7 @@ const Engine = {
 
   check(q, answer) {
     if (q.type === 'mcq' || q.type === 'why') return answer === q.correct;
-    const norm = s => s.trim().normalize('NFC').replace(/\s+/g,' ').replace(/[.!?,;…]+$/,'').toLowerCase();
+    const norm = s => s.trim().normalize('NFC').replace(/[''ʼ`′]/g,"'").replace(/\s+/g,' ').replace(/[.!?,;…]+$/,'').toLowerCase();
     const strip = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
     const match = (a, b) => a === b || strip(a) === strip(b);
     const n = norm(answer);
@@ -971,6 +971,10 @@ function pickHWSet(idx) {
   };
 }
 
+function normApostrophe(s) {
+  return s.replace(/[‘’ʼ`′]/g, "'");
+}
+
 function needsElision(conjugatedForm) {
   return /^[aeéèêëiîïoôuùûyh]/i.test(conjugatedForm);
 }
@@ -1190,7 +1194,7 @@ function checkHWVerb(idx) {
   var scoreCorrect = 0;
 
   PRONOUNS.forEach(function(p, i) {
-    var typed = ($('conj' + i) ? $('conj' + i).value : '').trim().toLowerCase().normalize('NFC');
+    var typed = normApostrophe(($('conj' + i) ? $('conj' + i).value : '').trim().toLowerCase().normalize('NFC'));
     var rawForm = correct[p].normalize('NFC');
     var displayCorrect = correct[p];
     var ok = typed === rawForm;
@@ -1273,7 +1277,7 @@ function checkHWNoun(idx) {
 
   var noun = S.hwWords.nouns[idx];
   var articleWord = noun.g === 'f' ? 'une' : 'un';
-  var norm = function(s) { return s.trim().toLowerCase().normalize('NFC').replace(/\s+/g, ' '); };
+  var norm = function(s) { return normApostrophe(s.trim().toLowerCase().normalize('NFC').replace(/\s+/g, ' ')); };
 
   var typedArticle = norm($('noun-article') ? $('noun-article').value : '');
   var correctArticle = articleWord + ' ' + noun.w;
@@ -1365,7 +1369,7 @@ function checkHWAdj(idx) {
   S.hwResponseCount++;
 
   var adj = S.hwWords.adjectives[idx];
-  var norm = function(s) { return s.trim().toLowerCase().normalize('NFC'); };
+  var norm = function(s) { return normApostrophe(s.trim().toLowerCase().normalize('NFC')); };
 
   var correctFem = French.feminizeAdj(adj);
   var correctMascPl = French.pluralAdj(adj);
