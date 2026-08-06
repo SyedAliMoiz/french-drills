@@ -1067,7 +1067,13 @@ function renderHWEntry() {
   var set = HW_BANK[S.hwBankIdx % HW_BANK.length];
   var isExtra = isHWDoneToday();
   var label = isExtra ? 'Extra Round' : 'Daily Homework';
-  var levelLabel = 'Set ' + (S.hwBankIdx + 1) + '/' + HW_BANK.length;
+
+  function wordLine(french, meaning) {
+    return '<div style="padding:.625rem 0;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:.75rem">' +
+      '<span style="font-weight:700;font-size:clamp(1.125rem,2.5vw,1.375rem)">' + esc(french) + '</span>' +
+      '<span style="color:var(--text-dim);font-size:clamp(.9375rem,2vw,1.0625rem)">' + esc(meaning) + '</span>' +
+    '</div>';
+  }
 
   app().innerHTML =
     '<div class="dp">' +
@@ -1079,34 +1085,20 @@ function renderHWEntry() {
         '</div>' +
       '</div>' +
       '<div class="dp-body" style="justify-content:flex-start;padding-top:.5rem">' +
-        '<div class="center" style="margin-bottom:1.25rem"><span class="sub">' + levelLabel + '</span></div>' +
-        '<div class="hw-entry-section">' +
+        '<div class="card" style="background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.25rem;box-shadow:var(--card-shadow);margin-bottom:.75rem">' +
           '<div class="hw-entry-label">Verbs</div>' +
-          set.verbs.map(function(v) {
-            return '<div class="hw-word-row" style="margin-bottom:.5rem">' +
-              '<span class="serif" style="font-size:1.125rem;flex:1">' + esc(v.w) + '</span>' +
-              '<span class="sub" style="font-size:.875rem">' + esc(v.m) + '</span>' +
-            '</div>';
-          }).join('') +
+          set.verbs.map(function(v) { return wordLine(v.w, v.m); }).join('') +
         '</div>' +
-        '<div class="hw-entry-section">' +
+        '<div class="card" style="background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.25rem;box-shadow:var(--card-shadow);margin-bottom:.75rem">' +
           '<div class="hw-entry-label">Nouns</div>' +
           set.nouns.map(function(n) {
             var article = n.g === 'f' ? 'une' : 'un';
-            return '<div class="hw-word-row" style="margin-bottom:.5rem">' +
-              '<span class="serif" style="font-size:1.125rem;flex:1">' + esc(article + ' ' + n.w) + '</span>' +
-              '<span class="sub" style="font-size:.875rem">' + esc(n.m) + '</span>' +
-            '</div>';
+            return wordLine(article + ' ' + n.w, n.m);
           }).join('') +
         '</div>' +
-        '<div class="hw-entry-section">' +
-          '<div class="hw-entry-label">Adjectives <span style="font-weight:400;text-transform:none;font-size:.75rem">(masc. singular)</span></div>' +
-          set.adj.map(function(a) {
-            return '<div class="hw-word-row" style="margin-bottom:.5rem">' +
-              '<span class="serif" style="font-size:1.125rem;flex:1">' + esc(a.w) + '</span>' +
-              '<span class="sub" style="font-size:.875rem">' + esc(a.m) + '</span>' +
-            '</div>';
-          }).join('') +
+        '<div class="card" style="background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.25rem;box-shadow:var(--card-shadow);margin-bottom:.75rem">' +
+          '<div class="hw-entry-label" style="margin-bottom:.375rem">Adjectives <span style="font-weight:400;text-transform:none;font-size:.75rem">(masc. singular)</span></div>' +
+          set.adj.map(function(a) { return wordLine(a.w, a.m); }).join('') +
         '</div>' +
         '<button class="btn btn-p mt" id="start-hw-btn">Start Homework</button>' +
       '</div>' +
