@@ -1630,38 +1630,44 @@ function generateHWMarkdown() {
   var set = HW_BANK[S.hwBankIdx % HW_BANK.length];
   var md = '';
   for (var i = 0; i < 3; i++) {
+    var vc = S.hwChecked['v' + i];
     var verb = S.hwWords.verbs[i];
     var conj = French.conjugateER(verb);
     md += '### ' + verb + '\n\n';
     PRONOUNS.forEach(function(p, pi) {
       var lbl = pronounLabel(p, conj[p]);
-      md += '|' + lbl + '|' + conj[p] + '|\n';
+      var val = vc && vc.forms[p] ? vc.forms[p].typed : '';
+      md += '|' + lbl + '|' + (val || '') + '|\n';
       if (pi === 0) md += '|---|---|\n';
     });
     md += '\n';
   }
   for (var i = 0; i < 3; i++) {
+    var nc = S.hwChecked['n' + i];
     var noun = S.hwWords.nouns[i];
-    var article = noun.g === 'f' ? 'une' : 'un';
     var gLabel = noun.g === 'f' ? 'feminine' : 'masculine';
     md += '### ' + noun.w + '\n\n';
-    md += '|' + gLabel + '|' + article + ' ' + noun.w + '|\n';
+    md += '|' + gLabel + '|' + (nc && nc.article ? nc.article.typed : '') + '|\n';
     md += '|---|---|\n';
-    md += '|plural|des ' + French.pluralNoun(noun.w) + '|\n\n';
+    md += '|plural|' + (nc && nc.plural ? nc.plural.typed : '') + '|\n\n';
   }
   for (var i = 0; i < 3; i++) {
+    var ac = S.hwChecked['a' + i];
     var adj = S.hwWords.adjectives[i];
     md += '### ' + adj + '\n\n';
     md += '|masculine|' + adj + '|\n';
     md += '|---|---|\n';
-    md += '|feminine|' + French.feminizeAdj(adj) + '|\n';
-    md += '|masc. plural|' + French.pluralAdj(adj) + '|\n';
-    md += '|fem. plural|' + French.pluralAdj(French.feminizeAdj(adj)) + '|\n\n';
+    md += '|feminine|' + (ac && ac.fem ? ac.fem.typed : '') + '|\n';
+    md += '|masc. plural|' + (ac && ac.mascPl ? ac.mascPl.typed : '') + '|\n';
+    md += '|fem. plural|' + (ac && ac.femPl ? ac.femPl.typed : '') + '|\n\n';
   }
   if (set.sentences) {
     md += '### Sentences\n\n';
     md += '|English|French|\n|---|---|\n';
-    set.sentences.forEach(function(s) { md += '|' + s.en + '|' + s.fr + '|\n'; });
+    set.sentences.forEach(function(s, si) {
+      var sc = S.hwChecked['s' + si];
+      md += '|' + s.en + '|' + (sc ? sc.typed : '') + '|\n';
+    });
     md += '\n';
   }
   return md;
