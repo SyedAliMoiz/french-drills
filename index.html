@@ -268,6 +268,15 @@ body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background
 .hw-summary-word{font-family:Georgia,serif;font-weight:700;font-size:1.125rem;margin-bottom:.5rem}
 .hw-summary-row{display:flex;justify-content:space-between;font-size:.875rem;padding:.25rem 0;border-bottom:1px solid var(--line)}
 .hw-summary-row:last-child{border-bottom:none}
+.streak-badge{display:inline-flex;align-items:center;gap:.375rem;font-size:.875rem;font-weight:700;color:var(--warn);padding:.25rem .75rem;background:var(--warn-bg);border:1px solid var(--warn-border);border-radius:99px}
+.hw-history{margin-top:1rem;text-align:left;width:100%}
+.hw-history-title{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text-dim);margin-bottom:.5rem}
+.hw-history-row{display:flex;justify-content:space-between;align-items:center;padding:.5rem .75rem;border-bottom:1px solid var(--line);font-size:.875rem}
+.hw-history-row:last-child{border-bottom:none}
+.hw-history-date{color:var(--text-dim)}
+.hw-history-score{font-weight:700;font-variant-numeric:tabular-nums}
+.hw-history-bar{flex:1;margin:0 .75rem;height:4px;background:var(--bar-track);border-radius:2px;overflow:hidden}
+.hw-history-fill{height:100%;border-radius:2px}
 </style>
 </head>
 <body>
@@ -632,6 +641,7 @@ const S = {
   hwChecked: null,
   hwResponseCount: 0,
   hwStartTime: null,
+  sessionStartTime: null,
 };
 
 let _advanceListener = null;
@@ -779,6 +789,7 @@ async function doLogin() {
 
 function startAutoMode() {
   if (!isHWDoneToday()) { startHWMode(); return; }
+  if (!S.sessionStartTime) S.sessionStartTime = Date.now();
   const p = S.progress;
   const available = Object.entries(p.sections)
     .filter(([,s]) => s.status === 'locked' || s.status === 'learning')
@@ -838,6 +849,58 @@ function startAutoMode() {
    HW MODE — Sir Saif's daily homework
    ═══════════════════════════════════════════════════════════════ */
 
+function getStreak() {
+  if (!S.progress) return 0;
+  var hw = S.progress.hw || {};
+  var today = todayStr();
+  var streak = 0;
+  var d = new Date(today);
+  if (hw[today] && hw[today].complete) { streak = 1; d.setDate(d.getDate() - 1); }
+  else { d.setDate(d.getDate() - 1); }
+  while (true) {
+    var key = d.toISOString().slice(0, 10);
+    if (hw[key] && hw[key].complete) { streak++; d.setDate(d.getDate() - 1); }
+    else break;
+  }
+  return streak;
+}
+
+function renderStreakBadge() {
+  var streak = getStreak();
+  if (streak === 0) return '';
+  return '<div class="streak-badge">Day ' + streak + '</div>';
+}
+
+function renderHWHistory() {
+  if (!S.progress || !S.progress.hw) return '';
+  var hw = S.progress.hw;
+  var days = Object.keys(hw).filter(function(k) { return hw[k].complete; }).sort().reverse().slice(0, 7);
+  if (days.length === 0) return '';
+  return '<div class="hw-history">' +
+    '<div class="hw-history-title">Last ' + days.length + ' days</div>' +
+    days.map(function(d) {
+      var entry = hw[d];
+      var score = entry.score || { total: 0, correct: 0 };
+      var pct = score.total > 0 ? Math.round((score.correct / score.total) * 100) : 0;
+      var color = pct >= 80 ? 'var(--ok)' : pct >= 50 ? 'var(--accent)' : 'var(--err)';
+      var dateLabel = d.slice(5);
+      return '<div class="hw-history-row">' +
+        '<span class="hw-history-date">' + dateLabel + '</span>' +
+        '<div class="hw-history-bar"><div class="hw-history-fill" style="width:' + pct + '%;background:' + color + '"></div></div>' +
+        '<span class="hw-history-score" style="color:' + color + '">' + score.correct + '/' + score.total + '</span>' +
+      '</div>';
+    }).join('') +
+  '</div>';
+}
+
+function formatDuration(ms) {
+  var secs = Math.floor(ms / 1000);
+  if (secs < 60) return secs + 's';
+  var mins = Math.floor(secs / 60);
+  secs = secs % 60;
+  return mins + 'm ' + (secs < 10 ? '0' : '') + secs + 's';
+}
+
 let _hwActiveInput = null;
 
 function insertCharHW(ch) {
@@ -857,6 +920,7 @@ function startHWMode() {
 
   S.screen = 'hw';
   S.hwStep = 0;
+  if (!S.sessionStartTime) S.sessionStartTime = Date.now();
   S.hwWords = { verbs: ['','',''], nouns: [{w:'',g:'f'},{w:'',g:'f'},{w:'',g:'f'}], adjectives: ['','',''] };
   S.hwResults = { verbs: [], nouns: [], adjectives: [] };
   S.hwChecked = {};
@@ -920,8 +984,8 @@ function bindHWInputs() {
 }
 
 function renderAccentBar(disabled) {
-  return (!disabled ? '<div class="center"><button class="keys-toggle" id="keys-toggle">accents ↓</button></div>' : '') +
-    '<div class="keys" id="keys" style="display:none">' +
+  return (!disabled ? '<div class="center"><button class="keys-toggle" id="keys-toggle">accents ↑</button></div>' : '') +
+    '<div class="keys" id="keys">' +
     ACCENTS.map(function(c) { return '<button class="key" data-c="' + c + '"' + (disabled ? ' disabled' : '') + '>' + c + '</button>'; }).join('') +
     '</div>';
 }
@@ -933,6 +997,7 @@ function renderHWEntry() {
       '<div class="dp-top">' +
         '<div class="row between">' +
           '<span class="dp-count">Daily Homework</span>' +
+          renderStreakBadge() +
           '<span class="dp-count">' + todayStr() + '</span>' +
         '</div>' +
       '</div>' +
@@ -1340,21 +1405,38 @@ function renderHWSummary() {
     }
   }
 
-  var startTimeDisplay = S.hwStartTime ? new Date(S.hwStartTime).toLocaleTimeString() : 'N/A';
+  var durationStr = S.sessionStartTime ? formatDuration(Date.now() - S.sessionStartTime) : '';
 
   app().innerHTML =
     '<div class="dp">' +
       '<div class="dp-body center" style="justify-content:flex-start;padding-top:2rem">' +
-        '<div class="res-score" style="color:' + (pctScore >= 80 ? 'var(--ok)' : pctScore >= 50 ? 'var(--accent)' : 'var(--err)') + '">' + totalCorrect + ' / ' + totalScore + '</div>' +
+        renderStreakBadge() +
+        '<div class="res-score" style="color:' + (pctScore >= 80 ? 'var(--ok)' : pctScore >= 50 ? 'var(--accent)' : 'var(--err)') + ';margin-top:.75rem">' + totalCorrect + ' / ' + totalScore + '</div>' +
         '<div class="res-msg">' + msg + '</div>' +
-        '<div class="sub" style="margin-bottom:1rem">' + S.hwResponseCount + ' checks — started ' + startTimeDisplay + '</div>' +
+        '<div class="sub" style="margin-bottom:1rem">' + (durationStr ? durationStr + ' today' : '') + '</div>' +
         (errors ? '<div style="text-align:left;width:100%;margin-bottom:1rem"><div class="hw-entry-label" style="color:var(--err)">Review These</div>' + errors + '</div>' : '') +
-        '<button class="btn btn-p mt" id="hw-bonus-btn" style="border-radius:12px;padding:1rem">Continue to Bonus Drills →</button>' +
+        '<div class="col" style="gap:.75rem;width:100%">' +
+          '<button class="btn btn-p" id="hw-another-btn" style="border-radius:12px;padding:1rem">One more round?</button>' +
+          '<button class="btn btn-g" id="hw-bonus-btn" style="border-radius:12px;padding:1rem">Continue to Bonus Drills →</button>' +
+        '</div>' +
+        renderHWHistory() +
       '</div>' +
     '</div>';
 
   completeHW();
+  $('hw-another-btn').onclick = function() { resetHWForNewRound(); };
   $('hw-bonus-btn').onclick = function() { startAutoMode(); };
+}
+
+function resetHWForNewRound() {
+  S.hwStep = 0;
+  S.hwWords = { verbs: ['','',''], nouns: [{w:'',g:'f'},{w:'',g:'f'},{w:'',g:'f'}], adjectives: ['','',''] };
+  S.hwResults = { verbs: [], nouns: [], adjectives: [] };
+  S.hwChecked = {};
+  S.hwResponseCount = 0;
+  S.hwStartTime = null;
+  S.screen = 'hw';
+  render();
 }
 
 function saveHWState() {
@@ -1469,8 +1551,8 @@ function renderBlank(q) {
           placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
           value="${ans ? esc(a.typed) : ''}" ${ans ? 'disabled' : ''}>
       </div>
-      <div class="center"><button class="keys-toggle" id="keys-toggle" ${ans ? 'style="display:none"' : ''}>accents ↓</button></div>
-      <div class="keys" id="keys" style="display:none">
+      <div class="center"><button class="keys-toggle" id="keys-toggle" ${ans ? 'style="display:none"' : ''}>accents ↑</button></div>
+      <div class="keys" id="keys">
         ${ACCENTS.map(c => `<button class="key" data-c="${c}" ${ans ? 'disabled' : ''}>${c}</button>`).join('')}
       </div>
       ${!ans ? '<button class="btn btn-p" id="check-btn">Vérifier</button>' : ''}
@@ -1499,8 +1581,8 @@ function renderOpen(q) {
           placeholder="Votre réponse…" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false"
           value="${ans ? esc(a.typed) : ''}" ${ans ? 'disabled' : ''}>
       </div>
-      <div class="center"><button class="keys-toggle" id="keys-toggle" ${ans ? 'style="display:none"' : ''}>accents ↓</button></div>
-      <div class="keys" id="keys" style="display:none">
+      <div class="center"><button class="keys-toggle" id="keys-toggle" ${ans ? 'style="display:none"' : ''}>accents ↑</button></div>
+      <div class="keys" id="keys">
         ${ACCENTS.map(c => `<button class="key" data-c="${c}" ${ans ? 'disabled' : ''}>${c}</button>`).join('')}
       </div>
       ${!ans ? '<button class="btn btn-p" id="check-btn">Vérifier</button>' : ''}
@@ -1668,14 +1750,18 @@ function renderDone() {
   if (acc < 50) msg = 'Il faut réviser.';
   else if (acc < 80) msg = 'Pas mal — continue !';
   else if (acc < 100) msg = 'Bien joué !';
+  const durationStr = S.sessionStartTime ? formatDuration(Date.now() - S.sessionStartTime) : '';
+  const stats = S.progress ? S.progress.stats : {};
 
   app().innerHTML = `
     <div class="dp">
       <div class="dp-body center">
         <div style="margin-top:auto"></div>
-        <div class="res-score" style="color:var(--accent)">${correct} / ${total}</div>
-        <div class="res-msg" style="font-size:1.25rem">${S.sessionTotal > 0 ? msg : 'All caught up.'}</div>
-        <p class="sub" style="margin-bottom:2rem">Come back later for spaced review.</p>
+        ${renderStreakBadge()}
+        <div class="res-score" style="color:var(--accent);margin-top:.75rem">${correct} / ${total}</div>
+        <div class="res-msg" style="font-size:1.25rem">${total > 0 ? msg : 'All caught up.'}</div>
+        ${durationStr ? `<p class="sub">${durationStr} today</p>` : ''}
+        <p class="sub" style="margin-bottom:1.5rem">${stats.questions || 0} lifetime questions &middot; ${stats.correct || 0} correct</p>
         <div class="col" style="gap:1rem">
           <button class="btn btn-p" id="again-btn" style="border-radius:12px;padding:1rem">Start Over (Shuffled)</button>
           <button class="btn btn-g" id="lock-btn" style="border-radius:12px;padding:1rem">Lock</button>
