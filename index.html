@@ -621,6 +621,61 @@ const French = {
 
 
 /* ═══════════════════════════════════════════════════════════════
+   HW WORD BANK — progressive difficulty over 14 days, then cycles
+   ═══════════════════════════════════════════════════════════════ */
+
+const HW_BANK = [
+  // Days 1-3: all regular patterns
+  { verbs: [{w:'parler',m:'to speak'},{w:'aimer',m:'to like/love'},{w:'donner',m:'to give'}],
+    nouns: [{w:'chat',g:'m',m:'cat'},{w:'maison',g:'f',m:'house'},{w:'livre',g:'m',m:'book'}],
+    adj: [{w:'grand',m:'big/tall'},{w:'petit',m:'small'},{w:'content',m:'happy'}] },
+  { verbs: [{w:'chanter',m:'to sing'},{w:'trouver',m:'to find'},{w:'marcher',m:'to walk'}],
+    nouns: [{w:'table',g:'f',m:'table'},{w:'garçon',g:'m',m:'boy'},{w:'fille',g:'f',m:'girl'}],
+    adj: [{w:'fort',m:'strong'},{w:'intelligent',m:'smart'},{w:'blond',m:'blonde'}] },
+  { verbs: [{w:'regarder',m:'to watch'},{w:'écouter',m:'to listen'},{w:'fermer',m:'to close'}],
+    nouns: [{w:'porte',g:'f',m:'door'},{w:'ami',g:'m',m:'friend'},{w:'école',g:'f',m:'school'}],
+    adj: [{w:'joli',m:'pretty'},{w:'important',m:'important'},{w:'français',m:'French'}] },
+  // Days 4-5: irregular adjectives (beau/nouveau/vieux/blanc/long/gros)
+  { verbs: [{w:'chercher',m:'to look for'},{w:'montrer',m:'to show'},{w:'porter',m:'to carry/wear'}],
+    nouns: [{w:'jardin',g:'m',m:'garden'},{w:'chambre',g:'f',m:'bedroom'},{w:'animal',g:'m',m:'animal'}],
+    adj: [{w:'nouveau',m:'new'},{w:'beau',m:'beautiful'},{w:'long',m:'long'}] },
+  { verbs: [{w:'jouer',m:'to play'},{w:'habiter',m:'to live (in)'},{w:'arriver',m:'to arrive'}],
+    nouns: [{w:'chapeau',g:'m',m:'hat'},{w:'oiseau',g:'m',m:'bird'},{w:'chanson',g:'f',m:'song'}],
+    adj: [{w:'vieux',m:'old'},{w:'blanc',m:'white'},{w:'gros',m:'big/fat'}] },
+  // Days 6-7: -ger/-cer verbs + -eux/-if adjectives
+  { verbs: [{w:'manger',m:'to eat'},{w:'commencer',m:'to begin'},{w:'danser',m:'to dance'}],
+    nouns: [{w:'pays',g:'m',m:'country'},{w:'voix',g:'f',m:'voice'},{w:'nez',g:'m',m:'nose'}],
+    adj: [{w:'heureux',m:'happy'},{w:'doux',m:'sweet/soft'},{w:'actif',m:'active'}] },
+  { verbs: [{w:'voyager',m:'to travel'},{w:'placer',m:'to place'},{w:'nager',m:'to swim'}],
+    nouns: [{w:'journal',g:'m',m:'newspaper'},{w:'bateau',g:'m',m:'boat'},{w:'fleur',g:'f',m:'flower'}],
+    adj: [{w:'gentil',m:'kind'},{w:'favori',m:'favorite'},{w:'frais',m:'fresh/cool'}] },
+  // Days 8-10: mixed review + new regular vocab
+  { verbs: [{w:'préparer',m:'to prepare'},{w:'adorer',m:'to adore'},{w:'détester',m:'to hate'}],
+    nouns: [{w:'cuisine',g:'f',m:'kitchen'},{w:'repas',g:'m',m:'meal'},{w:'enfant',g:'m',m:'child'}],
+    adj: [{w:'bon',m:'good'},{w:'mauvais',m:'bad'},{w:'jeune',m:'young'}] },
+  { verbs: [{w:'inviter',m:'to invite'},{w:'passer',m:'to pass/spend'},{w:'dessiner',m:'to draw'}],
+    nouns: [{w:'rue',g:'f',m:'street'},{w:'magasin',g:'m',m:'shop'},{w:'fenêtre',g:'f',m:'window'}],
+    adj: [{w:'léger',m:'light'},{w:'dernier',m:'last'},{w:'premier',m:'first'}] },
+  { verbs: [{w:'laver',m:'to wash'},{w:'couper',m:'to cut'},{w:'tomber',m:'to fall'}],
+    nouns: [{w:'couleur',g:'f',m:'color'},{w:'mur',g:'m',m:'wall'},{w:'clé',g:'f',m:'key'}],
+    adj: [{w:'naturel',m:'natural'},{w:'cruel',m:'cruel'},{w:'ancien',m:'old/former'}] },
+  // Days 11-14: harder combos (-cer/-ger verbs + tricky plurals + irregular adj)
+  { verbs: [{w:'lancer',m:'to throw'},{w:'ranger',m:'to tidy'},{w:'effacer',m:'to erase'}],
+    nouns: [{w:'gâteau',g:'m',m:'cake'},{w:'cadeau',g:'m',m:'gift'},{w:'ville',g:'f',m:'city'}],
+    adj: [{w:'faux',m:'false'},{w:'roux',m:'red-haired'},{w:'sec',m:'dry'}] },
+  { verbs: [{w:'partager',m:'to share'},{w:'avancer',m:'to advance'},{w:'plonger',m:'to dive'}],
+    nouns: [{w:'hôpital',g:'m',m:'hospital'},{w:'château',g:'m',m:'castle'},{w:'personne',g:'f',m:'person'}],
+    adj: [{w:'public',m:'public'},{w:'violet',m:'purple'},{w:'muet',m:'mute/silent'}] },
+  { verbs: [{w:'corriger',m:'to correct'},{w:'forcer',m:'to force'},{w:'tracer',m:'to trace/draw'}],
+    nouns: [{w:'rideau',g:'m',m:'curtain'},{w:'tableau',g:'m',m:'board/painting'},{w:'canal',g:'m',m:'canal'}],
+    adj: [{w:'net',m:'clean/clear'},{w:'direct',m:'direct'},{w:'correct',m:'correct'}] },
+  { verbs: [{w:'annoncer',m:'to announce'},{w:'déplacer',m:'to move'},{w:'encourager',m:'to encourage'}],
+    nouns: [{w:'noyau',g:'m',m:'pit/core'},{w:'tuyau',g:'m',m:'pipe'},{w:'métal',g:'m',m:'metal'}],
+    adj: [{w:'loyal',m:'loyal'},{w:'normal',m:'normal'},{w:'original',m:'original'}] },
+];
+
+
+/* ═══════════════════════════════════════════════════════════════
    APP STATE — simplified continuous drill
    ═══════════════════════════════════════════════════════════════ */
 
@@ -642,6 +697,7 @@ const S = {
   hwResponseCount: 0,
   hwStartTime: null,
   sessionStartTime: null,
+  hwBankIdx: 0,
 };
 
 let _advanceListener = null;
@@ -901,6 +957,20 @@ function formatDuration(ms) {
   return mins + 'm ' + (secs < 10 ? '0' : '') + secs + 's';
 }
 
+function getHWLevel() {
+  if (!S.progress || !S.progress.hw) return 0;
+  return Object.values(S.progress.hw).filter(function(h) { return h.complete; }).length;
+}
+
+function pickHWSet(idx) {
+  var set = HW_BANK[idx % HW_BANK.length];
+  return {
+    verbs: set.verbs.map(function(v) { return v.w; }),
+    nouns: set.nouns.map(function(n) { return { w: n.w, g: n.g }; }),
+    adjectives: set.adj.map(function(a) { return a.w; })
+  };
+}
+
 let _hwActiveInput = null;
 
 function insertCharHW(ch) {
@@ -921,19 +991,22 @@ function startHWMode() {
   S.screen = 'hw';
   S.hwStep = 0;
   if (!S.sessionStartTime) S.sessionStartTime = Date.now();
-  S.hwWords = { verbs: ['','',''], nouns: [{w:'',g:'f'},{w:'',g:'f'},{w:'',g:'f'}], adjectives: ['','',''] };
-  S.hwResults = { verbs: [], nouns: [], adjectives: [] };
-  S.hwChecked = {};
-  S.hwResponseCount = 0;
-  S.hwStartTime = null;
 
   if (existing && !existing.complete && existing.words) {
     S.hwWords = existing.words;
     S.hwStep = existing.lastStep || 0;
-    S.hwResults = existing.results || S.hwResults;
+    S.hwResults = existing.results || S.hwResults || { verbs: [], nouns: [], adjectives: [] };
     S.hwChecked = existing.checked || {};
     S.hwResponseCount = existing.responses || 0;
     S.hwStartTime = existing.startedAt || null;
+    S.hwBankIdx = existing.bankIdx || 0;
+  } else {
+    S.hwBankIdx = getHWLevel() % HW_BANK.length;
+    S.hwWords = pickHWSet(S.hwBankIdx);
+    S.hwResults = { verbs: [], nouns: [], adjectives: [] };
+    S.hwChecked = {};
+    S.hwResponseCount = 0;
+    S.hwStartTime = null;
   }
 
   render();
@@ -991,80 +1064,59 @@ function renderAccentBar(disabled) {
 }
 
 function renderHWEntry() {
-  var w = S.hwWords;
+  var set = HW_BANK[S.hwBankIdx % HW_BANK.length];
+  var isExtra = isHWDoneToday();
+  var label = isExtra ? 'Extra Round' : 'Daily Homework';
+  var levelLabel = 'Set ' + (S.hwBankIdx + 1) + '/' + HW_BANK.length;
+
   app().innerHTML =
     '<div class="dp">' +
       '<div class="dp-top">' +
         '<div class="row between">' +
-          '<span class="dp-count">Daily Homework</span>' +
+          '<span class="dp-count">' + label + '</span>' +
           renderStreakBadge() +
           '<span class="dp-count">' + todayStr() + '</span>' +
         '</div>' +
       '</div>' +
       '<div class="dp-body" style="justify-content:flex-start;padding-top:.5rem">' +
+        '<div class="center" style="margin-bottom:1.25rem"><span class="sub">' + levelLabel + '</span></div>' +
         '<div class="hw-entry-section">' +
-          '<div class="hw-entry-label">3 ER Verbs</div>' +
-          [0,1,2].map(function(i) {
-            return '<div class="hw-word-row">' +
-              '<span class="hw-word-num">' + (i+1) + '.</span>' +
-              '<input type="text" class="field hw-word-field" id="v' + i + '" placeholder="e.g. parler" value="' + esc(w.verbs[i]) + '" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false">' +
+          '<div class="hw-entry-label">Verbs</div>' +
+          set.verbs.map(function(v) {
+            return '<div class="hw-word-row" style="margin-bottom:.5rem">' +
+              '<span class="serif" style="font-size:1.125rem;flex:1">' + esc(v.w) + '</span>' +
+              '<span class="sub" style="font-size:.875rem">' + esc(v.m) + '</span>' +
             '</div>';
           }).join('') +
         '</div>' +
         '<div class="hw-entry-section">' +
-          '<div class="hw-entry-label">3 Nouns</div>' +
-          [0,1,2].map(function(i) {
-            return '<div class="hw-word-row">' +
-              '<span class="hw-word-num">' + (i+1) + '.</span>' +
-              '<input type="text" class="field hw-word-field" id="n' + i + '" placeholder="e.g. chanson" value="' + esc(w.nouns[i].w) + '" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false">' +
-              '<div class="hw-gender-btns">' +
-                '<button class="hw-gender-btn' + (w.nouns[i].g === 'm' ? ' active' : '') + '" data-ni="' + i + '" data-g="m">un</button>' +
-                '<button class="hw-gender-btn' + (w.nouns[i].g === 'f' ? ' active' : '') + '" data-ni="' + i + '" data-g="f">une</button>' +
-              '</div>' +
+          '<div class="hw-entry-label">Nouns</div>' +
+          set.nouns.map(function(n) {
+            var article = n.g === 'f' ? 'une' : 'un';
+            return '<div class="hw-word-row" style="margin-bottom:.5rem">' +
+              '<span class="serif" style="font-size:1.125rem;flex:1">' + esc(article + ' ' + n.w) + '</span>' +
+              '<span class="sub" style="font-size:.875rem">' + esc(n.m) + '</span>' +
             '</div>';
           }).join('') +
         '</div>' +
         '<div class="hw-entry-section">' +
-          '<div class="hw-entry-label">3 Adjectives <span style="font-weight:400;text-transform:none;font-size:.75rem">(masc. singular)</span></div>' +
-          [0,1,2].map(function(i) {
-            return '<div class="hw-word-row">' +
-              '<span class="hw-word-num">' + (i+1) + '.</span>' +
-              '<input type="text" class="field hw-word-field" id="a' + i + '" placeholder="e.g. grand" value="' + esc(w.adjectives[i]) + '" autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false">' +
+          '<div class="hw-entry-label">Adjectives <span style="font-weight:400;text-transform:none;font-size:.75rem">(masc. singular)</span></div>' +
+          set.adj.map(function(a) {
+            return '<div class="hw-word-row" style="margin-bottom:.5rem">' +
+              '<span class="serif" style="font-size:1.125rem;flex:1">' + esc(a.w) + '</span>' +
+              '<span class="sub" style="font-size:.875rem">' + esc(a.m) + '</span>' +
             '</div>';
           }).join('') +
         '</div>' +
-        (S.error ? '<div class="error-msg">' + esc(S.error) + '</div>' : '') +
-        '<button class="btn btn-p" id="start-hw-btn">Start Homework</button>' +
+        '<button class="btn btn-p mt" id="start-hw-btn">Start Homework</button>' +
       '</div>' +
     '</div>';
 
-  document.querySelectorAll('.hw-gender-btn').forEach(function(btn) {
-    btn.onclick = function() {
-      var ni = parseInt(btn.dataset.ni);
-      S.hwWords.nouns[ni].g = btn.dataset.g;
-      render();
-    };
-  });
-
   $('start-hw-btn').onclick = doStartHW;
-  if ($('v0')) $('v0').focus();
 }
 
 function doStartHW() {
-  var verbs = [0,1,2].map(function(i) { return ($('v' + i) ? $('v' + i).value : '').trim().toLowerCase(); });
-  var nouns = [0,1,2].map(function(i) { return { w: ($('n' + i) ? $('n' + i).value : '').trim().toLowerCase(), g: S.hwWords.nouns[i].g }; });
-  var adjs = [0,1,2].map(function(i) { return ($('a' + i) ? $('a' + i).value : '').trim().toLowerCase(); });
-
-  for (var i = 0; i < 3; i++) {
-    if (!verbs[i]) { S.error = 'Enter verb ' + (i+1) + '.'; render(); return; }
-    if (!verbs[i].endsWith('er')) { S.error = '"' + verbs[i] + '" doesn\'t end in -er. ER verbs only!'; render(); return; }
-    if (verbs[i] === 'aller') { S.error = '"aller" is irregular — try parler, manger, or écouter.'; render(); return; }
-    if (!nouns[i].w) { S.error = 'Enter noun ' + (i+1) + '.'; render(); return; }
-    if (!adjs[i]) { S.error = 'Enter adjective ' + (i+1) + '.'; render(); return; }
-  }
-
-  S.hwWords = { verbs: verbs, nouns: nouns, adjectives: adjs };
-  S.error = null;
+  S.hwWords = pickHWSet(S.hwBankIdx);
   S.hwStep = 1;
   saveHWState();
   render();
@@ -1429,8 +1481,9 @@ function renderHWSummary() {
 }
 
 function resetHWForNewRound() {
+  S.hwBankIdx = (S.hwBankIdx + 1) % HW_BANK.length;
   S.hwStep = 0;
-  S.hwWords = { verbs: ['','',''], nouns: [{w:'',g:'f'},{w:'',g:'f'},{w:'',g:'f'}], adjectives: ['','',''] };
+  S.hwWords = pickHWSet(S.hwBankIdx);
   S.hwResults = { verbs: [], nouns: [], adjectives: [] };
   S.hwChecked = {};
   S.hwResponseCount = 0;
@@ -1450,6 +1503,7 @@ function saveHWState() {
     results: S.hwResults,
     checked: S.hwChecked,
     lastStep: S.hwStep,
+    bankIdx: S.hwBankIdx,
     complete: false
   };
   localStorage.setItem('fd_progress', JSON.stringify(S.progress));
