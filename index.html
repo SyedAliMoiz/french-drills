@@ -391,8 +391,11 @@ class GH {
     if (this.token) h['Authorization'] = `Bearer ${this.token}`;
     return h;
   }
+  encodePath(path) {
+    return path.split('/').map(s => encodeURIComponent(s)).join('/');
+  }
   async get(path) {
-    const r = await fetch(`${this.api}/${path}`, { headers: this.headers() });
+    const r = await fetch(`${this.api}/${this.encodePath(path)}`, { headers: this.headers() });
     if (r.status === 404) return null;
     if (!r.ok) throw new Error(`GitHub ${r.status}: ${(await r.json()).message}`);
     const d = await r.json();
@@ -405,7 +408,7 @@ class GH {
     const b64 = btoa(String.fromCharCode(...bytes));
     const body = { message: msg, content: b64 };
     if (this.shas[path]) body.sha = this.shas[path];
-    const r = await fetch(`${this.api}/${path}`, {
+    const r = await fetch(`${this.api}/${this.encodePath(path)}`, {
       method: 'PUT',
       headers: { ...this.headers(), 'Content-Type':'application/json' },
       body: JSON.stringify(body)
@@ -1519,10 +1522,27 @@ function checkHWSentence(idx) {
   render();
 }
 
+function hwFileName() {
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var d = new Date();
+  var num = getHWLevel() + (isHWDoneToday() ? 0 : 1);
+  return 'homework/Homework ' + num + ' (' + months[d.getMonth()] + ' ' + d.getDate() + ').md';
+}
+
+async function syncHWFile() {
+  if (!S.gh) return;
+  try {
+    var md = generateHWMarkdown();
+    var path = hwFileName();
+    await S.gh.put(path, md, 'HW sync — ' + todayStr());
+  } catch(e) { console.error('HW file sync failed:', e); }
+}
+
 function hwNext() {
   S.hwStep++;
   if (S.hwStep > 12) S.hwStep = 13;
   saveHWState();
+  syncHWFile();
   render();
 }
 
@@ -1612,7 +1632,6 @@ function renderHWSummary() {
         '<div class="sub" style="margin-bottom:1rem">' + (durationStr ? durationStr + ' today' : '') + '</div>' +
         (errors ? '<div style="text-align:left;width:100%;margin-bottom:1rem"><div class="hw-entry-label" style="color:var(--err)">Review These</div>' + errors + '</div>' : '') +
         '<div class="col" style="gap:.75rem;width:100%">' +
-          '<button class="btn btn-ok" id="hw-save-btn" style="border-radius:12px;padding:1rem">Save Homework</button>' +
           '<button class="btn btn-p" id="hw-another-btn" style="border-radius:12px;padding:1rem">One more round?</button>' +
           '<button class="btn btn-g" id="hw-bonus-btn" style="border-radius:12px;padding:1rem">Continue to Bonus Drills →</button>' +
         '</div>' +
@@ -1621,7 +1640,6 @@ function renderHWSummary() {
     '</div>';
 
   completeHW();
-  $('hw-save-btn').onclick = downloadHWFile;
   $('hw-another-btn').onclick = function() { resetHWForNewRound(); };
   $('hw-bonus-btn').onclick = function() { startAutoMode(); };
 }
