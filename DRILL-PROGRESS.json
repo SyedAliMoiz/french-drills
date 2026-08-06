@@ -2775,5 +2775,517 @@
         }
       ]
     }
+  },
+  "hw": {
+    "2026-08-06": {
+      "startedAt": "2026-08-06T10:21:06.487Z",
+      "completedAt": "2026-08-06T10:56:20.776Z",
+      "responses": 9,
+      "words": {
+        "verbs": [
+          "parler",
+          "aimer",
+          "donner"
+        ],
+        "nouns": [
+          {
+            "w": "chat",
+            "g": "m"
+          },
+          {
+            "w": "maison",
+            "g": "f"
+          },
+          {
+            "w": "livre",
+            "g": "m"
+          }
+        ],
+        "adjectives": [
+          "grand",
+          "petit",
+          "content"
+        ]
+      },
+      "results": {
+        "verbs": [
+          {
+            "word": "parler",
+            "forms": {
+              "je": {
+                "typed": "parle",
+                "correct": "parle",
+                "ok": true
+              },
+              "tu": {
+                "typed": "parles",
+                "correct": "parles",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "parle",
+                "correct": "parle",
+                "ok": true
+              },
+              "nous": {
+                "typed": "parlons",
+                "correct": "parlons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "parlez",
+                "correct": "parlez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "parlent",
+                "correct": "parlent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "aimer",
+            "forms": {
+              "je": {
+                "typed": "aime",
+                "correct": "j'aime",
+                "ok": true
+              },
+              "tu": {
+                "typed": "aimes",
+                "correct": "aimes",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "aime",
+                "correct": "aime",
+                "ok": true
+              },
+              "nous": {
+                "typed": "aimons",
+                "correct": "aimons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "aimez",
+                "correct": "aimez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "aiment",
+                "correct": "aiment",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "donner",
+            "forms": {
+              "je": {
+                "typed": "donne",
+                "correct": "donne",
+                "ok": true
+              },
+              "tu": {
+                "typed": "donnes",
+                "correct": "donnes",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "donne",
+                "correct": "donne",
+                "ok": true
+              },
+              "nous": {
+                "typed": "donnons",
+                "correct": "donnons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "donnez",
+                "correct": "donnez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "donnent",
+                "correct": "donnent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          }
+        ],
+        "nouns": [
+          {
+            "word": "chat",
+            "gender": "m",
+            "article": {
+              "typed": "un chat",
+              "correct": "un chat",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des chats",
+              "correct": "des chats",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "maison",
+            "gender": "f",
+            "article": {
+              "typed": "une maison",
+              "correct": "une maison",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des maisons",
+              "correct": "des maisons",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "livre",
+            "gender": "m",
+            "article": {
+              "typed": "un livre",
+              "correct": "un livre",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des livres",
+              "correct": "des livres",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          }
+        ],
+        "adjectives": [
+          {
+            "word": "grand",
+            "fem": {
+              "typed": "grande",
+              "correct": "grande",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "grands",
+              "correct": "grands",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "grandes",
+              "correct": "grandes",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          },
+          {
+            "word": "petit",
+            "fem": {
+              "typed": "petite",
+              "correct": "petite",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "petits",
+              "correct": "petits",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "petites",
+              "correct": "petites",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          },
+          {
+            "word": "content",
+            "fem": {
+              "typed": "contente",
+              "correct": "contente",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "contents",
+              "correct": "contents",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "contentes",
+              "correct": "contentes",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          }
+        ]
+      },
+      "checked": {
+        "v0": {
+          "forms": {
+            "je": {
+              "typed": "parle",
+              "correct": "parle",
+              "ok": true
+            },
+            "tu": {
+              "typed": "parles",
+              "correct": "parles",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "parle",
+              "correct": "parle",
+              "ok": true
+            },
+            "nous": {
+              "typed": "parlons",
+              "correct": "parlons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "parlez",
+              "correct": "parlez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "parlent",
+              "correct": "parlent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "v1": {
+          "forms": {
+            "je": {
+              "typed": "aime",
+              "correct": "j'aime",
+              "ok": true
+            },
+            "tu": {
+              "typed": "aimes",
+              "correct": "aimes",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "aime",
+              "correct": "aime",
+              "ok": true
+            },
+            "nous": {
+              "typed": "aimons",
+              "correct": "aimons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "aimez",
+              "correct": "aimez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "aiment",
+              "correct": "aiment",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "v2": {
+          "forms": {
+            "je": {
+              "typed": "donne",
+              "correct": "donne",
+              "ok": true
+            },
+            "tu": {
+              "typed": "donnes",
+              "correct": "donnes",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "donne",
+              "correct": "donne",
+              "ok": true
+            },
+            "nous": {
+              "typed": "donnons",
+              "correct": "donnons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "donnez",
+              "correct": "donnez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "donnent",
+              "correct": "donnent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "n0": {
+          "article": {
+            "typed": "un chat",
+            "correct": "un chat",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des chats",
+            "correct": "des chats",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "n1": {
+          "article": {
+            "typed": "une maison",
+            "correct": "une maison",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des maisons",
+            "correct": "des maisons",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "n2": {
+          "article": {
+            "typed": "un livre",
+            "correct": "un livre",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des livres",
+            "correct": "des livres",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "a0": {
+          "fem": {
+            "typed": "grande",
+            "correct": "grande",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "grands",
+            "correct": "grands",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "grandes",
+            "correct": "grandes",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "a1": {
+          "fem": {
+            "typed": "petite",
+            "correct": "petite",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "petits",
+            "correct": "petits",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "petites",
+            "correct": "petites",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "a2": {
+          "fem": {
+            "typed": "contente",
+            "correct": "contente",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "contents",
+            "correct": "contents",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "contentes",
+            "correct": "contentes",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        }
+      },
+      "lastStep": 10,
+      "bankIdx": 0,
+      "complete": true,
+      "score": {
+        "total": 33,
+        "correct": 33
+      }
+    }
   }
 }
