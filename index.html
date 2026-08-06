@@ -632,65 +632,120 @@ const HW_BANK = [
   { verbs: [{w:'parler',m:'to speak'},{w:'aimer',m:'to like/love'},{w:'donner',m:'to give'}],
     nouns: [{w:'chat',g:'m',m:'cat'},{w:'maison',g:'f',m:'house'},{w:'livre',g:'m',m:'book'}],
     adj: [{w:'grand',m:'big/tall'},{w:'petit',m:'small'},{w:'content',m:'happy'}],
-    sentences: [{en:'I like a happy cat',fr:"j'aime un chat content"},{en:'We give a big book',fr:'nous donnons un grand livre'},{en:'She speaks in a small house',fr:'elle parle dans une petite maison'}] },
+    sentences: {
+      verbs: [{en:'I like a cat',fr:"j'aime un chat"},{en:'She likes a house',fr:'elle aime une maison'},{en:'We give a book',fr:'nous donnons un livre'},{en:'They give a cat',fr:'ils donnent un chat'},{en:'He speaks',fr:'il parle'},{en:'You (plural) speak',fr:'vous parlez'}],
+      nouns: [{en:'a big cat',fr:'un grand chat'},{en:'a small cat',fr:'un petit chat'},{en:'a big house',fr:'une grande maison'},{en:'a small house',fr:'une petite maison'},{en:'a big book',fr:'un grand livre'},{en:'a happy book',fr:'un livre content'}],
+      adj: [{en:'a big house',fr:'une grande maison'},{en:'big cats',fr:'de grands chats'},{en:'a small book',fr:'un petit livre'},{en:'small houses',fr:'de petites maisons'},{en:'a happy cat',fr:'un chat content'},{en:'happy books',fr:'des livres contents'}]
+    } },
   { verbs: [{w:'chanter',m:'to sing'},{w:'trouver',m:'to find'},{w:'marcher',m:'to walk'}],
     nouns: [{w:'table',g:'f',m:'table'},{w:'garçon',g:'m',m:'boy'},{w:'fille',g:'f',m:'girl'}],
     adj: [{w:'fort',m:'strong'},{w:'intelligent',m:'smart'},{w:'blond',m:'blonde'}],
-    sentences: [{en:'I find a smart boy',fr:'je trouve un garçon intelligent'},{en:'A blonde girl walks',fr:'une fille blonde marche'},{en:'He sings with a strong table',fr:'il chante avec une table forte'}] },
+    sentences: {
+      verbs: [{en:'I find a table',fr:'je trouve une table'},{en:'She finds a boy',fr:'elle trouve un garçon'},{en:'We sing',fr:'nous chantons'},{en:'You (informal) sing',fr:'tu chantes'},{en:'He walks',fr:'il marche'},{en:'They walk',fr:'ils marchent'}],
+      nouns: [{en:'a strong table',fr:'une table forte'},{en:'a smart table',fr:'une table intelligente'},{en:'a strong boy',fr:'un garçon fort'},{en:'a blond boy',fr:'un garçon blond'},{en:'a smart girl',fr:'une fille intelligente'},{en:'a blonde girl',fr:'une fille blonde'}],
+      adj: [{en:'a strong boy',fr:'un garçon fort'},{en:'strong girls',fr:'des filles fortes'},{en:'a smart girl',fr:'une fille intelligente'},{en:'smart boys',fr:'des garçons intelligents'},{en:'a blond boy',fr:'un garçon blond'},{en:'blonde girls',fr:'des filles blondes'}]
+    } },
   { verbs: [{w:'regarder',m:'to watch'},{w:'écouter',m:'to listen'},{w:'fermer',m:'to close'}],
     nouns: [{w:'porte',g:'f',m:'door'},{w:'ami',g:'m',m:'friend'},{w:'école',g:'f',m:'school'}],
     adj: [{w:'joli',m:'pretty'},{w:'important',m:'important'},{w:'français',m:'French'}],
-    sentences: [{en:'I watch a pretty door',fr:'je regarde une jolie porte'},{en:'We listen to an important friend',fr:'nous écoutons un ami important'},{en:'They close a French school',fr:'ils ferment une école française'}] },
+    sentences: {
+      verbs: [{en:'I watch a friend',fr:'je regarde un ami'},{en:'She watches a school',fr:'elle regarde une école'},{en:'We listen to a friend',fr:'nous écoutons un ami'},{en:'You (plural) listen to a door',fr:'vous écoutez une porte'},{en:'He closes a door',fr:'il ferme une porte'},{en:'They close a school',fr:'ils ferment une école'}],
+      nouns: [{en:'a pretty door',fr:'une jolie porte'},{en:'a French door',fr:'une porte française'},{en:'a pretty friend',fr:'un joli ami'},{en:'an important friend',fr:'un ami important'},{en:'an important school',fr:'une école importante'},{en:'a French school',fr:'une école française'}],
+      adj: [{en:'a pretty door',fr:'une jolie porte'},{en:'pretty friends',fr:'de jolis amis'},{en:'an important school',fr:'une école importante'},{en:'important doors',fr:'des portes importantes'},{en:'a French friend',fr:'un ami français'},{en:'French schools',fr:'des écoles françaises'}]
+    } },
   // Days 4-5: irregular adjectives (beau/nouveau/vieux/blanc/long/gros)
   { verbs: [{w:'chercher',m:'to look for'},{w:'montrer',m:'to show'},{w:'porter',m:'to carry/wear'}],
     nouns: [{w:'jardin',g:'m',m:'garden'},{w:'chambre',g:'f',m:'bedroom'},{w:'animal',g:'m',m:'animal'}],
     adj: [{w:'nouveau',m:'new'},{w:'beau',m:'beautiful'},{w:'long',m:'long'}],
-    sentences: [{en:'She shows a beautiful garden',fr:'elle montre un beau jardin'},{en:'We look for a new bedroom',fr:'nous cherchons une nouvelle chambre'},{en:'They carry a long animal',fr:'ils portent un long animal'}] },
+    sentences: {
+      verbs: [{en:'I look for a garden',fr:'je cherche un jardin'},{en:'She looks for a bedroom',fr:'elle cherche une chambre'},{en:'We show an animal',fr:'nous montrons un animal'},{en:'You (informal) show a garden',fr:'tu montres un jardin'},{en:'He carries an animal',fr:'il porte un animal'},{en:'You (plural) carry a bedroom',fr:'vous portez une chambre'}],
+      nouns: [{en:'a new garden',fr:'un nouveau jardin'},{en:'a beautiful garden',fr:'un beau jardin'},{en:'a new bedroom',fr:'une nouvelle chambre'},{en:'a beautiful bedroom',fr:'une belle chambre'},{en:'a new animal',fr:'un nouvel animal'},{en:'a long animal',fr:'un long animal'}],
+      adj: [{en:'a new bedroom',fr:'une nouvelle chambre'},{en:'new gardens',fr:'de nouveaux jardins'},{en:'a beautiful animal',fr:'un bel animal'},{en:'beautiful bedrooms',fr:'de belles chambres'},{en:'a long garden',fr:'un long jardin'},{en:'long animals',fr:'de longs animaux'}]
+    } },
   { verbs: [{w:'jouer',m:'to play'},{w:'habiter',m:'to live (in)'},{w:'arriver',m:'to arrive'}],
     nouns: [{w:'chapeau',g:'m',m:'hat'},{w:'oiseau',g:'m',m:'bird'},{w:'chanson',g:'f',m:'song'}],
     adj: [{w:'vieux',m:'old'},{w:'blanc',m:'white'},{w:'gros',m:'big/fat'}],
-    sentences: [{en:'We play an old song',fr:'nous jouons une vieille chanson'},{en:'I live with a white bird',fr:"j'habite avec un oiseau blanc"},{en:'He arrives with a big hat',fr:'il arrive avec un gros chapeau'}] },
+    sentences: {
+      verbs: [{en:'I play a song',fr:'je joue une chanson'},{en:'They play a song',fr:'ils jouent une chanson'},{en:'She lives',fr:'elle habite'},{en:'You (plural) live',fr:'vous habitez'},{en:'He arrives',fr:'il arrive'},{en:'We arrive',fr:'nous arrivons'}],
+      nouns: [{en:'an old hat',fr:'un vieux chapeau'},{en:'a big hat',fr:'un gros chapeau'},{en:'an old bird',fr:'un vieil oiseau'},{en:'a white bird',fr:'un oiseau blanc'},{en:'a big song',fr:'une grosse chanson'},{en:'a white song',fr:'une chanson blanche'}],
+      adj: [{en:'an old hat',fr:'un vieux chapeau'},{en:'old birds',fr:'de vieux oiseaux'},{en:'a big song',fr:'une grosse chanson'},{en:'big hats',fr:'de gros chapeaux'},{en:'a white bird',fr:'un oiseau blanc'},{en:'white songs',fr:'des chansons blanches'}]
+    } },
   // Days 6-7: -ger/-cer verbs + -eux/-if adjectives
   { verbs: [{w:'manger',m:'to eat'},{w:'commencer',m:'to begin'},{w:'danser',m:'to dance'}],
     nouns: [{w:'pays',g:'m',m:'country'},{w:'voix',g:'f',m:'voice'},{w:'nez',g:'m',m:'nose'}],
     adj: [{w:'heureux',m:'happy'},{w:'doux',m:'sweet/soft'},{w:'actif',m:'active'}],
-    sentences: [{en:'We eat in an active country',fr:'nous mangeons dans un pays actif'},{en:'A sweet voice begins',fr:'une voix douce commence'},{en:'A happy boy dances',fr:'un garçon heureux danse'}] },
+    sentences: {
+      verbs: [{en:'We eat',fr:'nous mangeons'},{en:'They eat',fr:'ils mangent'},{en:'I begin',fr:'je commence'},{en:'She begins',fr:'elle commence'},{en:'He dances',fr:'il danse'},{en:'You (informal) dance',fr:'tu danses'}],
+      nouns: [{en:'a happy country',fr:'un pays heureux'},{en:'a sweet country',fr:'un pays doux'},{en:'a sweet voice',fr:'une voix douce'},{en:'an active voice',fr:'une voix active'},{en:'an active nose',fr:'un nez actif'},{en:'a happy nose',fr:'un nez heureux'}],
+      adj: [{en:'a happy country',fr:'un pays heureux'},{en:'happy noses',fr:'des nez heureux'},{en:'a sweet voice',fr:'une voix douce'},{en:'sweet countries',fr:'des pays doux'},{en:'an active nose',fr:'un nez actif'},{en:'active voices',fr:'des voix actives'}]
+    } },
   { verbs: [{w:'voyager',m:'to travel'},{w:'placer',m:'to place'},{w:'nager',m:'to swim'}],
     nouns: [{w:'journal',g:'m',m:'newspaper'},{w:'bateau',g:'m',m:'boat'},{w:'fleur',g:'f',m:'flower'}],
     adj: [{w:'gentil',m:'kind'},{w:'favori',m:'favorite'},{w:'frais',m:'fresh/cool'}],
-    sentences: [{en:'We travel in a cool boat',fr:'nous voyageons dans un bateau frais'},{en:'He places a favorite newspaper',fr:'il place un journal favori'},{en:'She swims with a kind flower',fr:'elle nage avec une gentille fleur'}] },
+    sentences: {
+      verbs: [{en:'We travel',fr:'nous voyageons'},{en:'I travel',fr:'je voyage'},{en:'She places a newspaper',fr:'elle place un journal'},{en:'You (plural) place a flower',fr:'vous placez une fleur'},{en:'He swims',fr:'il nage'},{en:'They swim',fr:'ils nagent'}],
+      nouns: [{en:'a kind newspaper',fr:'un journal gentil'},{en:'a favorite newspaper',fr:'un journal favori'},{en:'a kind boat',fr:'un bateau gentil'},{en:'a fresh boat',fr:'un bateau frais'},{en:'a favorite flower',fr:'une fleur favorite'},{en:'a fresh flower',fr:'une fleur fraîche'}],
+      adj: [{en:'a kind flower',fr:'une fleur gentille'},{en:'kind boats',fr:'des bateaux gentils'},{en:'a favorite newspaper',fr:'un journal favori'},{en:'favorite flowers',fr:'des fleurs favorites'},{en:'a fresh boat',fr:'un bateau frais'},{en:'fresh flowers',fr:'des fleurs fraîches'}]
+    } },
   // Days 8-10: mixed review + new regular vocab
   { verbs: [{w:'préparer',m:'to prepare'},{w:'adorer',m:'to adore'},{w:'détester',m:'to hate'}],
     nouns: [{w:'cuisine',g:'f',m:'kitchen'},{w:'repas',g:'m',m:'meal'},{w:'enfant',g:'m',m:'child'}],
     adj: [{w:'bon',m:'good'},{w:'mauvais',m:'bad'},{w:'jeune',m:'young'}],
-    sentences: [{en:'She prepares a good meal',fr:'elle prépare un bon repas'},{en:'I adore a young child',fr:"j'adore un jeune enfant"},{en:'He hates a bad kitchen',fr:'il déteste une mauvaise cuisine'}] },
+    sentences: {
+      verbs: [{en:'I prepare a meal',fr:'je prépare un repas'},{en:'She prepares a kitchen',fr:'elle prépare une cuisine'},{en:'I adore a child',fr:"j'adore un enfant"},{en:'We adore a meal',fr:'nous adorons un repas'},{en:'He hates a kitchen',fr:'il déteste une cuisine'},{en:'They hate a child',fr:'ils détestent un enfant'}],
+      nouns: [{en:'a good kitchen',fr:'une bonne cuisine'},{en:'a bad kitchen',fr:'une mauvaise cuisine'},{en:'a good meal',fr:'un bon repas'},{en:'a young meal',fr:'un jeune repas'},{en:'a young child',fr:'un jeune enfant'},{en:'a bad child',fr:'un mauvais enfant'}],
+      adj: [{en:'a good meal',fr:'un bon repas'},{en:'good children',fr:'de bons enfants'},{en:'a bad kitchen',fr:'une mauvaise cuisine'},{en:'bad meals',fr:'de mauvais repas'},{en:'a young child',fr:'un jeune enfant'},{en:'young kitchens',fr:'de jeunes cuisines'}]
+    } },
   { verbs: [{w:'inviter',m:'to invite'},{w:'passer',m:'to pass/spend'},{w:'dessiner',m:'to draw'}],
     nouns: [{w:'rue',g:'f',m:'street'},{w:'magasin',g:'m',m:'shop'},{w:'fenêtre',g:'f',m:'window'}],
     adj: [{w:'léger',m:'light'},{w:'dernier',m:'last'},{w:'premier',m:'first'}],
-    sentences: [{en:'I draw a light window',fr:'je dessine une fenêtre légère'},{en:'We invite in a last shop',fr:'nous invitons dans un dernier magasin'},{en:'He passes a first street',fr:'il passe une première rue'}] },
+    sentences: {
+      verbs: [{en:'We invite',fr:'nous invitons'},{en:'She invites',fr:'elle invite'},{en:'He passes a street',fr:'il passe une rue'},{en:'They pass a shop',fr:'ils passent un magasin'},{en:'I draw a window',fr:'je dessine une fenêtre'},{en:'You (informal) draw a street',fr:'tu dessines une rue'}],
+      nouns: [{en:'a last street',fr:'une dernière rue'},{en:'a light street',fr:'une rue légère'},{en:'a first shop',fr:'un premier magasin'},{en:'a last shop',fr:'un dernier magasin'},{en:'a first window',fr:'une première fenêtre'},{en:'a light window',fr:'une fenêtre légère'}],
+      adj: [{en:'a light window',fr:'une fenêtre légère'},{en:'light streets',fr:'des rues légères'},{en:'a last street',fr:'une dernière rue'},{en:'last shops',fr:'de derniers magasins'},{en:'a first shop',fr:'un premier magasin'},{en:'first windows',fr:'de premières fenêtres'}]
+    } },
   { verbs: [{w:'laver',m:'to wash'},{w:'couper',m:'to cut'},{w:'tomber',m:'to fall'}],
     nouns: [{w:'couleur',g:'f',m:'color'},{w:'mur',g:'m',m:'wall'},{w:'clé',g:'f',m:'key'}],
     adj: [{w:'naturel',m:'natural'},{w:'cruel',m:'cruel'},{w:'ancien',m:'old/former'}],
-    sentences: [{en:'I wash an old key',fr:'je lave une clé ancienne'},{en:'He cuts a natural wall',fr:'il coupe un mur naturel'},{en:'A cruel color falls',fr:'une couleur cruelle tombe'}] },
+    sentences: {
+      verbs: [{en:'I wash a wall',fr:'je lave un mur'},{en:'She washes a key',fr:'elle lave une clé'},{en:'We cut a key',fr:'nous coupons une clé'},{en:'He cuts a wall',fr:'il coupe un mur'},{en:'They fall',fr:'ils tombent'},{en:'You (informal) fall',fr:'tu tombes'}],
+      nouns: [{en:'a natural color',fr:'une couleur naturelle'},{en:'a cruel color',fr:'une couleur cruelle'},{en:'a natural wall',fr:'un mur naturel'},{en:'an old wall',fr:'un mur ancien'},{en:'an old key',fr:'une clé ancienne'},{en:'a cruel key',fr:'une clé cruelle'}],
+      adj: [{en:'a natural wall',fr:'un mur naturel'},{en:'natural colors',fr:'des couleurs naturelles'},{en:'a cruel color',fr:'une couleur cruelle'},{en:'cruel walls',fr:'des murs cruels'},{en:'an old key',fr:'une clé ancienne'},{en:'old colors',fr:'des couleurs anciennes'}]
+    } },
   // Days 11-14: harder combos (-cer/-ger verbs + tricky plurals + irregular adj)
   { verbs: [{w:'lancer',m:'to throw'},{w:'ranger',m:'to tidy'},{w:'effacer',m:'to erase'}],
     nouns: [{w:'gâteau',g:'m',m:'cake'},{w:'cadeau',g:'m',m:'gift'},{w:'ville',g:'f',m:'city'}],
     adj: [{w:'faux',m:'false'},{w:'roux',m:'red-haired'},{w:'sec',m:'dry'}],
-    sentences: [{en:'I throw a false cake',fr:'je lance un faux gâteau'},{en:'We tidy a red-haired gift',fr:'nous rangeons un cadeau roux'},{en:'He erases a dry city',fr:'il efface une ville sèche'}] },
+    sentences: {
+      verbs: [{en:'We throw a cake',fr:'nous lançons un gâteau'},{en:'I throw a gift',fr:'je lance un cadeau'},{en:'We tidy a city',fr:'nous rangeons une ville'},{en:'She tidies a cake',fr:'elle range un gâteau'},{en:'I erase a gift',fr:"j'efface un cadeau"},{en:'You (plural) erase a city',fr:'vous effacez une ville'}],
+      nouns: [{en:'a false cake',fr:'un gâteau faux'},{en:'a reddish cake',fr:'un gâteau roux'},{en:'a dry gift',fr:'un cadeau sec'},{en:'a false gift',fr:'un cadeau faux'},{en:'a reddish city',fr:'une ville rousse'},{en:'a dry city',fr:'une ville sèche'}],
+      adj: [{en:'a false cake',fr:'un gâteau faux'},{en:'false cities',fr:'des villes fausses'},{en:'a reddish gift',fr:'un cadeau roux'},{en:'reddish cakes',fr:'des gâteaux roux'},{en:'a dry city',fr:'une ville sèche'},{en:'dry gifts',fr:'des cadeaux secs'}]
+    } },
   { verbs: [{w:'partager',m:'to share'},{w:'avancer',m:'to advance'},{w:'plonger',m:'to dive'}],
     nouns: [{w:'hôpital',g:'m',m:'hospital'},{w:'château',g:'m',m:'castle'},{w:'personne',g:'f',m:'person'}],
     adj: [{w:'public',m:'public'},{w:'violet',m:'purple'},{w:'muet',m:'mute/silent'}],
-    sentences: [{en:'We share a public hospital',fr:'nous partageons un hôpital public'},{en:'A silent person advances',fr:'une personne muette avance'},{en:'He dives in a purple castle',fr:'il plonge dans un château violet'}] },
+    sentences: {
+      verbs: [{en:'We share a hospital',fr:'nous partageons un hôpital'},{en:'I share a castle',fr:'je partage un château'},{en:'She advances',fr:'elle avance'},{en:'They advance',fr:'ils avancent'},{en:'He dives',fr:'il plonge'},{en:'We dive',fr:'nous plongeons'}],
+      nouns: [{en:'a public hospital',fr:'un hôpital public'},{en:'a purple hospital',fr:'un hôpital violet'},{en:'a public castle',fr:'un château public'},{en:'a mute castle',fr:'un château muet'},{en:'a mute person',fr:'une personne muette'},{en:'a purple person',fr:'une personne violette'}],
+      adj: [{en:'a public castle',fr:'un château public'},{en:'public hospitals',fr:'des hôpitaux publics'},{en:'a purple person',fr:'une personne violette'},{en:'purple castles',fr:'des châteaux violets'},{en:'a mute person',fr:'une personne muette'},{en:'mute hospitals',fr:'des hôpitaux muets'}]
+    } },
   { verbs: [{w:'corriger',m:'to correct'},{w:'forcer',m:'to force'},{w:'tracer',m:'to trace/draw'}],
     nouns: [{w:'rideau',g:'m',m:'curtain'},{w:'tableau',g:'m',m:'board/painting'},{w:'canal',g:'m',m:'canal'}],
     adj: [{w:'net',m:'clean/clear'},{w:'direct',m:'direct'},{w:'correct',m:'correct'}],
-    sentences: [{en:'I correct a clean board',fr:'je corrige un tableau net'},{en:'She traces a direct canal',fr:'elle trace un canal direct'},{en:'He forces a correct curtain',fr:'il force un rideau correct'}] },
+    sentences: {
+      verbs: [{en:'We correct a painting',fr:'nous corrigeons un tableau'},{en:'I correct a canal',fr:'je corrige un canal'},{en:'She forces a curtain',fr:'elle force un rideau'},{en:'You (plural) force a canal',fr:'vous forcez un canal'},{en:'He traces a painting',fr:'il trace un tableau'},{en:'They trace a curtain',fr:'ils tracent un rideau'}],
+      nouns: [{en:'a clean curtain',fr:'un rideau net'},{en:'a direct curtain',fr:'un rideau direct'},{en:'a clean painting',fr:'un tableau net'},{en:'a correct painting',fr:'un tableau correct'},{en:'a direct canal',fr:'un canal direct'},{en:'a correct canal',fr:'un canal correct'}],
+      adj: [{en:'a clean curtain',fr:'un rideau net'},{en:'clean paintings',fr:'des tableaux nets'},{en:'a direct canal',fr:'un canal direct'},{en:'direct curtains',fr:'des rideaux directs'},{en:'a correct painting',fr:'un tableau correct'},{en:'correct canals',fr:'des canaux corrects'}]
+    } },
   { verbs: [{w:'annoncer',m:'to announce'},{w:'déplacer',m:'to move'},{w:'encourager',m:'to encourage'}],
     nouns: [{w:'noyau',g:'m',m:'pit/core'},{w:'tuyau',g:'m',m:'pipe'},{w:'métal',g:'m',m:'metal'}],
     adj: [{w:'loyal',m:'loyal'},{w:'normal',m:'normal'},{w:'original',m:'original'}],
-    sentences: [{en:'We announce an original metal',fr:'nous annonçons un métal original'},{en:'He moves a normal pipe',fr:'il déplace un tuyau normal'},{en:'She encourages a loyal core',fr:'elle encourage un noyau loyal'}] },
+    sentences: {
+      verbs: [{en:'We announce a metal',fr:'nous annonçons un métal'},{en:'I announce a pipe',fr:"j'annonce un tuyau"},{en:'She moves a pipe',fr:'elle déplace un tuyau'},{en:'You (plural) move a core',fr:'vous déplacez un noyau'},{en:'We encourage a core',fr:'nous encourageons un noyau'},{en:'He encourages a metal',fr:'il encourage un métal'}],
+      nouns: [{en:'a loyal core',fr:'un noyau loyal'},{en:'a normal core',fr:'un noyau normal'},{en:'a normal pipe',fr:'un tuyau normal'},{en:'an original pipe',fr:'un tuyau original'},{en:'an original metal',fr:'un métal original'},{en:'a loyal metal',fr:'un métal loyal'}],
+      adj: [{en:'a loyal core',fr:'un noyau loyal'},{en:'loyal metals',fr:'des métaux loyaux'},{en:'a normal pipe',fr:'un tuyau normal'},{en:'normal cores',fr:'des noyaux normaux'},{en:'an original metal',fr:'un métal original'},{en:'original pipes',fr:'des tuyaux originaux'}]
+    } },
 ];
-
 
 /* ═══════════════════════════════════════════════════════════════
    APP STATE — simplified continuous drill
@@ -1435,33 +1490,43 @@ function checkHWAdj(idx) {
 
 function renderHWSentence(idx) {
   var set = HW_BANK[S.hwBankIdx % HW_BANK.length];
-  var sentence = set.sentences[idx];
+  var categories = ['verbs', 'nouns', 'adj'];
+  var catLabels = ['Verb Sentences', 'Noun Phrases', 'Adjective Phrases'];
+  var cat = categories[idx];
+  var items = set.sentences[cat];
   var checked = S.hwChecked['s' + idx];
   var pct = Math.round((S.hwStep / 13) * 100);
+
+  var inputsHTML = '';
+  for (var si = 0; si < items.length; si++) {
+    var item = items[si];
+    var ch = checked ? checked.items[si] : null;
+    inputsHTML += '<div class="hw-form-row">' +
+      '<label class="hw-form-label">' + (si + 1) + '. ' + esc(item.en) + '</label>' +
+      '<input type="text" class="field' + (ch ? (ch.ok ? ' field-ok' : ' field-err') : '') + '" id="sent-' + si + '" placeholder="..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (ch ? esc(ch.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
+      (ch && !ch.ok ? '<div class="conj-result"><span class="conj-wrong">→</span><span class="conj-answer conj-correct">' + esc(ch.correct) + '</span></div>' : '') +
+    '</div>';
+  }
 
   app().innerHTML =
     '<div class="dp">' +
       '<div class="dp-top">' +
         '<div class="row between" style="margin-bottom:.5rem">' +
-          '<span class="dp-count">Sentence ' + (idx+1) + '/3</span>' +
+          '<span class="dp-count">' + catLabels[idx] + '</span>' +
           '<span class="dp-count">' + S.hwStep + '/12</span>' +
         '</div>' +
         '<div class="prog-track"><div class="prog-fill" style="width:' + pct + '%"></div></div>' +
         renderHWDots() +
       '</div>' +
       '<div class="dp-body" style="justify-content:flex-start">' +
-        '<div class="serif" style="font-size:1.75rem;text-align:center;margin-bottom:.5rem">' + esc(sentence.en) + '</div>' +
-        '<div class="sub center" style="margin-bottom:1.5rem">Translate to French:</div>' +
-        '<div class="hw-form-row">' +
-          '<input type="text" class="field' + (checked ? (checked.ok ? ' field-ok' : ' field-err') : '') + '" id="sentence-input" placeholder="..." autocapitalize="off" autocomplete="off" autocorrect="off" spellcheck="false" value="' + (checked ? esc(checked.typed) : '') + '"' + (checked ? ' disabled' : '') + '>' +
-          (checked && !checked.ok ? '<div class="conj-result"><span class="conj-wrong">→</span><span class="conj-answer conj-correct">' + esc(checked.correct) + '</span></div>' : '') +
-        '</div>' +
+        '<div class="sub center" style="margin-bottom:1rem">Translate to French:</div>' +
+        inputsHTML +
         (!checked ?
           renderAccentBar(false) +
           '<button class="btn btn-p mt" id="hw-check-btn">Vérifier</button>'
         :
-          '<div class="fb ' + (checked.ok ? 'fb-ok' : 'fb-err') + ' mt">' +
-            '<span class="fb-head">' + (checked.ok ? 'Correct !' : 'Pas tout à fait.') + '</span>' +
+          '<div class="fb ' + (checked.score.correct === checked.score.total ? 'fb-ok' : 'fb-err') + ' mt">' +
+            '<span class="fb-head">' + checked.score.correct + '/' + checked.score.total + ' correct</span>' +
           '</div>' +
           '<button class="btn btn-p mt" id="hw-next-btn">Suivant →</button>'
         ) +
@@ -1471,8 +1536,8 @@ function renderHWSentence(idx) {
   if (!checked) {
     bindHWInputs();
     $('hw-check-btn').onclick = function() { checkHWSentence(idx); };
-    var inp = $('sentence-input');
-    if (inp) inp.addEventListener('keydown', function(e) { if (e.key === 'Enter') checkHWSentence(idx); });
+    var lastInp = $('sent-' + (items.length - 1));
+    if (lastInp) lastInp.addEventListener('keydown', function(e) { if (e.key === 'Enter') checkHWSentence(idx); });
   } else {
     $('hw-next-btn').onclick = hwNext;
     setTimeout(function() {
@@ -1488,35 +1553,41 @@ function checkHWSentence(idx) {
   S.hwResponseCount++;
 
   var set = HW_BANK[S.hwBankIdx % HW_BANK.length];
-  var sentence = set.sentences[idx];
-  var strip = function(s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, ''); };
+  var categories = ['verbs', 'nouns', 'adj'];
+  var cat = categories[idx];
+  var items = set.sentences[cat];
+  var strip = function(s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); };
   var norm = function(s) {
-    return normApostrophe(s.trim().toLowerCase().normalize('NFC').replace(/\s+/g, ' ').replace(/[.!?,;…]+$/, ''));
+    return normApostrophe(s.trim().toLowerCase().normalize('NFC').replace(/\s+/g, ' ').replace(/[.!?,;\u2026]+$/, ''));
   };
   var match = function(a, b) { return a === b || strip(a) === strip(b); };
 
-  var typed = norm($('sentence-input') ? $('sentence-input').value : '');
-  var expected = norm(sentence.fr);
-  var ok = match(typed, expected);
+  var results = [];
+  var scoreCorrect = 0;
 
-  if (!ok && sentence.alt) {
-    for (var ai = 0; ai < sentence.alt.length; ai++) {
-      if (match(typed, norm(sentence.alt[ai]))) { ok = true; break; }
+  for (var si = 0; si < items.length; si++) {
+    var typed = norm($('sent-' + si) ? $('sent-' + si).value : '');
+    var expected = norm(items[si].fr);
+    var ok = match(typed, expected);
+
+    if (!ok && items[si].alt) {
+      for (var ai = 0; ai < items[si].alt.length; ai++) {
+        if (match(typed, norm(items[si].alt[ai]))) { ok = true; break; }
+      }
     }
+
+    if (ok) scoreCorrect++;
+    results.push({ typed: typed, correct: items[si].fr, ok: ok, en: items[si].en });
   }
 
   S.hwChecked['s' + idx] = {
-    typed: typed,
-    correct: sentence.fr,
-    ok: ok,
-    score: { total: 1, correct: ok ? 1 : 0 }
+    items: results,
+    score: { total: items.length, correct: scoreCorrect }
   };
   S.hwResults.sentences[idx] = {
-    en: sentence.en,
-    typed: typed,
-    correct: sentence.fr,
-    ok: ok,
-    score: { total: 1, correct: ok ? 1 : 0 }
+    category: cat,
+    items: results,
+    score: { total: items.length, correct: scoreCorrect }
   };
   saveHWState();
   render();
@@ -1610,14 +1681,19 @@ function renderHWSummary() {
       }
     }
   }
+  var catLabels2 = ['Verb Sentences', 'Noun Phrases', 'Adjective Phrases'];
   for (i = 0; i < 3; i++) {
     var sc2 = S.hwChecked['s' + i];
-    if (sc2 && !sc2.ok) {
-      var sentenceSet = HW_BANK[S.hwBankIdx % HW_BANK.length];
-      errors += '<div class="hw-summary-card" style="border-left:3px solid var(--err)">' +
-        '<div class="hw-summary-word">' + esc(sentenceSet.sentences[i].en) + '</div>' +
-        '<div class="hw-summary-row"><span>you: <span style="color:var(--err);text-decoration:line-through">' + esc(sc2.typed) + '</span></span><span style="color:var(--ok);font-weight:600">' + esc(sc2.correct) + '</span></div>' +
-      '</div>';
+    if (sc2 && sc2.items) {
+      var swrongs = sc2.items.filter(function(it) { return !it.ok; });
+      if (swrongs.length > 0) {
+        errors += '<div class="hw-summary-card" style="border-left:3px solid var(--err)">' +
+          '<div class="hw-summary-word">' + catLabels2[i] + '</div>' +
+          swrongs.map(function(w) {
+            return '<div class="hw-summary-row"><span>' + esc(w.en) + ': <span style="color:var(--err);text-decoration:line-through">' + esc(w.typed) + '</span></span><span style="color:var(--ok);font-weight:600">' + esc(w.correct) + '</span></div>';
+          }).join('') +
+        '</div>';
+      }
     }
   }
 
@@ -1682,14 +1758,20 @@ function generateHWMarkdown() {
     md += '|masc. plural|' + (ac && ac.mascPl ? ac.mascPl.typed : '') + '|\n';
     md += '|fem. plural|' + (ac && ac.femPl ? ac.femPl.typed : '') + '|\n\n';
   }
-  if (set.sentences) {
-    md += '### Sentences\n\n';
-    md += '|English|French|\n|---|---|\n';
-    set.sentences.forEach(function(s, si) {
-      var sc = S.hwChecked['s' + si];
-      md += '|' + s.en + '|' + (sc ? sc.typed : '') + '|\n';
-    });
-    md += '\n';
+  var sentCatNames = ['Verb Sentences', 'Noun Phrases', 'Adjective Phrases'];
+  var sentCatKeys = ['verbs', 'nouns', 'adj'];
+  for (var ci = 0; ci < 3; ci++) {
+    var sentItems = set.sentences[sentCatKeys[ci]];
+    if (sentItems) {
+      md += '### ' + sentCatNames[ci] + '\n\n';
+      md += '|English|French|\n|---|---|\n';
+      var sentChecked = S.hwChecked['s' + ci];
+      sentItems.forEach(function(s, si) {
+        var typedVal = sentChecked && sentChecked.items && sentChecked.items[si] ? sentChecked.items[si].typed : '';
+        md += '|' + s.en + '|' + typedVal + '|\n';
+      });
+      md += '\n';
+    }
   }
   return md;
 }
