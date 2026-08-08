@@ -74,8 +74,8 @@
 
 |English|French|
 |---|---|
-|I find a table||
-|She finds a boy||
+|I find a table|je trouve une table|
+|She finds a boy|elle trouve un garcon|
 |We sing||
 |You (informal) sing||
 |He walks||
