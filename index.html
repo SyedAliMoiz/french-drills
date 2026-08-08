@@ -1099,16 +1099,33 @@ function startHWMode() {
 
 function renderHW() {
   if (S.hwStep === 0) return renderHWEntry();
-  if (S.hwStep >= 1 && S.hwStep <= 3) return renderHWVerb(S.hwStep - 1);
-  if (S.hwStep >= 4 && S.hwStep <= 6) return renderHWNoun(S.hwStep - 4);
-  if (S.hwStep >= 7 && S.hwStep <= 9) return renderHWAdj(S.hwStep - 7);
-  if (S.hwStep >= 10 && S.hwStep <= 12) return renderHWSentence(S.hwStep - 10);
-  if (S.hwStep === 13) return renderHWSummary();
+  // Verbs: odd steps = conjugation, even steps = sentences
+  if (S.hwStep === 1) return renderHWVerb(0);
+  if (S.hwStep === 2) return renderHWWordSentences('verbs', 0);
+  if (S.hwStep === 3) return renderHWVerb(1);
+  if (S.hwStep === 4) return renderHWWordSentences('verbs', 1);
+  if (S.hwStep === 5) return renderHWVerb(2);
+  if (S.hwStep === 6) return renderHWWordSentences('verbs', 2);
+  // Nouns: odd steps = article+plural, even steps = phrases
+  if (S.hwStep === 7) return renderHWNoun(0);
+  if (S.hwStep === 8) return renderHWWordSentences('nouns', 0);
+  if (S.hwStep === 9) return renderHWNoun(1);
+  if (S.hwStep === 10) return renderHWWordSentences('nouns', 1);
+  if (S.hwStep === 11) return renderHWNoun(2);
+  if (S.hwStep === 12) return renderHWWordSentences('nouns', 2);
+  // Adjectives: odd steps = forms, even steps = phrases
+  if (S.hwStep === 13) return renderHWAdj(0);
+  if (S.hwStep === 14) return renderHWWordSentences('adj', 0);
+  if (S.hwStep === 15) return renderHWAdj(1);
+  if (S.hwStep === 16) return renderHWWordSentences('adj', 1);
+  if (S.hwStep === 17) return renderHWAdj(2);
+  if (S.hwStep === 18) return renderHWWordSentences('adj', 2);
+  if (S.hwStep === 19) return renderHWSummary();
 }
 
 function renderHWDots() {
   const dots = [];
-  for (let i = 1; i <= 12; i++) {
+  for (let i = 1; i <= 18; i++) {
     let cls = 'hw-prog-dot';
     if (i < S.hwStep) cls += ' done';
     else if (i === S.hwStep) cls += ' active';
@@ -1203,14 +1220,14 @@ function doStartHW() {
 function renderHWVerb(idx) {
   var verb = S.hwWords.verbs[idx];
   var checked = S.hwChecked['v' + idx];
-  var pct = Math.round((S.hwStep / 13) * 100);
+  var pct = Math.round((S.hwStep / 19) * 100);
 
   app().innerHTML =
     '<div class="dp">' +
       '<div class="dp-top">' +
         '<div class="row between" style="margin-bottom:.5rem">' +
           '<span class="dp-count">Verb ' + (idx+1) + '/3</span>' +
-          '<span class="dp-count">' + S.hwStep + '/12</span>' +
+          '<span class="dp-count">' + S.hwStep + '/18</span>' +
         '</div>' +
         '<div class="prog-track"><div class="prog-fill" style="width:' + pct + '%"></div></div>' +
         renderHWDots() +
@@ -1297,7 +1314,7 @@ function hintLevel() {
 function renderHWNoun(idx) {
   var noun = S.hwWords.nouns[idx];
   var checked = S.hwChecked['n' + idx];
-  var pct = Math.round((S.hwStep / 13) * 100);
+  var pct = Math.round((S.hwStep / 19) * 100);
   var article = noun.g === 'f' ? 'une' : 'un';
   var hl = hintLevel();
   var genderHint = hl <= 1 ? (noun.g === 'f' ? 'feminine' : 'masculine') : '';
@@ -1311,7 +1328,7 @@ function renderHWNoun(idx) {
       '<div class="dp-top">' +
         '<div class="row between" style="margin-bottom:.5rem">' +
           '<span class="dp-count">Noun ' + (idx+1) + '/3</span>' +
-          '<span class="dp-count">' + S.hwStep + '/12</span>' +
+          '<span class="dp-count">' + S.hwStep + '/18</span>' +
         '</div>' +
         '<div class="prog-track"><div class="prog-fill" style="width:' + pct + '%"></div></div>' +
         renderHWDots() +
@@ -1392,7 +1409,7 @@ function checkHWNoun(idx) {
 function renderHWAdj(idx) {
   var adj = S.hwWords.adjectives[idx];
   var checked = S.hwChecked['a' + idx];
-  var pct = Math.round((S.hwStep / 13) * 100);
+  var pct = Math.round((S.hwStep / 19) * 100);
   var hl = hintLevel();
   var showFormHint = hl <= 1;
 
@@ -1401,7 +1418,7 @@ function renderHWAdj(idx) {
       '<div class="dp-top">' +
         '<div class="row between" style="margin-bottom:.5rem">' +
           '<span class="dp-count">Adjective ' + (idx+1) + '/3</span>' +
-          '<span class="dp-count">' + S.hwStep + '/12</span>' +
+          '<span class="dp-count">' + S.hwStep + '/18</span>' +
         '</div>' +
         '<div class="prog-track"><div class="prog-fill" style="width:' + pct + '%"></div></div>' +
         renderHWDots() +
@@ -1488,14 +1505,20 @@ function checkHWAdj(idx) {
   render();
 }
 
-function renderHWSentence(idx) {
+function renderHWWordSentences(type, wordIdx) {
   var set = HW_BANK[S.hwBankIdx % HW_BANK.length];
-  var categories = ['verbs', 'nouns', 'adj'];
-  var catLabels = ['Verb Sentences', 'Noun Phrases', 'Adjective Phrases'];
-  var cat = categories[idx];
-  var items = set.sentences[cat];
-  var checked = S.hwChecked['s' + idx];
-  var pct = Math.round((S.hwStep / 13) * 100);
+  var keyPrefix = type === 'verbs' ? 'sv' : type === 'nouns' ? 'sn' : 'sa';
+  var checkedKey = keyPrefix + wordIdx;
+  var checked = S.hwChecked[checkedKey];
+  var pct = Math.round((S.hwStep / 19) * 100);
+  var allSentences = set.sentences[type];
+  var baseIdx = wordIdx * 2;
+  var items = [allSentences[baseIdx], allSentences[baseIdx + 1]];
+  var wordName;
+  if (type === 'verbs') wordName = S.hwWords.verbs[wordIdx];
+  else if (type === 'nouns') wordName = S.hwWords.nouns[wordIdx].w;
+  else wordName = S.hwWords.adjectives[wordIdx];
+  var labelSuffix = type === 'verbs' ? 'Sentences' : 'Phrases';
 
   var inputsHTML = '';
   for (var si = 0; si < items.length; si++) {
@@ -1512,13 +1535,14 @@ function renderHWSentence(idx) {
     '<div class="dp">' +
       '<div class="dp-top">' +
         '<div class="row between" style="margin-bottom:.5rem">' +
-          '<span class="dp-count">' + catLabels[idx] + '</span>' +
-          '<span class="dp-count">' + S.hwStep + '/12</span>' +
+          '<span class="dp-count">' + esc(wordName) + ' — ' + labelSuffix + '</span>' +
+          '<span class="dp-count">' + S.hwStep + '/18</span>' +
         '</div>' +
         '<div class="prog-track"><div class="prog-fill" style="width:' + pct + '%"></div></div>' +
         renderHWDots() +
       '</div>' +
       '<div class="dp-body" style="justify-content:flex-start">' +
+        '<div class="serif" style="font-size:2rem;text-align:center;margin-bottom:.5rem">' + esc(wordName) + '</div>' +
         '<div class="sub center" style="margin-bottom:1rem">Translate to French:</div>' +
         inputsHTML +
         (!checked ?
@@ -1535,9 +1559,9 @@ function renderHWSentence(idx) {
 
   if (!checked) {
     bindHWInputs();
-    $('hw-check-btn').onclick = function() { checkHWSentence(idx); };
+    $('hw-check-btn').onclick = function() { checkHWWordSentences(type, wordIdx); };
     var lastInp = $('sent-' + (items.length - 1));
-    if (lastInp) lastInp.addEventListener('keydown', function(e) { if (e.key === 'Enter') checkHWSentence(idx); });
+    if (lastInp) lastInp.addEventListener('keydown', function(e) { if (e.key === 'Enter') checkHWWordSentences(type, wordIdx); });
   } else {
     $('hw-next-btn').onclick = hwNext;
     setTimeout(function() {
@@ -1548,14 +1572,16 @@ function renderHWSentence(idx) {
   }
 }
 
-function checkHWSentence(idx) {
+function checkHWWordSentences(type, wordIdx) {
   if (!S.hwStartTime) S.hwStartTime = new Date().toISOString();
   S.hwResponseCount++;
 
   var set = HW_BANK[S.hwBankIdx % HW_BANK.length];
-  var categories = ['verbs', 'nouns', 'adj'];
-  var cat = categories[idx];
-  var items = set.sentences[cat];
+  var allSentences = set.sentences[type];
+  var baseIdx = wordIdx * 2;
+  var items = [allSentences[baseIdx], allSentences[baseIdx + 1]];
+  var keyPrefix = type === 'verbs' ? 'sv' : type === 'nouns' ? 'sn' : 'sa';
+  var checkedKey = keyPrefix + wordIdx;
   var strip = function(s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); };
   var norm = function(s) {
     return normApostrophe(s.trim().toLowerCase().normalize('NFC').replace(/\s+/g, ' ').replace(/[.!?,;\u2026]+$/, ''));
@@ -1580,16 +1606,17 @@ function checkHWSentence(idx) {
     results.push({ typed: typed, correct: items[si].fr, ok: ok, en: items[si].en });
   }
 
-  S.hwChecked['s' + idx] = {
+  S.hwChecked[checkedKey] = {
     items: results,
-    score: { total: items.length, correct: scoreCorrect }
+    score: { total: 2, correct: scoreCorrect }
   };
-  S.hwResults.sentences[idx] = {
-    category: cat,
+  S.hwResults.sentences[type + wordIdx] = {
+    category: type,
     items: results,
-    score: { total: items.length, correct: scoreCorrect }
+    score: { total: 2, correct: scoreCorrect }
   };
   saveHWState();
+  syncHWFile();
   render();
 }
 
@@ -1611,7 +1638,7 @@ async function syncHWFile() {
 
 function hwNext() {
   S.hwStep++;
-  if (S.hwStep > 12) S.hwStep = 13;
+  if (S.hwStep > 18) S.hwStep = 19;
   saveHWState();
   syncHWFile();
   render();
@@ -1622,9 +1649,11 @@ function renderHWSummary() {
   var i;
   for (i = 0; i < 3; i++) {
     var vc = S.hwChecked['v' + i]; if (vc) { totalScore += vc.score.total; totalCorrect += vc.score.correct; }
+    var svc = S.hwChecked['sv' + i]; if (svc) { totalScore += svc.score.total; totalCorrect += svc.score.correct; }
     var nc = S.hwChecked['n' + i]; if (nc) { totalScore += nc.score.total; totalCorrect += nc.score.correct; }
+    var snc = S.hwChecked['sn' + i]; if (snc) { totalScore += snc.score.total; totalCorrect += snc.score.correct; }
     var ac = S.hwChecked['a' + i]; if (ac) { totalScore += ac.score.total; totalCorrect += ac.score.correct; }
-    var sc = S.hwChecked['s' + i]; if (sc) { totalScore += sc.score.total; totalCorrect += sc.score.correct; }
+    var sac = S.hwChecked['sa' + i]; if (sac) { totalScore += sac.score.total; totalCorrect += sac.score.correct; }
   }
 
   var pctScore = totalScore > 0 ? Math.round((totalCorrect / totalScore) * 100) : 0;
@@ -1681,21 +1710,28 @@ function renderHWSummary() {
       }
     }
   }
-  var catLabels2 = ['Verb Sentences', 'Noun Phrases', 'Adjective Phrases'];
-  for (i = 0; i < 3; i++) {
-    var sc2 = S.hwChecked['s' + i];
-    if (sc2 && sc2.items) {
-      var swrongs = sc2.items.filter(function(it) { return !it.ok; });
-      if (swrongs.length > 0) {
-        errors += '<div class="hw-summary-card" style="border-left:3px solid var(--err)">' +
-          '<div class="hw-summary-word">' + catLabels2[i] + '</div>' +
-          swrongs.map(function(w) {
-            return '<div class="hw-summary-row"><span>' + esc(w.en) + ': <span style="color:var(--err);text-decoration:line-through">' + esc(w.typed) + '</span></span><span style="color:var(--ok);font-weight:600">' + esc(w.correct) + '</span></div>';
-          }).join('') +
-        '</div>';
+  var sentKeyGroups = [
+    {prefix: 'sv', nameArr: 'verbs', label: 'Sentences'},
+    {prefix: 'sn', nameArr: 'nouns', label: 'Phrases'},
+    {prefix: 'sa', nameArr: 'adjectives', label: 'Phrases'}
+  ];
+  sentKeyGroups.forEach(function(sg) {
+    for (var si = 0; si < 3; si++) {
+      var sc2 = S.hwChecked[sg.prefix + si];
+      if (sc2 && sc2.items) {
+        var swrongs = sc2.items.filter(function(it) { return !it.ok; });
+        if (swrongs.length > 0) {
+          var wname = sg.nameArr === 'nouns' ? S.hwWords.nouns[si].w : S.hwWords[sg.nameArr][si];
+          errors += '<div class="hw-summary-card" style="border-left:3px solid var(--err)">' +
+            '<div class="hw-summary-word">' + esc(wname) + ' — ' + sg.label + '</div>' +
+            swrongs.map(function(w) {
+              return '<div class="hw-summary-row"><span>' + esc(w.en) + ': <span style="color:var(--err);text-decoration:line-through">' + esc(w.typed) + '</span></span><span style="color:var(--ok);font-weight:600">' + esc(w.correct) + '</span></div>';
+            }).join('') +
+          '</div>';
+        }
       }
     }
-  }
+  });
 
   var durationStr = S.sessionStartTime ? formatDuration(Date.now() - S.sessionStartTime) : '';
 
@@ -1760,16 +1796,23 @@ function generateHWMarkdown() {
   }
   var sentCatNames = ['Verb Sentences', 'Noun Phrases', 'Adjective Phrases'];
   var sentCatKeys = ['verbs', 'nouns', 'adj'];
+  var sentKeyPrefixes = ['sv', 'sn', 'sa'];
   for (var ci = 0; ci < 3; ci++) {
     var sentItems = set.sentences[sentCatKeys[ci]];
     if (sentItems) {
       md += '### ' + sentCatNames[ci] + '\n\n';
       md += '|English|French|\n|---|---|\n';
-      var sentChecked = S.hwChecked['s' + ci];
-      sentItems.forEach(function(s, si) {
-        var typedVal = sentChecked && sentChecked.items && sentChecked.items[si] ? sentChecked.items[si].typed : '';
-        md += '|' + s.en + '|' + typedVal + '|\n';
-      });
+      for (var wi = 0; wi < 3; wi++) {
+        var sentChecked = S.hwChecked[sentKeyPrefixes[ci] + wi];
+        var sentBase = wi * 2;
+        for (var si = 0; si < 2; si++) {
+          var sentIdx = sentBase + si;
+          if (sentIdx < sentItems.length) {
+            var typedVal = sentChecked && sentChecked.items && sentChecked.items[si] ? sentChecked.items[si].typed : '';
+            md += '|' + sentItems[sentIdx].en + '|' + typedVal + '|\n';
+          }
+        }
+      }
       md += '\n';
     }
   }
@@ -1836,9 +1879,11 @@ function completeHW() {
   var total = 0, correct = 0;
   for (var i = 0; i < 3; i++) {
     var vc = S.hwChecked['v' + i]; if (vc) { total += vc.score.total; correct += vc.score.correct; }
+    var svc = S.hwChecked['sv' + i]; if (svc) { total += svc.score.total; correct += svc.score.correct; }
     var nc = S.hwChecked['n' + i]; if (nc) { total += nc.score.total; correct += nc.score.correct; }
+    var snc = S.hwChecked['sn' + i]; if (snc) { total += snc.score.total; correct += snc.score.correct; }
     var ac = S.hwChecked['a' + i]; if (ac) { total += ac.score.total; correct += ac.score.correct; }
-    var sc = S.hwChecked['s' + i]; if (sc) { total += sc.score.total; correct += sc.score.correct; }
+    var sac = S.hwChecked['sa' + i]; if (sac) { total += sac.score.total; correct += sac.score.correct; }
   }
   hw.score = { total: total, correct: correct };
   S.progress.hw[today] = hw;
