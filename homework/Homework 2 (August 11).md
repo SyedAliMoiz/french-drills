@@ -36,9 +36,9 @@
 
 ### garçon
 
-|masculine||
+|masculine|un garcon|
 |---|---|
-|plural||
+|plural|des garcons|
 
 ### fille
 
