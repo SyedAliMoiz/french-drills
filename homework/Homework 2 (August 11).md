@@ -78,8 +78,8 @@
 |You (informal) sing|tu chantes|
 |I find a table|je trouve une table|
 |She finds a boy|elle trouve un garcon|
-|He walks||
-|They walk||
+|He walks|il marche|
+|They walk|ils marchent|
 
 ### Noun Phrases
 
