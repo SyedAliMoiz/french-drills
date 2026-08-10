@@ -87,8 +87,8 @@
 |---|---|
 |a strong table|une table forte|
 |a smart table|une table intelligent|
-|a strong boy||
-|a blond boy||
+|a strong boy|un garcon fort|
+|a blond boy|un garcon blond|
 |a smart girl||
 |a blonde girl||
 
