@@ -10,13 +10,13 @@
 
 ### trouver
 
-|je||
+|je|trouve|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|trouves|
+|il/elle/on|trouve|
+|nous|trouvons|
+|vous|trouvez|
+|ils/elles|trouvent|
 
 ### marcher
 
