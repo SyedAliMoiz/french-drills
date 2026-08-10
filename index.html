@@ -549,7 +549,7 @@ const Engine = {
   check(q, answer) {
     if (q.type === 'mcq' || q.type === 'why') return answer === q.correct;
     const norm = s => s.trim().normalize('NFC').replace(/[''ʼ`′]/g,"'").replace(/\s+/g,' ').replace(/[.!?,;…]+$/,'').toLowerCase();
-    const strip = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+  var strip = function(s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); };
     const match = (a, b) => a === b || strip(a) === strip(b);
     const n = norm(answer);
     if (match(n, norm(q.correct))) return true;
@@ -1044,7 +1044,13 @@ function pickHWSet(idx) {
 }
 
 function normApostrophe(s) {
-  return s.replace(/[‘’ʼ`′]/g, "'");
+  return s.replace(/[‘’ʼ`′]/g, "’");
+}
+
+function accentMatch(a, b) {
+  if (a === b) return true;
+  var strip = function(s) { return s.normalize('NFD').replace(/[\u0300-\u036f]/g, ''); };
+  return strip(a) === strip(b);
 }
 
 function needsElision(conjugatedForm) {
@@ -1287,12 +1293,12 @@ function checkHWVerb(idx) {
     var typed = normApostrophe(($('conj' + i) ? $('conj' + i).value : '').trim().toLowerCase().normalize('NFC'));
     var rawForm = correct[p].normalize('NFC');
     var displayCorrect = correct[p];
-    var ok = typed === rawForm;
+    var ok = accentMatch(typed, rawForm);
 
     if (p === 'je' && needsElision(rawForm)) {
       var elided = ("j'" + rawForm).normalize('NFC');
       displayCorrect = "j'" + correct[p];
-      if (typed === elided) ok = true;
+      if (accentMatch(typed, elided)) ok = true;
     }
 
     if (ok) scoreCorrect++;
@@ -1383,11 +1389,11 @@ function checkHWNoun(idx) {
 
   var typedArticle = norm($('noun-article') ? $('noun-article').value : '');
   var correctArticle = articleWord + ' ' + noun.w;
-  var okArticle = typedArticle === norm(correctArticle);
+  var okArticle = accentMatch(typedArticle, norm(correctArticle));
 
   var typedPlural = norm($('noun-plural') ? $('noun-plural').value : '');
   var correctPlural = 'des ' + French.pluralNoun(noun.w);
-  var okPlural = typedPlural === norm(correctPlural);
+  var okPlural = accentMatch(typedPlural, norm(correctPlural));
 
   var scoreCorrect = (okArticle ? 1 : 0) + (okPlural ? 1 : 0);
 
@@ -1483,9 +1489,9 @@ function checkHWAdj(idx) {
   var typedMascPl = norm($('adj-mpl') ? $('adj-mpl').value : '');
   var typedFemPl = norm($('adj-fpl') ? $('adj-fpl').value : '');
 
-  var okFem = typedFem === norm(correctFem);
-  var okMascPl = typedMascPl === norm(correctMascPl);
-  var okFemPl = typedFemPl === norm(correctFemPl);
+  var okFem = accentMatch(typedFem, norm(correctFem));
+  var okMascPl = accentMatch(typedMascPl, norm(correctMascPl));
+  var okFemPl = accentMatch(typedFemPl, norm(correctFemPl));
   var scoreCorrect = (okFem ? 1 : 0) + (okMascPl ? 1 : 0) + (okFemPl ? 1 : 0);
 
   S.hwChecked['a' + idx] = {
