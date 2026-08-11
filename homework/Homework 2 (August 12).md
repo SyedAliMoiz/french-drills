@@ -20,13 +20,13 @@
 
 ### fermer
 
-|je||
+|je|ferme|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|fermes|
+|il/elle/on|ferme|
+|nous|fermons|
+|vous|fermez|
+|ils/elles|ferment|
 
 ### porte
 
