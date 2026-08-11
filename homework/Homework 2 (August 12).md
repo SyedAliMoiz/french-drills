@@ -36,9 +36,9 @@
 
 ### ami
 
-|masculine||
+|masculine|un ami|
 |---|---|
-|plural||
+|plural|des amis|
 
 ### école
 
