@@ -50,9 +50,9 @@
 
 |masculine|fort|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|forte|
+|masc. plural|forts|
+|fem. plural|fortes|
 
 ### intelligent
 
