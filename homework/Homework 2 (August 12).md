@@ -96,8 +96,8 @@
 
 |English|French|
 |---|---|
-|a strong boy||
-|strong girls||
+|a strong boy|un garcon fort|
+|strong girls|filles fortes|
 |a smart girl||
 |smart boys||
 |a blond boy||
