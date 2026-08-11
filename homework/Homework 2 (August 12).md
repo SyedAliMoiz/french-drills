@@ -42,9 +42,9 @@
 
 ### école
 
-|feminine||
+|feminine|une ecole|
 |---|---|
-|plural||
+|plural|des ecoles|
 
 ### joli
 
