@@ -30,9 +30,9 @@
 
 ### porte
 
-|feminine||
+|feminine|une porte|
 |---|---|
-|plural||
+|plural|des portes|
 
 ### ami
 
