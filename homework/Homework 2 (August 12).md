@@ -98,8 +98,8 @@
 |---|---|
 |a pretty door|une jolie porte|
 |pretty friends|des joli amis|
-|an important school||
-|important doors||
+|an important school|une ecole importante|
+|important doors|des portes importantes|
 |a French friend||
 |French schools||
 
