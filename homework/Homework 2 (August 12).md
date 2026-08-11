@@ -66,9 +66,9 @@
 
 |masculine|blond|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|blonde|
+|masc. plural|blonds|
+|fem. plural|blondes|
 
 ### Verb Sentences
 
