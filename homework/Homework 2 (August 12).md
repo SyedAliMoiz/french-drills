@@ -30,9 +30,9 @@
 
 ### table
 
-|feminine||
+|feminine|une table|
 |---|---|
-|plural||
+|plural|des tables|
 
 ### garçon
 
