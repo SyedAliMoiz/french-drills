@@ -58,9 +58,9 @@
 
 |masculine|intelligent|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|intelligente|
+|masc. plural|intelligents|
+|fem. plural|intelligentes|
 
 ### blond
 
