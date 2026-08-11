@@ -74,8 +74,8 @@
 
 |English|French|
 |---|---|
-|We sing||
-|You (informal) sing||
+|We sing|nous chantons|
+|You (informal) sing|vous chantez|
 |I find a table||
 |She finds a boy||
 |He walks||
