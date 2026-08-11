@@ -3345,6 +3345,697 @@
         "total": 36,
         "correct": 35
       }
+    },
+    "2026-08-11": {
+      "startedAt": "2026-08-11T23:22:12.250Z",
+      "completedAt": "2026-08-11T23:26:27.405Z",
+      "responses": 18,
+      "words": {
+        "verbs": [
+          "chanter",
+          "trouver",
+          "marcher"
+        ],
+        "nouns": [
+          {
+            "w": "table",
+            "g": "f"
+          },
+          {
+            "w": "garçon",
+            "g": "m"
+          },
+          {
+            "w": "fille",
+            "g": "f"
+          }
+        ],
+        "adjectives": [
+          "fort",
+          "intelligent",
+          "blond"
+        ]
+      },
+      "results": {
+        "verbs": [
+          {
+            "word": "chanter",
+            "forms": {
+              "je": {
+                "typed": "chante",
+                "correct": "chante",
+                "ok": true
+              },
+              "tu": {
+                "typed": "chantes",
+                "correct": "chantes",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "chante",
+                "correct": "chante",
+                "ok": true
+              },
+              "nous": {
+                "typed": "chantons",
+                "correct": "chantons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "chantez",
+                "correct": "chantez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "chantent",
+                "correct": "chantent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "trouver",
+            "forms": {
+              "je": {
+                "typed": "trouve",
+                "correct": "trouve",
+                "ok": true
+              },
+              "tu": {
+                "typed": "trouves",
+                "correct": "trouves",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "trouve",
+                "correct": "trouve",
+                "ok": true
+              },
+              "nous": {
+                "typed": "trouvons",
+                "correct": "trouvons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "trouvez",
+                "correct": "trouvez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "trouvent",
+                "correct": "trouvent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "marcher",
+            "forms": {
+              "je": {
+                "typed": "marche",
+                "correct": "marche",
+                "ok": true
+              },
+              "tu": {
+                "typed": "marches",
+                "correct": "marches",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "marche",
+                "correct": "marche",
+                "ok": true
+              },
+              "nous": {
+                "typed": "marchons",
+                "correct": "marchons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "marchez",
+                "correct": "marchez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "marchent",
+                "correct": "marchent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          }
+        ],
+        "nouns": [
+          {
+            "word": "table",
+            "gender": "f",
+            "article": {
+              "typed": "une table",
+              "correct": "une table",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des tables",
+              "correct": "des tables",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "garçon",
+            "gender": "m",
+            "article": {
+              "typed": "un garcon",
+              "correct": "un garçon",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des garcons",
+              "correct": "des garçons",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "fille",
+            "gender": "f",
+            "article": {
+              "typed": "une fille",
+              "correct": "une fille",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des filles",
+              "correct": "des filles",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          }
+        ],
+        "adjectives": [
+          {
+            "word": "fort",
+            "fem": {
+              "typed": "forte",
+              "correct": "forte",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "forts",
+              "correct": "forts",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "fortes",
+              "correct": "fortes",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          },
+          {
+            "word": "intelligent",
+            "fem": {
+              "typed": "intelligente",
+              "correct": "intelligente",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "intelligents",
+              "correct": "intelligents",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "intelligentes",
+              "correct": "intelligentes",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          },
+          {
+            "word": "blond",
+            "fem": {
+              "typed": "blonde",
+              "correct": "blonde",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "blonds",
+              "correct": "blonds",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "blondes",
+              "correct": "blondes",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          }
+        ],
+        "sentences": []
+      },
+      "checked": {
+        "v0": {
+          "forms": {
+            "je": {
+              "typed": "chante",
+              "correct": "chante",
+              "ok": true
+            },
+            "tu": {
+              "typed": "chantes",
+              "correct": "chantes",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "chante",
+              "correct": "chante",
+              "ok": true
+            },
+            "nous": {
+              "typed": "chantons",
+              "correct": "chantons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "chantez",
+              "correct": "chantez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "chantent",
+              "correct": "chantent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv0": {
+          "items": [
+            {
+              "typed": "nous chantons",
+              "correct": "nous chantons",
+              "ok": true,
+              "en": "We sing"
+            },
+            {
+              "typed": "vous chantez",
+              "correct": "tu chantes",
+              "ok": false,
+              "en": "You (informal) sing"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "v1": {
+          "forms": {
+            "je": {
+              "typed": "trouve",
+              "correct": "trouve",
+              "ok": true
+            },
+            "tu": {
+              "typed": "trouves",
+              "correct": "trouves",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "trouve",
+              "correct": "trouve",
+              "ok": true
+            },
+            "nous": {
+              "typed": "trouvons",
+              "correct": "trouvons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "trouvez",
+              "correct": "trouvez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "trouvent",
+              "correct": "trouvent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv1": {
+          "items": [
+            {
+              "typed": "je trouve une table",
+              "correct": "je trouve une table",
+              "ok": true,
+              "en": "I find a table"
+            },
+            {
+              "typed": "elle trouve un garcon",
+              "correct": "elle trouve un garçon",
+              "ok": true,
+              "en": "She finds a boy"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "v2": {
+          "forms": {
+            "je": {
+              "typed": "marche",
+              "correct": "marche",
+              "ok": true
+            },
+            "tu": {
+              "typed": "marches",
+              "correct": "marches",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "marche",
+              "correct": "marche",
+              "ok": true
+            },
+            "nous": {
+              "typed": "marchons",
+              "correct": "marchons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "marchez",
+              "correct": "marchez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "marchent",
+              "correct": "marchent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv2": {
+          "items": [
+            {
+              "typed": "il marche",
+              "correct": "il marche",
+              "ok": true,
+              "en": "He walks"
+            },
+            {
+              "typed": "nous marchons",
+              "correct": "ils marchent",
+              "ok": false,
+              "en": "They walk"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "n0": {
+          "article": {
+            "typed": "une table",
+            "correct": "une table",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des tables",
+            "correct": "des tables",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn0": {
+          "items": [
+            {
+              "typed": "une table forte",
+              "correct": "une table forte",
+              "ok": true,
+              "en": "a strong table"
+            },
+            {
+              "typed": "une table intelligente",
+              "correct": "une table intelligente",
+              "ok": true,
+              "en": "a smart table"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "n1": {
+          "article": {
+            "typed": "un garcon",
+            "correct": "un garçon",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des garcons",
+            "correct": "des garçons",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn1": {
+          "items": [
+            {
+              "typed": "un garcon fort",
+              "correct": "un garçon fort",
+              "ok": true,
+              "en": "a strong boy"
+            },
+            {
+              "typed": "un garcon blond",
+              "correct": "un garçon blond",
+              "ok": true,
+              "en": "a blond boy"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "n2": {
+          "article": {
+            "typed": "une fille",
+            "correct": "une fille",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des filles",
+            "correct": "des filles",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn2": {
+          "items": [
+            {
+              "typed": "une fille intelligente",
+              "correct": "une fille intelligente",
+              "ok": true,
+              "en": "a smart girl"
+            },
+            {
+              "typed": "une fille blonde",
+              "correct": "une fille blonde",
+              "ok": true,
+              "en": "a blonde girl"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "a0": {
+          "fem": {
+            "typed": "forte",
+            "correct": "forte",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "forts",
+            "correct": "forts",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "fortes",
+            "correct": "fortes",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa0": {
+          "items": [
+            {
+              "typed": "un garcon fort",
+              "correct": "un garçon fort",
+              "ok": true,
+              "en": "a strong boy"
+            },
+            {
+              "typed": "filles fortes",
+              "correct": "des filles fortes",
+              "ok": false,
+              "en": "strong girls"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "a1": {
+          "fem": {
+            "typed": "intelligente",
+            "correct": "intelligente",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "intelligents",
+            "correct": "intelligents",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "intelligentes",
+            "correct": "intelligentes",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa1": {
+          "items": [
+            {
+              "typed": "une fille intelligente",
+              "correct": "une fille intelligente",
+              "ok": true,
+              "en": "a smart girl"
+            },
+            {
+              "typed": "des garcons intelligents",
+              "correct": "des garçons intelligents",
+              "ok": true,
+              "en": "smart boys"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "a2": {
+          "fem": {
+            "typed": "blonde",
+            "correct": "blonde",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "blonds",
+            "correct": "blonds",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "blondes",
+            "correct": "blondes",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa2": {
+          "items": [
+            {
+              "typed": "un garcon blond",
+              "correct": "un garçon blond",
+              "ok": true,
+              "en": "a blond boy"
+            },
+            {
+              "typed": "des filles blondes",
+              "correct": "des filles blondes",
+              "ok": true,
+              "en": "blonde girls"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        }
+      },
+      "lastStep": 19,
+      "bankIdx": 1,
+      "complete": true,
+      "score": {
+        "total": 51,
+        "correct": 48
+      }
     }
   }
 }
