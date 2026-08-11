@@ -89,8 +89,8 @@
 |a smart table|une table intelligente|
 |a strong boy|un garcon fort|
 |a blond boy|un garcon blond|
-|a smart girl||
-|a blonde girl||
+|a smart girl|une fille intelligente|
+|a blonde girl|une fille blonde|
 
 ### Adjective Phrases
 
