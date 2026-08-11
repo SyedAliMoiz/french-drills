@@ -89,8 +89,8 @@
 |a French door|une porte francaise|
 |a pretty friend|un ami jolie|
 |an important friend|un ami important|
-|an important school||
-|a French school||
+|an important school|une ecole importante|
+|a French school|une ecole francaise|
 
 ### Adjective Phrases
 
