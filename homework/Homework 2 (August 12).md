@@ -98,8 +98,8 @@
 |---|---|
 |a strong boy|un garcon fort|
 |strong girls|filles fortes|
-|a smart girl||
-|smart boys||
+|a smart girl|une fille intelligente|
+|smart boys|des garcons intelligents|
 |a blond boy||
 |blonde girls||
 
