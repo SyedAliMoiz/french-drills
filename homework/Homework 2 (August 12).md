@@ -10,13 +10,13 @@
 
 ### écouter
 
-|j'||
+|j'|ecoute|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|ecoutes|
+|il/elle/on|ecoute|
+|nous|ecoutons|
+|vous|ecoutez|
+|ils/elles|ecoutent|
 
 ### fermer
 
