@@ -42,9 +42,9 @@
 
 ### fille
 
-|feminine||
+|feminine|une fille|
 |---|---|
-|plural||
+|plural|des filles|
 
 ### fort
 
