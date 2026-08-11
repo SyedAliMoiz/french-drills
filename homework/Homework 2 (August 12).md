@@ -1,105 +1,105 @@
-### chanter
+### regarder
 
-|je|chante|
+|je|regarde|
 |---|---|
-|tu|chantes|
-|il/elle/on|chante|
-|nous|chantons|
-|vous|chantez|
-|ils/elles|chantent|
+|tu|regardes|
+|il/elle/on|regarde|
+|nous|regardons|
+|vous|regardez|
+|ils/elles|regardent|
 
-### trouver
+### écouter
 
-|je|trouve|
+|j'||
 |---|---|
-|tu|trouves|
-|il/elle/on|trouve|
-|nous|trouvons|
-|vous|trouvez|
-|ils/elles|trouvent|
+|tu||
+|il/elle/on||
+|nous||
+|vous||
+|ils/elles||
 
-### marcher
+### fermer
 
-|je|marche|
+|je||
 |---|---|
-|tu|marches|
-|il/elle/on|marche|
-|nous|marchons|
-|vous|marchez|
-|ils/elles|marchent|
+|tu||
+|il/elle/on||
+|nous||
+|vous||
+|ils/elles||
 
-### table
+### porte
 
-|feminine|une table|
+|feminine||
 |---|---|
-|plural|des tables|
+|plural||
 
-### garçon
+### ami
 
-|masculine|un garcon|
+|masculine||
 |---|---|
-|plural|des garcons|
+|plural||
 
-### fille
+### école
 
-|feminine|une fille|
+|feminine||
 |---|---|
-|plural|des filles|
+|plural||
 
-### fort
+### joli
 
-|masculine|fort|
+|masculine|joli|
 |---|---|
-|feminine|forte|
-|masc. plural|forts|
-|fem. plural|fortes|
+|feminine||
+|masc. plural||
+|fem. plural||
 
-### intelligent
+### important
 
-|masculine|intelligent|
+|masculine|important|
 |---|---|
-|feminine|intelligente|
-|masc. plural|intelligents|
-|fem. plural|intelligentes|
+|feminine||
+|masc. plural||
+|fem. plural||
 
-### blond
+### français
 
-|masculine|blond|
+|masculine|français|
 |---|---|
-|feminine|blonde|
-|masc. plural|blonds|
-|fem. plural|blondes|
+|feminine||
+|masc. plural||
+|fem. plural||
 
 ### Verb Sentences
 
 |English|French|
 |---|---|
-|We sing|nous chantons|
-|You (informal) sing|vous chantez|
-|I find a table|je trouve une table|
-|She finds a boy|elle trouve un garcon|
-|He walks|il marche|
-|They walk|nous marchons|
+|I watch a friend||
+|She watches a school||
+|We listen to a friend||
+|You (plural) listen to a door||
+|He closes a door||
+|They close a school||
 
 ### Noun Phrases
 
 |English|French|
 |---|---|
-|a strong table|une table forte|
-|a smart table|une table intelligente|
-|a strong boy|un garcon fort|
-|a blond boy|un garcon blond|
-|a smart girl|une fille intelligente|
-|a blonde girl|une fille blonde|
+|a pretty door||
+|a French door||
+|a pretty friend||
+|an important friend||
+|an important school||
+|a French school||
 
 ### Adjective Phrases
 
 |English|French|
 |---|---|
-|a strong boy|un garcon fort|
-|strong girls|filles fortes|
-|a smart girl|une fille intelligente|
-|smart boys|des garcons intelligents|
-|a blond boy|un garcon blond|
-|blonde girls|des filles blondes|
+|a pretty door||
+|pretty friends||
+|an important school||
+|important doors||
+|a French friend||
+|French schools||
 
