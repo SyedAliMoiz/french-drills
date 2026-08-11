@@ -50,9 +50,9 @@
 
 |masculine|joli|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|jolie|
+|masc. plural|jolis|
+|fem. plural|jolies|
 
 ### important
 
