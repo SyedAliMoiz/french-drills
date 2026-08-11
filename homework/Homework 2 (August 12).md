@@ -58,9 +58,9 @@
 
 |masculine|important|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|importante|
+|masc. plural|importants|
+|fem. plural|importantes|
 
 ### français
 
