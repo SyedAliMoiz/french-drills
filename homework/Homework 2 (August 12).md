@@ -85,8 +85,8 @@
 
 |English|French|
 |---|---|
-|a pretty door||
-|a French door||
+|a pretty door|une belle porte|
+|a French door|une porte francaise|
 |a pretty friend||
 |an important friend||
 |an important school||
