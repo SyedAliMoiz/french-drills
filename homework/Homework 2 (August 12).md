@@ -78,8 +78,8 @@
 |She watches a school|elle regarde un ecole|
 |We listen to a friend|nous ecoutons un ami|
 |You (plural) listen to a door|vous ecoutez un port|
-|He closes a door||
-|They close a school||
+|He closes a door|il ferme une porte|
+|They close a school|ils ferment une ecole|
 
 ### Noun Phrases
 
