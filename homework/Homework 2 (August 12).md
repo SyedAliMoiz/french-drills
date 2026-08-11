@@ -100,6 +100,6 @@
 |pretty friends|des joli amis|
 |an important school|une ecole importante|
 |important doors|des portes importantes|
-|a French friend||
-|French schools||
+|a French friend|un ami francais|
+|French schools|des ecoles francaises|
 
