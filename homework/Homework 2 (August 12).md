@@ -96,8 +96,8 @@
 
 |English|French|
 |---|---|
-|a pretty door||
-|pretty friends||
+|a pretty door|une jolie porte|
+|pretty friends|des joli amis|
 |an important school||
 |important doors||
 |a French friend||
