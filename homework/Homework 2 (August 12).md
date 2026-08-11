@@ -66,9 +66,9 @@
 
 |masculine|français|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|francaise|
+|masc. plural|francais|
+|fem. plural|francaises|
 
 ### Verb Sentences
 
