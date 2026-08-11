@@ -20,13 +20,13 @@
 
 ### marcher
 
-|je||
+|je|marche|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|marches|
+|il/elle/on|marche|
+|nous|marchons|
+|vous|marchez|
+|ils/elles|marchent|
 
 ### table
 
