@@ -100,6 +100,6 @@
 |strong girls|filles fortes|
 |a smart girl|une fille intelligente|
 |smart boys|des garcons intelligents|
-|a blond boy||
-|blonde girls||
+|a blond boy|un garcon blond|
+|blonde girls|des filles blondes|
 
