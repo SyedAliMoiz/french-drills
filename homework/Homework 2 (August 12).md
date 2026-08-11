@@ -74,8 +74,8 @@
 
 |English|French|
 |---|---|
-|I watch a friend||
-|She watches a school||
+|I watch a friend|je regarde un ami|
+|She watches a school|elle regarde un ecole|
 |We listen to a friend||
 |You (plural) listen to a door||
 |He closes a door||
