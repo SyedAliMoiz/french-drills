@@ -20,13 +20,13 @@
 
 ### porter
 
-|je||
+|je|porte|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|portes|
+|il/elle/on|porte|
+|nous|portons|
+|vous|portez|
+|ils/elles|portent|
 
 ### jardin
 
