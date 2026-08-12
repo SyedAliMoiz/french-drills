@@ -100,6 +100,6 @@
 |new gardens|nouveaux jardins|
 |a beautiful animal|un beau animal|
 |beautiful bedrooms|une beaux chambres|
-|a long garden||
-|long animals||
+|a long garden|un jardin long|
+|long animals|des animals longs|
 
