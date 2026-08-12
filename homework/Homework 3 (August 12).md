@@ -78,8 +78,8 @@
 |She looks for a bedroom|elle cherche un sall|
 |We show an animal|nous montrons animal|
 |You (informal) show a garden|tu montrez un jardin|
-|He carries an animal||
-|You (plural) carry a bedroom||
+|He carries an animal|il porte animal|
+|You (plural) carry a bedroom|vous portez une chambre|
 
 ### Noun Phrases
 
