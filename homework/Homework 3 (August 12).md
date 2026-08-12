@@ -10,13 +10,13 @@
 
 ### montrer
 
-|je||
+|je|montre|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|montres|
+|il/elle/on|montre|
+|nous|montrons|
+|vous|montrez|
+|ils/elles|montrent|
 
 ### porter
 
