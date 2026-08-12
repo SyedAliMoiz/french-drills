@@ -1751,7 +1751,8 @@ function renderHWSummary() {
         (errors ? '<div style="text-align:left;width:100%;margin-bottom:1rem"><div class="hw-entry-label" style="color:var(--err)">Review These</div>' + errors + '</div>' : '') +
         '<div class="col" style="gap:.75rem;width:100%">' +
           '<button class="btn btn-ok" id="hw-save-btn" style="border-radius:12px;padding:1rem">Download Homework</button>' +
-          '<button class="btn btn-p" id="hw-another-btn" style="border-radius:12px;padding:1rem">One more round?</button>' +
+          '<button class="btn btn-p" id="hw-redo-btn" style="border-radius:12px;padding:1rem">Redo this set</button>' +
+          '<button class="btn btn-p" id="hw-another-btn" style="border-radius:12px;padding:1rem">Next set →</button>' +
           '<button class="btn btn-g" id="hw-bonus-btn" style="border-radius:12px;padding:1rem">Continue to Bonus Drills →</button>' +
         '</div>' +
         renderHWHistory() +
@@ -1761,8 +1762,20 @@ function renderHWSummary() {
   completeHW();
   syncHWFile();
   $('hw-save-btn').onclick = downloadHWFile;
+  $('hw-redo-btn').onclick = function() { redoHWRound(); };
   $('hw-another-btn').onclick = function() { resetHWForNewRound(); };
   $('hw-bonus-btn').onclick = function() { startAutoMode(); };
+}
+
+function redoHWRound() {
+  S.hwStep = 0;
+  S.hwWords = pickHWSet(S.hwBankIdx);
+  S.hwResults = { verbs: [], nouns: [], adjectives: [], sentences: [] };
+  S.hwChecked = {};
+  S.hwResponseCount = 0;
+  S.hwStartTime = null;
+  S.screen = 'hw';
+  render();
 }
 
 function generateHWMarkdown() {
