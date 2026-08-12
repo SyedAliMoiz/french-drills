@@ -76,8 +76,8 @@
 |---|---|
 |I look for a garden|je cherche un jardin|
 |She looks for a bedroom|elle cherche un sall|
-|We show an animal||
-|You (informal) show a garden||
+|We show an animal|nous montrons animal|
+|You (informal) show a garden|tu montrez un jardin|
 |He carries an animal||
 |You (plural) carry a bedroom||
 
