@@ -36,9 +36,9 @@
 
 ### chambre
 
-|feminine||
+|feminine|une chambre|
 |---|---|
-|plural||
+|plural|des chambres|
 
 ### animal
 
