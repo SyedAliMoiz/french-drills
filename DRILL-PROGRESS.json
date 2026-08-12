@@ -3347,68 +3347,68 @@
       }
     },
     "2026-08-11": {
-      "startedAt": "2026-08-11T23:22:12.250Z",
-      "completedAt": "2026-08-11T23:26:27.405Z",
+      "startedAt": "2026-08-11T23:41:03.771Z",
+      "completedAt": "2026-08-11T23:57:12.161Z",
       "responses": 18,
       "words": {
         "verbs": [
-          "chanter",
-          "trouver",
-          "marcher"
+          "regarder",
+          "écouter",
+          "fermer"
         ],
         "nouns": [
           {
-            "w": "table",
+            "w": "porte",
             "g": "f"
           },
           {
-            "w": "garçon",
+            "w": "ami",
             "g": "m"
           },
           {
-            "w": "fille",
+            "w": "école",
             "g": "f"
           }
         ],
         "adjectives": [
-          "fort",
-          "intelligent",
-          "blond"
+          "joli",
+          "important",
+          "français"
         ]
       },
       "results": {
         "verbs": [
           {
-            "word": "chanter",
+            "word": "regarder",
             "forms": {
               "je": {
-                "typed": "chante",
-                "correct": "chante",
+                "typed": "regarde",
+                "correct": "regarde",
                 "ok": true
               },
               "tu": {
-                "typed": "chantes",
-                "correct": "chantes",
+                "typed": "regardes",
+                "correct": "regardes",
                 "ok": true
               },
               "il/elle/on": {
-                "typed": "chante",
-                "correct": "chante",
+                "typed": "regarde",
+                "correct": "regarde",
                 "ok": true
               },
               "nous": {
-                "typed": "chantons",
-                "correct": "chantons",
+                "typed": "regardons",
+                "correct": "regardons",
                 "ok": true
               },
               "vous": {
-                "typed": "chantez",
-                "correct": "chantez",
+                "typed": "regardez",
+                "correct": "regardez",
                 "ok": true
               },
               "ils/elles": {
-                "typed": "chantent",
-                "correct": "chantent",
+                "typed": "regardent",
+                "correct": "regardent",
                 "ok": true
               }
             },
@@ -3418,36 +3418,36 @@
             }
           },
           {
-            "word": "trouver",
+            "word": "écouter",
             "forms": {
               "je": {
-                "typed": "trouve",
-                "correct": "trouve",
+                "typed": "ecoute",
+                "correct": "j'écoute",
                 "ok": true
               },
               "tu": {
-                "typed": "trouves",
-                "correct": "trouves",
+                "typed": "ecoutes",
+                "correct": "écoutes",
                 "ok": true
               },
               "il/elle/on": {
-                "typed": "trouve",
-                "correct": "trouve",
+                "typed": "ecoute",
+                "correct": "écoute",
                 "ok": true
               },
               "nous": {
-                "typed": "trouvons",
-                "correct": "trouvons",
+                "typed": "ecoutons",
+                "correct": "écoutons",
                 "ok": true
               },
               "vous": {
-                "typed": "trouvez",
-                "correct": "trouvez",
+                "typed": "ecoutez",
+                "correct": "écoutez",
                 "ok": true
               },
               "ils/elles": {
-                "typed": "trouvent",
-                "correct": "trouvent",
+                "typed": "ecoutent",
+                "correct": "écoutent",
                 "ok": true
               }
             },
@@ -3457,36 +3457,36 @@
             }
           },
           {
-            "word": "marcher",
+            "word": "fermer",
             "forms": {
               "je": {
-                "typed": "marche",
-                "correct": "marche",
+                "typed": "ferme",
+                "correct": "ferme",
                 "ok": true
               },
               "tu": {
-                "typed": "marches",
-                "correct": "marches",
+                "typed": "fermes",
+                "correct": "fermes",
                 "ok": true
               },
               "il/elle/on": {
-                "typed": "marche",
-                "correct": "marche",
+                "typed": "ferme",
+                "correct": "ferme",
                 "ok": true
               },
               "nous": {
-                "typed": "marchons",
-                "correct": "marchons",
+                "typed": "fermons",
+                "correct": "fermons",
                 "ok": true
               },
               "vous": {
-                "typed": "marchez",
-                "correct": "marchez",
+                "typed": "fermez",
+                "correct": "fermez",
                 "ok": true
               },
               "ils/elles": {
-                "typed": "marchent",
-                "correct": "marchent",
+                "typed": "ferment",
+                "correct": "ferment",
                 "ok": true
               }
             },
@@ -3498,16 +3498,16 @@
         ],
         "nouns": [
           {
-            "word": "table",
+            "word": "porte",
             "gender": "f",
             "article": {
-              "typed": "une table",
-              "correct": "une table",
+              "typed": "une porte",
+              "correct": "une porte",
               "ok": true
             },
             "plural": {
-              "typed": "des tables",
-              "correct": "des tables",
+              "typed": "des portes",
+              "correct": "des portes",
               "ok": true
             },
             "score": {
@@ -3516,16 +3516,16 @@
             }
           },
           {
-            "word": "garçon",
+            "word": "ami",
             "gender": "m",
             "article": {
-              "typed": "un garcon",
-              "correct": "un garçon",
+              "typed": "un ami",
+              "correct": "un ami",
               "ok": true
             },
             "plural": {
-              "typed": "des garcons",
-              "correct": "des garçons",
+              "typed": "des amis",
+              "correct": "des amis",
               "ok": true
             },
             "score": {
@@ -3534,16 +3534,16 @@
             }
           },
           {
-            "word": "fille",
+            "word": "école",
             "gender": "f",
             "article": {
-              "typed": "une fille",
-              "correct": "une fille",
+              "typed": "une ecole",
+              "correct": "une école",
               "ok": true
             },
             "plural": {
-              "typed": "des filles",
-              "correct": "des filles",
+              "typed": "des ecoles",
+              "correct": "des écoles",
               "ok": true
             },
             "score": {
@@ -3554,20 +3554,20 @@
         ],
         "adjectives": [
           {
-            "word": "fort",
+            "word": "joli",
             "fem": {
-              "typed": "forte",
-              "correct": "forte",
+              "typed": "jolie",
+              "correct": "jolie",
               "ok": true
             },
             "mascPl": {
-              "typed": "forts",
-              "correct": "forts",
+              "typed": "jolis",
+              "correct": "jolis",
               "ok": true
             },
             "femPl": {
-              "typed": "fortes",
-              "correct": "fortes",
+              "typed": "jolies",
+              "correct": "jolies",
               "ok": true
             },
             "score": {
@@ -3576,20 +3576,20 @@
             }
           },
           {
-            "word": "intelligent",
+            "word": "important",
             "fem": {
-              "typed": "intelligente",
-              "correct": "intelligente",
+              "typed": "importante",
+              "correct": "importante",
               "ok": true
             },
             "mascPl": {
-              "typed": "intelligents",
-              "correct": "intelligents",
+              "typed": "importants",
+              "correct": "importants",
               "ok": true
             },
             "femPl": {
-              "typed": "intelligentes",
-              "correct": "intelligentes",
+              "typed": "importantes",
+              "correct": "importantes",
               "ok": true
             },
             "score": {
@@ -3598,20 +3598,20 @@
             }
           },
           {
-            "word": "blond",
+            "word": "français",
             "fem": {
-              "typed": "blonde",
-              "correct": "blonde",
+              "typed": "francaise",
+              "correct": "française",
               "ok": true
             },
             "mascPl": {
-              "typed": "blonds",
-              "correct": "blonds",
+              "typed": "francais",
+              "correct": "français",
               "ok": true
             },
             "femPl": {
-              "typed": "blondes",
-              "correct": "blondes",
+              "typed": "francaises",
+              "correct": "françaises",
               "ok": true
             },
             "score": {
@@ -3626,33 +3626,33 @@
         "v0": {
           "forms": {
             "je": {
-              "typed": "chante",
-              "correct": "chante",
+              "typed": "regarde",
+              "correct": "regarde",
               "ok": true
             },
             "tu": {
-              "typed": "chantes",
-              "correct": "chantes",
+              "typed": "regardes",
+              "correct": "regardes",
               "ok": true
             },
             "il/elle/on": {
-              "typed": "chante",
-              "correct": "chante",
+              "typed": "regarde",
+              "correct": "regarde",
               "ok": true
             },
             "nous": {
-              "typed": "chantons",
-              "correct": "chantons",
+              "typed": "regardons",
+              "correct": "regardons",
               "ok": true
             },
             "vous": {
-              "typed": "chantez",
-              "correct": "chantez",
+              "typed": "regardez",
+              "correct": "regardez",
               "ok": true
             },
             "ils/elles": {
-              "typed": "chantent",
-              "correct": "chantent",
+              "typed": "regardent",
+              "correct": "regardent",
               "ok": true
             }
           },
@@ -3664,16 +3664,16 @@
         "sv0": {
           "items": [
             {
-              "typed": "nous chantons",
-              "correct": "nous chantons",
+              "typed": "je regarde un ami",
+              "correct": "je regarde un ami",
               "ok": true,
-              "en": "We sing"
+              "en": "I watch a friend"
             },
             {
-              "typed": "vous chantez",
-              "correct": "tu chantes",
+              "typed": "elle regarde un ecole",
+              "correct": "elle regarde une école",
               "ok": false,
-              "en": "You (informal) sing"
+              "en": "She watches a school"
             }
           ],
           "score": {
@@ -3684,33 +3684,33 @@
         "v1": {
           "forms": {
             "je": {
-              "typed": "trouve",
-              "correct": "trouve",
+              "typed": "ecoute",
+              "correct": "j'écoute",
               "ok": true
             },
             "tu": {
-              "typed": "trouves",
-              "correct": "trouves",
+              "typed": "ecoutes",
+              "correct": "écoutes",
               "ok": true
             },
             "il/elle/on": {
-              "typed": "trouve",
-              "correct": "trouve",
+              "typed": "ecoute",
+              "correct": "écoute",
               "ok": true
             },
             "nous": {
-              "typed": "trouvons",
-              "correct": "trouvons",
+              "typed": "ecoutons",
+              "correct": "écoutons",
               "ok": true
             },
             "vous": {
-              "typed": "trouvez",
-              "correct": "trouvez",
+              "typed": "ecoutez",
+              "correct": "écoutez",
               "ok": true
             },
             "ils/elles": {
-              "typed": "trouvent",
-              "correct": "trouvent",
+              "typed": "ecoutent",
+              "correct": "écoutent",
               "ok": true
             }
           },
@@ -3722,53 +3722,53 @@
         "sv1": {
           "items": [
             {
-              "typed": "je trouve une table",
-              "correct": "je trouve une table",
+              "typed": "nous ecoutons un ami",
+              "correct": "nous écoutons un ami",
               "ok": true,
-              "en": "I find a table"
+              "en": "We listen to a friend"
             },
             {
-              "typed": "elle trouve un garcon",
-              "correct": "elle trouve un garçon",
-              "ok": true,
-              "en": "She finds a boy"
+              "typed": "vous ecoutez un port",
+              "correct": "vous écoutez une porte",
+              "ok": false,
+              "en": "You (plural) listen to a door"
             }
           ],
           "score": {
             "total": 2,
-            "correct": 2
+            "correct": 1
           }
         },
         "v2": {
           "forms": {
             "je": {
-              "typed": "marche",
-              "correct": "marche",
+              "typed": "ferme",
+              "correct": "ferme",
               "ok": true
             },
             "tu": {
-              "typed": "marches",
-              "correct": "marches",
+              "typed": "fermes",
+              "correct": "fermes",
               "ok": true
             },
             "il/elle/on": {
-              "typed": "marche",
-              "correct": "marche",
+              "typed": "ferme",
+              "correct": "ferme",
               "ok": true
             },
             "nous": {
-              "typed": "marchons",
-              "correct": "marchons",
+              "typed": "fermons",
+              "correct": "fermons",
               "ok": true
             },
             "vous": {
-              "typed": "marchez",
-              "correct": "marchez",
+              "typed": "fermez",
+              "correct": "fermez",
               "ok": true
             },
             "ils/elles": {
-              "typed": "marchent",
-              "correct": "marchent",
+              "typed": "ferment",
+              "correct": "ferment",
               "ok": true
             }
           },
@@ -3780,32 +3780,32 @@
         "sv2": {
           "items": [
             {
-              "typed": "il marche",
-              "correct": "il marche",
+              "typed": "il ferme une porte",
+              "correct": "il ferme une porte",
               "ok": true,
-              "en": "He walks"
+              "en": "He closes a door"
             },
             {
-              "typed": "nous marchons",
-              "correct": "ils marchent",
-              "ok": false,
-              "en": "They walk"
+              "typed": "ils ferment une ecole",
+              "correct": "ils ferment une école",
+              "ok": true,
+              "en": "They close a school"
             }
           ],
           "score": {
             "total": 2,
-            "correct": 1
+            "correct": 2
           }
         },
         "n0": {
           "article": {
-            "typed": "une table",
-            "correct": "une table",
+            "typed": "une porte",
+            "correct": "une porte",
             "ok": true
           },
           "plural": {
-            "typed": "des tables",
-            "correct": "des tables",
+            "typed": "des portes",
+            "correct": "des portes",
             "ok": true
           },
           "score": {
@@ -3816,32 +3816,32 @@
         "sn0": {
           "items": [
             {
-              "typed": "une table forte",
-              "correct": "une table forte",
-              "ok": true,
-              "en": "a strong table"
+              "typed": "une belle porte",
+              "correct": "une jolie porte",
+              "ok": false,
+              "en": "a pretty door"
             },
             {
-              "typed": "une table intelligente",
-              "correct": "une table intelligente",
+              "typed": "une porte francaise",
+              "correct": "une porte française",
               "ok": true,
-              "en": "a smart table"
+              "en": "a French door"
             }
           ],
           "score": {
             "total": 2,
-            "correct": 2
+            "correct": 1
           }
         },
         "n1": {
           "article": {
-            "typed": "un garcon",
-            "correct": "un garçon",
+            "typed": "un ami",
+            "correct": "un ami",
             "ok": true
           },
           "plural": {
-            "typed": "des garcons",
-            "correct": "des garçons",
+            "typed": "des amis",
+            "correct": "des amis",
             "ok": true
           },
           "score": {
@@ -3852,32 +3852,32 @@
         "sn1": {
           "items": [
             {
-              "typed": "un garcon fort",
-              "correct": "un garçon fort",
-              "ok": true,
-              "en": "a strong boy"
+              "typed": "un ami jolie",
+              "correct": "un joli ami",
+              "ok": false,
+              "en": "a pretty friend"
             },
             {
-              "typed": "un garcon blond",
-              "correct": "un garçon blond",
+              "typed": "un ami important",
+              "correct": "un ami important",
               "ok": true,
-              "en": "a blond boy"
+              "en": "an important friend"
             }
           ],
           "score": {
             "total": 2,
-            "correct": 2
+            "correct": 1
           }
         },
         "n2": {
           "article": {
-            "typed": "une fille",
-            "correct": "une fille",
+            "typed": "une ecole",
+            "correct": "une école",
             "ok": true
           },
           "plural": {
-            "typed": "des filles",
-            "correct": "des filles",
+            "typed": "des ecoles",
+            "correct": "des écoles",
             "ok": true
           },
           "score": {
@@ -3888,16 +3888,16 @@
         "sn2": {
           "items": [
             {
-              "typed": "une fille intelligente",
-              "correct": "une fille intelligente",
+              "typed": "une ecole importante",
+              "correct": "une école importante",
               "ok": true,
-              "en": "a smart girl"
+              "en": "an important school"
             },
             {
-              "typed": "une fille blonde",
-              "correct": "une fille blonde",
+              "typed": "une ecole francaise",
+              "correct": "une école française",
               "ok": true,
-              "en": "a blonde girl"
+              "en": "a French school"
             }
           ],
           "score": {
@@ -3907,18 +3907,18 @@
         },
         "a0": {
           "fem": {
-            "typed": "forte",
-            "correct": "forte",
+            "typed": "jolie",
+            "correct": "jolie",
             "ok": true
           },
           "mascPl": {
-            "typed": "forts",
-            "correct": "forts",
+            "typed": "jolis",
+            "correct": "jolis",
             "ok": true
           },
           "femPl": {
-            "typed": "fortes",
-            "correct": "fortes",
+            "typed": "jolies",
+            "correct": "jolies",
             "ok": true
           },
           "score": {
@@ -3929,16 +3929,16 @@
         "sa0": {
           "items": [
             {
-              "typed": "un garcon fort",
-              "correct": "un garçon fort",
+              "typed": "une jolie porte",
+              "correct": "une jolie porte",
               "ok": true,
-              "en": "a strong boy"
+              "en": "a pretty door"
             },
             {
-              "typed": "filles fortes",
-              "correct": "des filles fortes",
+              "typed": "des joli amis",
+              "correct": "de jolis amis",
               "ok": false,
-              "en": "strong girls"
+              "en": "pretty friends"
             }
           ],
           "score": {
@@ -3948,18 +3948,18 @@
         },
         "a1": {
           "fem": {
-            "typed": "intelligente",
-            "correct": "intelligente",
+            "typed": "importante",
+            "correct": "importante",
             "ok": true
           },
           "mascPl": {
-            "typed": "intelligents",
-            "correct": "intelligents",
+            "typed": "importants",
+            "correct": "importants",
             "ok": true
           },
           "femPl": {
-            "typed": "intelligentes",
-            "correct": "intelligentes",
+            "typed": "importantes",
+            "correct": "importantes",
             "ok": true
           },
           "score": {
@@ -3970,16 +3970,16 @@
         "sa1": {
           "items": [
             {
-              "typed": "une fille intelligente",
-              "correct": "une fille intelligente",
+              "typed": "une ecole importante",
+              "correct": "une école importante",
               "ok": true,
-              "en": "a smart girl"
+              "en": "an important school"
             },
             {
-              "typed": "des garcons intelligents",
-              "correct": "des garçons intelligents",
+              "typed": "des portes importantes",
+              "correct": "des portes importantes",
               "ok": true,
-              "en": "smart boys"
+              "en": "important doors"
             }
           ],
           "score": {
@@ -3989,18 +3989,18 @@
         },
         "a2": {
           "fem": {
-            "typed": "blonde",
-            "correct": "blonde",
+            "typed": "francaise",
+            "correct": "française",
             "ok": true
           },
           "mascPl": {
-            "typed": "blonds",
-            "correct": "blonds",
+            "typed": "francais",
+            "correct": "français",
             "ok": true
           },
           "femPl": {
-            "typed": "blondes",
-            "correct": "blondes",
+            "typed": "francaises",
+            "correct": "françaises",
             "ok": true
           },
           "score": {
@@ -4011,16 +4011,16 @@
         "sa2": {
           "items": [
             {
-              "typed": "un garcon blond",
-              "correct": "un garçon blond",
+              "typed": "un ami francais",
+              "correct": "un ami français",
               "ok": true,
-              "en": "a blond boy"
+              "en": "a French friend"
             },
             {
-              "typed": "des filles blondes",
-              "correct": "des filles blondes",
+              "typed": "des ecoles francaises",
+              "correct": "des écoles françaises",
               "ok": true,
-              "en": "blonde girls"
+              "en": "French schools"
             }
           ],
           "score": {
@@ -4030,11 +4030,669 @@
         }
       },
       "lastStep": 19,
-      "bankIdx": 1,
+      "bankIdx": 2,
       "complete": true,
       "score": {
         "total": 51,
-        "correct": 48
+        "correct": 46
+      }
+    },
+    "2026-08-12": {
+      "startedAt": "2026-08-12T10:48:49.318Z",
+      "completedAt": "2026-08-12T10:57:51.445Z",
+      "responses": 17,
+      "words": {
+        "verbs": [
+          "chercher",
+          "montrer",
+          "porter"
+        ],
+        "nouns": [
+          {
+            "w": "jardin",
+            "g": "m"
+          },
+          {
+            "w": "chambre",
+            "g": "f"
+          },
+          {
+            "w": "animal",
+            "g": "m"
+          }
+        ],
+        "adjectives": [
+          "nouveau",
+          "beau",
+          "long"
+        ]
+      },
+      "results": {
+        "verbs": [
+          {
+            "word": "chercher",
+            "forms": {
+              "je": {
+                "typed": "cherche",
+                "correct": "cherche",
+                "ok": true
+              },
+              "tu": {
+                "typed": "cherches",
+                "correct": "cherches",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "cherche",
+                "correct": "cherche",
+                "ok": true
+              },
+              "nous": {
+                "typed": "cherchons",
+                "correct": "cherchons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "cherchez",
+                "correct": "cherchez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "cherchent",
+                "correct": "cherchent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "montrer",
+            "forms": {
+              "je": {
+                "typed": "montre",
+                "correct": "montre",
+                "ok": true
+              },
+              "tu": {
+                "typed": "montres",
+                "correct": "montres",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "montre",
+                "correct": "montre",
+                "ok": true
+              },
+              "nous": {
+                "typed": "montrons",
+                "correct": "montrons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "montrez",
+                "correct": "montrez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "montrent",
+                "correct": "montrent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "porter",
+            "forms": {
+              "je": {
+                "typed": "porte",
+                "correct": "porte",
+                "ok": true
+              },
+              "tu": {
+                "typed": "portes",
+                "correct": "portes",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "porte",
+                "correct": "porte",
+                "ok": true
+              },
+              "nous": {
+                "typed": "portons",
+                "correct": "portons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "portez",
+                "correct": "portez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "portent",
+                "correct": "portent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          }
+        ],
+        "nouns": [
+          null,
+          {
+            "word": "chambre",
+            "gender": "f",
+            "article": {
+              "typed": "une chambre",
+              "correct": "une chambre",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des chambres",
+              "correct": "des chambres",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "animal",
+            "gender": "m",
+            "article": {
+              "typed": "un animal",
+              "correct": "un animal",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des animals",
+              "correct": "des animaux",
+              "ok": false
+            },
+            "score": {
+              "total": 2,
+              "correct": 1
+            }
+          }
+        ],
+        "adjectives": [
+          {
+            "word": "nouveau",
+            "fem": {
+              "typed": "nouvelle",
+              "correct": "nouvelle",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "nouveaus",
+              "correct": "nouveaux",
+              "ok": false
+            },
+            "femPl": {
+              "typed": "nouvelles",
+              "correct": "nouvelles",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 2
+            }
+          },
+          {
+            "word": "beau",
+            "fem": {
+              "typed": "beau",
+              "correct": "belle",
+              "ok": false
+            },
+            "mascPl": {
+              "typed": "belles",
+              "correct": "beaux",
+              "ok": false
+            },
+            "femPl": {
+              "typed": "beaus",
+              "correct": "belles",
+              "ok": false
+            },
+            "score": {
+              "total": 3,
+              "correct": 0
+            }
+          },
+          {
+            "word": "long",
+            "fem": {
+              "typed": "longue",
+              "correct": "longue",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "longs",
+              "correct": "longs",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "longues",
+              "correct": "longues",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          }
+        ],
+        "sentences": []
+      },
+      "checked": {
+        "v0": {
+          "forms": {
+            "je": {
+              "typed": "cherche",
+              "correct": "cherche",
+              "ok": true
+            },
+            "tu": {
+              "typed": "cherches",
+              "correct": "cherches",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "cherche",
+              "correct": "cherche",
+              "ok": true
+            },
+            "nous": {
+              "typed": "cherchons",
+              "correct": "cherchons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "cherchez",
+              "correct": "cherchez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "cherchent",
+              "correct": "cherchent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv0": {
+          "items": [
+            {
+              "typed": "je cherche un jardin",
+              "correct": "je cherche un jardin",
+              "ok": true,
+              "en": "I look for a garden"
+            },
+            {
+              "typed": "elle cherche un sall",
+              "correct": "elle cherche une chambre",
+              "ok": false,
+              "en": "She looks for a bedroom"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "v1": {
+          "forms": {
+            "je": {
+              "typed": "montre",
+              "correct": "montre",
+              "ok": true
+            },
+            "tu": {
+              "typed": "montres",
+              "correct": "montres",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "montre",
+              "correct": "montre",
+              "ok": true
+            },
+            "nous": {
+              "typed": "montrons",
+              "correct": "montrons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "montrez",
+              "correct": "montrez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "montrent",
+              "correct": "montrent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv1": {
+          "items": [
+            {
+              "typed": "nous montrons animal",
+              "correct": "nous montrons un animal",
+              "ok": false,
+              "en": "We show an animal"
+            },
+            {
+              "typed": "tu montrez un jardin",
+              "correct": "tu montres un jardin",
+              "ok": false,
+              "en": "You (informal) show a garden"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "v2": {
+          "forms": {
+            "je": {
+              "typed": "porte",
+              "correct": "porte",
+              "ok": true
+            },
+            "tu": {
+              "typed": "portes",
+              "correct": "portes",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "porte",
+              "correct": "porte",
+              "ok": true
+            },
+            "nous": {
+              "typed": "portons",
+              "correct": "portons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "portez",
+              "correct": "portez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "portent",
+              "correct": "portent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv2": {
+          "items": [
+            {
+              "typed": "il porte animal",
+              "correct": "il porte un animal",
+              "ok": false,
+              "en": "He carries an animal"
+            },
+            {
+              "typed": "vous portez une chambre",
+              "correct": "vous portez une chambre",
+              "ok": true,
+              "en": "You (plural) carry a bedroom"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "sn0": {
+          "items": [
+            {
+              "typed": "un jardin nouveau",
+              "correct": "un nouveau jardin",
+              "ok": false,
+              "en": "a new garden"
+            },
+            {
+              "typed": "un belle jardin",
+              "correct": "un beau jardin",
+              "ok": false,
+              "en": "a beautiful garden"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "n1": {
+          "article": {
+            "typed": "une chambre",
+            "correct": "une chambre",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des chambres",
+            "correct": "des chambres",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn1": {
+          "items": [
+            {
+              "typed": "une nouveau chambre",
+              "correct": "une nouvelle chambre",
+              "ok": false,
+              "en": "a new bedroom"
+            },
+            {
+              "typed": "une beau chambre",
+              "correct": "une belle chambre",
+              "ok": false,
+              "en": "a beautiful bedroom"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "n2": {
+          "article": {
+            "typed": "un animal",
+            "correct": "un animal",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des animals",
+            "correct": "des animaux",
+            "ok": false
+          },
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "sn2": {
+          "items": [
+            {
+              "typed": "un nouvaeu animal",
+              "correct": "un nouvel animal",
+              "ok": false,
+              "en": "a new animal"
+            },
+            {
+              "typed": "un animal long",
+              "correct": "un long animal",
+              "ok": false,
+              "en": "a long animal"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "a0": {
+          "fem": {
+            "typed": "nouvelle",
+            "correct": "nouvelle",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "nouveaus",
+            "correct": "nouveaux",
+            "ok": false
+          },
+          "femPl": {
+            "typed": "nouvelles",
+            "correct": "nouvelles",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 2
+          }
+        },
+        "sa0": {
+          "items": [
+            {
+              "typed": "une nouvelle chambre",
+              "correct": "une nouvelle chambre",
+              "ok": true,
+              "en": "a new bedroom"
+            },
+            {
+              "typed": "nouveaux jardins",
+              "correct": "de nouveaux jardins",
+              "ok": false,
+              "en": "new gardens"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "a1": {
+          "fem": {
+            "typed": "beau",
+            "correct": "belle",
+            "ok": false
+          },
+          "mascPl": {
+            "typed": "belles",
+            "correct": "beaux",
+            "ok": false
+          },
+          "femPl": {
+            "typed": "beaus",
+            "correct": "belles",
+            "ok": false
+          },
+          "score": {
+            "total": 3,
+            "correct": 0
+          }
+        },
+        "sa1": {
+          "items": [
+            {
+              "typed": "un beau animal",
+              "correct": "un bel animal",
+              "ok": false,
+              "en": "a beautiful animal"
+            },
+            {
+              "typed": "une beaux chambres",
+              "correct": "de belles chambres",
+              "ok": false,
+              "en": "beautiful bedrooms"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "a2": {
+          "fem": {
+            "typed": "longue",
+            "correct": "longue",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "longs",
+            "correct": "longs",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "longues",
+            "correct": "longues",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa2": {
+          "items": [
+            {
+              "typed": "un jardin long",
+              "correct": "un long jardin",
+              "ok": false,
+              "en": "a long garden"
+            },
+            {
+              "typed": "des animals longs",
+              "correct": "de longs animaux",
+              "ok": false,
+              "en": "long animals"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        }
+      },
+      "lastStep": 19,
+      "bankIdx": 3,
+      "complete": true,
+      "score": {
+        "total": 49,
+        "correct": 29
       }
     }
   }
