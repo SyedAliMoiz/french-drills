@@ -58,9 +58,9 @@
 
 |masculine|beau|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|beau|
+|masc. plural|belles|
+|fem. plural|beaus|
 
 ### long
 
