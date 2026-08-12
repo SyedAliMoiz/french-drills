@@ -74,8 +74,8 @@
 
 |English|French|
 |---|---|
-|I look for a garden||
-|She looks for a bedroom||
+|I look for a garden|je cherche un jardin|
+|She looks for a bedroom|elle cherche un sall|
 |We show an animal||
 |You (informal) show a garden||
 |He carries an animal||
