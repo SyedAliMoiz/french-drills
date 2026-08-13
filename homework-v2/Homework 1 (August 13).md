@@ -85,8 +85,8 @@
 
 |English|French|
 |---|---|
-|a new animal||
-|a long animal||
+|a new animal|un nouvel animal|
+|a long animal|un long animal|
 |a new garden||
 |a beautiful garden||
 |a new bedroom||
