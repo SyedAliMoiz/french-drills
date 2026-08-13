@@ -76,8 +76,8 @@
 |---|---|
 |I play a song|je joue un chanson|
 |They play a song|ils jouent un chanson|
-|She lives||
-|You (plural) live||
+|She lives|elle habite|
+|You (plural) live|vous habitez|
 |He arrives||
 |We arrive||
 
