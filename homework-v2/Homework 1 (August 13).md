@@ -78,8 +78,8 @@
 |They play a song|ils jouent un chanson|
 |She lives|elle habite|
 |You (plural) live|vous habitez|
-|He arrives||
-|We arrive||
+|He arrives|j'arrive|
+|We arrive|nous arrivons|
 
 ### Noun Phrases
 
