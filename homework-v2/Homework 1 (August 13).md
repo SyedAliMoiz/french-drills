@@ -10,13 +10,13 @@
 
 ### habiter
 
-|j'||
+|j'|habite|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|habites|
+|il/elle/on|habite|
+|nous|habitons|
+|vous|habitez|
+|ils/elles|habitent|
 
 ### arriver
 
