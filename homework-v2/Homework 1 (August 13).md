@@ -20,13 +20,13 @@
 
 ### arriver
 
-|j'||
+|j'|arrive|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|arrives|
+|il/elle/on|arrive|
+|nous|arrivons|
+|vous|arrivez|
+|ils/elles|arrivent|
 
 ### animal
 
