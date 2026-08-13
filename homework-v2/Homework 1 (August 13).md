@@ -50,9 +50,9 @@
 
 |masculine|beau|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|belle|
+|masc. plural|beaux|
+|fem. plural|belles|
 
 ### nouveau
 
