@@ -36,9 +36,9 @@
 
 ### jardin
 
-|masculine||
+|masculine|un jardin|
 |---|---|
-|plural||
+|plural|des jardins|
 
 ### chambre
 
