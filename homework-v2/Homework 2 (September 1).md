@@ -20,13 +20,13 @@
 
 ### regarder
 
-|je||
+|je|regarde|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|regardes|
+|il/elle/on|regarde|
+|nous|regardons|
+|vous|regardez|
+|ils/elles|regardent|
 
 ### jardin
 
