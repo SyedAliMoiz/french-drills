@@ -10,13 +10,13 @@
 
 ### jouer
 
-|je||
+|je|joue|
 |---|---|
-|tu||
-|il/elle/on||
-|nous||
-|vous||
-|ils/elles||
+|tu|joues|
+|il/elle/on|joue|
+|nous|jouons|
+|vous|jouez|
+|ils/elles|jouent|
 
 ### regarder
 
