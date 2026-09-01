@@ -66,9 +66,9 @@
 
 |masculine|nouveau|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|nouvel|
+|masc. plural|nouveaux|
+|fem. plural|nouvels|
 
 ### Verb Sentences
 
