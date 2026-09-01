@@ -74,8 +74,8 @@
 
 |English|French|
 |---|---|
-|We show an animal||
-|You (informal) show a garden||
+|We show an animal|nous montrons un animaux|
+|You (informal) show a garden|tu montres un jardin|
 |I play a song||
 |They play a song||
 |I watch a friend||
