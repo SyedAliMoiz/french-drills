@@ -87,8 +87,8 @@
 |---|---|
 |a new garden|un nouveux jardin|
 |a beautiful garden|un beau jardin|
-|a new animal||
-|a long animal||
+|a new animal|un nouveau animal|
+|a long animal|un long animal|
 |a new bedroom||
 |a beautiful bedroom||
 
