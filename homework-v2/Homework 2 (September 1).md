@@ -76,8 +76,8 @@
 |---|---|
 |We show an animal|nous montrons un animaux|
 |You (informal) show a garden|tu montres un jardin|
-|I play a song||
-|They play a song||
+|I play a song|je joue un chanson|
+|They play a song|ils jouent un chanson|
 |I watch a friend||
 |She watches a school||
 
