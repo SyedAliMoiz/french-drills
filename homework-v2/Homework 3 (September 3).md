@@ -58,9 +58,9 @@
 
 |masculine|nouveau|
 |---|---|
-|feminine||
-|masc. plural||
-|fem. plural||
+|feminine|nouvelle|
+|masc. plural|nouveaux|
+|fem. plural|nouvelles|
 
 ### long
 
