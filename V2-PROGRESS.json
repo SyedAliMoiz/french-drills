@@ -1,6 +1,6 @@
 {
   "v": 2,
-  "updated": "2026-08-13T12:00:00Z",
+  "updated": "2026-09-03T12:30:53.741Z",
   "srs": {
     "v-0-0": {
       "ef": 2.5,
@@ -127,10 +127,10 @@
     },
     "v-2-0": {
       "ef": 2.5,
-      "interval": 3,
-      "reps": 1,
-      "nextReview": "2026-08-14",
-      "lastReview": "2026-08-11",
+      "interval": 8,
+      "reps": 3,
+      "nextReview": "2026-09-10",
+      "lastReview": "2026-09-03",
       "errors": {
         "je": 0,
         "tu": 0,
@@ -138,7 +138,7 @@
         "nous": 0,
         "vous": 0,
         "ils": 0,
-        "sentence": 1
+        "sentence": 3
       }
     },
     "n-2-0": {
@@ -265,36 +265,36 @@
       }
     },
     "n-3-0": {
-      "ef": 2.5,
-      "interval": 1,
-      "reps": 0,
-      "nextReview": "2026-08-13",
-      "lastReview": "2026-08-12",
+      "ef": 2.2200000000000006,
+      "interval": 3,
+      "reps": 2,
+      "nextReview": "2026-09-05",
+      "lastReview": "2026-09-03",
       "errors": {
         "article": 0,
         "plural": 0,
-        "sentence": 2
+        "sentence": 6
       }
     },
     "a-3-0": {
       "ef": 2.5,
       "interval": 1,
-      "reps": 0,
-      "nextReview": "2026-08-13",
-      "lastReview": "2026-08-12",
+      "reps": 1,
+      "nextReview": "2026-09-03",
+      "lastReview": "2026-09-03",
       "errors": {
-        "feminine": 0,
+        "feminine": 1,
         "mascPlural": 1,
-        "femPlural": 0,
-        "sentence": 1
+        "femPlural": 1,
+        "sentence": 3
       }
     },
     "v-3-1": {
       "ef": 2.5,
-      "interval": 3,
-      "reps": 1,
-      "nextReview": "2026-08-15",
-      "lastReview": "2026-08-12",
+      "interval": 8,
+      "reps": 3,
+      "nextReview": "2026-09-10",
+      "lastReview": "2026-09-03",
       "errors": {
         "je": 0,
         "tu": 0,
@@ -302,32 +302,32 @@
         "nous": 0,
         "vous": 0,
         "ils": 0,
-        "sentence": 2
+        "sentence": 4
       }
     },
     "n-3-1": {
-      "ef": 2.5,
+      "ef": 2.6,
       "interval": 1,
       "reps": 0,
-      "nextReview": "2026-08-13",
-      "lastReview": "2026-08-12",
+      "nextReview": "2026-09-03",
+      "lastReview": "2026-09-03",
       "errors": {
         "article": 0,
         "plural": 0,
-        "sentence": 2
+        "sentence": 6
       }
     },
     "a-3-1": {
-      "ef": 2.5,
+      "ef": 2.2200000000000006,
       "interval": 1,
-      "reps": 0,
-      "nextReview": "2026-08-13",
-      "lastReview": "2026-08-12",
+      "reps": 1,
+      "nextReview": "2026-09-03",
+      "lastReview": "2026-09-03",
       "errors": {
-        "feminine": 1,
+        "feminine": 2,
         "mascPlural": 1,
-        "femPlural": 1,
-        "sentence": 2
+        "femPlural": 2,
+        "sentence": 8
       }
     },
     "v-3-2": {
@@ -347,28 +347,28 @@
       }
     },
     "n-3-2": {
-      "ef": 2.5,
-      "interval": 1,
-      "reps": 0,
-      "nextReview": "2026-08-13",
-      "lastReview": "2026-08-12",
+      "ef": 2.3200000000000003,
+      "interval": 7,
+      "reps": 3,
+      "nextReview": "2026-09-09",
+      "lastReview": "2026-09-03",
       "errors": {
         "article": 0,
         "plural": 1,
-        "sentence": 2
+        "sentence": 4
       }
     },
     "a-3-2": {
-      "ef": 2.5,
-      "interval": 1,
-      "reps": 0,
-      "nextReview": "2026-08-13",
-      "lastReview": "2026-08-12",
+      "ef": 2.7,
+      "interval": 8,
+      "reps": 3,
+      "nextReview": "2026-09-10",
+      "lastReview": "2026-09-03",
       "errors": {
         "feminine": 0,
         "mascPlural": 0,
         "femPlural": 0,
-        "sentence": 2
+        "sentence": 3
       }
     },
     "v-1-0": {
@@ -493,14 +493,4170 @@
         "femPlural": 0,
         "sentence": 0
       }
+    },
+    "v-4-0": {
+      "ef": 2.080000000000001,
+      "interval": 7,
+      "reps": 3,
+      "nextReview": "2026-09-09",
+      "lastReview": "2026-09-03",
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 6
+      }
+    },
+    "v-4-1": {
+      "ef": 2.6,
+      "interval": 1,
+      "reps": 1,
+      "nextReview": "2026-08-13",
+      "lastReview": "2026-08-13",
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-4-2": {
+      "ef": 2.5,
+      "interval": 1,
+      "reps": 1,
+      "nextReview": "2026-08-13",
+      "lastReview": "2026-08-13",
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 1
+      }
+    },
+    "v-5-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-5-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-5-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-6-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-6-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-6-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-7-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-7-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-7-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-8-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-8-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-8-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-9-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-9-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-9-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-10-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-10-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-10-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-11-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-11-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-11-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-12-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-12-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-12-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-13-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-13-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-13-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "n-4-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-4-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-4-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-5-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-5-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-5-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-6-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-6-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-6-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-7-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-7-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-7-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-8-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-8-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-8-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-9-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-9-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-9-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-10-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-10-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-10-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-11-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-11-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-11-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-12-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-12-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-12-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-13-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-13-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-13-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "a-4-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-4-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-4-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-5-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-5-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-5-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-6-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-6-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-6-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-7-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-7-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-7-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-8-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-8-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-8-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-9-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-9-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-9-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-10-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-10-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-10-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-11-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-11-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-11-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-12-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-12-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-12-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-13-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-13-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-13-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "v-14-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-14-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-14-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-15-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-15-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-15-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-16-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-16-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-16-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-17-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-17-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-17-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-18-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-18-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-18-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-19-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-19-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-19-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-20-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-20-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-20-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-21-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-21-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "v-21-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "je": 0,
+        "tu": 0,
+        "il": 0,
+        "nous": 0,
+        "vous": 0,
+        "ils": 0,
+        "sentence": 0
+      }
+    },
+    "n-14-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-14-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-14-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-15-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-15-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-15-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-16-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-16-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-16-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-17-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-17-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-17-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-18-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-18-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-18-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-19-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-19-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-19-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-20-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-20-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-20-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-21-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-21-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "n-21-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "article": 0,
+        "plural": 0,
+        "sentence": 0
+      }
+    },
+    "a-14-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-14-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-14-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-15-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-15-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-15-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-16-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-16-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-16-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-17-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-17-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-17-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-18-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-18-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-18-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-19-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-19-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-19-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-20-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-20-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-20-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-21-0": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-21-1": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
+    },
+    "a-21-2": {
+      "ef": 2.5,
+      "interval": 0,
+      "reps": 0,
+      "nextReview": null,
+      "lastReview": null,
+      "errors": {
+        "feminine": 0,
+        "mascPlural": 0,
+        "femPlural": 0,
+        "sentence": 0
+      }
     }
   },
-  "hw": {},
+  "hw": {
+    "2026-08-13": {
+      "startedAt": "2026-08-13T18:07:26.880Z",
+      "completedAt": "2026-08-13T18:22:04.217Z",
+      "responses": 15,
+      "wordIds": {
+        "verbs": [
+          "v-4-0",
+          "v-4-1",
+          "v-4-2"
+        ],
+        "nouns": [
+          "n-3-2",
+          "n-3-0",
+          "n-3-1"
+        ],
+        "adj": [
+          "a-3-1",
+          "a-3-0",
+          "a-3-2"
+        ]
+      },
+      "results": {
+        "verbs": [
+          {
+            "word": "jouer",
+            "forms": {
+              "je": {
+                "typed": "joue",
+                "correct": "joue",
+                "ok": true
+              },
+              "tu": {
+                "typed": "joues",
+                "correct": "joues",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "joue",
+                "correct": "joue",
+                "ok": true
+              },
+              "nous": {
+                "typed": "jouons",
+                "correct": "jouons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "jouez",
+                "correct": "jouez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "jouent",
+                "correct": "jouent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "habiter",
+            "forms": {
+              "je": {
+                "typed": "habite",
+                "correct": "j'habite",
+                "ok": true
+              },
+              "tu": {
+                "typed": "habites",
+                "correct": "habites",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "habite",
+                "correct": "habite",
+                "ok": true
+              },
+              "nous": {
+                "typed": "habitons",
+                "correct": "habitons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "habitez",
+                "correct": "habitez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "habitent",
+                "correct": "habitent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "arriver",
+            "forms": {
+              "je": {
+                "typed": "arrive",
+                "correct": "j'arrive",
+                "ok": true
+              },
+              "tu": {
+                "typed": "arrives",
+                "correct": "arrives",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "arrive",
+                "correct": "arrive",
+                "ok": true
+              },
+              "nous": {
+                "typed": "arrivons",
+                "correct": "arrivons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "arrivez",
+                "correct": "arrivez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "arrivent",
+                "correct": "arrivent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          }
+        ],
+        "nouns": [
+          {
+            "word": "animal",
+            "gender": "m",
+            "article": {
+              "typed": "un animal",
+              "correct": "un animal",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des animaux",
+              "correct": "des animaux",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "jardin",
+            "gender": "m",
+            "article": {
+              "typed": "un jardin",
+              "correct": "un jardin",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des jardins",
+              "correct": "des jardins",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "chambre",
+            "gender": "f",
+            "article": {
+              "typed": "une chambre",
+              "correct": "une chambre",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des chambres",
+              "correct": "des chambres",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          }
+        ],
+        "adjectives": [
+          {
+            "word": "beau",
+            "fem": {
+              "typed": "belle",
+              "correct": "belle",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "beaux",
+              "correct": "beaux",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "belles",
+              "correct": "belles",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          },
+          null,
+          {
+            "word": "long",
+            "fem": {
+              "typed": "longue",
+              "correct": "longue",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "longs",
+              "correct": "longs",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "longues",
+              "correct": "longues",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          }
+        ],
+        "sentences": []
+      },
+      "checked": {
+        "v0": {
+          "forms": {
+            "je": {
+              "typed": "joue",
+              "correct": "joue",
+              "ok": true
+            },
+            "tu": {
+              "typed": "joues",
+              "correct": "joues",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "joue",
+              "correct": "joue",
+              "ok": true
+            },
+            "nous": {
+              "typed": "jouons",
+              "correct": "jouons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "jouez",
+              "correct": "jouez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "jouent",
+              "correct": "jouent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv0": {
+          "items": [
+            {
+              "typed": "je joue un chanson",
+              "correct": "je joue une chanson",
+              "ok": false,
+              "en": "I play a song"
+            },
+            {
+              "typed": "ils jouent un chanson",
+              "correct": "ils jouent une chanson",
+              "ok": false,
+              "en": "They play a song"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "v1": {
+          "forms": {
+            "je": {
+              "typed": "habite",
+              "correct": "j'habite",
+              "ok": true
+            },
+            "tu": {
+              "typed": "habites",
+              "correct": "habites",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "habite",
+              "correct": "habite",
+              "ok": true
+            },
+            "nous": {
+              "typed": "habitons",
+              "correct": "habitons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "habitez",
+              "correct": "habitez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "habitent",
+              "correct": "habitent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv1": {
+          "items": [
+            {
+              "typed": "elle habite",
+              "correct": "elle habite",
+              "ok": true,
+              "en": "She lives"
+            },
+            {
+              "typed": "vous habitez",
+              "correct": "vous habitez",
+              "ok": true,
+              "en": "You (plural) live"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "v2": {
+          "forms": {
+            "je": {
+              "typed": "arrive",
+              "correct": "j'arrive",
+              "ok": true
+            },
+            "tu": {
+              "typed": "arrives",
+              "correct": "arrives",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "arrive",
+              "correct": "arrive",
+              "ok": true
+            },
+            "nous": {
+              "typed": "arrivons",
+              "correct": "arrivons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "arrivez",
+              "correct": "arrivez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "arrivent",
+              "correct": "arrivent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv2": {
+          "items": [
+            {
+              "typed": "j'arrive",
+              "correct": "il arrive",
+              "ok": false,
+              "en": "He arrives"
+            },
+            {
+              "typed": "nous arrivons",
+              "correct": "nous arrivons",
+              "ok": true,
+              "en": "We arrive"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "n0": {
+          "article": {
+            "typed": "un animal",
+            "correct": "un animal",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des animaux",
+            "correct": "des animaux",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn0": {
+          "items": [
+            {
+              "typed": "un nouvel animal",
+              "correct": "un nouvel animal",
+              "ok": true,
+              "en": "a new animal"
+            },
+            {
+              "typed": "un long animal",
+              "correct": "un long animal",
+              "ok": true,
+              "en": "a long animal"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "n1": {
+          "article": {
+            "typed": "un jardin",
+            "correct": "un jardin",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des jardins",
+            "correct": "des jardins",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn1": {
+          "items": [
+            {
+              "typed": "un nouvel jardin",
+              "correct": "un nouveau jardin",
+              "ok": false,
+              "en": "a new garden"
+            },
+            {
+              "typed": "un belle jardin",
+              "correct": "un beau jardin",
+              "ok": false,
+              "en": "a beautiful garden"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "n2": {
+          "article": {
+            "typed": "une chambre",
+            "correct": "une chambre",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des chambres",
+            "correct": "des chambres",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "a0": {
+          "fem": {
+            "typed": "belle",
+            "correct": "belle",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "beaux",
+            "correct": "beaux",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "belles",
+            "correct": "belles",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa0": {
+          "items": [
+            {
+              "typed": "un belle animal",
+              "correct": "un bel animal",
+              "ok": false,
+              "en": "a beautiful animal"
+            },
+            {
+              "typed": "des beaux chambres",
+              "correct": "de belles chambres",
+              "ok": false,
+              "en": "beautiful bedrooms"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "a2": {
+          "fem": {
+            "typed": "longue",
+            "correct": "longue",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "longs",
+            "correct": "longs",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "longues",
+            "correct": "longues",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa2": {
+          "items": [
+            {
+              "typed": "un long jardin",
+              "correct": "un long jardin",
+              "ok": true,
+              "en": "a long garden"
+            },
+            {
+              "typed": "de long animaux",
+              "correct": "de longs animaux",
+              "ok": false,
+              "en": "long animals"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        }
+      },
+      "lastStep": 19,
+      "complete": true,
+      "score": {
+        "total": 44,
+        "correct": 36
+      }
+    },
+    "2026-09-01": {
+      "startedAt": "2026-09-01T08:47:39.646Z",
+      "completedAt": "2026-09-01T08:54:16.641Z",
+      "responses": 18,
+      "wordIds": {
+        "verbs": [
+          "v-3-1",
+          "v-4-0",
+          "v-2-0"
+        ],
+        "nouns": [
+          "n-3-0",
+          "n-3-2",
+          "n-3-1"
+        ],
+        "adj": [
+          "a-3-1",
+          "a-3-2",
+          "a-3-0"
+        ]
+      },
+      "results": {
+        "verbs": [
+          {
+            "word": "montrer",
+            "forms": {
+              "je": {
+                "typed": "montre",
+                "correct": "montre",
+                "ok": true
+              },
+              "tu": {
+                "typed": "montres",
+                "correct": "montres",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "montre",
+                "correct": "montre",
+                "ok": true
+              },
+              "nous": {
+                "typed": "montrons",
+                "correct": "montrons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "montrez",
+                "correct": "montrez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "montrent",
+                "correct": "montrent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "jouer",
+            "forms": {
+              "je": {
+                "typed": "joue",
+                "correct": "joue",
+                "ok": true
+              },
+              "tu": {
+                "typed": "joues",
+                "correct": "joues",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "joue",
+                "correct": "joue",
+                "ok": true
+              },
+              "nous": {
+                "typed": "jouons",
+                "correct": "jouons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "jouez",
+                "correct": "jouez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "jouent",
+                "correct": "jouent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "regarder",
+            "forms": {
+              "je": {
+                "typed": "regarde",
+                "correct": "regarde",
+                "ok": true
+              },
+              "tu": {
+                "typed": "regardes",
+                "correct": "regardes",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "regarde",
+                "correct": "regarde",
+                "ok": true
+              },
+              "nous": {
+                "typed": "regardons",
+                "correct": "regardons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "regardez",
+                "correct": "regardez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "regardent",
+                "correct": "regardent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          }
+        ],
+        "nouns": [
+          {
+            "word": "jardin",
+            "gender": "m",
+            "article": {
+              "typed": "un jardin",
+              "correct": "un jardin",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des jardins",
+              "correct": "des jardins",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "animal",
+            "gender": "m",
+            "article": {
+              "typed": "un animal",
+              "correct": "un animal",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des animaux",
+              "correct": "des animaux",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "chambre",
+            "gender": "f",
+            "article": {
+              "typed": "une chambre",
+              "correct": "une chambre",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des chambres",
+              "correct": "des chambres",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          }
+        ],
+        "adjectives": [
+          {
+            "word": "beau",
+            "fem": {
+              "typed": "bel",
+              "correct": "belle",
+              "ok": false
+            },
+            "mascPl": {
+              "typed": "beaux",
+              "correct": "beaux",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "belle",
+              "correct": "belles",
+              "ok": false
+            },
+            "score": {
+              "total": 3,
+              "correct": 1
+            }
+          },
+          {
+            "word": "long",
+            "fem": {
+              "typed": "longue",
+              "correct": "longue",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "longs",
+              "correct": "longs",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "longues",
+              "correct": "longues",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          },
+          {
+            "word": "nouveau",
+            "fem": {
+              "typed": "nouvel",
+              "correct": "nouvelle",
+              "ok": false
+            },
+            "mascPl": {
+              "typed": "nouveaux",
+              "correct": "nouveaux",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "nouvels",
+              "correct": "nouvelles",
+              "ok": false
+            },
+            "score": {
+              "total": 3,
+              "correct": 1
+            }
+          }
+        ],
+        "sentences": []
+      },
+      "checked": {
+        "v0": {
+          "forms": {
+            "je": {
+              "typed": "montre",
+              "correct": "montre",
+              "ok": true
+            },
+            "tu": {
+              "typed": "montres",
+              "correct": "montres",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "montre",
+              "correct": "montre",
+              "ok": true
+            },
+            "nous": {
+              "typed": "montrons",
+              "correct": "montrons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "montrez",
+              "correct": "montrez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "montrent",
+              "correct": "montrent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv0": {
+          "items": [
+            {
+              "typed": "nous montrons un animaux",
+              "correct": "nous montrons un animal",
+              "ok": false,
+              "en": "We show an animal"
+            },
+            {
+              "typed": "tu montres un jardin",
+              "correct": "tu montres un jardin",
+              "ok": true,
+              "en": "You (informal) show a garden"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "v1": {
+          "forms": {
+            "je": {
+              "typed": "joue",
+              "correct": "joue",
+              "ok": true
+            },
+            "tu": {
+              "typed": "joues",
+              "correct": "joues",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "joue",
+              "correct": "joue",
+              "ok": true
+            },
+            "nous": {
+              "typed": "jouons",
+              "correct": "jouons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "jouez",
+              "correct": "jouez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "jouent",
+              "correct": "jouent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv1": {
+          "items": [
+            {
+              "typed": "je joue un chanson",
+              "correct": "je joue une chanson",
+              "ok": false,
+              "en": "I play a song"
+            },
+            {
+              "typed": "ils jouent un chanson",
+              "correct": "ils jouent une chanson",
+              "ok": false,
+              "en": "They play a song"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "v2": {
+          "forms": {
+            "je": {
+              "typed": "regarde",
+              "correct": "regarde",
+              "ok": true
+            },
+            "tu": {
+              "typed": "regardes",
+              "correct": "regardes",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "regarde",
+              "correct": "regarde",
+              "ok": true
+            },
+            "nous": {
+              "typed": "regardons",
+              "correct": "regardons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "regardez",
+              "correct": "regardez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "regardent",
+              "correct": "regardent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv2": {
+          "items": [
+            {
+              "typed": "je regarde un ami",
+              "correct": "je regarde un ami",
+              "ok": true,
+              "en": "I watch a friend"
+            },
+            {
+              "typed": "elle regarde un ecole",
+              "correct": "elle regarde une école",
+              "ok": false,
+              "en": "She watches a school"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "n0": {
+          "article": {
+            "typed": "un jardin",
+            "correct": "un jardin",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des jardins",
+            "correct": "des jardins",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn0": {
+          "items": [
+            {
+              "typed": "un nouveux jardin",
+              "correct": "un nouveau jardin",
+              "ok": false,
+              "en": "a new garden"
+            },
+            {
+              "typed": "un beau jardin",
+              "correct": "un beau jardin",
+              "ok": true,
+              "en": "a beautiful garden"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "n1": {
+          "article": {
+            "typed": "un animal",
+            "correct": "un animal",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des animaux",
+            "correct": "des animaux",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn1": {
+          "items": [
+            {
+              "typed": "un nouveau animal",
+              "correct": "un nouvel animal",
+              "ok": false,
+              "en": "a new animal"
+            },
+            {
+              "typed": "un long animal",
+              "correct": "un long animal",
+              "ok": true,
+              "en": "a long animal"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "n2": {
+          "article": {
+            "typed": "une chambre",
+            "correct": "une chambre",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des chambres",
+            "correct": "des chambres",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn2": {
+          "items": [
+            {
+              "typed": "un nouvel chambre",
+              "correct": "une nouvelle chambre",
+              "ok": false,
+              "en": "a new bedroom"
+            },
+            {
+              "typed": "un bel chambre",
+              "correct": "une belle chambre",
+              "ok": false,
+              "en": "a beautiful bedroom"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "a0": {
+          "fem": {
+            "typed": "bel",
+            "correct": "belle",
+            "ok": false
+          },
+          "mascPl": {
+            "typed": "beaux",
+            "correct": "beaux",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "belle",
+            "correct": "belles",
+            "ok": false
+          },
+          "score": {
+            "total": 3,
+            "correct": 1
+          }
+        },
+        "sa0": {
+          "items": [
+            {
+              "typed": "un beau animal",
+              "correct": "un bel animal",
+              "ok": false,
+              "en": "a beautiful animal"
+            },
+            {
+              "typed": "des belles chambres",
+              "correct": "de belles chambres",
+              "ok": false,
+              "en": "beautiful bedrooms"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "a1": {
+          "fem": {
+            "typed": "longue",
+            "correct": "longue",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "longs",
+            "correct": "longs",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "longues",
+            "correct": "longues",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa1": {
+          "items": [
+            {
+              "typed": "un long jardin",
+              "correct": "un long jardin",
+              "ok": true,
+              "en": "a long garden"
+            },
+            {
+              "typed": "de longs animaux",
+              "correct": "de longs animaux",
+              "ok": true,
+              "en": "long animals"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "a2": {
+          "fem": {
+            "typed": "nouvel",
+            "correct": "nouvelle",
+            "ok": false
+          },
+          "mascPl": {
+            "typed": "nouveaux",
+            "correct": "nouveaux",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "nouvels",
+            "correct": "nouvelles",
+            "ok": false
+          },
+          "score": {
+            "total": 3,
+            "correct": 1
+          }
+        },
+        "sa2": {
+          "items": [
+            {
+              "typed": "un nouvell chambre",
+              "correct": "une nouvelle chambre",
+              "ok": false,
+              "en": "a new bedroom"
+            },
+            {
+              "typed": "de nouveaux jardins",
+              "correct": "de nouveaux jardins",
+              "ok": true,
+              "en": "new gardens"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        }
+      },
+      "lastStep": 19,
+      "complete": true,
+      "score": {
+        "total": 51,
+        "correct": 36
+      }
+    },
+    "2026-09-03": {
+      "startedAt": "2026-09-03T12:24:52.528Z",
+      "completedAt": "2026-09-03T12:30:53.741Z",
+      "responses": 17,
+      "wordIds": {
+        "verbs": [
+          "v-4-0",
+          "v-3-1",
+          "v-2-0"
+        ],
+        "nouns": [
+          "n-3-0",
+          "n-3-1",
+          "n-3-2"
+        ],
+        "adj": [
+          "a-3-1",
+          "a-3-0",
+          "a-3-2"
+        ]
+      },
+      "results": {
+        "verbs": [
+          {
+            "word": "jouer",
+            "forms": {
+              "je": {
+                "typed": "joue",
+                "correct": "joue",
+                "ok": true
+              },
+              "tu": {
+                "typed": "joues",
+                "correct": "joues",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "joue",
+                "correct": "joue",
+                "ok": true
+              },
+              "nous": {
+                "typed": "jouons",
+                "correct": "jouons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "jouez",
+                "correct": "jouez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "jouent",
+                "correct": "jouent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "montrer",
+            "forms": {
+              "je": {
+                "typed": "montre",
+                "correct": "montre",
+                "ok": true
+              },
+              "tu": {
+                "typed": "montres",
+                "correct": "montres",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "montre",
+                "correct": "montre",
+                "ok": true
+              },
+              "nous": {
+                "typed": "montrons",
+                "correct": "montrons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "montrez",
+                "correct": "montrez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "montrent",
+                "correct": "montrent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          },
+          {
+            "word": "regarder",
+            "forms": {
+              "je": {
+                "typed": "regarde",
+                "correct": "regarde",
+                "ok": true
+              },
+              "tu": {
+                "typed": "regardes",
+                "correct": "regardes",
+                "ok": true
+              },
+              "il/elle/on": {
+                "typed": "regarde",
+                "correct": "regarde",
+                "ok": true
+              },
+              "nous": {
+                "typed": "regardons",
+                "correct": "regardons",
+                "ok": true
+              },
+              "vous": {
+                "typed": "regardez",
+                "correct": "regardez",
+                "ok": true
+              },
+              "ils/elles": {
+                "typed": "regardent",
+                "correct": "regardent",
+                "ok": true
+              }
+            },
+            "score": {
+              "total": 6,
+              "correct": 6
+            }
+          }
+        ],
+        "nouns": [
+          {
+            "word": "jardin",
+            "gender": "m",
+            "article": {
+              "typed": "un jardin",
+              "correct": "un jardin",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des jardins",
+              "correct": "des jardins",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "chambre",
+            "gender": "f",
+            "article": {
+              "typed": "une chambre",
+              "correct": "une chambre",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des chambres",
+              "correct": "des chambres",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          },
+          {
+            "word": "animal",
+            "gender": "m",
+            "article": {
+              "typed": "un animal",
+              "correct": "un animal",
+              "ok": true
+            },
+            "plural": {
+              "typed": "des animaux",
+              "correct": "des animaux",
+              "ok": true
+            },
+            "score": {
+              "total": 2,
+              "correct": 2
+            }
+          }
+        ],
+        "adjectives": [
+          {
+            "word": "beau",
+            "fem": {
+              "typed": "belle",
+              "correct": "belle",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "beaux",
+              "correct": "beaux",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "belles",
+              "correct": "belles",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          },
+          {
+            "word": "nouveau",
+            "fem": {
+              "typed": "nouvelle",
+              "correct": "nouvelle",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "nouveaux",
+              "correct": "nouveaux",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "nouvelles",
+              "correct": "nouvelles",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          },
+          {
+            "word": "long",
+            "fem": {
+              "typed": "longue",
+              "correct": "longue",
+              "ok": true
+            },
+            "mascPl": {
+              "typed": "longs",
+              "correct": "longs",
+              "ok": true
+            },
+            "femPl": {
+              "typed": "longues",
+              "correct": "longues",
+              "ok": true
+            },
+            "score": {
+              "total": 3,
+              "correct": 3
+            }
+          }
+        ],
+        "sentences": []
+      },
+      "checked": {
+        "v0": {
+          "forms": {
+            "je": {
+              "typed": "joue",
+              "correct": "joue",
+              "ok": true
+            },
+            "tu": {
+              "typed": "joues",
+              "correct": "joues",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "joue",
+              "correct": "joue",
+              "ok": true
+            },
+            "nous": {
+              "typed": "jouons",
+              "correct": "jouons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "jouez",
+              "correct": "jouez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "jouent",
+              "correct": "jouent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv0": {
+          "items": [
+            {
+              "typed": "je joue un chanson",
+              "correct": "je joue une chanson",
+              "ok": false,
+              "en": "I play a song"
+            },
+            {
+              "typed": "ils jouent un chanson",
+              "correct": "ils jouent une chanson",
+              "ok": false,
+              "en": "They play a song"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "v1": {
+          "forms": {
+            "je": {
+              "typed": "montre",
+              "correct": "montre",
+              "ok": true
+            },
+            "tu": {
+              "typed": "montres",
+              "correct": "montres",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "montre",
+              "correct": "montre",
+              "ok": true
+            },
+            "nous": {
+              "typed": "montrons",
+              "correct": "montrons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "montrez",
+              "correct": "montrez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "montrent",
+              "correct": "montrent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv1": {
+          "items": [
+            {
+              "typed": "nous montrons un animal",
+              "correct": "nous montrons un animal",
+              "ok": true,
+              "en": "We show an animal"
+            },
+            {
+              "typed": "tu montres un jargin",
+              "correct": "tu montres un jardin",
+              "ok": false,
+              "en": "You (informal) show a garden"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "v2": {
+          "forms": {
+            "je": {
+              "typed": "regarde",
+              "correct": "regarde",
+              "ok": true
+            },
+            "tu": {
+              "typed": "regardes",
+              "correct": "regardes",
+              "ok": true
+            },
+            "il/elle/on": {
+              "typed": "regarde",
+              "correct": "regarde",
+              "ok": true
+            },
+            "nous": {
+              "typed": "regardons",
+              "correct": "regardons",
+              "ok": true
+            },
+            "vous": {
+              "typed": "regardez",
+              "correct": "regardez",
+              "ok": true
+            },
+            "ils/elles": {
+              "typed": "regardent",
+              "correct": "regardent",
+              "ok": true
+            }
+          },
+          "score": {
+            "total": 6,
+            "correct": 6
+          }
+        },
+        "sv2": {
+          "items": [
+            {
+              "typed": "je regarde un ami",
+              "correct": "je regarde un ami",
+              "ok": true,
+              "en": "I watch a friend"
+            },
+            {
+              "typed": "elle regarde un ecole",
+              "correct": "elle regarde une école",
+              "ok": false,
+              "en": "She watches a school"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "n0": {
+          "article": {
+            "typed": "un jardin",
+            "correct": "un jardin",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des jardins",
+            "correct": "des jardins",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn0": {
+          "items": [
+            {
+              "typed": "un nouveau jardin",
+              "correct": "un nouveau jardin",
+              "ok": true,
+              "en": "a new garden"
+            },
+            {
+              "typed": "un belle jardin",
+              "correct": "un beau jardin",
+              "ok": false,
+              "en": "a beautiful garden"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "n1": {
+          "article": {
+            "typed": "une chambre",
+            "correct": "une chambre",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des chambres",
+            "correct": "des chambres",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn1": {
+          "items": [
+            {
+              "typed": "un nouvelle chambre",
+              "correct": "une nouvelle chambre",
+              "ok": false,
+              "en": "a new bedroom"
+            },
+            {
+              "typed": "un belle chambre",
+              "correct": "une belle chambre",
+              "ok": false,
+              "en": "a beautiful bedroom"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "n2": {
+          "article": {
+            "typed": "un animal",
+            "correct": "un animal",
+            "ok": true
+          },
+          "plural": {
+            "typed": "des animaux",
+            "correct": "des animaux",
+            "ok": true
+          },
+          "score": {
+            "total": 2,
+            "correct": 2
+          }
+        },
+        "sn2": {
+          "items": [
+            {
+              "typed": "un nouveau animal",
+              "correct": "un nouvel animal",
+              "ok": false,
+              "en": "a new animal"
+            },
+            {
+              "typed": "un long animal",
+              "correct": "un long animal",
+              "ok": true,
+              "en": "a long animal"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "a0": {
+          "fem": {
+            "typed": "belle",
+            "correct": "belle",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "beaux",
+            "correct": "beaux",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "belles",
+            "correct": "belles",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa0": {
+          "items": [
+            {
+              "typed": "un beau animal",
+              "correct": "un bel animal",
+              "ok": false,
+              "en": "a beautiful animal"
+            },
+            {
+              "typed": "une belles chambres",
+              "correct": "de belles chambres",
+              "ok": false,
+              "en": "beautiful bedrooms"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 0
+          }
+        },
+        "a1": {
+          "fem": {
+            "typed": "nouvelle",
+            "correct": "nouvelle",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "nouveaux",
+            "correct": "nouveaux",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "nouvelles",
+            "correct": "nouvelles",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        },
+        "sa1": {
+          "items": [
+            {
+              "typed": "une nouvelle chambre",
+              "correct": "une nouvelle chambre",
+              "ok": true,
+              "en": "a new bedroom"
+            },
+            {
+              "typed": "des nouveaux jardins",
+              "correct": "de nouveaux jardins",
+              "ok": false,
+              "en": "new gardens"
+            }
+          ],
+          "score": {
+            "total": 2,
+            "correct": 1
+          }
+        },
+        "a2": {
+          "fem": {
+            "typed": "longue",
+            "correct": "longue",
+            "ok": true
+          },
+          "mascPl": {
+            "typed": "longs",
+            "correct": "longs",
+            "ok": true
+          },
+          "femPl": {
+            "typed": "longues",
+            "correct": "longues",
+            "ok": true
+          },
+          "score": {
+            "total": 3,
+            "correct": 3
+          }
+        }
+      },
+      "lastStep": 19,
+      "complete": true,
+      "score": {
+        "total": 49,
+        "correct": 38
+      }
+    }
+  },
   "stats": {
-    "questions": 0,
-    "correct": 0,
-    "streak": 0,
-    "best": 0,
-    "lastDate": null
+    "questions": 144,
+    "correct": 110,
+    "streak": 1,
+    "best": 1,
+    "lastDate": "2026-09-03"
   }
 }
