@@ -42,9 +42,9 @@
 
 ### animal
 
-|masculine||
+|masculine|un animal|
 |---|---|
-|plural||
+|plural|des animaux|
 
 ### beau
 
