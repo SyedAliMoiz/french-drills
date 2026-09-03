@@ -96,8 +96,8 @@
 
 |English|French|
 |---|---|
-|a beautiful animal||
-|beautiful bedrooms||
+|a beautiful animal|un beau animal|
+|beautiful bedrooms|une belles chambres|
 |a new bedroom||
 |new gardens||
 |a long garden||
