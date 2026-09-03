@@ -89,8 +89,8 @@
 |a beautiful garden|un belle jardin|
 |a new bedroom|un nouvelle chambre|
 |a beautiful bedroom|un belle chambre|
-|a new animal||
-|a long animal||
+|a new animal|un nouveau animal|
+|a long animal|un long animal|
 
 ### Adjective Phrases
 
