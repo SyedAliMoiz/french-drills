@@ -85,8 +85,8 @@
 
 |English|French|
 |---|---|
-|a new garden||
-|a beautiful garden||
+|a new garden|un nouveau jardin|
+|a beautiful garden|un belle jardin|
 |a new bedroom||
 |a beautiful bedroom||
 |a new animal||
