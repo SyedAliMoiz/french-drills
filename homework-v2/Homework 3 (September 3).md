@@ -98,8 +98,8 @@
 |---|---|
 |a beautiful animal|un beau animal|
 |beautiful bedrooms|une belles chambres|
-|a new bedroom||
-|new gardens||
+|a new bedroom|une nouvelle chambre|
+|new gardens|des nouveaux jardins|
 |a long garden||
 |long animals||
 
