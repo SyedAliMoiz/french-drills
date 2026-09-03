@@ -78,8 +78,8 @@
 |They play a song|ils jouent un chanson|
 |We show an animal|nous montrons un animal|
 |You (informal) show a garden|tu montres un jargin|
-|I watch a friend||
-|She watches a school||
+|I watch a friend|je regarde un ami|
+|She watches a school|elle regarde un ecole|
 
 ### Noun Phrases
 
